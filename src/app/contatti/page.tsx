@@ -85,7 +85,7 @@ export default function Contatti() {
     <div>
       <h3 className="text-xl font-semibold text-green-700">Disponibilità Attuale</h3>
       <p>
-        Attualmente, l'attività privata della dott.ssa Sabina Scattola è <strong>temporaneamente sospesa</strong> fino a nuova comunicazione, in seguito all'assunzione come dirigente psicologo presso AULSS 7 Pedemontana.
+        Attualmente, l&apos;attività privata della dott.ssa Sabina Scattola è <strong>temporaneamente sospesa</strong> fino a nuova comunicazione, in seguito all&apos;assunzione come dirigente psicologo presso AULSS 7 Pedemontana.
       </p>
     </div>
 
@@ -103,7 +103,7 @@ export default function Contatti() {
       <ul className="list-disc list-inside ml-4">
         <li>Ansia e attacchi di panico</li>
         <li>Disturbo post-traumatico da stress</li>
-        <li>Depressione e disturbi dell'umore</li>
+        <li>Depressione e disturbi dell&apos;umore</li>
         <li>Disturbi di personalità</li>
         <li>Disturbi dello spettro psicotico</li>
         <li>Disturbi neurocognitivi</li>

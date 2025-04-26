@@ -27,7 +27,7 @@ export default function ChiSono() {
           <p>
           Mi chiamo <strong>Sabina Scattola</strong>, sono una <strong>Psicologa</strong> e <strong>Psicoterapeuta</strong> con oltre vent'anni di esperienza clinica e istituzionale. Attualmente ricopro il ruolo <strong>Dirigente Psicologo</strong> presso l'<strong>AULSS 7 Pedemontana</strong>. Ho iniziato la mia attività professionale nel 2003, dopo la Laurea in Psicologia Clinica e di Comunità, conseguendo poi la specializzazione in Psicoterapia Psicodinamica ad orientamento Psicoanalitico. Dal 2003 al 2025 ho lavorato i nella salute mentale territoriale come responsabile di strutture residenziali psichiatriche per giovani ed adulti in Aulss 7 ed in Aulss 8.
             <br />
-            Nel mio percorso formativo ho svolto un lungo training personale con psicoanalista membro della Società Psicoanalitica Italiana (SPI) e dell'International Psychoanalytical Association (IPA), supervisioni individuali e di gruppo e ho frequentato un Master biennale in Psicoterapia Psicoanalitica del ciclo di vita. Partecipo a seminari, corsi e conferenze per seguire un aggiornamento continuo accreditato, con particolare interesse per la clinica adulta.
+            Nel mio percorso formativo ho svolto un lungo training personale con psicoanalista membro della Società Psicoanalitica Italiana (SPI) e dell&apos;International Psychoanalytical Association (IPA), supervisioni individuali e di gruppo e ho frequentato un Master biennale in Psicoterapia Psicoanalitica del ciclo di vita. Partecipo a seminari, corsi e conferenze per seguire un aggiornamento continuo accreditato, con particolare interesse per la clinica adulta.
           </p>
         </section>
 
@@ -52,7 +52,7 @@ export default function ChiSono() {
           </h2>
           <ul className="list-disc list-inside space-y-2 ml-4">
             <li><strong>Dirigente Psicologo in disciplina Psicoterapia</strong> presso <strong>AULSS 7 Pedemontana</strong></li>
-            <li><strong>Vicepresidente</strong> dell'Associazione <strong>«La Recherche»</strong></li>
+            <li><strong>Vicepresidente</strong> dell&apos;Associazione <strong>«La Recherche»</strong></li>
           </ul>
         </section>
 
@@ -61,7 +61,7 @@ export default function ChiSono() {
             <HeartIcon className="h-7 w-7" /> Filosofia e Metodo
           </h2>
           <p>
-            Il mio lavoro si basa sull'ascolto analitico e sulla relazione terapeutica intesa come spazio privilegiato di incontro tra paziente e terapeuta. Attraverso l'esplorazione delle dinamiche relazionali storiche attivate nel 'qui ed ora', il paziente rivive e riconosce schemi emotivi e comportamentali inconsci, spesso derivanti da esperienze passate. Le reazioni controtransferali che emergono nel terapeuta diventano strumenti preziosi di comprensione, contribuendo a co-costruire una nuova consapevolezza condivisa e un cambiamento profondo e duraturo.
+            Il mio lavoro si basa sull&apos;ascolto analitico e sulla relazione terapeutica intesa come spazio privilegiato di incontro tra paziente e terapeuta. Attraverso l&apos;esplorazione delle dinamiche relazionali storiche attivate nel &apos;qui ed ora&apos;, il paziente rivive e riconosce schemi emotivi e comportamentali inconsci, spesso derivanti da esperienze passate. Le reazioni controtransferali che emergono nel terapeuta diventano strumenti preziosi di comprensione, contribuendo a co-costruire una nuova consapevolezza condivisa e un cambiamento profondo e duraturo.
           </p>
         </section>
 

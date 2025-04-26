@@ -26,7 +26,7 @@ export default function CuriositaPsicologiche() {
 
         <h2 className="text-2xl font-semibold text-green-800">Consigli utili prima di iniziare un percorso</h2>
         <ul className="list-disc list-inside ml-4 space-y-2">
-          <li>Cerca di essere aperto e sincero fin dall'inizio.</li>
+          <li>Cerca di essere aperto e sincero fin dall&apos;inizio.</li>
           <li>Poni domande se qualcosa non è chiaro durante la terapia.</li>
           <li>Impegnati ad applicare ciò che emerge in seduta anche nella vita quotidiana.</li>
           <li>Ricorda che è normale sentirsi vulnerabili: è parte del processo di crescita.</li>
@@ -34,7 +34,7 @@ export default function CuriositaPsicologiche() {
 
         <h2 className="text-2xl font-semibold text-green-800">Aspettative realistiche</h2>
         <p>
-          Un percorso terapeutico può essere breve o lungo in base agli obiettivi che si vogliono raggiungere. L'importante è stabilire obiettivi chiari con il proprio terapeuta e lavorare assieme verso un cambiamento significativo e duraturo.
+          Un percorso terapeutico può essere breve o lungo in base agli obiettivi che si vogliono raggiungere. L&apos;importante è stabilire obiettivi chiari con il proprio terapeuta e lavorare assieme verso un cambiamento significativo e duraturo.
         </p>
       </section>
 

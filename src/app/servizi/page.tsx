@@ -104,7 +104,7 @@ export default function Servizi() {
           <BuildingOfficeIcon className="h-10 w-10 text-green-600 mb-4" />
           <h2 className="text-2xl font-semibold text-green-800 mb-2">Psicoterapia in presenza (Intramoenia)</h2>
           <p className="text-gray-700">
-            L'attività in libera professione sarà riattivata in modalità intramoenia presso le strutture dell'AULSS 7 Pedemontana entro il 2025. Ulteriori informazioni saranno disponibili nei prossimi mesi.
+            L&apos;attività in libera professione sarà riattivata in modalità intramoenia presso le strutture dell&apos;AULSS 7 Pedemontana entro il 2025. Ulteriori informazioni saranno disponibili nei prossimi mesi.
           </p>
         </div>
 
@@ -117,7 +117,7 @@ export default function Servizi() {
           <h2 className="text-2xl font-semibold text-green-800 mt-2">Cosa dicono i pazienti</h2>
         </div>
         <blockquote className="italic text-center text-gray-700">
-          "Il percorso terapeutico con la Dott.ssa Scattola è stato fondamentale per ritrovare equilibrio e serenità. Mi sono sentita sempre ascoltata e supportata con grande professionalità e calore umano."
+          &quot;Il percorso terapeutico con la Dott.ssa Scattola è stato fondamentale per ritrovare equilibrio e serenità. Mi sono sentita sempre ascoltata e supportata con grande professionalità e calore umano.&quot;
         </blockquote>
         <p className="mt-4 text-center font-semibold text-green-700">— Testimonianza anonima</p>
       </section>
@@ -131,7 +131,7 @@ export default function Servizi() {
         <ul className="text-gray-700 list-disc list-inside space-y-3">
           <li>Ansia e attacchi di panico</li>
           <li>Disturbo post-traumatico da stress</li>
-          <li>Depressione e disturbi dell'umore</li>
+          <li>Depressione e disturbi dell&apos;umore</li>
           <li>Disturbi di personalità</li>
           <li>Disturbi dello spettro psicotico</li>
           <li>Disturbi neurocognitivi</li>

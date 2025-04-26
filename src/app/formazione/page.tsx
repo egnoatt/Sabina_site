@@ -39,7 +39,7 @@ export default function Formazione() {
         <ul className="text-gray-700 list-disc list-inside space-y-3">
           <li>Laurea in Psicologia Clinica e di Comunità.</li>
           <li>Specializzazione quadriennale in Psicoterapia Psicodinamica (orientamento Psicoanalitico).</li>
-          <li>Iscrizione all'Ordine degli Psicologi del Veneto, n°4157 dal 31 gennaio 2003.</li>
+          <li>Iscrizione all&apos;Ordine degli Psicologi del Veneto, n°4157 dal 31 gennaio 2003.</li>
           <li> Master in Psicoterapia Psicanalitica del bambino, adolescente, adulto, coppia, famiglia (2016 -2018).</li>
           <li>Corso di formazione in Valutazione Neuropsicologica del Decadimento cognitivo tenuto dalla dr.ssa S. Turati - Psicologa e Neuropsicologa di Milano presso CePoSS nel 2018.</li>
           <li>Training certificato di EMDR con Isabel Fernandez del centro di ricerche e studi in psicotraumatologia e dell’EMDR Europe Association 2022.</li>
@@ -56,8 +56,8 @@ export default function Formazione() {
           <li><strong>9 giugno 2017:</strong> Pubblicazione del libro: <em>RESTITUIRE LA MENTE AL CORPO</em>. Autrice Sabina Scattola. Edizioni Accademiche Italiane (EAI).</li>
           <li><strong>24 gennaio 2014:</strong> Pubblicazione catalogo <em>IDENTITÀ</em>. Nascoste, mascherate, rivelate tra sogno e realtà. Esposizione sull’uso del medium pittorico come mediatore terapeutico in un gruppo di Arteterapia con utenti psichiatrici di comunità.</li>
           <li><strong>25 settembre 2015:</strong> Pubblicazione catalogo <em>PAESAGGI EMOTIVI</em>. Esposizione della prosecuzione del percorso di attività artistica-pittorica a mediazione terapeutica in un gruppo di Arteterapia con utenti psichiatrici di comunità.</li>
-          <li><strong>2004:</strong> Pubblicazione su Pol.it - Psychiatry online, articolo "Lavorare con gli uditori di voci in una comunità". Intervento clinico con un paziente psichiatrico affetto da allucinazioni uditive inserito in una comunità per psicotici.</li>
-          <li><strong>29-30 agosto 2002:</strong> Paper per il Scientific Meeting, Poitiers (Francia). Maison des sciences de l’homme e de la Société (MSHS): "The Effect Of The Text And Picture Integration On Comprehending Spatial Descriptions" – Francesca Pazzaglia, Sabina Scattola e Francesca Zanardi – Dipartimento di Psicologia Generale, Università di Padova.</li>
+          <li><strong>2004:</strong> Pubblicazione su Pol.it - Psychiatry online, articolo &quot;Lavorare con gli uditori di voci in una comunità&quot;. Intervento clinico con un paziente psichiatrico affetto da allucinazioni uditive inserito in una comunità per psicotici.</li>
+          <li><strong>29-30 agosto 2002:</strong> Paper per il Scientific Meeting, Poitiers (Francia). Maison des sciences de l’homme e de la Société (MSHS): &quot;The Effect Of The Text And Picture Integration On Comprehending Spatial Descriptions&quot; – Francesca Pazzaglia, Sabina Scattola e Francesca Zanardi – Dipartimento di Psicologia Generale, Università di Padova.</li>
         </ul>
       </section>
 

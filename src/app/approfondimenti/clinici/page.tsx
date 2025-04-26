@@ -22,7 +22,7 @@ export default function ApprofondimentiClinici() {
       <section className="max-w-4xl mx-auto text-lg text-gray-700 space-y-6">
         <h2 className="text-2xl font-semibold text-green-800">Esperienza di un paziente anonimo</h2>
         <p>
-          "Inizialmente ero scettico sull'efficacia della terapia, ma ho deciso comunque di provare. Nel corso delle sedute ho trovato uno spazio in cui mi sono sentito ascoltato e compreso, senza alcun tipo di giudizio. Questo mi ha permesso di affrontare problemi che da solo non riuscivo a gestire."
+          &quot;Inizialmente ero scettico sull&apos;efficacia della terapia, ma ho deciso comunque di provare. Nel corso delle sedute ho trovato uno spazio in cui mi sono sentito ascoltato e compreso, senza alcun tipo di giudizio. Questo mi ha permesso di affrontare problemi che da solo non riuscivo a gestire.&quot;
         </p>
 
         <h2 className="text-2xl font-semibold text-green-800">Tecniche terapeutiche utilizzate</h2>
@@ -31,12 +31,12 @@ export default function ApprofondimentiClinici() {
           <li>Psicoterapia psicodinamica orientata alla psicoanalisi</li>
           <li>Analisi dei sogni e del linguaggio simbolico</li>
           <li>Tecniche di esplorazione profonda delle emozioni e dei vissuti personali</li>
-          <li>Supporto nella gestione dello stress e dell'ansia quotidiana</li>
+          <li>Supporto nella gestione dello stress e dell&apos;ansia quotidiana</li>
         </ul>
 
         <h2 className="text-2xl font-semibold text-green-800">Benefici ottenibili dalla terapia</h2>
         <p>
-          Tra i principali benefici della psicoterapia clinica vi sono un miglioramento significativo della qualità della vita, una maggiore consapevolezza di sé e delle proprie emozioni, e l'acquisizione di strumenti utili per affrontare le difficoltà quotidiane con maggiore equilibrio e serenità.
+          Tra i principali benefici della psicoterapia clinica vi sono un miglioramento significativo della qualità della vita, una maggiore consapevolezza di sé e delle proprie emozioni, e l&apos;acquisizione di strumenti utili per affrontare le difficoltà quotidiane con maggiore equilibrio e serenità.
         </p>
       </section>
 

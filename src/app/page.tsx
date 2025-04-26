@@ -40,7 +40,7 @@ export default function Home() {
             </button>
             <h2 className="text-xl font-semibold text-green-700 mb-4 text-center">Attenzione</h2>
             <p className="text-gray-700">
-            L'attività clinica privata è temporaneamente sospesa. La ripresa delle consulenze e delle sedute in libera professione è prevista entro il 2025.
+            L&apos;attività clinica privata è temporaneamente sospesa. La ripresa delle consulenze e delle sedute in libera professione è prevista entro il 2025.
             </p>
             <div className="text-right mt-4">
               <button
@@ -79,7 +79,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-semibold text-green-800 mb-4">Benvenuti nel mio sito</h2>
           <p className="text-lg md:text-xl text-gray-700">
-            Sono una psicologa e psicoterapeuta con oltre vent'anni di esperienza clinica e formativa in diversi contesti. Nel mio percorso ho affrontato molteplici sfide e tematiche psicologiche, mettendo sempre al centro la persona nella sua unicità.
+            Sono una psicologa e psicoterapeuta con oltre vent&apos;anni di esperienza clinica e formativa in diversi contesti. Nel mio percorso ho affrontato molteplici sfide e tematiche psicologiche, mettendo sempre al centro la persona nella sua unicità.
           </p>
         </div>
       </section>
@@ -92,8 +92,8 @@ export default function Home() {
           </h2>
           <p className="text-lg md:text-xl leading-relaxed text-gray-800 mb-6">
             Sono una Psicologa ad indirizzo clinico e di comunità e Psicoterapeuta ad orientamento psicodinamico.<br />
-            Attualmente lavoro come dirigente psicologo presso l'AULSS 7 Pedemontana (servizio di Neuropsicologia clinica).<br />
-            Sono inoltre vicepresidente dell'Associazione ”La Recherche" per lo studio e la ricerca in psicoterapia psicoanalitica.<br />
+            Attualmente lavoro come dirigente psicologo presso l&apos;AULSS 7 Pedemontana (servizio di Neuropsicologia clinica).<br />
+            Sono inoltre vicepresidente dell&apos;Associazione ”La Recherche" per lo studio e la ricerca in psicoterapia psicoanalitica.<br />
             Ho maturato una lunga esperienza clinica in vari contesti terapeutici riabilitativi della salute mentale pubblica e privata. Dal 2008 al 2025 ho esercitato anche attività libera professionale presso il mio studio privato.
           </p>
           <div className="text-center mt-8">
@@ -112,11 +112,11 @@ export default function Home() {
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gray-50 p-6 rounded-xl shadow">
-              <p className="italic">"La Dottoressa mi ha aiutato a superare un periodo difficile. La consiglio vivamente!"</p>
+              <p className="italic">&quot;La Dottoressa mi ha aiutato a superare un periodo difficile. La consiglio vivamente!&quot;</p>
               <p className="font-semibold text-green-700 mt-4">— Maria G.</p>
             </div>
             <div className="bg-gray-50 p-6 rounded-xl shadow">
-              <p className="italic">"Un sostegno fondamentale in un percorso di crescita personale."</p>
+              <p className="italic">&quot;Un sostegno fondamentale in un percorso di crescita personale.&quot;</p>
               <p className="font-semibold text-green-700 mt-4">— Luca F.</p>
             </div>
           </div>
