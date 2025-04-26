@@ -1,0 +1,204 @@
+# Specifica del Nuovo Sito per Sabina Scattola (Open Source)
+
+## 1. Visione e Obiettivi
+
+- **Identità del Brand:**
+  Il sito deve trasmettere calma, accoglienza e fiducia, rispecchiando il lavoro di una psicologa e psicoterapeuta.
+
+- **Obiettivi del Progetto:**
+  - Creare un sito moderno, minimalista e responsivo.
+  - Utilizzare esclusivamente strumenti open source, garantendo trasparenza e flessibilità.
+  - Implementare un layout che trasmetta serenità (es. utilizzo di tonalità pastello come verde menta) e differenziarsi dal sito personale.
+  - Prevedere integrazioni future (es. funzionalità interattive con AI) sfruttando API open source ove possibile.
+
+## 2. Struttura e Architettura delle Pagine
+
+- **Homepage:**
+  - Hero Section con immagine/video di sfondo, claim ispirazionale e call-to-action.
+  - Sezione breve di presentazione dei servizi principali.
+
+- **Chi Sono / About:**
+  - Biografia con una descrizione del percorso professionale e dell’approccio terapeutico.
+
+- **Servizi:**
+  - Descrizione dei servizi offerti, organizzata in schede o a griglia.
+
+- **Contatti:**
+  - Form di contatto semplice e intuitivo, con informazioni di sede, orari e social.
+
+- **Sezioni Aggiuntive (opzionali):**
+  - Blog, testimonianze e/o FAQ.
+
+## 3. Design e Linee Guida Visive
+
+- **Palette Colori:**
+  - **Primario:** Tonalità pastello (verde menta) per trasmettere tranquillità.
+  - **Secondari:** Toni neutri (bianco, grigi chiari) per un design pulito e minimalista.
+
+- **Tipografia:**
+  - **Titoli:** Font sans-serif moderni (es. Montserrat, Poppins).
+  - **Testi:** Font leggibili (es. Open Sans, Roboto).
+
+- **Layout:**
+  - Minimalista, con abbondanza di spazi bianchi.
+  - Header fisso e navigazione intuitiva, adattabile a desktop e mobile.
+  - Animazioni leggere per migliorare l’esperienza utente.
+
+### Specifiche Tipografiche e Dimensioni Testo
+
+Per garantire coerenza e leggibilità, utilizza le seguenti linee guida tipografiche in tutte le pagine del sito:
+
+- **Font principali:**
+  - **Titoli:** Montserrat o Poppins (Sans-serif moderni)
+  - **Testi:** Open Sans o Roboto (leggibili e puliti)
+
+- **Dimensioni consigliate (Tailwind CSS v3):**
+  - **Titolo Principale (Homepage e Titoli Articoli):** `text-3xl` o `text-4xl` (a seconda dell'importanza visiva)
+  - **Sottotitoli e Titoli Sezioni:** `text-2xl`
+  - **Titoli Schede e Componenti Minori:** `text-xl`
+  - **Corpo Testo standard (paragrafi):** `text-lg` per mantenere leggibilità e comfort visivo
+  - **Data o testo secondario (metadati, descrizioni minori):** `text-base` o `text-sm`
+
+- **Utilizzo Classi Tailwind CSS per il contenuto dinamico (Markdown):**
+  - Utilizza la classe `prose prose-green mx-auto` per il contenuto proveniente da Markdown, garantendo uniformità stilistica e cromatica.
+
+Queste specifiche devono essere rispettate in ogni pagina e componente per assicurare uniformità estetica e funzionale, facendo riferimento alla versione Tailwind CSS v3 adottata per stabilità e compatibilità.
+
+## 4. Tecnologie e Stack Open Source
+
+- **Ambiente di Sviluppo:**
+  - **Stack:** Next.js 15+, React, TypeScript.
+  - **Styling:** Tailwind CSS v3 per uno styling modulare e compatibilità confermata.
+  - **Editor:** Visual Studio Code.
+
+- **Versionamento e Collaborazione:**
+  - **Git:** Hosting su GitHub o GitLab.
+
+- **Strumenti di Design:**
+  - Canva o alternative open source (Penpot, Inkscape).
+
+- **Integrazione AI (opzionale in futuro):**
+  - Eventuali funzionalità AI tramite API open source o servizi esterni.
+
+## 5. Prototipazione e Wireframe (da rifare)
+
+- **Wireframe:**
+  - Creazione aggiornata di bozzetti per ogni pagina principale per definire struttura e flusso utente.
+
+- **Prototipo Interattivo:**
+  - Realizzazione di un prototipo cliccabile per testare l’esperienza utente.
+
+## 6. Roadmap e Pianificazione Aggiornata (nuova pianificazione)
+
+### Fasi del Progetto
+
+1. **Definizione Specifica e Pianificazione:**
+   - Revisione e approvazione di questa specifica aggiornata.
+   - Creazione nuovi wireframe.
+
+2. **Prototipazione:**
+   - Sviluppo wireframe aggiornati e prototipo interattivo.
+
+3. **Sviluppo Frontend:**
+   - Realizzazione delle pagine principali e componenti.
+   - Integrazione componenti Tailwind CSS v3.
+
+4. **Testing e Feedback:**
+   - Deploy su staging, raccolta feedback e iterazioni.
+
+5. **Deploy Finale e Lancio:**
+   - Deploy definitivo su Vercel e configurazione dominio.
+
+### Tempistiche (Indicative e aggiornate)
+
+- **Fase 1 (Specifiche e Wireframe):** 1 settimana
+- **Fase 2 (Prototipazione):** 1-2 settimane
+- **Fase 3 (Sviluppo Frontend):** 2-3 settimane
+- **Fase 4 (Testing e Deploy):** 1 settimana
+
+## 7. Best Practices
+
+- **Codice e Documentazione:**
+  - ESLint, Prettier e commenti per codice chiaro e manutenibile.
+
+- **Accessibilità e SEO:**
+  - HTML semantico, attributi ARIA, WCAG.
+  - Ottimizzazione SEO e immagini.
+
+- **CI/CD:**
+  - Pipeline automatizzate di build, test e deploy.
+
+- **Feedback e Iterazione:**
+  - Revisioni periodiche e iterazioni basate sui feedback ricevuti.
+
+## 8. Sicurezza, Performance e Testing
+
+- **Sicurezza e Privacy:**
+  - HTTPS obbligatorio.
+  - Prevenzione attacchi comuni (XSS, CSRF).
+  - Gestione sicura dei dati (GDPR compliant).
+
+- **Performance:**
+  - Ottimizzazione immagini e lazy loading.
+  - Minificazione CSS e JS.
+  - Valutazione utilizzo CDN.
+
+- **Testing e Qualità del Codice:**
+  - Test unitari ed E2E (Jest, Cypress).
+  - Pipeline CI/CD per automatizzare.
+
+---
+
+## Stato Attuale del Progetto (16 aprile 2025):
+
+Il progetto è stato completamente riavviato partendo da zero con la seguente configurazione iniziale confermata e funzionante:
+
+- ✅ Progetto Next.js 15 con TypeScript.
+- ✅ Configurazione Tailwind CSS v4 funzionante e verificata.
+- ✅ Struttura base impostata correttamente.
+
+**Prossimi Step Immediati:**
+- Conferma e aggiornamento wireframe e prototipo.
+- Sviluppo delle pagine e componenti base.
+
+Stato Attuale del Progetto (17 aprile 2025):
+
+Il progetto, dopo alcuni problemi riscontrati con la configurazione della versione più recente di Tailwind CSS (v4), è stato riconfigurato con successo utilizzando una versione stabile precedente (Tailwind CSS v3). Questa scelta è stata fatta per garantire stabilità, velocità di sviluppo e compatibilità immediata con Next.js 15.
+
+La nuova configurazione, correttamente funzionante, è la seguente:
+
+✅ Progetto Next.js 15 con TypeScript.
+✅ Configurazione Tailwind CSS v3 confermata e funzionante.
+✅ File postcss.config.js correttamente impostato come segue:
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+};
+✅ File globals.css correttamente configurato con:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+✅ Struttura di base e layout delle pagine impostate e verificate.
+📌 Nota finale: È stata confermata definitivamente la versione Tailwind CSS v3, scelta per garantire la massima stabilità e compatibilità con Next.js 15.
+📌 Lesson Learned Importanti:
+Gestione Versioni:
+Durante lo sviluppo, è emersa la necessità di verificare attentamente la compatibilità tra versioni delle tecnologie scelte (Tailwind CSS e Next.js). Utilizzare versioni stabili e ben documentate è fondamentale per evitare problemi bloccanti nello sviluppo.
+Documentazione Aggiornata e Chiarita:
+La documentazione del progetto deve essere aggiornata costantemente e includere chiaramente le versioni delle tecnologie utilizzate, per evitare confusione in fasi future di sviluppo e manutenzione.
+Verifica Ufficiale:
+In presenza di problemi bloccanti o dubbi sulla configurazione, è essenziale consultare sempre la documentazione ufficiale o fonti autorevoli prima di effettuare modifiche sostanziali.
+
+Stato Attuale del Progetto (26 aprile 2025):
+
+Sono stati completati i seguenti aggiornamenti:
+
+- ✅ Menu header reso fisso e visibile durante lo scroll grazie a Tailwind CSS (classi `sticky top-0 z-50`).
+- ✅ Testo della sezione "Chi Sono" aggiornato e centrato con enfasi maggiore sull'approccio psicodinamico e psicoanalitico.
+- ✅ Aggiornati e riorganizzati i contenuti delle sezioni "Consulenza Psicologica", "Psicoterapia Individuale", "Supervisione Clinica" e "Disturbi Trattati".
+
+**Prossimi Step Immediati:**
+
+- Test finale di tutte le modifiche effettuate.
+- Preparazione per il deploy finale su Vercel.
