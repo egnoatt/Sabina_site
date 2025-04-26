@@ -19,7 +19,7 @@ interface Post {
   date: string;
   title?: string;
   description?: string;
-  [key: string]: any; // per eventuali proprietà aggiuntive
+  [key: string]: unknown; // per eventuali proprietà aggiuntive
 }
 
 export function getAllPosts(): Post[] {

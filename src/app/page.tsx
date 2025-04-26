@@ -6,7 +6,6 @@ import {
   EnvelopeIcon,
   SparklesIcon,
   UserGroupIcon,
-  ChatBubbleLeftRightIcon,
   XMarkIcon
 } from '@heroicons/react/24/outline';
 
@@ -66,7 +65,7 @@ export default function Home() {
             Psicologa e Psicoterapeuta
           </p>
           <p className="mt-4 text-lg md:text-xl text-green-200 italic drop-shadow-sm">
-            "Una presenza accogliente per il tuo benessere psicologico."
+          &quot;Una presenza accogliente per il tuo benessere psicologico.&quot;
           </p>
           <p className="text-xl md:text-3xl mt-4 text-green-100 drop-shadow-sm">
             Studio di Psicodiagnosi e Trattamenti personalizzati di Psicoterapia
@@ -93,7 +92,7 @@ export default function Home() {
           <p className="text-lg md:text-xl leading-relaxed text-gray-800 mb-6">
             Sono una Psicologa ad indirizzo clinico e di comunità e Psicoterapeuta ad orientamento psicodinamico.<br />
             Attualmente lavoro come dirigente psicologo presso l&apos;AULSS 7 Pedemontana (servizio di Neuropsicologia clinica).<br />
-            Sono inoltre vicepresidente dell&apos;Associazione ”La Recherche" per lo studio e la ricerca in psicoterapia psicoanalitica.<br />
+            Sono inoltre vicepresidente dell&apos;Associazione &quot;La Recherche&quot; per lo studio e la ricerca in psicoterapia psicoanalitica.<br />
             Ho maturato una lunga esperienza clinica in vari contesti terapeutici riabilitativi della salute mentale pubblica e privata. Dal 2008 al 2025 ho esercitato anche attività libera professionale presso il mio studio privato.
           </p>
           <div className="text-center mt-8">

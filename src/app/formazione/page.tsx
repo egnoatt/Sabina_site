@@ -3,7 +3,6 @@ import {
   ClipboardDocumentListIcon, 
   UserGroupIcon,
   CalendarDaysIcon,
-  BuildingOfficeIcon 
 } from '@heroicons/react/24/outline';
 export const metadata = {
   title: "Formazione | Sabina Scattola Psicologa e Psicoterapeuta",
