@@ -125,7 +125,7 @@ export default function ServiziContent() {
           <BuildingOfficeIcon className="h-10 w-10 text-green-600 mb-4" />
           <h2 className="text-2xl font-semibold text-green-800 mb-2">Psicoterapia in presenza (Intramoenia)</h2>
           <p className="text-gray-700">
-            L'attività in libera professione sarà riattivata in modalità intramoenia presso le strutture dell'AULSS 7 Pedemontana entro il 2025. Ulteriori informazioni saranno disponibili nei prossimi mesi.
+            L&apos;attività in libera professione sarà riattivata in modalità intramoenia presso le strutture dell&apos;AULSS 7 Pedemontana entro il 2025. Ulteriori informazioni saranno disponibili nei prossimi mesi.
           </p>
         </div>
 
