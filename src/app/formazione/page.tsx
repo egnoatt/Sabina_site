@@ -79,7 +79,7 @@ export default function Formazione() {
           <li><strong>24 gennaio 2014:</strong> Catalogo <em>IDENTITÀ</em>. Uso del medium pittorico in Arteterapia con utenti psichiatrici.</li>
           <li><strong>25 settembre 2015:</strong> Catalogo <em>PAESAGGI EMOTIVI</em>. Attività artistica-pittorica terapeutica in Arteterapia.</li>
           <li><strong>2004:</strong> Articolo &quot;Lavorare con gli uditori di voci&quot;, Psychiatry online.</li>
-          <li><strong>29-30 agosto 2002:</strong> Paper scientifico, Poitiers, Francia, sull'integrazione testo-immagini nella comprensione spaziale.</li>
+          <li><strong>29-30 agosto 2002:</strong> Paper scientifico, Poitiers, Francia, sull&apos;integrazione testo-immagini nella comprensione spaziale.</li>
         </ul>
       </motion.section>
            {/* Training Personale e Supervisioni */}
