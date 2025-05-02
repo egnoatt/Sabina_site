@@ -9,7 +9,6 @@ import {
   XMarkIcon
 } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
