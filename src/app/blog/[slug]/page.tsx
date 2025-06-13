@@ -15,8 +15,8 @@ export async function generateStaticParams() {
 }
 
 // Pagina dinamica corretta per Next.js >=13.3 (incluso 15.3)
-export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;  // risolvi params esplicitamente
+export default async function BlogPost({ params }: { params: { slug: string } }) {
+  const { slug } = params;
   const post = await getPostContent(slug);
 
   return (
