@@ -1,8 +1,21 @@
-import type { NextConfig } from "next";
+
+import type { NextConfig } from 'next';
 import withBundleAnalyzer from '@next/bundle-analyzer';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  compress: true, // Abilita la compressione gzip automatica
+  async headers() {
+    return [
+      {
+        source: '/fonts/(.*)',
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
+      },
+      {
+        source: '/_next/static/(.*)',
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
+      },
+    ];
+  },
 };
 
 export default withBundleAnalyzer({
