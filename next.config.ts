@@ -1,9 +1,11 @@
-
 import type { NextConfig } from 'next';
 import withBundleAnalyzer from '@next/bundle-analyzer';
 
 const nextConfig: NextConfig = {
   compress: true, // Abilita la compressione gzip automatica
+  experimental: {
+    esmExternals: true,
+  },
   async headers() {
     return [
       {
