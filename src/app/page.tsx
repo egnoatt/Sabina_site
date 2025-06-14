@@ -81,20 +81,14 @@ export default function Home() {
       </motion.section>
 
       {/* Introduzione personale generica */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="bg-white py-12"
-      >
+      <section className="bg-white py-12">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-semibold text-green-800 mb-4">Benvenuti nel mio sito</h2>
           <p className="text-lg md:text-xl text-gray-700">
             Sono una psicologa e psicoterapeuta con oltre vent&apos;anni di esperienza clinica e formativa in diversi contesti. Nel mio percorso ho affrontato molteplici sfide e tematiche psicologiche, mettendo sempre al centro la persona nella sua unicità.
           </p>
         </div>
-      </motion.section>
+      </section>
 
       {/* Chi Sono aggiornato */}
       <motion.section
