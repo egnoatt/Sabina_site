@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
+import dynamic from 'next/dynamic';
 import {
   AcademicCapIcon,
   EnvelopeIcon,
@@ -8,7 +9,8 @@ import {
   UserGroupIcon,
   XMarkIcon
 } from '@heroicons/react/24/outline';
-import { motion } from 'framer-motion';
+
+const MotionSection = dynamic(() => import('@/components/MotionSection'), { ssr: false });
 
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
@@ -55,13 +57,7 @@ export default function Home() {
       )}
 
       {/* Hero Section */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="relative flex flex-col justify-center items-center text-center py-32 bg-gradient-to-r from-[#2e7d32] to-[#102027]"
-      >
+      <MotionSection className="relative flex flex-col justify-center items-center text-center py-32 bg-gradient-to-r from-[#2e7d32] to-[#102027]">
         <div className="absolute inset-0 bg-black opacity-10"></div>
         <div className="relative z-10">
           <SparklesIcon className="h-16 w-16 text-green-100 mb-4" />
@@ -78,7 +74,7 @@ export default function Home() {
             Studio di Psicodiagnosi e Trattamenti personalizzati di Psicoterapia
           </p>
         </div>
-      </motion.section>
+      </MotionSection>
 
       {/* Introduzione personale generica */}
       <section className="bg-white py-12">
@@ -91,13 +87,7 @@ export default function Home() {
       </section>
 
       {/* Chi Sono aggiornato */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="bg-gray-50 py-20"
-      >
+      <MotionSection className="bg-gray-50 py-20">
         <div className="max-w-3xl mx-auto px-6 md:px-8 text-center">
           <h2 className="text-3xl font-semibold text-green-800 mb-6 border-b-2 border-green-300 pb-2 flex justify-center items-center gap-2">
             <AcademicCapIcon className="h-7 w-7" /> Mi presento
@@ -114,16 +104,10 @@ export default function Home() {
             </a>
           </div>
         </div>
-      </motion.section>
+      </MotionSection>
 
       {/* Testimonianze (RECUPERATE E COMPLETE) */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="bg-white py-20"
-      >
+      <MotionSection className="bg-white py-20">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-semibold text-green-800 mb-10 flex justify-center items-center gap-2">
             <UserGroupIcon className="h-7 w-7" /> Testimonianze
@@ -139,7 +123,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </motion.section>
+      </MotionSection>
 
     </div>
   );
