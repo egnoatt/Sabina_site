@@ -1,8 +1,6 @@
-
-
 "use client";
 
-import { motion } from 'framer-motion';
+import dynamic from 'next/dynamic';
 import {
   UserCircleIcon,
   AcademicCapIcon,
@@ -10,6 +8,8 @@ import {
   BuildingOfficeIcon,
   UsersIcon,
 } from '@heroicons/react/24/outline';
+
+const MotionSection = dynamic(() => import('@/components/MotionSection'), { ssr: false });
 
 export default function ChiSonoContent() {
   return (
@@ -77,12 +77,9 @@ export default function ChiSonoContent() {
             ),
           }
         ].map((section, idx) => (
-          <motion.section
+          <MotionSection
             key={idx}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            className=""
           >
             {section.title && (
               <h2 className="flex items-center gap-2 text-2xl font-semibold text-green-800 mb-4">
@@ -90,21 +87,17 @@ export default function ChiSonoContent() {
               </h2>
             )}
             {section.content}
-          </motion.section>
+          </MotionSection>
         ))}
 
-        <motion.section
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
+        <MotionSection
           className="mt-12 text-center"
         >
           <a href="/contatti"
              className="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-colors duration-300">
             Contattami per maggiori informazioni
           </a>
-        </motion.section>
+        </MotionSection>
       </div>
     </main>
   );

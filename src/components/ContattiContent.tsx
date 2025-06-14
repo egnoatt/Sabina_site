@@ -1,29 +1,21 @@
 'use client';
-import { motion } from 'framer-motion';
+import dynamic from 'next/dynamic';
 import { EnvelopeIcon, ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline';
+
+const MotionSection = dynamic(() => import('@/components/MotionSection'), { ssr: false });
 
 export default function ContattiContent() {
   return (
     <main className="container mx-auto py-16 px-4">
       {/* Hero Section */}
-      <motion.div
-        className="text-center mb-16"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
+      <MotionSection className="text-center mb-16">
         <EnvelopeIcon className="mx-auto h-16 w-16 text-green-600" />
         <h1 className="mt-4 text-5xl font-bold text-gray-800">Contatti</h1>
         <p className="mt-3 text-xl text-gray-500">Rimaniamo in contatto per qualsiasi informazione</p>
-      </motion.div>
+      </MotionSection>
 
       {/* Informazioni di Contatto */}
-      <motion.section
-        className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.3 }}
-      >
+      <MotionSection className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
         {/* Email */}
         <div className="bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
           <EnvelopeIcon className="h-10 w-10 text-green-600 mx-auto mb-3" />
@@ -50,15 +42,10 @@ export default function ContattiContent() {
             </a>
           </p>
         </div>
-      </motion.section>
+      </MotionSection>
 
       {/* Note Informative */}
-      <motion.section
-        className="max-w-4xl mx-auto my-16 bg-green-50 rounded-xl p-8 shadow-lg"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.6 }}
-      >
+      <MotionSection className="max-w-4xl mx-auto my-16 bg-green-50 rounded-xl p-8 shadow-lg">
         <h2 className="text-3xl font-semibold text-green-800 mb-6 text-center">Note Informative</h2>
 
         <div className="space-y-6 text-lg text-gray-700">
@@ -95,7 +82,7 @@ export default function ContattiContent() {
             </ul>
           </div>
         </div>
-      </motion.section>
+      </MotionSection>
     </main>
   );
 }

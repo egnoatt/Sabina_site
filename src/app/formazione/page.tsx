@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from 'framer-motion';
+import dynamic from 'next/dynamic';
 import { 
   AcademicCapIcon, 
   ClipboardDocumentListIcon, 
@@ -8,46 +8,30 @@ import {
   CalendarDaysIcon,
 } from '@heroicons/react/24/outline';
 
+const MotionSection = dynamic(() => import('@/components/MotionSection'), { ssr: false });
+
 export default function Formazione() {
   return (
     <main className="container mx-auto py-12 px-4">
 
       {/* Hero Section */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="text-center mb-12"
-      >
+      <MotionSection className="text-center mb-12">
         <AcademicCapIcon className="mx-auto h-16 w-16 text-green-600" />
         <h1 className="mt-4 text-4xl font-bold text-gray-800">Formazione e Aggiornamento</h1>
         <p className="mt-2 text-xl text-gray-500">
           Un percorso continuo per garantire qualità e competenza professionale
         </p>
-      </motion.section>
+      </MotionSection>
 
       {/* Introduzione */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        className="max-w-2xl mx-auto mb-12 text-center"
-      >
+      <MotionSection className="max-w-2xl mx-auto mb-12 text-center" delay={0.2}>
         <p className="text-lg text-gray-700">
           La mia formazione professionale è continua e approfondita, volta a garantire il più alto standard di professionalità e aggiornamento scientifico.
         </p>
-      </motion.section>
+      </MotionSection>
 
       {/* Formazione Accademica e Specializzazioni */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8, delay: 0.4 }}
-        className="max-w-3xl mx-auto mb-16 bg-gray-50 p-8 rounded-xl shadow-lg"
-      >
+      <MotionSection className="max-w-3xl mx-auto mb-16 bg-gray-50 p-8 rounded-xl shadow-lg" delay={0.4}>
         <div className="text-center mb-6">
           <ClipboardDocumentListIcon className="h-10 w-10 text-green-600 mx-auto" />
           <h2 className="text-2xl font-semibold text-green-800 mt-2">Formazione Accademica e Specializzazioni</h2>
@@ -60,16 +44,10 @@ export default function Formazione() {
           <li>Corso di formazione in Valutazione Neuropsicologica del Decadimento cognitivo tenuto dalla dr.ssa S. Turati presso CePoSS nel 2018.</li>
           <li>Training certificato di EMDR con Isabel Fernandez del centro EMDR Europe Association, 2022.</li>
         </ul>
-      </motion.section>
+      </MotionSection>
 
       {/* Pubblicazioni */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8, delay: 0.6 }}
-        className="max-w-3xl mx-auto mb-16 bg-gray-50 p-8 rounded-xl shadow-lg"
-      >
+      <MotionSection className="max-w-3xl mx-auto mb-16 bg-gray-50 p-8 rounded-xl shadow-lg" delay={0.6}>
         <div className="text-center mb-6">
           <ClipboardDocumentListIcon className="h-10 w-10 text-green-600 mx-auto" />
           <h2 className="text-2xl font-semibold text-green-800 mt-2">Pubblicazioni</h2>
@@ -81,15 +59,9 @@ export default function Formazione() {
           <li><strong>2004:</strong> Articolo &quot;Lavorare con gli uditori di voci&quot;, Psychiatry online.</li>
           <li><strong>29-30 agosto 2002:</strong> Paper scientifico, Poitiers, Francia, sull&apos;integrazione testo-immagini nella comprensione spaziale.</li>
         </ul>
-      </motion.section>
+      </MotionSection>
            {/* Training Personale e Supervisioni */}
-           <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8, delay: 0.8 }}
-        className="max-w-3xl mx-auto mb-16 bg-gray-50 p-8 rounded-xl shadow-lg"
-      >
+           <MotionSection className="max-w-3xl mx-auto mb-16 bg-gray-50 p-8 rounded-xl shadow-lg" delay={0.8}>
         <div className="text-center mb-6">
           <UserGroupIcon className="h-10 w-10 text-green-600 mx-auto" />
           <h2 className="text-2xl font-semibold text-green-800 mt-2">Training Personale e Supervisioni</h2>
@@ -98,16 +70,10 @@ export default function Formazione() {
           <li>Training psicoanalitico con analista SPI e IPA.</li>
           <li>Supervisioni cliniche individuali e di gruppo.</li>
         </ul>
-      </motion.section>
+      </MotionSection>
 
       {/* Aggiornamenti e Corsi Recenti (2024-2025) */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8, delay: 1.0 }}
-        className="max-w-3xl mx-auto mb-16 bg-gray-50 p-8 rounded-xl shadow-lg"
-      >
+      <MotionSection className="max-w-3xl mx-auto mb-16 bg-gray-50 p-8 rounded-xl shadow-lg" delay={1.0}>
         <div className="text-center mb-6">
           <CalendarDaysIcon className="h-10 w-10 text-green-600 mx-auto" />
           <h2 className="text-2xl font-semibold text-green-800 mt-2">Aggiornamenti e Corsi Recenti (2024-2025)</h2>
@@ -127,24 +93,18 @@ export default function Formazione() {
         <p className="mt-4 text-sm text-gray-500 text-center">
           Questa è una selezione rappresentativa degli aggiornamenti e dei corsi recenti.
         </p>
-      </motion.section>
+      </MotionSection>
 
       {/* Call to Action */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8, delay: 1.2 }}
-        className="max-w-2xl mx-auto text-center"
-      >
+      <MotionSection className="max-w-2xl mx-auto text-center" delay={1.2}>
         <a
           href="/contatti"
           className="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold text-lg py-3 px-8 rounded-full shadow transition-colors duration-300"
         >
           Richiedi ulteriori informazioni
         </a>
-      </motion.section>
+      </MotionSection>
 
     </main>
   );
-} 
+}
