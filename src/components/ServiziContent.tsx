@@ -1,7 +1,8 @@
 "use client";
 
 import React from 'react';
-import { motion } from 'framer-motion';
+import dynamic from 'next/dynamic';
+const MotionSection = dynamic(() => import('@/components/MotionSection'), { ssr: false });
 import { 
   SparklesIcon, 
   ChatBubbleLeftRightIcon, 
@@ -19,41 +20,23 @@ export default function ServiziContent() {
     <main className="container mx-auto py-12 px-4">
 
       {/* Hero Section */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="text-center mb-12"
-      >
+      <MotionSection className="text-center mb-12">
         <SparklesIcon className="mx-auto h-16 w-16 text-green-600" />
         <h1 className="mt-4 text-4xl font-bold text-gray-800">Servizi Offerti</h1>
         <p className="mt-2 text-xl text-gray-500">
           Un percorso personalizzato per il tuo benessere psicologico
         </p>
-      </motion.section>
+      </MotionSection>
 
       {/* Introduzione */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="max-w-2xl mx-auto mb-16 text-center"
-      >
+      <MotionSection className="max-w-2xl mx-auto mb-16 text-center">
         <p className="text-lg text-gray-700">
           Ogni servizio è pensato per adattarsi alle tue specifiche esigenze, offrendo sostegno e orientamento con professionalità e calore umano.
         </p>
-      </motion.section>
+      </MotionSection>
 
       {/* Servizi principali */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-16"
-      >
+      <MotionSection className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
 
         {/* Consulenza Psicologica */}
         <div className="bg-gray-50 p-8 rounded-xl shadow-lg">
@@ -129,14 +112,9 @@ export default function ServiziContent() {
           </p>
         </div>
 
-      </motion.section>
+      </MotionSection>
             {/* Testimonianza */}
-            <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="max-w-3xl mx-auto mb-16 bg-green-50 p-8 rounded-xl shadow-lg"
+            <MotionSection className="max-w-3xl mx-auto mb-16 bg-green-50 p-8 rounded-xl shadow-lg"
       >
         <div className="text-center mb-6">
           <UserGroupIcon className="mx-auto h-10 w-10 text-green-600" />
@@ -146,15 +124,10 @@ export default function ServiziContent() {
           &quot;Il percorso terapeutico con la Dott.ssa Scattola è stato fondamentale per ritrovare equilibrio e serenità. Mi sono sentita sempre ascoltata e supportata con grande professionalità e calore umano.&quot;
         </blockquote>
         <p className="mt-4 text-center font-semibold text-green-700">— Testimonianza anonima</p>
-      </motion.section>
+      </MotionSection>
 
       {/* Disturbi trattati */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="max-w-3xl mx-auto mb-16 bg-gray-50 p-8 rounded-xl shadow-lg"
+      <MotionSection className="max-w-3xl mx-auto mb-16 bg-gray-50 p-8 rounded-xl shadow-lg"
       >
         <div className="text-center mb-6">
           <ExclamationCircleIcon className="mx-auto h-10 w-10 text-green-600" />
@@ -172,15 +145,10 @@ export default function ServiziContent() {
           <li>Sostegno in fasi critiche della vita</li>
           <li>Supporto in momenti di crisi personale e lavorativa</li>
         </ul>
-      </motion.section>
+      </MotionSection>
 
       {/* Modalità e Costi */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="max-w-2xl mx-auto mb-16"
+      <MotionSection className="max-w-2xl mx-auto mb-16"
       >
         <div className="text-center mb-8">
           <CreditCardIcon className="mx-auto h-10 w-10 text-green-600 mb-2" />
@@ -193,15 +161,10 @@ export default function ServiziContent() {
             Per maggiori dettagli sui costi e sulle modalità, ti invito a contattarmi direttamente tramite email o telefono.
           </p>
         </div>
-      </motion.section>
+      </MotionSection>
 
       {/* Call to Action */}
-      <motion.section
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="max-w-2xl mx-auto text-center"
+      <MotionSection className="max-w-2xl mx-auto text-center"
       >
         <a
           href="/contatti"
@@ -209,7 +172,7 @@ export default function ServiziContent() {
         >
           Richiedi maggiori informazioni
         </a>
-      </motion.section>
+      </MotionSection>
 
     </main>
   );
