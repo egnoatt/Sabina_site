@@ -17,7 +17,7 @@ Attività Completate ✅
 - Inserimento e ottimizzazione immagini per tutte le pagine.
 - Test finale multipiattaforma (Desktop, Tablet, Mobile).
 - Revisione finale della conformità SEO e accessibilità.
-- Aggiornamento e revisione documentazione (`docs/PROGETTO.md`, `docs/ROADMAP.md`, `docs/MeetingNotes.md`).
+- Aggiornamento e revisione documentazione (`docs/PROGETTO.md`, `docs/ROADMAP.md`, `docs/ProgressLog.md`).
 - Deploy finale su Vercel completato.
 
 Task in Corso 🔄

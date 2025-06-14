@@ -5,7 +5,7 @@ Data: 2025-04-18
 Partecipanti:
 	•	Enrico Gnoatto
 
-Argomenti DiscussI:
+Argomenti Discussi:
 	•	Risoluzione definitiva degli errori relativi alla gestione dinamica dei parametri (params.slug) nelle pagine dinamiche del blog su Next.js 15.
 	•	Correzioni effettuate nella generazione statica delle pagine del blog (problemi di generateStaticParams e percorso file Markdown).
 	•	Integrazione completa e funzionante del plugin Tailwind CSS Typography per una migliore formattazione estetica degli articoli.
