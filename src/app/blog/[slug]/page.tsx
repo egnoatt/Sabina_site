@@ -14,9 +14,13 @@ export async function generateStaticParams() {
   }));
 }
 
+interface PageProps {
+  params: Promise<{ slug: string }>;
+}
+
 // Pagina dinamica corretta per Next.js >=13.3 (incluso 15.3)
-export default async function BlogPost({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+export default async function BlogPost({ params }: PageProps) {
+  const { slug } = await params;
   const post = await getPostContent(slug);
 
   return (

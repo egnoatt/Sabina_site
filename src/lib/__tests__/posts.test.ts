@@ -1,6 +1,7 @@
 import fs from 'fs';
 import os from 'os';
 import path from 'path';
+import { getAllPosts } from '../posts';
 
 // Helper to create temporary markdown posts
 function createMarkdownPost(dir: string, slug: string, date: string) {
@@ -29,7 +30,6 @@ describe('getAllPosts', () => {
 
     process.chdir(tempDir);
     jest.resetModules();
-    const { getAllPosts } = require('../posts');
 
     const result = getAllPosts();
     const slugs = result.map(p => p.slug);
