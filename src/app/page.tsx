@@ -77,7 +77,7 @@ export default function Home() {
       </MotionSection>
 
       {/* Introduzione personale generica */}
-      <section className="bg-white py-12">
+      <section className="bg-white py-12 min-h-[250px]">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-2xl md:text-3xl font-semibold text-green-800 mb-4">Benvenuti nel mio sito</h2>
           <p className="text-lg md:text-xl text-gray-700">
