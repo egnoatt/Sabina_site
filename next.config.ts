@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     esmExternals: true,
-    optimizeCss: true,
+    optimizeCss: false,
   },
   async headers() {
     return [
