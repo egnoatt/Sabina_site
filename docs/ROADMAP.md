@@ -1,63 +1,87 @@
+# 🗺️ ROADMAP — Sabina Scattola Site
+
+⬅️ Torna a [INDEX.md](./INDEX.md)
+
+_Ultimo aggiornamento: 28 agosto 2025_
+
 ROADMAP AGGIORNATA (18 aprile 2025)
 
 Fase 1: Definizione e Pianificazione ✅ Completata
-	•	✅ Revisione della specifica alla luce del nuovo progetto.
-	•	✅ Conferma o aggiornamento dei wireframe per le principali pagine.
-	•	✅ Definizione della struttura documentale aggiornata.
+• ✅ Revisione della specifica alla luce del nuovo progetto.
+• ✅ Conferma o aggiornamento dei wireframe per le principali pagine.
+• ✅ Definizione della struttura documentale aggiornata.
 
 Fase 2: Prototipazione ✅ Completata
-	•	✅ Sviluppo di un prototipo interattivo (homepage e sezioni principali).
-	•	✅ Prime iterazioni grafiche e identificazione dei problemi di layout.
+• ✅ Sviluppo di un prototipo interattivo (homepage e sezioni principali).
+• ✅ Prime iterazioni grafiche e identificazione dei problemi di layout.
 
 Fase 3: Sviluppo Frontend 🔄 In revisione finale
-	•	✅ Implementazione layout completo (Header, Footer, pagina principale).
-	•	✅ Configurazione Tailwind CSS v3 (completata e confermata).
-	•	✅ Ottimizzazione sezioni principali: Hero, Chi Sono, Servizi, Contattami.
-	•	✅ Implementazione del Blog (articoli Markdown e styling con Tailwind Typography).
-	•	✅ Tipografia, spaziature e accessibilità mobile.
-	•	🔄 Ottimizzazione immagini (in fase finale).
+• ✅ Implementazione layout completo (Header, Footer, pagina principale).
+• ✅ Configurazione Tailwind CSS v3 (completata e confermata).
+• ✅ Ottimizzazione sezioni principali: Hero, Chi Sono, Servizi, Contattami.
+• ✅ Implementazione del Blog (articoli Markdown e styling con Tailwind Typography).
+• ✅ Tipografia, spaziature e accessibilità mobile.
+• 🔄 Ottimizzazione immagini (in fase finale).
 
 Fase 4: Testing e Ottimizzazione 🔄 In revisione finale
-	•	✅ Test funzionali e visuali multipiattaforma (desktop e mobile).
-	•	✅ Validazione responsive design completa.
-	•	✅ Ottimizzazione delle performance generali (codice e configurazioni).
-	•	✅ Accessibilità e conformità SEO di base.
-	•	🔄 Revisione finale e verifica complessiva.
+• ✅ Test funzionali e visuali multipiattaforma (desktop e mobile).
+• ✅ Validazione responsive design completa.
+• ✅ Ottimizzazione delle performance generali (codice e configurazioni).
+• ✅ Accessibilità e conformità SEO di base.
+• 🔄 Revisione finale e verifica complessiva.
 
 Fase 5: Deploy e Lancio Finale ✅ Completata
-	•	✅ Deploy in ambiente di staging su Vercel.
-	•	✅ Raccolta feedback e revisione finale.
-	•	✅ Configurazione dominio personalizzato.
-	•	✅ Lancio pubblico del sito.
+• ✅ Deploy in ambiente di staging su Vercel.
+• ✅ Raccolta feedback e revisione finale.
+• ✅ Configurazione dominio personalizzato.
+• ✅ Lancio pubblico del sito.
 
 ROADMAP AGGIORNATA (2 maggio 2025)
 
 Fase 1: Definizione e Pianificazione ✅ Completata
-  • ✅ Revisione della specifica alla luce del nuovo progetto.
-  • ✅ Conferma o aggiornamento dei wireframe per le principali pagine.
-  • ✅ Definizione della struttura documentale aggiornata.
+• ✅ Revisione della specifica alla luce del nuovo progetto.
+• ✅ Conferma o aggiornamento dei wireframe per le principali pagine.
+• ✅ Definizione della struttura documentale aggiornata.
 
 Fase 2: Prototipazione ✅ Completata
-  • ✅ Sviluppo di un prototipo interattivo (homepage e sezioni principali).
-  • ✅ Prime iterazioni grafiche e identificazione dei problemi di layout.
+• ✅ Sviluppo di un prototipo interattivo (homepage e sezioni principali).
+• ✅ Prime iterazioni grafiche e identificazione dei problemi di layout.
 
 Fase 3: Sviluppo Frontend ✅ Completata
-  • ✅ Implementazione layout completo (Header, Footer, pagina principale).
-  • ✅ Configurazione Tailwind CSS v3 (completata e confermata).
-  • ✅ Ottimizzazione sezioni principali: Hero, Chi Sono, Servizi, Contattami.
-  • ✅ Implementazione del Blog (articoli Markdown e styling con Tailwind Typography).
-  • ✅ Tipografia, spaziature e accessibilità mobile.
-  • ✅ Ottimizzazione immagini.
+• ✅ Implementazione layout completo (Header, Footer, pagina principale).
+• ✅ Configurazione Tailwind CSS v3 (completata e confermata).
+• ✅ Ottimizzazione sezioni principali: Hero, Chi Sono, Servizi, Contattami.
+• ✅ Implementazione del Blog (articoli Markdown e styling con Tailwind Typography).
+• ✅ Tipografia, spaziature e accessibilità mobile.
+• ✅ Ottimizzazione immagini.
 
 Fase 4: Testing e Ottimizzazione ✅ Completata
-  • ✅ Test funzionali e visuali multipiattaforma (desktop e mobile).
-  • ✅ Validazione responsive design completa.
-  • ✅ Ottimizzazione delle performance generali (codice e configurazioni).
-  • ✅ Accessibilità e conformità SEO di base.
-  • ✅ Revisione finale e verifica complessiva.
+• ✅ Test funzionali e visuali multipiattaforma (desktop e mobile).
+• ✅ Validazione responsive design completa.
+• ✅ Ottimizzazione delle performance generali (codice e configurazioni).
+• ✅ Accessibilità e conformità SEO di base.
+• ✅ Revisione finale e verifica complessiva.
 
 Fase 5: Deploy e Lancio Finale ✅ Completata
-  • ✅ Deploy in ambiente di staging su Vercel.
-  • ✅ Raccolta feedback e revisione finale.
-  • ✅ Configurazione dominio personalizzato.
-  • ✅ Lancio pubblico del sito.
+• ✅ Deploy in ambiente di staging su Vercel.
+• ✅ Raccolta feedback e revisione finale.
+• ✅ Configurazione dominio personalizzato.
+• ✅ Lancio pubblico del sito.
+
+ROADMAP AGGIORNATA (28 agosto 2025)
+
+Fase 6: SEO e Contenuti ✅ Completata
+• ✅ Integrazione SEO avanzata: sitemap.xml, robots.txt, metadata dinamici.
+• ✅ Implementazione immagini OG dinamiche per i post del blog.
+• ✅ Creazione e pubblicazione del feed RSS per il blog.
+• ✅ Migliorata tipografia e resa contenuti Markdown tramite Tailwind Typography.
+
+Fase 7: Documentazione ✅ Completata
+• ✅ Compattazione documentazione: README semplificato con link ai docs.
+• ✅ Creazione di INDEX.md centralizzato in /docs.
+• ✅ Uniformata struttura e intestazioni dei documenti.
+
+Fase 8: Prossimi Step 🔄 In pianificazione
+• 🔄 Aggiunta JSON-LD per Organization e Article.
+• 🔄 Implementazione test end-to-end (Cypress).
+• 🔄 Ottimizzazione performance avanzata e monitoraggio analytics.

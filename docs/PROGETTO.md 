@@ -1,3 +1,8 @@
+# 📘 PROGETTO — Sabina Scattola Site
+⬅️ Torna a [INDEX.md](./INDEX.md)
+
+_Ultimo aggiornamento: 28 agosto 2025_
+
 # Specifica del Nuovo Sito per Sabina Scattola (Open Source)
 
 ## 1. Visione e Obiettivi
@@ -68,8 +73,9 @@ Queste specifiche devono essere rispettate in ogni pagina e componente per assic
 
 - **Ambiente di Sviluppo:**
   - **Stack:** Next.js 15+, React, TypeScript.
-  - **Styling:** Tailwind CSS v3 per uno styling modulare e compatibilità confermata.
+  - **Styling:** Tailwind CSS v3.4 + plugin Typography per migliore resa del contenuto Markdown.
   - **Editor:** Visual Studio Code.
+  - **SEO e Ottimizzazione:** Sitemap.xml, robots.txt, metadata dinamici, immagini OG generate automaticamente e feed RSS integrato.
 
 - **Versionamento e Collaborazione:**
   - **Git:** Hosting su GitHub o GitLab.
@@ -103,6 +109,8 @@ Queste specifiche devono essere rispettate in ogni pagina e componente per assic
    - Realizzazione delle pagine principali e componenti.
    - Integrazione componenti Tailwind CSS v3.
 
+- Integrazione SEO avanzata (sitemap, robots, metadata, OG images, RSS).
+
 4. **Testing e Feedback:**
    - Deploy su staging, raccolta feedback e iterazioni.
 
@@ -123,7 +131,7 @@ Queste specifiche devono essere rispettate in ogni pagina e componente per assic
 
 - **Accessibilità e SEO:**
   - HTML semantico, attributi ARIA, WCAG.
-  - Ottimizzazione SEO e immagini.
+  - SEO avanzata: metadata dinamici, sitemap, robots, RSS feed e immagini OG per social.
 
 - **CI/CD:**
   - Pipeline automatizzate di build, test e deploy.
@@ -145,6 +153,7 @@ Queste specifiche devono essere rispettate in ogni pagina e componente per assic
 
 - **Testing e Qualità del Codice:**
   - Test unitari ed E2E (Jest, Cypress).
+  - Pianificazione aggiunta di test E2E con Cypress/Vitest.
   - Pipeline CI/CD per automatizzare.
 
 ---
@@ -153,11 +162,14 @@ Queste specifiche devono essere rispettate in ogni pagina e componente per assic
 
 Sono stati completati i seguenti aggiornamenti:
 
-- ✅ Aggiunte animazioni con Framer Motion su tutte le pagine principali.
-- ✅ Correzione di tutti gli errori ESLint e TypeScript per una build pulita.
-- ✅ Ottimizzazione completa per il deploy finale su Vercel.
+- ✅ Aggiunta SEO avanzata: sitemap, robots.txt, metadata dinamici.
+- ✅ Implementato supporto OG images dinamiche per i post del blog.
+- ✅ Creato feed RSS automatico per il blog.
+- ✅ Fix configurazione Tailwind CSS (v3.4) e attivazione plugin Typography.
+- ✅ Compattazione documentazione: README semplificato + INDEX centralizzato in /docs.
 
 **Prossimi Step Immediati:**
 
-- Verifica finale delle modifiche effettuate.
-- Deploy finale su Vercel e verifica online.
+- Aggiunta JSON-LD per Organization e Article.
+- Implementazione test end-to-end (Cypress).
+- Ottimizzazione performance avanzata e monitoraggio analytics.

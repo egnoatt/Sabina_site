@@ -1,11 +1,15 @@
-
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 import withBundleAnalyzer from '@next/bundle-analyzer';
 
 const nextConfig: NextConfig = {
   compress: true,
+  images: {
+    domains: ['sabinascattola.com'],
+    formats: ['image/avif', 'image/webp'],
+  },
   experimental: {
     esmExternals: true,
+    optimizeCss: true,
   },
   async headers() {
     return [

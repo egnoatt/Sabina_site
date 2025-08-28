@@ -1,0 +1,50 @@
+{
+  "React Functional Component (TSX)": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "type Props = {",
+      "  className?: string;",
+      "};",
+      "",
+      "export default function ${1:ComponentName}({ className }: Props) {",
+      "  return (",
+      "    <div className={className}>",
+      "      ${2:/* TODO */}",
+      "    </div>",
+      "  );",
+      "}"
+    ],
+    "description": "Create a React functional component with TS types"
+  },
+  "Next.js Route Handler (App Router)": {
+    "prefix": "route",
+    "body": [
+      "import { NextResponse } from 'next/server';",
+      "",
+      "export async function GET() {",
+      "  return NextResponse.json({ ok: true });",
+      "}",
+      "",
+      "export async function POST(req: Request) {",
+      "  const data = await req.json();",
+      "  // TODO: handle data",
+      "  return NextResponse.json({ received: data });",
+      "}"
+    ],
+    "description": "Minimal Next.js route handler"
+  },
+  "Supabase Client (client-side)": {
+    "prefix": "supaclient",
+    "body": [
+      "import { createClient } from '@supabase/supabase-js';",
+      "",
+      "export const supabase = createClient(",
+      "  process.env.NEXT_PUBLIC_SUPABASE_URL!,",
+      "  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!",
+      ");"
+    ],
+    "description": "Initialize Supabase client (browser)"
+  }
+}

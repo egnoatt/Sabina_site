@@ -1,0 +1,22 @@
+{
+  "FastAPI Router Endpoint": {
+    "prefix": "fa-endpoint",
+    "body": [
+      "from fastapi import APIRouter, HTTPException",
+      "",
+      "router = APIRouter(prefix='/api', tags=['api'])",
+      "",
+      "@router.get('/health')",
+      "def health():",
+      "    return {'status': 'ok'}",
+      "",
+      "@router.post('/items')",
+      "def create_item(item: dict):",
+      "    if not item:",
+      "        raise HTTPException(status_code=400, detail='Invalid item')",
+      "    return {'created': item}",
+      ""
+    ],
+    "description": "Simple FastAPI router with health and POST"
+  }
+}

@@ -1,11 +1,21 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            h1: { fontWeight: "700" },
+            h2: { fontWeight: "600" },
+            a: { color: "#007BFF", "&:hover": { color: "#0056b3" } }
+          }
+        }
+      }
+    }
   },
-  plugins: [require('@tailwindcss/typography')], // <- importante aggiungerlo qui
+  plugins: [require("@tailwindcss/typography")]
 };

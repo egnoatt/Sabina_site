@@ -1,0 +1,12 @@
+{
+  "Tailwind Container Section": {
+    "prefix": "tw-section",
+    "body": [
+      "<section className=\"container mx-auto px-4 py-12\">",
+      "  <h2 className=\"text-2xl font-semibold mb-4\">${1:Title}</h2>",
+      "  <p className=\"text-base text-gray-600\">${2:Content}</p>",
+      "</section>"
+    ],
+    "description": "Responsive container section with Tailwind"
+  }
+}

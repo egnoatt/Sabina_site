@@ -1,0 +1,27 @@
+[
+  {
+    "key": "cmd+shift+f",
+    "command": "editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+shift+t",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Start: Frontend",
+    "when": "workspaceFolderCount > 0"
+  },
+  {
+    "key": "cmd+shift+y",
+    "command": "workbench.action.tasks.runTask",
+    "args": "Start: Backend",
+    "when": "workspaceFolderCount > 0"
+  },
+  {
+    "key": "cmd+`",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "cmd+shift+o",
+    "command": "workbench.action.gotoSymbol"
+  }
+]
