@@ -8,7 +8,7 @@ interface HeroSectionProps {
 
 const HeroSection = ({ titolo, sottotitolo, icona }: HeroSectionProps) => {
   return (
-    <section className="relative flex flex-col justify-center items-center text-center py-24 bg-gradient-to-r from-[#2e7d32] to-[#102027]">
+    <section className="relative flex flex-col justify-center items-center text-center py-24 bg-gradient-to-br from-[#1F5C4A] via-[#78A18A] to-white">
       <div className="absolute inset-0 bg-black opacity-10"></div>
       <div className="relative z-10">
         {icona && <div className="flex justify-center mb-4">{icona}</div>}
@@ -16,7 +16,7 @@ const HeroSection = ({ titolo, sottotitolo, icona }: HeroSectionProps) => {
           {titolo}
         </h1>
         {sottotitolo && (
-          <p className="mt-4 text-xl md:text-2xl text-green-100 italic drop-shadow-sm">
+          <p className="mt-4 text-xl md:text-2xl text-white/80 italic drop-shadow-md">
             {sottotitolo}
           </p>
         )}

@@ -1,8 +1,41 @@
 # 📑 PROGRESS LOG — Sabina Scattola Site
 
-⬅️ Torna a [INDEX.md](./INDEX.md)
+**2025-08-30**
 
-_Ultimo aggiornamento: 28 agosto 2025_
+- Allineata palette colori con brand tokens (brand.primary, brand.text, brand.accent, brand.bg).
+- Aggiornati tutti i titoli e tipografia per coerenza: H1 `text-3xl md:text-4xl`, testo base `text-base leading-relaxed`.
+- Rimossi MotionSection e dynamic import dalle pagine server (Formazione, Blog).
+- Fix pagina Blog: rimosso doppio titolo, lista articoli e CTA robusta solo in BlogContent, slug gestiti con encodeURIComponent.
+- Aggiornati CTA in tutte le pagine (Chi Sono, Servizi, Formazione, Blog) con pulsanti solidi verdi (`bg-[#1F5C4A] text-white`) e focus ring.
+- Aggiunti breadcrumb + JSON-LD su Servizi (mancante) per uniformità con le altre pagine.
+- Aggiornata documentazione in /docs e README alla versione v1.1.
+
+## Data: 2025-08-30
+
+### Partecipanti:
+
+- Enrico Gnoatto
+
+### Argomenti Discussi:
+
+- Uniformità grafica e tipografica tra tutte le pagine.
+- Introduzione breadcrumb mancante su Servizi.
+- Revisione blog: eliminazione movimento anomalo, gestione slug sicura, CTA coerente.
+- Revisione ServiziContent per coerenza visiva (icone, colori, CTA finale).
+- Aggiornamento documentazione tecnica e README.
+
+### Decisioni Prese:
+
+- Standardizzare CTA con colore verde brand e testo bianco forzato.
+- Mantenere breadcrumb + JSON-LD come parte obbligatoria di tutte le pagine.
+- Non utilizzare MotionSection o wrapper dinamici in pagine server.
+- Mantenere palette brand aggiornata con fallback inline in CTA per robustezza.
+
+### Azioni da Intraprendere:
+
+- Introdurre pagine 404/500 personalizzate eleganti.
+- Aggiungere security headers (HSTS, Permissions-Policy, Referrer-Policy).
+- Configurare CI minimale con lint/typecheck/build su GitHub Actions.
 
 ## 📝 Changelog Sintetico
 
@@ -14,6 +47,7 @@ _Ultimo aggiornamento: 28 agosto 2025_
 - Creazione e pubblicazione del feed RSS per il blog.
 - Compattazione documentazione: README semplificato + INDEX centralizzato in /docs.
 - Uniformazione struttura e intestazioni dei documenti in /docs.
+- Aggiunto JSON-LD Article con keywords, image e dateModified nei post del blog.
 
 ## Data: 2025-08-28
 

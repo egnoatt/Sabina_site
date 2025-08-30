@@ -81,7 +81,18 @@ Fase 7: Documentazione ✅ Completata
 • ✅ Creazione di INDEX.md centralizzato in /docs.
 • ✅ Uniformata struttura e intestazioni dei documenti.
 
-Fase 8: Prossimi Step 🔄 In pianificazione
-• 🔄 Aggiunta JSON-LD per Organization e Article.
-• 🔄 Implementazione test end-to-end (Cypress).
-• 🔄 Ottimizzazione performance avanzata e monitoraggio analytics.
+ROADMAP AGGIORNATA (30 agosto 2025)
+
+Fase 9: Allineamenti v1.1 ✅ Completata
+• ✅ Uniformata palette colori con brand tokens (brand.primary, brand.text, brand.accent, brand.bg).
+• ✅ Aggiornata tipografia: H1 `text-3xl md:text-4xl`, testo base `text-base leading-relaxed`.
+• ✅ Rimossi MotionSection e dynamic import dalle pagine server (Formazione, Blog).
+• ✅ Fix pagina Blog: eliminato doppio titolo, slug sicuri con encodeURIComponent, lista + CTA robusta solo in BlogContent.
+• ✅ Aggiornati CTA in tutte le pagine (Chi Sono, Servizi, Formazione, Blog) con pulsanti verdi solidi e focus ring.
+• ✅ Aggiunti breadcrumb + JSON-LD anche a Servizi per uniformità con le altre pagine.
+• ✅ Footer reso coerente su tutte le pagine.
+
+Fase 10: Prossimi Step 🔄 In pianificazione
+• 🔄 Introduzione di pagine 404 e 500 personalizzate ed eleganti.
+• 🔄 Aggiunta di security headers (HSTS, Permissions-Policy, Referrer-Policy).
+• 🔄 Configurazione CI minima con lint, typecheck e build su GitHub Actions.

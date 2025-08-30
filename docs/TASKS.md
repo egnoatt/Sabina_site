@@ -2,7 +2,7 @@
 
 ⬅️ Torna a [INDEX.md](./INDEX.md)
 
-_Ultimo aggiornamento: 28 agosto 2025_
+_Ultimo aggiornamento: 30 agosto 2025_
 
 # TASKS.md
 
@@ -32,10 +32,19 @@ Attività Completate ✅
 - Fix definitivo configurazione Tailwind CSS (v3.4) e attivazione plugin Typography.
 - Compattazione e uniformazione della documentazione: README semplificato + INDEX centralizzato in /docs.
 
+- Uniformata palette colori con brand tokens (brand.primary, brand.text, brand.accent, brand.bg).
+- Aggiornata tipografia per coerenza (H1 `text-3xl md:text-4xl`, testo base `text-base leading-relaxed`).
+- Rimossi MotionSection e dynamic import dalle pagine server (Formazione, Blog).
+- Fix pagina Blog: eliminato doppio titolo, slug sicuri con encodeURIComponent, lista + CTA robusta solo in BlogContent.
+- Aggiornati CTA in tutte le pagine (Chi Sono, Servizi, Formazione, Blog) con pulsanti solidi verdi (`bg-[#1F5C4A] text-white`) e focus ring.
+- Aggiunti breadcrumb + JSON-LD anche a Servizi per uniformità con le altre pagine.
+- Footer reso coerente con sfondo verde scuro e linea bianca sottile.
+
 Task in Corso 🔄
 
 - Monitoraggio iniziale post-lancio (performance, feedback utenti).
 - Monitoraggio e affinamento SEO con focus su JSON-LD e miglioramento performance.
+- Monitoraggio e manutenzione CTA robuste e palette brand su nuove pagine.
 
 Task Futuri ⏳
 
@@ -43,5 +52,9 @@ Task Futuri ⏳
 - Implementazione test end-to-end (Cypress) e unit testing con Vitest.
 - Ottimizzazione avanzata delle performance (lazy loading, minificazione risorse, CDN).
 - Analisi periodica dei dati utente (analytics).
-- Integrazione JSON-LD per Organization e Article.
+- Integrazione JSON-LD avanzata per Organization e Article.
 - Manutenzione e aggiornamento continuo della documentazione (`docs/TASKS.md`, `docs/ROADMAP.md`, `docs/PROGETTO.md`) durante il ciclo di vita del progetto.
+
+- Creazione di pagine 404 e 500 personalizzate ed eleganti.
+- Aggiunta di security headers (HSTS, Permissions-Policy, Referrer-Policy).
+- Configurazione CI minima con lint, typecheck e build su GitHub Actions.

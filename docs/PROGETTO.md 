@@ -1,19 +1,19 @@
 # 📘 PROGETTO — Sabina Scattola Site
 ⬅️ Torna a [INDEX.md](./INDEX.md)
 
-_Ultimo aggiornamento: 28 agosto 2025_
+_Ultimo aggiornamento: 30 agosto 2025_
 
 # Specifica del Nuovo Sito per Sabina Scattola (Open Source)
 
 ## 1. Visione e Obiettivi
 
 - **Identità del Brand:**
-  Il sito deve trasmettere calma, accoglienza e fiducia, rispecchiando il lavoro di una psicologa e psicoterapeuta.
+  Il sito deve trasmettere calma, accoglienza e fiducia con un design professionale e coerente, rispecchiando il lavoro di una psicologa e psicoterapeuta.
 
 - **Obiettivi del Progetto:**
-  - Creare un sito moderno, minimalista e responsivo.
+  - Creare un sito moderno, responsivo e professionale.
   - Utilizzare esclusivamente strumenti open source, garantendo trasparenza e flessibilità.
-  - Implementare un layout che trasmetta serenità (es. utilizzo di tonalità pastello come verde menta) e differenziarsi dal sito personale.
+  - Implementare un layout che trasmetta serenità utilizzando la palette brand aggiornata con i token: `brand.primary #1F5C4A`, `brand.text`, `brand.accent`, `brand.bg`.
   - Prevedere integrazioni future (es. funzionalità interattive con AI) sfruttando API open source ove possibile.
 
 ## 2. Struttura e Architettura delle Pagine
@@ -23,51 +23,56 @@ _Ultimo aggiornamento: 28 agosto 2025_
   - Sezione breve di presentazione dei servizi principali.
 
 - **Chi Sono / About:**
-  - Biografia con una descrizione del percorso professionale e dell’approccio terapeutico.
+  - Biografia dettagliata con ruoli attuali, formazione approfondita, filosofia/metodo terapeutico, target di riferimento e call-to-action.
+  - Breadcrumb + JSON-LD per migliorare SEO e navigazione.
 
 - **Servizi:**
-  - Descrizione dei servizi offerti, organizzata in schede o a griglia.
+  - Descrizione dei servizi offerti organizzata in cards.
+  - Sezione intramoenia, testimonianze, disturbi trattati, modalità e costi.
+  - Call-to-action robusta.
+  - Breadcrumb + JSON-LD.
+
+- **Blog:**
+  - Titolo e sottotitolo presenti solo nella pagina principale.
+  - Lista articoli e call-to-action in BlogContent.
+  - Breadcrumb + JSON-LD.
 
 - **Contatti:**
-  - Form di contatto semplice e intuitivo, con informazioni di sede, orari e social.
+  - Form di contatto semplice e intuitivo con email, social e note informative su disponibilità attuale, ruolo e aree di intervento.
+  - Breadcrumb + JSON-LD.
 
-- **Sezioni Aggiuntive (opzionali):**
-  - Blog, testimonianze e/o FAQ.
+- **Formazione:**
+  - Sezioni a card con brand styling, senza utilizzo di MotionSection.
+  - Breadcrumb + JSON-LD.
+
+- **Footer:**
+  - Sfondo verde scuro (`brand.primary`), linea sottile bianca di separazione.
+  - Contatti interattivi.
 
 ## 3. Design e Linee Guida Visive
 
 - **Palette Colori:**
-  - **Primario:** Tonalità pastello (verde menta) per trasmettere tranquillità.
-  - **Secondari:** Toni neutri (bianco, grigi chiari) per un design pulito e minimalista.
+  - Utilizzo dei token brand aggiornati: `brand.primary #1F5C4A`, `brand.text`, `brand.accent`, `brand.bg`.
 
 - **Tipografia:**
-  - **Titoli:** Font sans-serif moderni (es. Montserrat, Poppins).
-  - **Testi:** Font leggibili (es. Open Sans, Roboto).
+  - Font principale: Open Sans.
+  - Dimensioni:
+    - H1: `text-3xl md:text-4xl`
+    - H2: `text-2xl`
+    - Testo: `text-base leading-relaxed`
 
 - **Layout:**
-  - Minimalista, con abbondanza di spazi bianchi.
+  - Minimalista e professionale, con abbondanza di spazi bianchi.
   - Header fisso e navigazione intuitiva, adattabile a desktop e mobile.
-  - Animazioni leggere per migliorare l’esperienza utente.
+  - Animazioni leggere rimosse MotionSection per evitare problemi di idratazione.
 
-### Specifiche Tipografiche e Dimensioni Testo
+- **Classi Tailwind CSS per contenuto Markdown:**
+  - Utilizzo della classe `prose` (rimosse classi `prose-green`).
 
-Per garantire coerenza e leggibilità, utilizza le seguenti linee guida tipografiche in tutte le pagine del sito:
-
-- **Font principali:**
-  - **Titoli:** Montserrat o Poppins (Sans-serif moderni)
-  - **Testi:** Open Sans o Roboto (leggibili e puliti)
-
-- **Dimensioni consigliate (Tailwind CSS v3):**
-  - **Titolo Principale (Homepage e Titoli Articoli):** `text-3xl` o `text-4xl` (a seconda dell'importanza visiva)
-  - **Sottotitoli e Titoli Sezioni:** `text-2xl`
-  - **Titoli Schede e Componenti Minori:** `text-xl`
-  - **Corpo Testo standard (paragrafi):** `text-lg` per mantenere leggibilità e comfort visivo
-  - **Data o testo secondario (metadati, descrizioni minori):** `text-base` o `text-sm`
-
-- **Utilizzo Classi Tailwind CSS per il contenuto dinamico (Markdown):**
-  - Utilizza la classe `prose prose-green mx-auto` per il contenuto proveniente da Markdown, garantendo uniformità stilistica e cromatica.
-
-Queste specifiche devono essere rispettate in ogni pagina e componente per assicurare uniformità estetica e funzionale, facendo riferimento alla versione Tailwind CSS v3 adottata per stabilità e compatibilità.
+- **Call-to-Action (CTA):**
+  - Pulsanti solidi verdi con stile `bg-[#1F5C4A] text-white`.
+  - Focus ring per accessibilità.
+  - Sempre con fallback colore inline per sicurezza.
 
 ## 4. Tecnologie e Stack Open Source
 
@@ -75,7 +80,8 @@ Queste specifiche devono essere rispettate in ogni pagina e componente per assic
   - **Stack:** Next.js 15+, React, TypeScript.
   - **Styling:** Tailwind CSS v3.4 + plugin Typography per migliore resa del contenuto Markdown.
   - **Editor:** Visual Studio Code.
-  - **SEO e Ottimizzazione:** Sitemap.xml, robots.txt, metadata dinamici, immagini OG generate automaticamente e feed RSS integrato.
+  - **SEO e Ottimizzazione:** Sitemap.xml, robots.txt, metadata dinamici, immagini OG generate automaticamente, feed RSS integrato.
+  - **JSON-LD:** implementazione di BreadcrumbList e Article.
 
 - **Versionamento e Collaborazione:**
   - **Git:** Hosting su GitHub o GitLab.
@@ -86,6 +92,8 @@ Queste specifiche devono essere rispettate in ogni pagina e componente per assic
 - **Integrazione AI (opzionale in futuro):**
   - Eventuali funzionalità AI tramite API open source o servizi esterni.
 
+- **Nota:** Nessun dynamic import nelle pagine server per evitare problemi di idratazione.
+
 ## 5. Prototipazione e Wireframe (da rifare)
 
 - **Wireframe:**
@@ -94,7 +102,7 @@ Queste specifiche devono essere rispettate in ogni pagina e componente per assic
 - **Prototipo Interattivo:**
   - Realizzazione di un prototipo cliccabile per testare l’esperienza utente.
 
-## 6. Roadmap e Pianificazione Aggiornata (nuova pianificazione)
+## 6. Roadmap e Pianificazione Aggiornata (v1.1 completata)
 
 ### Fasi del Progetto
 
@@ -110,12 +118,23 @@ Queste specifiche devono essere rispettate in ogni pagina e componente per assic
    - Integrazione componenti Tailwind CSS v3.
 
 - Integrazione SEO avanzata (sitemap, robots, metadata, OG images, RSS).
+- Implementazione breadcrumb e JSON-LD.
+- Uniformità palette e tipografia.
+- Fix Blog (doppio titolo, encodeURIComponent slug).
+- CTA robuste replicate in tutto il sito.
+- Footer consistente e accessibile.
 
 4. **Testing e Feedback:**
    - Deploy su staging, raccolta feedback e iterazioni.
 
 5. **Deploy Finale e Lancio:**
    - Deploy definitivo su Vercel e configurazione dominio.
+
+### Prossimi Step
+
+- Pagine 404/500 eleganti e personalizzate.
+- Implementazione security headers.
+- Pipeline CI minima per lint, typecheck e build.
 
 ### Tempistiche (Indicative e aggiornate)
 
@@ -128,10 +147,12 @@ Queste specifiche devono essere rispettate in ogni pagina e componente per assic
 
 - **Codice e Documentazione:**
   - ESLint, Prettier e commenti per codice chiaro e manutenibile.
+  - Non introdurre MotionSection o dynamic import nelle pagine server per evitare problemi di idratazione.
 
 - **Accessibilità e SEO:**
   - HTML semantico, attributi ARIA, WCAG.
   - SEO avanzata: metadata dinamici, sitemap, robots, RSS feed e immagini OG per social.
+  - CTA sempre con fallback colore inline e focus ring per accessibilità.
 
 - **CI/CD:**
   - Pipeline automatizzate di build, test e deploy.
@@ -158,18 +179,20 @@ Queste specifiche devono essere rispettate in ogni pagina e componente per assic
 
 ---
 
-## Stato Attuale del Progetto (2 maggio 2025):
+## Stato Attuale del Progetto (30 agosto 2025):
 
-Sono stati completati i seguenti aggiornamenti:
+Sono stati completati i seguenti aggiornamenti relativi alla versione v1.1:
 
-- ✅ Aggiunta SEO avanzata: sitemap, robots.txt, metadata dinamici.
-- ✅ Implementato supporto OG images dinamiche per i post del blog.
-- ✅ Creato feed RSS automatico per il blog.
-- ✅ Fix configurazione Tailwind CSS (v3.4) e attivazione plugin Typography.
-- ✅ Compattazione documentazione: README semplificato + INDEX centralizzato in /docs.
+- ✅ Uniformità palette brand aggiornata con token `brand.primary`, `brand.text`, `brand.accent`, `brand.bg`.
+- ✅ Implementazione breadcrumb e JSON-LD in tutte le pagine principali.
+- ✅ Fix Blog: rimozione doppio titolo, correzione encodeURIComponent slug.
+- ✅ CTA robuste replicate in tutte le pagine con fallback colore inline e focus ring.
+- ✅ Footer consistente con sfondo verde scuro e contatti interattivi.
+- ✅ Migliorata accessibilità con focus-visible su elementi interattivi.
+- ✅ Rimozione completa di MotionSection e dynamic import nelle pagine server per evitare problemi di idratazione.
 
 **Prossimi Step Immediati:**
 
-- Aggiunta JSON-LD per Organization e Article.
-- Implementazione test end-to-end (Cypress).
-- Ottimizzazione performance avanzata e monitoraggio analytics.
+- Realizzazione pagine 404/500 eleganti e personalizzate.
+- Implementazione security headers.
+- Setup pipeline CI minima per lint, typecheck e build.

@@ -1,130 +1,299 @@
-"use client";
+import Link from 'next/link';
+import { AcademicCapIcon, EnvelopeIcon, SparklesIcon } from '@heroicons/react/24/outline';
+import { getAllPosts } from '@/lib/posts';
+import SiteBanner from '../components/SiteBanner';
 
-import { useState, useEffect } from 'react';
-import dynamic from 'next/dynamic';
-import {
-  AcademicCapIcon,
-  EnvelopeIcon,
-  SparklesIcon,
-  UserGroupIcon,
-  XMarkIcon
-} from '@heroicons/react/24/outline';
-
-const MotionSection = dynamic(() => import('@/components/MotionSection'), { ssr: false });
+type BlogTeaser = {
+  title: string;
+  date?: string;
+  excerpt?: string;
+  slug: string;
+};
 
 export default function Home() {
-  const [showModal, setShowModal] = useState(false);
-
-  useEffect(() => {
-    setShowModal(true);
-  }, []);
-
-  const closeModal = () => setShowModal(false);
-
-  useEffect(() => {
-    const handleEscape = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') closeModal();
-    };
-    window.addEventListener('keydown', handleEscape);
-    return () => window.removeEventListener('keydown', handleEscape);
-  }, []);
+  const posts: BlogTeaser[] = getAllPosts().slice(0, 3) as BlogTeaser[];
+  const fmt = (iso?: string) =>
+    iso ? new Intl.DateTimeFormat('it-IT', { dateStyle: 'medium' }).format(new Date(iso)) : '';
 
   return (
-    <div className="flex flex-col min-h-screen bg-white">
-      {showModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white rounded-lg shadow-xl max-w-lg w-full p-6 relative">
-            <button
-              className="absolute top-2 right-2 text-gray-600 hover:text-gray-800"
-              onClick={closeModal}
-            >
-              <XMarkIcon className="h-6 w-6" />
-            </button>
-            <h2 className="text-xl font-semibold text-green-700 mb-4 text-center">Attenzione</h2>
-            <p className="text-gray-700">
-            L&apos;attività clinica privata è temporaneamente sospesa. La ripresa delle consulenze e delle sedute in libera professione è prevista entro il 2025.
-            </p>
-            <div className="text-right mt-4">
-              <button
-                className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded"
-                onClick={closeModal}
+    <main className="flex flex-col min-h-screen bg-white">
+      {/* Site-wide informational banner (non-blocking) */}
+      <SiteBanner />
+
+      {/* HERO */}
+      <section className="relative isolate overflow-hidden bg-gradient-to-br from-[#1F5C4A] via-[#78A18A] to-white py-24 md:py-32">
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
+          <svg
+            viewBox="0 0 1440 900"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            className="h-full w-full"
+          >
+            <defs>
+              <linearGradient id="heroGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stopColor="#1F5C4A" />
+                <stop offset="60%" stopColor="#78A18A" />
+                <stop offset="100%" stopColor="#ffffff" />
+              </linearGradient>
+              <linearGradient id="wave1" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stopColor="#ffffff" stopOpacity="0.20" />
+                <stop offset="100%" stopColor="#ffffff" stopOpacity="0.0" />
+              </linearGradient>
+              <linearGradient id="wave2" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stopColor="#ffffff" stopOpacity="0.28" />
+                <stop offset="100%" stopColor="#ffffff" stopOpacity="0.0" />
+              </linearGradient>
+            </defs>
+            <rect width="1440" height="900" fill="url(#heroGrad)" />
+            <path
+              d="M0 610 C 240 560, 480 660, 720 610 C 960 560, 1200 660, 1440 610 L 1440 900 L 0 900 Z"
+              fill="url(#wave1)"
+            />
+            <path
+              d="M0 720 C 240 680, 480 760, 720 720 C 960 680, 1200 760, 1440 720 L 1440 900 L 0 900 Z"
+              fill="url(#wave2)"
+            />
+          </svg>
+        </div>
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 -z-10 [background:linear-gradient(to_bottom,rgba(16,32,39,0.32),rgba(16,32,39,0.14),transparent)]"
+        />
+        <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
+          <SparklesIcon className="mx-auto mb-6 h-16 w-16 text-white" aria-hidden="true" />
+          <h1 className="text-4xl md:text-6xl font-semibold tracking-wide text-white drop-shadow-md">
+            Sabina Scattola
+          </h1>
+          <p className="mt-3 text-xl md:text-2xl text-white drop-shadow-md">
+            Psicologa Psicoterapeuta
+          </p>
+          <p className="mt-4 text-base md:text-lg text-white/80 drop-shadow-md">
+            Valutazione neuropsicologica, sostegno ai caregiver e psicoterapia ad orientamento
+            psicodinamico.
+          </p>
+
+          <div className="mt-8 flex items-center justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 backdrop-blur-sm bg-white/10 rounded-full px-4 py-3">
+              <a
+                href="mailto:sabinascat@live.com"
+                className="inline-flex items-center gap-2 rounded-full bg-brand-primary px-6 py-3 text-white font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary"
               >
-                Chiudi
-              </button>
+                <EnvelopeIcon className="h-5 w-5" aria-hidden="true" />
+                Scrivimi
+              </a>
+              <Link
+                href="/chi-sono"
+                className="inline-flex items-center gap-2 rounded-full border border-brand-accent px-6 py-3 text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary"
+              >
+                <AcademicCapIcon className="h-5 w-5" aria-hidden="true" />
+                Chi sono
+              </Link>
             </div>
           </div>
         </div>
-      )}
+      </section>
 
-      {/* Hero Section */}
-      <MotionSection className="relative flex flex-col justify-center items-center text-center py-32 bg-gradient-to-r from-[#2e7d32] to-[#102027]">
-        <div className="absolute inset-0 bg-black opacity-10"></div>
-        <div className="relative z-10">
-          <SparklesIcon className="h-16 w-16 text-green-100 mb-4" />
-          <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
-            Sabina Scattola
-          </h1>
-          <p className="text-xl md:text-3xl mt-4 text-green-100 drop-shadow-sm">
-            Psicologa e Psicoterapeuta
+      {/* Per chi e per cosa (pillars) */}
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-5xl px-6">
+          <h2 className="text-2xl md:text-3xl font-semibold text-brand-text text-center mb-2">
+            Per chi e per cosa
+          </h2>
+          <p className="mt-2 text-gray-600 text-center mx-auto max-w-3xl">
+            Ambiti in cui posso essere utile; descrizioni orientate al beneficio, non solo al
+            sintomo.
           </p>
-          <p className="mt-4 text-lg md:text-xl text-green-200 italic drop-shadow-sm">
-          &quot;Una presenza accogliente per il tuo benessere psicologico.&quot;
-          </p>
-          <p className="text-xl md:text-3xl mt-4 text-green-100 drop-shadow-sm">
-            Studio di Psicodiagnosi e Trattamenti personalizzati di Psicoterapia
-          </p>
+          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { title: 'Ansia', text: 'Comprendere i sintomi per ritrovare respiro e ritmo.' },
+              { title: 'Umore', text: 'Riconnettersi a energie e interessi in modo graduale.' },
+              {
+                title: 'Stress lavoro',
+                text: 'Riorganizzare confini e priorità per maggiore equilibrio.',
+              },
+              { title: 'Caregiver', text: 'Sostenere chi assiste, senza dimenticare se stessi.' },
+              { title: 'Cognitivo', text: 'Valutazioni e interventi in età adulta e anziana.' },
+              { title: 'Relazioni', text: 'Leggere i pattern relazionali e trovare nuove strade.' },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm"
+              >
+                <h3 className="text-lg font-semibold text-brand-text">{item.title}</h3>
+                <p className="mt-2 text-gray-700">{item.text}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </MotionSection>
+      </section>
 
-      {/* Introduzione personale generica */}
-      <section className="bg-white py-12 min-h-[250px]">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="text-2xl md:text-3xl font-semibold text-green-800 mb-4">Benvenuti nel mio sito</h2>
-          <p className="text-lg md:text-xl text-gray-700">
-            Sono una psicologa e psicoterapeuta con oltre vent&apos;anni di esperienza clinica e formativa in diversi contesti. Nel mio percorso ho affrontato molteplici sfide e tematiche psicologiche, mettendo sempre al centro la persona nella sua unicità.
+      {/* Approccio & primo colloquio */}
+      <section className="bg-gray-50 py-16">
+        <div className="mx-auto max-w-5xl px-6">
+          <div className="grid items-start gap-10 md:grid-cols-12">
+            <div className="md:col-span-7">
+              <h2 className="text-2xl md:text-3xl font-semibold text-brand-text mb-2">
+                Approccio e metodo
+              </h2>
+              <p className="mt-4 text-gray-700">
+                Lavoro con un orientamento psicodinamico, ponendo al centro la relazione terapeutica
+                e la storia individuale. Il percorso viene definito insieme, con obiettivi
+                realistici e rispettosi dei tempi personali.
+              </p>
+              <p className="mt-3 text-gray-700">
+                Il primo passo è ascoltare e comprendere: ciò permette di dare un significato ai
+                sintomi e di orientare cambiamenti sostenibili nella vita quotidiana.
+              </p>
+            </div>
+            <aside className="md:col-span-5">
+              <div className="rounded-2xl border border-brand-accent bg-white p-6 shadow-sm">
+                <h3 className="text-lg font-semibold text-brand-text">Primo colloquio</h3>
+                <ul className="mt-3 list-disc space-y-1 pl-5 text-gray-700">
+                  <li>Durata 45–60 minuti</li>
+                  <li>Raccolta della domanda e della storia</li>
+                  <li>Definizione di obiettivi e passi successivi</li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      {/* Credenziali */}
+      <section className="bg-white py-12">
+        <div className="mx-auto max-w-5xl px-6">
+          <div className="grid gap-6 rounded-xl border border-gray-200 bg-white p-6 shadow-sm md:grid-cols-3">
+            <div>
+              <p className="text-sm uppercase tracking-wide text-gray-500">Ruolo</p>
+              <p className="mt-1 font-semibold text-brand-text">
+                Dirigente Psicologo – AULSS 7 Pedemontana
+              </p>
+            </div>
+            <div>
+              <p className="text-sm uppercase tracking-wide text-gray-500">Associazione</p>
+              <p className="mt-1 font-semibold text-brand-text">Vicepresidente “La Recherche”</p>
+            </div>
+            <div>
+              <p className="text-sm uppercase tracking-wide text-gray-500">Esperienza</p>
+              <p className="mt-1 font-semibold text-brand-text">20+ anni di lavoro clinico</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Blog teaser (dinamico) */}
+      <section className="bg-gray-50 py-16">
+        <div className="mx-auto max-w-5xl px-6">
+          <h2 className="text-2xl md:text-3xl font-semibold text-brand-text text-center mb-2">
+            Approfondimenti
+          </h2>
+          <p className="mt-2 text-gray-600 text-center mx-auto max-w-3xl">
+            Ultimi articoli dal blog.
+          </p>
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {posts.length > 0
+              ? posts.map((p) => (
+                  <article
+                    key={p.slug}
+                    className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm"
+                  >
+                    <time className="text-xs uppercase tracking-wide text-gray-500">
+                      {fmt(p.date)}
+                    </time>
+                    <h3 className="mt-2 text-lg font-semibold text-brand-text">
+                      <Link
+                        href={`/blog/${p.slug}`}
+                        className="hover:underline focus-visible:underline underline-offset-4"
+                      >
+                        {p.title}
+                      </Link>
+                    </h3>
+                    {p.excerpt && <p className="mt-2 text-gray-700">{p.excerpt}</p>}
+                    <Link
+                      href={`/blog/${p.slug}`}
+                      className="mt-3 inline-block text-brand-primary underline underline-offset-4 hover:no-underline focus-visible:underline"
+                    >
+                      Leggi tutto
+                    </Link>
+                  </article>
+                ))
+              : [1, 2, 3].map((i) => (
+                  <article
+                    key={i}
+                    className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm"
+                  >
+                    <h3 className="text-lg font-semibold text-brand-text">Titolo articolo {i}</h3>
+                    <p className="mt-2 text-gray-700">
+                      Breve estratto di 1–2 righe per invogliare alla lettura.
+                    </p>
+                    <Link
+                      href="/blog"
+                      className="mt-3 inline-block text-brand-primary underline underline-offset-4 hover:no-underline focus-visible:underline"
+                    >
+                      Leggi tutto
+                    </Link>
+                  </article>
+                ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link
+              href="/blog"
+              className="text-brand-primary underline underline-offset-4 hover:no-underline focus-visible:underline"
+            >
+              Tutti gli articoli
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonianze con nota etica */}
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-5xl px-6 text-center">
+          <h2 className="text-2xl md:text-3xl font-semibold text-brand-text text-center mb-2">
+            Testimonianze
+          </h2>
+          <div className="mt-8 grid gap-6 md:grid-cols-2 text-left">
+            <blockquote className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+              <p className="italic">
+                “La Dottoressa mi ha aiutato a superare un periodo difficile.”
+              </p>
+              <footer className="mt-3 font-semibold text-brand-primary">— Maria G.</footer>
+            </blockquote>
+            <blockquote className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+              <p className="italic">
+                “Un sostegno fondamentale in un percorso di crescita personale.”
+              </p>
+              <footer className="mt-3 font-semibold text-brand-primary">— Luca F.</footer>
+            </blockquote>
+          </div>
+          <p className="mt-6 text-xs text-gray-500">
+            Le testimonianze sono riportate nel rispetto della privacy.
           </p>
         </div>
       </section>
 
-      {/* Chi Sono aggiornato */}
-      <MotionSection className="bg-gray-50 py-20">
-        <div className="max-w-3xl mx-auto px-6 md:px-8 text-center">
-          <h2 className="text-3xl font-semibold text-green-800 mb-6 border-b-2 border-green-300 pb-2 flex justify-center items-center gap-2">
-            <AcademicCapIcon className="h-7 w-7" /> Mi presento
-          </h2>
-          <p className="text-lg md:text-xl leading-relaxed text-gray-800 mb-6">
-            Sono una Psicologa ad indirizzo clinico e di comunità e Psicoterapeuta ad orientamento psicodinamico.<br />
-            Attualmente lavoro come dirigente psicologo presso l&apos;AULSS 7 Pedemontana (servizio di Neuropsicologia clinica).<br />
-            Sono inoltre vicepresidente dell&apos;Associazione &quot;La Recherche&quot; per lo studio e la ricerca in psicoterapia psicoanalitica.<br />
-            Ho maturato una lunga esperienza clinica in vari contesti terapeutici riabilitativi della salute mentale pubblica e privata. Dal 2008 al 2025 ho esercitato anche attività libera professionale presso il mio studio privato.
+      {/* Contact CTA */}
+      <section className="bg-brand-bg py-16">
+        <div className="mx-auto max-w-5xl px-6 text-center">
+          <div className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-brand-primary/5 ring-1 ring-brand-primary/20">
+            <EnvelopeIcon className="h-5 w-5 text-brand-primary/80" aria-hidden="true" />
+          </div>
+          <h2 className="text-2xl md:text-3xl font-semibold text-brand-text">Hai domande?</h2>
+          <p className="mt-2 text-gray-700">
+            Scrivimi per informazioni: ti risponderò al più presto.
           </p>
-          <div className="text-center mt-8">
-            <a href="mailto:sabinascat@live.com" className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold text-lg py-3 px-8 rounded-full shadow-lg transition-colors duration-300">
-              <EnvelopeIcon className="h-6 w-6" /> Contattami
-            </a>
-          </div>
+          <p className="mt-4 text-xs text-gray-500">
+            Vedi l&apos;informativa su{' '}
+            <Link
+              href="/privacy"
+              className="underline underline-offset-4 hover:no-underline focus-visible:underline"
+            >
+              privacy
+            </Link>
+            .
+          </p>
         </div>
-      </MotionSection>
-
-      {/* Testimonianze (RECUPERATE E COMPLETE) */}
-      <MotionSection className="bg-white py-20">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-semibold text-green-800 mb-10 flex justify-center items-center gap-2">
-            <UserGroupIcon className="h-7 w-7" /> Testimonianze
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gray-50 p-6 rounded-xl shadow">
-              <p className="italic">&quot;La Dottoressa mi ha aiutato a superare un periodo difficile. La consiglio vivamente!&quot;</p>
-              <p className="font-semibold text-green-700 mt-4">— Maria G.</p>
-            </div>
-            <div className="bg-gray-50 p-6 rounded-xl shadow">
-              <p className="italic">&quot;Un sostegno fondamentale in un percorso di crescita personale.&quot;</p>
-              <p className="font-semibold text-green-700 mt-4">— Luca F.</p>
-            </div>
-          </div>
-        </div>
-      </MotionSection>
-
-    </div>
+      </section>
+    </main>
   );
 }

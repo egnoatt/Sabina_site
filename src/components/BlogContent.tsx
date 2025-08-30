@@ -1,9 +1,7 @@
-"use client";
+'use client';
 
-import dynamic from 'next/dynamic';
 import Link from 'next/link';
-
-const MotionSection = dynamic(() => import('@/components/MotionSection'), { ssr: false });
+import { EnvelopeIcon } from '@heroicons/react/24/outline';
 
 interface Post {
   slug: string;
@@ -13,41 +11,55 @@ interface Post {
 }
 
 export default function BlogContent({ posts }: { posts: Post[] }) {
+  const list: Post[] = Array.isArray(posts)
+    ? posts.filter((p) => typeof p?.slug === 'string' && p.slug.length > 0)
+    : [];
   return (
-    <main className="container mx-auto px-4 py-12">
-      {/* Hero Section */}
-      <MotionSection className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-green-800">Blog</h1>
-        <p className="mt-2 text-xl text-gray-500">
-          Articoli e approfondimenti sulla psicologia e psicoterapia
-        </p>
-      </MotionSection>
-
-      {/* Lista Articoli */}
-      <section className="space-y-6 max-w-4xl mx-auto">
-        {posts.map((post, index) => (
-          <MotionSection key={post.slug} className="" delay={index * 0.1}>
-            <Link href={`/blog/${post.slug}`} className="block p-6 rounded-xl bg-gray-50 hover:bg-green-100 transition">
-              <h2 className="text-2xl font-semibold text-gray-900">{post.title}</h2>
-              <p className="text-gray-600">{post.description}</p>
-              <p className="text-sm text-gray-500 mt-2">{post.date}</p>
-            </Link>
-          </MotionSection>
+    <section className="mx-auto max-w-5xl px-6 py-10 text-base leading-relaxed">
+      {/* Lista Articoli (senza header per evitare doppio titolo) */}
+      <ul className="divide-y divide-gray-200 max-w-4xl mx-auto">
+        {list.map(({ slug, title, date, description }) => (
+          <li key={slug} className="py-6">
+            <article>
+              <h2 className="text-xl font-semibold text-brand-text">
+                <Link
+                  href={`/blog/${encodeURIComponent(slug)}`}
+                  className="hover:underline focus-visible:underline underline-offset-4"
+                >
+                  {title}
+                </Link>
+              </h2>
+              <time dateTime={date} className="block text-sm text-gray-500 mb-2">
+                {new Date(date).toLocaleDateString('it-IT', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })}
+              </time>
+              <p className="text-gray-700">{description}</p>
+            </article>
+          </li>
         ))}
-      </section>
+      </ul>
 
-      {/* Call to Action finale */}
-      <MotionSection className="mt-16 max-w-2xl mx-auto text-center" delay={0.5}>
-        <p className="text-lg text-gray-700 mb-6">
-          Sei interessato ad approfondire uno di questi argomenti o hai richieste specifiche?
-        </p>
+      {list.length === 0 && (
+        <p className="mt-6 text-center text-gray-600">Nessun articolo disponibile al momento.</p>
+      )}
+
+      {/* CTA finale robusta (no override) */}
+      <p className="mt-12 text-center text-gray-700">
+        Sei interessato ad approfondire uno di questi argomenti o hai richieste specifiche?
+      </p>
+      <div className="mt-4 text-center">
         <Link
           href="/contatti"
-          className="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold text-lg py-3 px-8 rounded-full shadow transition-colors duration-300"
+          className="inline-flex items-center gap-2 rounded-full px-8 py-3 font-semibold shadow-md transition focus:outline-none focus:ring-2 focus:ring-offset-2"
+          style={{ backgroundColor: '#1F5C4A', color: '#ffffff' }}
         >
-          Contattami per ulteriori informazioni
+          <EnvelopeIcon className="h-5 w-5" aria-hidden="true" />
+          Contattami
         </Link>
-      </MotionSection>
-    </main>
+      </div>
+    </section>
   );
 }

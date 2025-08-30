@@ -16,16 +16,17 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow sticky top-0 z-50 w-full">
-      <nav className="container mx-auto py-4 flex gap-6 justify-center">
+      <nav className="container mx-auto py-4 flex gap-6 justify-center text-base leading-relaxed">
         {navLinks.map((link) => (
           <Link
             key={link.href}
             href={link.href}
-            className={`text-lg font-medium transition-colors duration-300 ${
+            className={`relative px-1 transition-colors duration-300 focus-visible:underline underline-offset-4 ${
               pathname === link.href
-                ? 'text-green-700 border-b-2 border-green-700'
-                : 'text-gray-600 hover:text-green-700'
+                ? 'text-brand-primary font-semibold'
+                : 'text-gray-600 hover:text-brand-primary'
             }`}
+            aria-current={pathname === link.href ? 'page' : undefined}
           >
             {link.label}
           </Link>
