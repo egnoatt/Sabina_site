@@ -2,7 +2,7 @@
 
 ⬅️ Torna a [INDEX.md](./INDEX.md)
 
-_Ultimo aggiornamento: 30 agosto 2025_
+_Ultimo aggiornamento: 31 agosto 2025_
 
 # TASKS.md
 
@@ -40,6 +40,11 @@ Attività Completate ✅
 - Aggiunti breadcrumb + JSON-LD anche a Servizi per uniformità con le altre pagine.
 - Footer reso coerente con sfondo verde scuro e linea bianca sottile.
 
+- Creazione di pagine 404 e 500 personalizzate ed eleganti.
+- Aggiunta di security headers (HSTS, Permissions-Policy, Referrer-Policy).
+- Configurazione CI minima con lint, typecheck e build su GitHub Actions.
+- Configurazione caching e performance ottimizzata in `next.config.ts` (immagini, favicon, static assets).
+
 Task in Corso 🔄
 
 - Monitoraggio iniziale post-lancio (performance, feedback utenti).
@@ -50,11 +55,6 @@ Task Futuri ⏳
 
 - Configurazione e ottimizzazione della sicurezza (HTTPS, protezione XSS/CSRF).
 - Implementazione test end-to-end (Cypress) e unit testing con Vitest.
-- Ottimizzazione avanzata delle performance (lazy loading, minificazione risorse, CDN).
 - Analisi periodica dei dati utente (analytics).
 - Integrazione JSON-LD avanzata per Organization e Article.
 - Manutenzione e aggiornamento continuo della documentazione (`docs/TASKS.md`, `docs/ROADMAP.md`, `docs/PROGETTO.md`) durante il ciclo di vita del progetto.
-
-- Creazione di pagine 404 e 500 personalizzate ed eleganti.
-- Aggiunta di security headers (HSTS, Permissions-Policy, Referrer-Policy).
-- Configurazione CI minima con lint, typecheck e build su GitHub Actions.

@@ -1,7 +1,7 @@
 # 📘 PROGETTO — Sabina Scattola Site
 ⬅️ Torna a [INDEX.md](./INDEX.md)
 
-_Ultimo aggiornamento: 30 agosto 2025_
+_Ultimo aggiornamento: 31 agosto 2025_
 
 # Specifica del Nuovo Sito per Sabina Scattola (Open Source)
 
@@ -132,9 +132,6 @@ _Ultimo aggiornamento: 30 agosto 2025_
 
 ### Prossimi Step
 
-- Pagine 404/500 eleganti e personalizzate.
-- Implementazione security headers.
-- Pipeline CI minima per lint, typecheck e build.
 
 ### Tempistiche (Indicative e aggiornate)
 
@@ -193,6 +190,6 @@ Sono stati completati i seguenti aggiornamenti relativi alla versione v1.1:
 
 **Prossimi Step Immediati:**
 
-- Realizzazione pagine 404/500 eleganti e personalizzate.
-- Implementazione security headers.
-- Setup pipeline CI minima per lint, typecheck e build.
+- Verifica finale con Lighthouse (Performance, SEO, Accessibilità, Best Practices).
+- Pulizia e allineamento documentazione (site-structure, roadmap, progetto).
+- Test caching e immagini ottimizzate con next/image.

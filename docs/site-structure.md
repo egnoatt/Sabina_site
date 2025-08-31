@@ -24,6 +24,7 @@
 │ ├── PROGETTO.md
 │ ├── ProgressLog.md
 │ ├── ROADMAP.md
+│ ├── site-structure.md
 │ └── TASKS.md
 ├── eslint.config.mjs
 ├── jest.config.js
@@ -42,8 +43,6 @@
 │ ├── vercel.svg
 │ └── window.svg
 ├── pyproject.toml
-├── README.md
-├── site-structure.md
 ├── src/
 │ ├── app/ # Pagine Next.js (App Router)
 │ │ ├── approfondimenti/
@@ -55,7 +54,6 @@
 │ │ ├── chi-sono/
 │ │ ├── contatti/
 │ │ ├── formazione/
-│ │ ├── news/
 │ │ ├── privacy/
 │ │ ├── servizi/
 │ │ ├── favicon.ico

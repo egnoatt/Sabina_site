@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
   },
   experimental: {
     esmExternals: true,
-    optimizeCss: false,
+    optimizeCss: true,
   },
   async headers() {
     return [
@@ -20,6 +20,14 @@ const nextConfig: NextConfig = {
       {
         source: '/_next/static/(.*)',
         headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }],
+      },
+      {
+        source: '/:path*\\.(png|jpg|jpeg|gif|svg|webp|avif)$',
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=604800, must-revalidate' }],
+      },
+      {
+        source: '/(favicon.ico|site.webmanifest|manifest.webmanifest)',
+        headers: [{ key: 'Cache-Control', value: 'public, max-age=86400, must-revalidate' }],
       },
     ];
   },

@@ -2,7 +2,7 @@
 
 ⬅️ Torna a [INDEX.md](./INDEX.md)
 
-_Ultimo aggiornamento: 28 agosto 2025_
+_Ultimo aggiornamento: 31 agosto 2025_
 
 ROADMAP AGGIORNATA (18 aprile 2025)
 
@@ -92,7 +92,12 @@ Fase 9: Allineamenti v1.1 ✅ Completata
 • ✅ Aggiunti breadcrumb + JSON-LD anche a Servizi per uniformità con le altre pagine.
 • ✅ Footer reso coerente su tutte le pagine.
 
-Fase 10: Prossimi Step 🔄 In pianificazione
-• 🔄 Introduzione di pagine 404 e 500 personalizzate ed eleganti.
-• 🔄 Aggiunta di security headers (HSTS, Permissions-Policy, Referrer-Policy).
-• 🔄 Configurazione CI minima con lint, typecheck e build su GitHub Actions.
+Fase 10: Prossimi Step ✅ Completata
+• ✅ Introduzione di pagine 404 e 500 personalizzate ed eleganti.
+• ✅ Aggiunta di security headers (HSTS, Permissions-Policy, Referrer-Policy).
+• ✅ Configurazione CI minima con lint, typecheck e build su GitHub Actions.
+
+Fase 11: Ottimizzazioni Finali 🔄 In corso
+• Verifica finale con Lighthouse (Performance, SEO, Accessibilità, Best Practices).
+• Pulizia e allineamento documentazione (site-structure, roadmap, progetto).
+• ✅ Test caching e immagini ottimizzate con next/image.

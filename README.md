@@ -45,9 +45,9 @@ La documentazione dettagliata si trova nella cartella [`docs/`](./docs):
 
 ## 📌 ToDo a breve
 
-- Creazione di pagine 404 e 500 personalizzate ed eleganti
-- Aggiunta di security headers (HSTS, Permissions-Policy, Referrer-Policy)
-- Configurazione CI minima con lint, typecheck e build su GitHub Actions
+- Verifica finale con Lighthouse (Performance, SEO, Accessibilità, Best Practices)
+- Pulizia e allineamento documentazione (site-structure, roadmap, progetto)
+- Test caching e immagini ottimizzate con next/image
 - Test E2E (Cypress)
 - Ottimizzazione performance avanzata
 - Analisi analytics e sicurezza
