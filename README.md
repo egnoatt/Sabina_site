@@ -78,3 +78,22 @@ La documentazione dettagliata si trova nella cartella [`docs/`](./docs):
 - Compattazione documentazione: README semplificato + INDEX centralizzato in /docs.
 - Uniformazione struttura e intestazioni dei documenti in /docs.
 - Aggiunto JSON-LD Article con keywords, image e dateModified nei post del blog.
+
+---
+
+## 👤 Autore / Contatti
+
+Sito sviluppato e mantenuto da **Enrico Gnoatto**  
+🌐 [gnoatto.pro](https://gnoatto.pro)  
+📧 [enrico@gnoatto.pro](mailto:enrico@gnoatto.pro)  
+
+Per informazioni professionali su **Sabina Scattola**:  
+🌐 [sabinascattola.com](https://sabinascattola.com)
+
+---
+
+## 📄 Licenza
+
+- **Codice del sito**: rilasciato con licenza [MIT](LICENSE).  
+- **Contenuti (testi, immagini, articoli)**: © Sabina Scattola — Tutti i diritti riservati.  
+  Non è consentito il riuso dei contenuti senza autorizzazione.
