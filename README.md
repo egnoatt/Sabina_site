@@ -1,6 +1,6 @@
 # Sabina Scattola — Sito Ufficiale
 
-🌐 [sabinascattola.com](https://sabinascattola.com)
+🌐 [sabinascattola.com](https://www.sabinascattola.com)
 
 Sito web sviluppato con **Next.js 15**, **TypeScript**, **Tailwind CSS 3**, App Router e Vercel.  
 Include palette brand, accessibilità migliorata, breadcrumb, JSON-LD per SEO avanzata.
@@ -88,7 +88,7 @@ Sito sviluppato e mantenuto da **Enrico Gnoatto**
 📧 [enrico@gnoatto.pro](mailto:enrico@gnoatto.pro)  
 
 Per informazioni professionali su **Sabina Scattola**:  
-🌐 [sabinascattola.com](https://sabinascattola.com)
+🌐 [sabinascattola.com](https://www.sabinascattola.com)
 
 ---
 
