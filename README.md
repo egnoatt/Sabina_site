@@ -1,7 +1,12 @@
 # Sabina Scattola — Sito Ufficiale
 
-Sito web sviluppato con **Next.js 15**, **TypeScript**, **Tailwind CSS 3**, App Router e Vercel.
+🌐 [sabinascattola.com](https://sabinascattola.com)
+
+Sito web sviluppato con **Next.js 15**, **TypeScript**, **Tailwind CSS 3**, App Router e Vercel.  
 Include palette brand, accessibilità migliorata, breadcrumb, JSON-LD per SEO avanzata.
+
+![Preview](public/og.png)
+
 
 ## 🚀 Tecnologie
 
