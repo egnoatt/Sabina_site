@@ -1,15 +1,20 @@
 import type { NextConfig } from 'next';
-import withBundleAnalyzer from '@next/bundle-analyzer';
 
-// NextConfig typing may lag behind runtime-supported options.
-// Extend it locally to allow `eslint.dirs` without using `any`.
-type NextConfigWithEslint = NextConfig & {
-  eslint?: {
-    dirs?: string[];
-  };
-};
+// Optional dependency: if @next/bundle-analyzer is not installed, fall back to a no-op wrapper.
+// This avoids TS "Cannot find module" errors and keeps the config working in all environments.
+type WithBundleAnalyzer = (opts: { enabled?: boolean }) => (cfg: NextConfig) => NextConfig;
 
-const nextConfig: NextConfigWithEslint = {
+let withBundleAnalyzer: WithBundleAnalyzer = () => (cfg) => cfg;
+
+try {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const mod = require('@next/bundle-analyzer');
+  withBundleAnalyzer = (mod.default ?? mod) as WithBundleAnalyzer;
+} catch {
+  // no-op
+}
+
+const nextConfig: NextConfig = {
   compress: true,
   images: {
     remotePatterns: [
@@ -24,10 +29,6 @@ const nextConfig: NextConfigWithEslint = {
   experimental: {
     esmExternals: true,
     optimizeCss: true,
-  },
-  eslint: {
-    // Ensure Next lint checks the real source directory (CI previously tried a non-existent `lint/` dir).
-    dirs: ['src'],
   },
   async headers() {
     return [
