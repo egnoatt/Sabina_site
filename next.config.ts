@@ -1,15 +1,33 @@
 import type { NextConfig } from 'next';
 import withBundleAnalyzer from '@next/bundle-analyzer';
 
-const nextConfig: NextConfig = {
+// NextConfig typing may lag behind runtime-supported options.
+// Extend it locally to allow `eslint.dirs` without using `any`.
+type NextConfigWithEslint = NextConfig & {
+  eslint?: {
+    dirs?: string[];
+  };
+};
+
+const nextConfig: NextConfigWithEslint = {
   compress: true,
   images: {
-    domains: ['sabinascattola.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'sabinascattola.com',
+        pathname: '/**',
+      },
+    ],
     formats: ['image/avif', 'image/webp'],
   },
   experimental: {
     esmExternals: true,
     optimizeCss: true,
+  },
+  eslint: {
+    // Ensure Next lint checks the real source directory (CI previously tried a non-existent `lint/` dir).
+    dirs: ['src'],
   },
   async headers() {
     return [
@@ -35,4 +53,4 @@ const nextConfig: NextConfig = {
 
 export default withBundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
-})(nextConfig);
+})(nextConfig as NextConfig);

@@ -23,7 +23,7 @@ jobs:
         run: npm ci
 
       - name: Run ESLint
-        run: npx next lint
+        run: npx next lint --dir app
 
       - name: Run TypeScript check
         run: npm run typecheck --if-present
