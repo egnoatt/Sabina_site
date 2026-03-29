@@ -5,14 +5,47 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
+const siteUrl = 'https://sabinascattola.com';
+const homeTitle = 'Sabina Scattola – Psicologa e Psicoterapeuta';
+const homeDescription =
+  'Profilo professionale della Dott.ssa Sabina Scattola. Attività libero-professionale attualmente sospesa. Informazioni su esperienza clinica, formazione e approfondimenti.';
 
 export const metadata: Metadata = {
-  title: 'Sabina Scattola | Profilo professionale di psicologa e psicoterapeuta',
-  description:
-    'Profilo professionale della Dott.ssa Sabina Scattola: esperienza clinica, formazione e approfondimenti in ambito psicologico e psicoterapeutico. L’attività libero-professionale è attualmente sospesa.',
+  metadataBase: new URL(siteUrl),
+  title: homeTitle,
+  description: homeDescription,
   keywords:
     'Sabina Scattola, psicologa, psicoterapeuta, profilo professionale, esperienza clinica, formazione, approfondimenti psicologici',
   authors: [{ name: 'Sabina Scattola', url: 'https://sabinascattola.com' }],
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'it_IT',
+    siteName: 'Sabina Scattola',
+    title: homeTitle,
+    description: homeDescription,
+    url: '/',
+    images: [
+      {
+        url: '/og.png',
+        width: 1200,
+        height: 630,
+        alt: 'Sabina Scattola – Profilo professionale',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: homeTitle,
+    description: homeDescription,
+    images: ['/og.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -47,12 +80,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               '@context': 'https://schema.org',
               '@type': 'Person',
               name: 'Sabina Scattola',
-              url: 'https://sabinascattola.com',
+              url: siteUrl,
               jobTitle: 'Psicologa e Psicoterapeuta',
-              sameAs: [
-                'https://www.linkedin.com/in/sabinascattola',
-                'https://www.psicologi-italia.it/psicologo/sabina-scattola', // esempio, sostituire con link reali
-              ],
+              description: homeDescription,
             }),
           }}
         />

@@ -2,12 +2,6 @@ import Link from 'next/link';
 import { UserCircleIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
 import { professionalStatus } from '@/config/professionalStatus';
 
-export const metadata = {
-  title: 'Chi sono | Sabina Scattola',
-  description:
-    'Profilo professionale della Dott.ssa Sabina Scattola: formazione, esperienza clinica, ruolo attuale e filosofia di lavoro in ambito psicodinamico.',
-};
-
 export default function ChiSono() {
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',

@@ -1,12 +1,6 @@
 import Link from 'next/link';
 import ServiziContent from '@/components/ServiziContent';
 
-export const metadata = {
-  title: 'Ambiti di esperienza clinica | Sabina Scattola',
-  description:
-    'Ambiti di esperienza clinica e professionale della Dott.ssa Sabina Scattola, presentati in chiave informativa. L’attività libero-professionale è attualmente sospesa.',
-};
-
 export default function Servizi() {
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',

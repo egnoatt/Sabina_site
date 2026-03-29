@@ -2,12 +2,6 @@ import Link from 'next/link';
 import { EnvelopeIcon, ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline';
 import { professionalStatus } from '@/config/professionalStatus';
 
-export const metadata = {
-  title: 'Contatti e Informazioni | Sabina Scattola',
-  description:
-    'Informazioni generali e professionali sulla Dott.ssa Sabina Scattola, con nota istituzionale sulla sospensione dell’attività libero-professionale.',
-};
-
 export default function ContattiPage() {
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
