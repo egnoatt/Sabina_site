@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'Curiosità Psicologiche | Sabina Scattola',
   description:
-    'Scopri approfondimenti e consigli utili sulla psicologia, per comprendere meglio la mente e le emozioni, a cura della Dott.ssa Sabina Scattola.',
+    'Approfondimenti divulgativi e spunti informativi su psicologia, emozioni e relazione d’aiuto, a cura della Dott.ssa Sabina Scattola.',
 };
 
 import { LightBulbIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
@@ -30,35 +30,34 @@ export default function CuriositaPsicologiche() {
         <LightBulbIcon className="mx-auto h-16 w-16 text-brand-primary" />
         <h1 className="mt-4 text-4xl font-bold text-brand-text">Curiosità Psicologiche</h1>
         <p className="mt-2 text-xl text-gray-500">
-          Approfondimenti utili per comprendere meglio la mente e le emozioni.
+          Approfondimenti divulgativi per orientarsi tra mente, emozioni e linguaggio clinico.
         </p>
       </div>
 
       {/* Contenuto Principale */}
       <section className="max-w-4xl mx-auto text-lg text-gray-700 space-y-6">
-        <h2 className="text-2xl font-semibold text-brand-text">Cosa dovrebbe sapere un paziente</h2>
+        <h2 className="text-2xl font-semibold text-brand-text">
+          Cosa sapere in termini generali
+        </h2>
         <p>
-          Ogni percorso terapeutico è unico e si basa sulla relazione che si crea tra terapeuta e
-          paziente. È fondamentale essere consapevoli che la terapia è uno spazio sicuro e riservato
-          in cui esprimere liberamente i propri pensieri ed emozioni, senza il timore di essere
-          giudicati.
+          Quando si parla di percorso clinico o psicoterapeutico è utile ricordare che ogni
+          esperienza è diversa e richiede tempi, obiettivi e contesti valutati caso per caso.
+          Questa pagina offre solo elementi orientativi e informativi.
         </p>
 
-        <h2 className="text-2xl font-semibold text-brand-text">
-          Consigli utili prima di iniziare un percorso
-        </h2>
+        <h2 className="text-2xl font-semibold text-brand-text">Alcuni punti utili per orientarsi</h2>
         <ul className="list-disc list-inside ml-4 space-y-2">
-          <li>Cerca di essere aperto e sincero fin dall&apos;inizio.</li>
-          <li>Poni domande se qualcosa non è chiaro durante la terapia.</li>
-          <li>Impegnati ad applicare ciò che emerge in seduta anche nella vita quotidiana.</li>
-          <li>Ricorda che è normale sentirsi vulnerabili: è parte del processo di crescita.</li>
+          <li>Chiarire bisogni, domande e obiettivi aiuta a leggere meglio il proprio momento.</li>
+          <li>Comprendere il contesto professionale e istituzionale è parte dell’orientamento.</li>
+          <li>Il lavoro clinico richiede tempo, continuità e attenzione ai cambiamenti progressivi.</li>
+          <li>Vulnerabilità e cambiamento possono far parte dei processi di cura e sostegno.</li>
         </ul>
 
-        <h2 className="text-2xl font-semibold text-brand-text">Aspettative realistiche</h2>
+        <h2 className="text-2xl font-semibold text-brand-text">Tempi e obiettivi</h2>
         <p>
-          Un percorso terapeutico può essere breve o lungo in base agli obiettivi che si vogliono
-          raggiungere. L&apos;importante è stabilire obiettivi chiari con il proprio terapeuta e
-          lavorare assieme verso un cambiamento significativo e duraturo.
+          Durata, intensità e obiettivi di un percorso clinico possono variare in modo rilevante.
+          Per questo i contenuti qui pubblicati non descrivono un servizio attualmente attivo, ma
+          offrono una cornice divulgativa e professionale.
         </p>
       </section>
 

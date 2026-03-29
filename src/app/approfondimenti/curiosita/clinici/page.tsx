@@ -9,28 +9,33 @@ export default function ApprofondimentiClinici() {
         <BookOpenIcon className="mx-auto h-16 w-16 text-green-600" />
         <h1 className="mt-4 text-4xl font-bold text-gray-800">Approfondimenti Clinici</h1>
         <p className="mt-2 text-xl text-gray-500">
-          Esplora tecniche ed esperienze per il benessere psicologico.
+          Temi, strumenti e prospettive cliniche presentati in chiave informativa.
         </p>
       </div>
 
       {/* Contenuto Principale */}
       <section className="max-w-4xl mx-auto text-lg text-gray-700 space-y-6">
-        <h2 className="text-2xl font-semibold text-green-800">Esperienza di un paziente anonimo</h2>
+        <h2 className="text-2xl font-semibold text-green-800">Nota editoriale</h2>
         <p>
-          &quot;Inizialmente ero scettico sull&apos;efficacia della terapia, ma ho deciso comunque di provare. Nel corso delle sedute ho trovato uno spazio in cui mi sono sentito ascoltato e compreso, senza alcun tipo di giudizio. Questo mi ha permesso di affrontare problemi che da solo non riuscivo a gestire.&quot;
+          Questa sezione raccoglie contenuti di taglio clinico e divulgativo, pensati per presentare
+          approcci, strumenti ed esperienza professionale senza configurare un servizio terapeutico
+          privato attivo.
         </p>
 
-        <h2 className="text-2xl font-semibold text-green-800">Tecniche terapeutiche utilizzate</h2>
+        <h2 className="text-2xl font-semibold text-green-800">Temi e strumenti clinici</h2>
         <ul className="list-disc list-inside ml-4 space-y-2">
           <li>Colloqui clinici individuali</li>
-          <li>Psicoterapia psicodinamica orientata alla psicoanalisi</li>
-          <li>Analisi dei sogni e del linguaggio simbolico</li>
-          <li>Tecniche di esplorazione profonda delle emozioni e dei vissuti personali</li>
+          <li>Psicoterapia psicodinamica ad orientamento psicoanalitico</li>
+          <li>Lettura del linguaggio simbolico e dei vissuti emotivi</li>
+          <li>Approfondimento delle dinamiche relazionali</li>
+          <li>Strumenti clinici per comprendere ansia, stress e momenti di crisi</li>
         </ul>
 
-        <h2 className="text-2xl font-semibold text-green-800">Benefici ottenibili dalla terapia</h2>
+        <h2 className="text-2xl font-semibold text-green-800">Finalità di questi contenuti</h2>
         <p>
-          Tra i principali benefici della psicoterapia clinica vi sono un miglioramento significativo della qualità della vita, una maggiore consapevolezza di sé e delle proprie emozioni, e l&apos;acquisizione di strumenti utili per affrontare le difficoltà quotidiane con maggiore equilibrio e serenità.
+          I contenuti pubblicati hanno finalità esclusivamente informativa e descrivono temi e
+          prospettive cliniche maturati nel tempo. Per questo motivo non vanno letti come
+          presentazione di trattamenti privati attualmente disponibili.
         </p>
       </section>
 

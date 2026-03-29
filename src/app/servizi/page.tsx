@@ -2,9 +2,9 @@ import Link from 'next/link';
 import ServiziContent from '@/components/ServiziContent';
 
 export const metadata = {
-  title: 'Ambiti clinici e professionali | Sabina Scattola',
+  title: 'Ambiti di esperienza clinica | Sabina Scattola',
   description:
-    'Sintesi degli ambiti di esperienza clinica e professionale della Dott.ssa Sabina Scattola, con nota informativa sulla sospensione dell’attività libero-professionale.',
+    'Ambiti di esperienza clinica e professionale della Dott.ssa Sabina Scattola, presentati in chiave informativa. L’attività libero-professionale è attualmente sospesa.',
 };
 
 export default function Servizi() {
@@ -16,7 +16,7 @@ export default function Servizi() {
       {
         '@type': 'ListItem',
         position: 2,
-        name: 'Servizi',
+        name: 'Ambiti di esperienza',
         item: 'https://sabinascattola.com/servizi',
       },
     ],
@@ -34,7 +34,7 @@ export default function Servizi() {
           </li>
           <li>/</li>
           <li aria-current="page" className="font-semibold text-brand-text">
-            Servizi
+            Ambiti di esperienza
           </li>
         </ol>
       </nav>

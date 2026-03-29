@@ -3,8 +3,9 @@
 import React from 'react';
 
 export const metadata = {
-  title: 'Curiosità Psicologiche - Sabina Scattola',
-  description: 'Esplora curiosità e approfondimenti su temi psicologici con la Dott.ssa Sabina Scattola.',
+  title: 'Curiosità psicologiche | Sabina Scattola',
+  description:
+    'Approfondimenti divulgativi e spunti informativi su psicologia, emozioni e linguaggio clinico.',
 };
 
 export default function CuriositaLayout({ children }: { children: React.ReactNode }) {
