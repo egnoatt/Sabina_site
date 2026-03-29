@@ -2,9 +2,9 @@ import Link from 'next/link';
 import ServiziContent from '@/components/ServiziContent';
 
 export const metadata = {
-  title: 'Servizi | Sabina Scattola – Psicologa e Psicoterapeuta',
+  title: 'Ambiti clinici e professionali | Sabina Scattola',
   description:
-    'Panoramica dei servizi offerti: consulenza psicologica, psicoterapia individuale, supervisione clinica, online e intramoenia.',
+    'Sintesi degli ambiti di esperienza clinica e professionale della Dott.ssa Sabina Scattola, con nota informativa sulla sospensione dell’attività libero-professionale.',
 };
 
 export default function Servizi() {

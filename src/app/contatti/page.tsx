@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import { EnvelopeIcon, ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline';
+import { professionalStatus } from '@/config/professionalStatus';
 
 export const metadata = {
-  title: 'Contatti - Sabina Scattola Psicologa e Psicoterapeuta',
+  title: 'Contatti e Informazioni | Sabina Scattola',
   description:
-    'Rimaniamo in contatto: email, social e note informative. Disponibilità attuale, ruoloem aree principali di intervento.',
+    'Informazioni generali e professionali sulla Dott.ssa Sabina Scattola, con nota istituzionale sulla sospensione dell’attività libero-professionale.',
 };
 
 export default function ContattiPage() {
@@ -47,7 +48,7 @@ export default function ContattiPage() {
       <section className="text-center mb-8">
         <EnvelopeIcon className="mx-auto h-16 w-16 text-brand-primary" aria-hidden="true" />
         <h1 className="mt-4 text-3xl md:text-4xl font-semibold text-brand-text">Contatti</h1>
-        <p className="mt-2 text-gray-600">Rimaniamo in contatto per qualsiasi informazione</p>
+        <p className="mt-2 text-gray-600">Informazioni generali e professionali</p>
       </section>
 
       {/* Cards: Email + Social */}
@@ -58,7 +59,7 @@ export default function ContattiPage() {
             <h2 className="text-lg font-semibold text-brand-text">Email</h2>
           </div>
           <p className="mt-3 text-gray-700">
-            Scrivimi a
+            Per comunicazioni generali o professionali scrivi a
             <a
               href="mailto:sabinascat@live.com"
               className="ml-2 text-brand-primary hover:underline focus-visible:underline underline-offset-4"
@@ -89,32 +90,30 @@ export default function ContattiPage() {
       {/* Note informative (come nel PDF) */}
       <section className="rounded-xl border border-brand-accent bg-brand-bg p-6 shadow-sm">
         <h2 className="text-2xl font-semibold text-brand-text text-center mb-4">
-          Note Informative
+          Informazioni Istituzionali
         </h2>
 
         {/* Disponibilità Attuale */}
         <div className="mb-5">
           <h3 className="text-brand-text font-semibold">Disponibilità Attuale</h3>
-          <p className="mt-1 text-gray-700">
-            Attualmente, l&apos;attività privata della dott.ssa Sabina Scattola è{' '}
-            <strong>temporaneamente sospesa</strong> fino a nuova comunicazione, in seguito
-            all&apos;assunzione come dirigente psicologo presso AULSS 7 Pedemontana.
-          </p>
+          <p className="mt-1 text-gray-700">{professionalStatus.availabilityMessage}</p>
         </div>
 
-        {/* Ruolo Attuale */}
+        {/* Profilo Attuale */}
         <div className="mb-5">
-          <h3 className="text-brand-text font-semibold">Ruolo Attuale</h3>
-          <p className="mt-1 text-gray-700">
-            Dal marzo 2025 ricopre il ruolo di{' '}
-            <strong>Dirigente Psicologo – disciplina Psicoterapia</strong> presso AULSS 7
-            Pedemontana.
-          </p>
+          <h3 className="text-brand-text font-semibold">Profilo Attuale</h3>
+          <p className="mt-1 text-gray-700">{professionalStatus.institutionalRoleMessage}</p>
+          <p className="mt-3 text-gray-700">{professionalStatus.sitePurposeMessage}</p>
+        </div>
+
+        <div className="mb-5">
+          <h3 className="text-brand-text font-semibold">Comunicazioni</h3>
+          <p className="mt-1 text-gray-700">{professionalStatus.contactMessage}</p>
         </div>
 
         {/* Aree Principali di Intervento */}
         <div>
-          <h3 className="text-brand-text font-semibold">Aree Principali di Intervento</h3>
+          <h3 className="text-brand-text font-semibold">Aree di Esperienza Clinica</h3>
           <ul className="mt-2 space-y-1 text-gray-700 list-disc list-inside">
             {[
               'Ansia e attacchi di panico',

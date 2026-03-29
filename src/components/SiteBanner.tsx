@@ -2,8 +2,9 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { professionalStatus } from '@/config/professionalStatus';
 
-const STORAGE_KEY = 'siteBannerDismissedUntil'; // ISO timestamp
+const STORAGE_KEY = 'siteBannerDismissedUntil-v2'; // ISO timestamp
 const DISMISS_DAYS = 30; // days to keep banner hidden after dismiss
 
 function addDays(date: Date, days: number) {
@@ -43,7 +44,7 @@ export default function SiteBanner() {
     setVisible(false);
   };
 
-  if (!visible) return null;
+  if (professionalStatus.isPrivatePracticeActive || !visible) return null;
 
   return (
     <div
@@ -54,13 +55,12 @@ export default function SiteBanner() {
       <div className="mx-auto max-w-5xl px-4 py-2 text-sm md:text-base flex items-start gap-3">
         <span className="font-medium">Aggiornamento:</span>
         <p className="flex-1">
-          L&apos;attività clinica privata è temporaneamente sospesa. La ripresa è prevista entro il
-          2025{' '}
+          {professionalStatus.availabilityMessage}{' '}
           <Link
-            href="/news"
+            href="/contatti"
             className="underline underline-offset-4 hover:no-underline focus-visible:underline"
           >
-            Dettagli
+            {professionalStatus.infoLinkLabel}
           </Link>
         </p>
         <button

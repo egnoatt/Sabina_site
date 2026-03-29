@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
+import { professionalStatus } from '@/config/professionalStatus';
 
 export const metadata: Metadata = {
-  title: 'News | Sabina Scattola Psicologa e Psicoterapeuta',
+  title: 'Aggiornamenti | Sabina Scattola',
   description:
-    'Ultime notizie, aggiornamenti professionali e novità sulla psicoterapia e sulla psicologia dalla Dott.ssa Sabina Scattola.',
+    'Aggiornamenti professionali e informativi relativi al profilo della Dott.ssa Sabina Scattola.',
 };
 
 import { ChatBubbleOvalLeftEllipsisIcon } from '@heroicons/react/24/outline';
@@ -14,8 +15,7 @@ const newsData = [
     id: 1,
     titolo: 'Assunzione presso AULSS 7 Pedemontana',
     data: '10 marzo 2025',
-    descrizione:
-      "Sono lieta di annunciare l'inizio della mia attività come dirigente Psicologo-Psicoterapeuta presso l'AULSS 7 Pedemontana.",
+    descrizione: professionalStatus.institutionalRoleMessage,
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const newsData = [
     titolo: 'Lancio del nuovo sito web',
     data: '15 aprile 2025',
     descrizione:
-      'È finalmente online il nuovo sito web dello studio, con informazioni dettagliate sui servizi offerti e modalità di contatto.',
+      'È online il sito professionale e informativo, con contenuti dedicati a profilo, formazione e approfondimenti.',
   },
 ];
 
@@ -54,7 +54,7 @@ export default function News() {
       <div className="text-center mb-12">
         <ChatBubbleOvalLeftEllipsisIcon className="mx-auto h-16 w-16 text-brand-primary" />
         <h1 className="mt-4 text-4xl font-bold text-brand-text">News</h1>
-        <p className="mt-2 text-xl text-gray-500">Novità e aggiornamenti dallo studio</p>
+        <p className="mt-2 text-xl text-gray-500">Aggiornamenti professionali e informativi</p>
       </div>
 
       {/* Lista delle News */}

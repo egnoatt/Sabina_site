@@ -5,6 +5,7 @@ import {
   CalendarDaysIcon,
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import { professionalStatus } from '@/config/professionalStatus';
 
 export default function Formazione() {
   return (
@@ -179,7 +180,7 @@ export default function Formazione() {
           href="/contatti"
           className="inline-flex items-center gap-2 rounded-full bg-brand-primary bg-[#1F5C4A] px-8 py-3 text-white font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary shadow-md transition"
         >
-          Richiedi ulteriori informazioni
+          {professionalStatus.infoCtaLabel}
         </Link>
       </section>
     </main>

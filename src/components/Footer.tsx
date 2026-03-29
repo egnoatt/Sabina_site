@@ -1,4 +1,5 @@
 import { GlobeAltIcon, MapPinIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
+import { professionalStatus } from '@/config/professionalStatus';
 
 const Footer = () => {
   return (
@@ -43,6 +44,9 @@ const Footer = () => {
             <GlobeAltIcon className="w-5 h-5" /> Facebook
           </a>
         </div>
+        <p className="mx-auto mt-4 max-w-2xl text-xs leading-relaxed text-white/90">
+          {professionalStatus.availabilityMessage} {professionalStatus.sitePurposeMessage}
+        </p>
         <p className="text-xs mt-4">
           Sito realizzato da{' '}
           <a

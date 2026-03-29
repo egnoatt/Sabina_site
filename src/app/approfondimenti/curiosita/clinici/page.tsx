@@ -1,4 +1,5 @@
 import { BookOpenIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
+import { professionalStatus } from '@/config/professionalStatus';
 
 export default function ApprofondimentiClinici() {
   return (
@@ -39,7 +40,7 @@ export default function ApprofondimentiClinici() {
           href="/contatti"
           className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-colors duration-300"
         >
-          <EnvelopeIcon className="h-6 w-6" /> Contattami per un incontro
+          <EnvelopeIcon className="h-6 w-6" /> {professionalStatus.infoCtaLabel}
         </a>
       </section>
     </main>

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { AcademicCapIcon, EnvelopeIcon, SparklesIcon } from '@heroicons/react/24/outline';
 import { getAllPosts } from '@/lib/posts';
+import { professionalStatus } from '@/config/professionalStatus';
 import SiteBanner from '../components/SiteBanner';
 
 type BlogTeaser = {
@@ -68,19 +69,19 @@ export default function Home() {
             Psicologa Psicoterapeuta
           </p>
           <p className="mt-4 text-base md:text-lg text-white/80 drop-shadow-md">
-            Valutazione neuropsicologica, sostegno ai caregiver e psicoterapia ad orientamento
-            psicodinamico.
+            Esperienza clinica, formazione e approfondimenti in ambito psicologico e
+            psicoterapeutico.
           </p>
 
           <div className="mt-8 flex items-center justify-center">
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 backdrop-blur-sm bg-white/10 rounded-full px-4 py-3">
-              <a
-                href="mailto:sabinascat@live.com"
+              <Link
+                href="/contatti"
                 className="inline-flex items-center gap-2 rounded-full bg-brand-primary px-6 py-3 text-white font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary"
               >
                 <EnvelopeIcon className="h-5 w-5" aria-hidden="true" />
-                Scrivimi
-              </a>
+                {professionalStatus.infoCtaLabel}
+              </Link>
               <Link
                 href="/chi-sono"
                 className="inline-flex items-center gap-2 rounded-full border border-brand-accent px-6 py-3 text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary"
@@ -97,11 +98,11 @@ export default function Home() {
       <section className="bg-white py-16">
         <div className="mx-auto max-w-5xl px-6">
           <h2 className="text-2xl md:text-3xl font-semibold text-brand-text text-center mb-2">
-            Per chi e per cosa
+            Ambiti di esperienza clinica
           </h2>
           <p className="mt-2 text-gray-600 text-center mx-auto max-w-3xl">
-            Ambiti in cui posso essere utile; descrizioni orientate al beneficio, non solo al
-            sintomo.
+            Una sintesi dei principali ambiti clinici e professionali maturati nel corso
+            dell&apos;esperienza.
           </p>
           <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
@@ -127,32 +128,29 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Approccio & primo colloquio */}
+      {/* Approccio & nota informativa */}
       <section className="bg-gray-50 py-16">
         <div className="mx-auto max-w-5xl px-6">
           <div className="grid items-start gap-10 md:grid-cols-12">
             <div className="md:col-span-7">
               <h2 className="text-2xl md:text-3xl font-semibold text-brand-text mb-2">
-                Approccio e metodo
+                Approccio professionale
               </h2>
               <p className="mt-4 text-gray-700">
-                Lavoro con un orientamento psicodinamico, ponendo al centro la relazione terapeutica
-                e la storia individuale. Il percorso viene definito insieme, con obiettivi
-                realistici e rispettosi dei tempi personali.
+                L&apos;approccio psicodinamico e la centralità della relazione terapeutica hanno
+                orientato il mio lavoro clinico e istituzionale, con attenzione alla storia della
+                persona e al significato dei vissuti emotivi.
               </p>
               <p className="mt-3 text-gray-700">
-                Il primo passo è ascoltare e comprendere: ciò permette di dare un significato ai
-                sintomi e di orientare cambiamenti sostenibili nella vita quotidiana.
+                Questa prospettiva continua a informare il profilo professionale e i contenuti
+                pubblicati su questo sito.
               </p>
             </div>
             <aside className="md:col-span-5">
               <div className="rounded-2xl border border-brand-accent bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-brand-text">Primo colloquio</h3>
-                <ul className="mt-3 list-disc space-y-1 pl-5 text-gray-700">
-                  <li>Durata 45–60 minuti</li>
-                  <li>Raccolta della domanda e della storia</li>
-                  <li>Definizione di obiettivi e passi successivi</li>
-                </ul>
+                <h3 className="text-lg font-semibold text-brand-text">Nota informativa</h3>
+                <p className="mt-3 text-gray-700">{professionalStatus.availabilityMessage}</p>
+                <p className="mt-3 text-gray-700">{professionalStatus.sitePurposeMessage}</p>
               </div>
             </aside>
           </div>
@@ -246,32 +244,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonianze con nota etica */}
-      <section className="bg-white py-16">
-        <div className="mx-auto max-w-5xl px-6 text-center">
-          <h2 className="text-2xl md:text-3xl font-semibold text-brand-text text-center mb-2">
-            Testimonianze
-          </h2>
-          <div className="mt-8 grid gap-6 md:grid-cols-2 text-left">
-            <blockquote className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-              <p className="italic">
-                “La Dottoressa mi ha aiutato a superare un periodo difficile.”
-              </p>
-              <footer className="mt-3 font-semibold text-brand-primary">— Maria G.</footer>
-            </blockquote>
-            <blockquote className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
-              <p className="italic">
-                “Un sostegno fondamentale in un percorso di crescita personale.”
-              </p>
-              <footer className="mt-3 font-semibold text-brand-primary">— Luca F.</footer>
-            </blockquote>
-          </div>
-          <p className="mt-6 text-xs text-gray-500">
-            Le testimonianze sono riportate nel rispetto della privacy.
-          </p>
-        </div>
-      </section>
-
       {/* Contact CTA */}
       <section className="bg-brand-bg py-16">
         <div className="mx-auto max-w-5xl px-6 text-center">
@@ -280,7 +252,14 @@ export default function Home() {
           </div>
           <h2 className="text-2xl md:text-3xl font-semibold text-brand-text">Hai domande?</h2>
           <p className="mt-2 text-gray-700">
-            Scrivimi per informazioni: ti risponderò al più presto.
+            Per informazioni generali o professionali consulta la pagina{' '}
+            <Link
+              href="/contatti"
+              className="underline underline-offset-4 hover:no-underline focus-visible:underline"
+            >
+              contatti
+            </Link>
+            .
           </p>
           <p className="mt-4 text-xs text-gray-500">
             Vedi l&apos;informativa su{' '}

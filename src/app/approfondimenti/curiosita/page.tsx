@@ -6,6 +6,7 @@ export const metadata = {
 
 import { LightBulbIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import { professionalStatus } from '@/config/professionalStatus';
 
 export default function CuriositaPsicologiche() {
   return (
@@ -68,7 +69,7 @@ export default function CuriositaPsicologiche() {
           className="inline-flex items-center gap-2 rounded-full bg-brand-primary px-8 py-3 text-white font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary shadow transition"
         >
           <EnvelopeIcon className="h-6 w-6" aria-hidden="true" />
-          Richiedi maggiori informazioni
+          {professionalStatus.infoCtaLabel}
         </Link>
       </section>
     </main>

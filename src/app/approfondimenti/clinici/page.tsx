@@ -1,6 +1,7 @@
 import React from 'react';
 import { BookOpenIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import { professionalStatus } from '@/config/professionalStatus';
 
 export const metadata = {
   title: 'Approfondimenti Clinici | Sabina Scattola Psicologa e Psicoterapeuta',
@@ -97,7 +98,7 @@ export default function ApprofondimentiClinici() {
           className="inline-flex items-center gap-2 rounded-full bg-brand-primary px-8 py-3 text-white font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary shadow transition"
         >
           <EnvelopeIcon className="h-6 w-6" aria-hidden="true" />
-          Contattami per un incontro
+          {professionalStatus.infoCtaLabel}
         </Link>
       </section>
     </main>

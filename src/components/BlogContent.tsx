@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { EnvelopeIcon } from '@heroicons/react/24/outline';
+import { professionalStatus } from '@/config/professionalStatus';
 
 interface Post {
   slug: string;
@@ -48,7 +49,8 @@ export default function BlogContent({ posts }: { posts: Post[] }) {
 
       {/* CTA finale robusta (no override) */}
       <p className="mt-12 text-center text-gray-700">
-        Sei interessato ad approfondire uno di questi argomenti o hai richieste specifiche?
+        Per informazioni generali sul profilo professionale o sui contenuti pubblicati puoi usare i
+        recapiti indicati nella pagina contatti.
       </p>
       <div className="mt-4 text-center">
         <Link
@@ -57,7 +59,7 @@ export default function BlogContent({ posts }: { posts: Post[] }) {
           style={{ backgroundColor: '#1F5C4A', color: '#ffffff' }}
         >
           <EnvelopeIcon className="h-5 w-5" aria-hidden="true" />
-          Contattami
+          {professionalStatus.infoCtaLabel}
         </Link>
       </div>
     </section>

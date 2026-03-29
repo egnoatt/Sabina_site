@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import { UserCircleIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
+import { professionalStatus } from '@/config/professionalStatus';
 
 export const metadata = {
-  title: 'Chi Sono | Sabina Scattola - Psicologa e Psicoterapeuta',
+  title: 'Chi sono | Sabina Scattola',
   description:
-    'Profilo professionale della Dott.ssa Sabina Scattola: formazione, esperienza clinica, ruoli attuali e filosofia di lavoro in psicoterapia psicodinamica.',
+    'Profilo professionale della Dott.ssa Sabina Scattola: formazione, esperienza clinica, ruolo attuale e filosofia di lavoro in ambito psicodinamico.',
 };
 
 export default function ChiSono() {
@@ -49,8 +50,8 @@ export default function ChiSono() {
         <h1 className="mt-4 text-3xl md:text-4xl font-semibold text-brand-text">Chi Sono</h1>
         <p className="mt-2 text-gray-700">
           Sono la Dott.ssa <strong>Sabina Scattola</strong>, psicologa e psicoterapeuta ad
-          orientamento psicodinamico. Lavoro con attenzione alla storia della persona e alla
-          relazione terapeutica, per costruire percorsi rispettosi e realmente utili.
+          orientamento psicodinamico. Questa pagina raccoglie il mio profilo professionale, la
+          formazione e i principali ambiti di esperienza clinica maturati nel tempo.
         </p>
       </section>
 
@@ -64,6 +65,13 @@ export default function ChiSono() {
           <h3 className="text-lg font-semibold text-brand-text">Associazione</h3>
           <p className="mt-2 text-gray-700">Vicepresidente “La Recherche”</p>
         </div>
+      </section>
+
+      <section className="mb-10 rounded-xl border border-brand-accent bg-brand-bg p-6 shadow-sm">
+        <h2 className="text-2xl font-semibold text-brand-text">Nota informativa</h2>
+        <p className="mt-3 text-gray-700">{professionalStatus.availabilityMessage}</p>
+        <p className="mt-3 text-gray-700">{professionalStatus.institutionalRoleMessage}</p>
+        <p className="mt-3 text-gray-700">{professionalStatus.sitePurposeMessage}</p>
       </section>
 
       {/* Esperienza */}
@@ -107,9 +115,9 @@ export default function ChiSono() {
       <section className="mb-10 space-y-3">
         <h2 className="text-2xl font-semibold text-brand-text">A chi mi rivolgo</h2>
         <p className="text-gray-700">
-          Persone pre-adolescenti, adolescenti, adulti e anziani. Supporto ai caregiver e percorsi
-          rivolti a professionisti in periodi di stress o cambiamento. Ricevo presso lo studio di
-          Mussolente (VI) e online tramite Zoom, Google Meet e FaceTime.
+          Nel corso dell&apos;attività clinica e istituzionale mi sono occupata di persone
+          pre-adolescenti, adolescenti, adulti e anziani, oltre che di caregiver e professionisti
+          in periodi di stress o cambiamento.
         </p>
       </section>
 
@@ -125,7 +133,7 @@ export default function ChiSono() {
           className="inline-flex items-center gap-2 rounded-full bg-brand-primary bg-[#1F5C4A] px-8 py-3 text-white font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary shadow-md transition"
         >
           <EnvelopeIcon className="h-5 w-5" aria-hidden="true" />
-          Contattami per maggiori informazioni
+          {professionalStatus.infoCtaLabel}
         </Link>
       </div>
     </main>

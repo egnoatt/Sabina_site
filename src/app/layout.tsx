@@ -1,16 +1,17 @@
 import './globals.css';
+import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata = {
-  title: 'Sabina Scattola | Psicologa e Psicoterapeuta a Mussolente',
+export const metadata: Metadata = {
+  title: 'Sabina Scattola | Profilo professionale di psicologa e psicoterapeuta',
   description:
-    'Sabina Scattola, Psicologa e Psicoterapeuta specializzata in psicoterapia psicodinamica a Mussolente (VI). Scopri i servizi di consulenza psicologica e supporto emotivo offerti.',
+    'Profilo professionale della Dott.ssa Sabina Scattola: esperienza clinica, formazione e approfondimenti in ambito psicologico e psicoterapeutico. L’attività libero-professionale è attualmente sospesa.',
   keywords:
-    'Sabina Scattola, psicologa Mussolente, psicoterapeuta psicodinamica, consulenza psicologica, terapia individuale, supporto emotivo',
+    'Sabina Scattola, psicologa, psicoterapeuta, profilo professionale, esperienza clinica, formazione, approfondimenti psicologici',
   authors: [{ name: 'Sabina Scattola', url: 'https://sabinascattola.com' }],
 };
 
@@ -48,12 +49,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               name: 'Sabina Scattola',
               url: 'https://sabinascattola.com',
               jobTitle: 'Psicologa e Psicoterapeuta',
-              address: {
-                '@type': 'PostalAddress',
-                addressLocality: 'Mussolente',
-                addressRegion: 'VI',
-                addressCountry: 'IT',
-              },
               sameAs: [
                 'https://www.linkedin.com/in/sabinascattola',
                 'https://www.psicologi-italia.it/psicologo/sabina-scattola', // esempio, sostituire con link reali
