@@ -22,7 +22,7 @@ export default function Home() {
       <SiteBanner />
 
       {/* HERO */}
-      <section className="relative isolate overflow-hidden bg-gradient-to-br from-[#1F5C4A] via-[#78A18A] to-white py-24 md:py-32">
+      <section className="relative isolate overflow-hidden bg-gradient-to-br from-[#1F5C4A] via-[#5C8976] to-[#F7FAF9] py-20 md:py-28">
         <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
           <svg
             viewBox="0 0 1440 900"
@@ -60,51 +60,60 @@ export default function Home() {
           aria-hidden="true"
           className="absolute inset-0 -z-10 [background:linear-gradient(to_bottom,rgba(16,32,39,0.32),rgba(16,32,39,0.14),transparent)]"
         />
-        <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
-          <SparklesIcon className="mx-auto mb-6 h-16 w-16 text-white" aria-hidden="true" />
-          <h1 className="text-4xl md:text-6xl font-semibold tracking-wide text-white drop-shadow-md">
-            Sabina Scattola
-          </h1>
-          <p className="mt-3 text-xl md:text-2xl text-white drop-shadow-md">
-            Psicologa Psicoterapeuta
-          </p>
-          <p className="mt-4 text-base md:text-lg text-white/80 drop-shadow-md">
-            Esperienza clinica, formazione e approfondimenti in ambito psicologico e
-            psicoterapeutico.
-          </p>
+        <div className="relative z-10 mx-auto max-w-5xl px-6">
+          <div className="mx-auto max-w-4xl rounded-[2rem] border border-white/20 bg-white/10 px-6 py-10 text-center shadow-[0_24px_80px_rgba(16,32,39,0.12)] backdrop-blur-sm md:px-12 md:py-14">
+            <SparklesIcon className="mx-auto mb-6 h-14 w-14 text-white/90" aria-hidden="true" />
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/75">
+              Profilo professionale
+            </p>
+            <h1 className="mt-4 text-4xl font-bold tracking-tight text-white md:text-6xl">
+              Sabina Scattola
+            </h1>
+            <p className="mt-4 text-xl font-medium text-white md:text-2xl">
+              Psicologa e Psicoterapeuta
+            </p>
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-white/85 md:text-lg">
+              Esperienza clinica, formazione e approfondimenti in ambito psicologico e
+              psicoterapeutico.
+            </p>
+            <p className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-white/70 md:text-base">
+              Il sito resta online come spazio professionale e informativo, con contenuti ordinati
+              per ruolo, esperienza clinica e aggiornamento.
+            </p>
 
-          <div className="mt-8 flex items-center justify-center">
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 backdrop-blur-sm bg-white/10 rounded-full px-4 py-3">
-              <Link
-                href="/contatti"
-                className="inline-flex items-center gap-2 rounded-full bg-brand-primary px-6 py-3 text-white font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary"
-              >
-                <EnvelopeIcon className="h-5 w-5" aria-hidden="true" />
-                {professionalStatus.infoCtaLabel}
-              </Link>
-              <Link
-                href="/chi-sono"
-                className="inline-flex items-center gap-2 rounded-full border border-brand-accent px-6 py-3 text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary"
-              >
-                <AcademicCapIcon className="h-5 w-5" aria-hidden="true" />
-                Chi sono
-              </Link>
+            <div className="mt-10 flex items-center justify-center">
+              <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
+                <Link
+                  href="/contatti"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand-text shadow-sm hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+                >
+                  <EnvelopeIcon className="h-5 w-5" aria-hidden="true" />
+                  {professionalStatus.infoCtaLabel}
+                </Link>
+                <Link
+                  href="/chi-sono"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/35 px-6 py-3 text-sm font-medium text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+                >
+                  <AcademicCapIcon className="h-5 w-5" aria-hidden="true" />
+                  Chi sono
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Per chi e per cosa (pillars) */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-20">
         <div className="mx-auto max-w-5xl px-6">
-          <h2 className="text-2xl md:text-3xl font-semibold text-brand-text text-center mb-2">
+          <h2 className="text-2xl font-semibold text-brand-text text-center md:text-3xl">
             Ambiti di esperienza clinica
           </h2>
-          <p className="mt-2 text-gray-600 text-center mx-auto max-w-3xl">
+          <p className="mx-auto mt-4 max-w-3xl text-center text-base leading-relaxed text-slate-600">
             Una sintesi dei principali ambiti clinici e professionali maturati nel corso
             dell&apos;esperienza.
           </p>
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
               { title: 'Ansia', text: 'Comprendere i sintomi per ritrovare respiro e ritmo.' },
               { title: 'Umore', text: 'Riconnettersi a energie e interessi in modo graduale.' },
@@ -118,10 +127,10 @@ export default function Home() {
             ].map((item) => (
               <div
                 key={item.title}
-                className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm"
+                className="rounded-2xl border border-slate-200 bg-slate-50/70 p-6 shadow-sm"
               >
                 <h3 className="text-lg font-semibold text-brand-text">{item.title}</h3>
-                <p className="mt-2 text-gray-700">{item.text}</p>
+                <p className="mt-3 text-base leading-relaxed text-slate-700">{item.text}</p>
               </div>
             ))}
           </div>
@@ -129,28 +138,35 @@ export default function Home() {
       </section>
 
       {/* Approccio & nota informativa */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-slate-50 py-20">
         <div className="mx-auto max-w-5xl px-6">
-          <div className="grid items-start gap-10 md:grid-cols-12">
-            <div className="md:col-span-7">
-              <h2 className="text-2xl md:text-3xl font-semibold text-brand-text mb-2">
+          <div className="grid items-start gap-8 md:grid-cols-12">
+            <div className="md:col-span-7 md:pr-6">
+              <h2 className="text-2xl font-semibold text-brand-text md:text-3xl">
                 Approccio professionale
               </h2>
-              <p className="mt-4 text-gray-700">
+              <p className="mt-5 text-base leading-relaxed text-slate-700">
                 L&apos;approccio psicodinamico e la centralità della relazione terapeutica hanno
                 orientato il mio lavoro clinico e istituzionale, con attenzione alla storia della
                 persona e al significato dei vissuti emotivi.
               </p>
-              <p className="mt-3 text-gray-700">
+              <p className="mt-4 text-base leading-relaxed text-slate-700">
                 Questa prospettiva continua a informare il profilo professionale e i contenuti
                 pubblicati su questo sito.
               </p>
             </div>
             <aside className="md:col-span-5">
-              <div className="rounded-2xl border border-brand-accent bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-brand-text">Nota informativa</h3>
-                <p className="mt-3 text-gray-700">{professionalStatus.availabilityMessage}</p>
-                <p className="mt-3 text-gray-700">{professionalStatus.sitePurposeMessage}</p>
+              <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+                  Nota istituzionale
+                </p>
+                <h3 className="mt-3 text-lg font-semibold text-brand-text">Stato attuale</h3>
+                <p className="mt-3 text-base leading-relaxed text-slate-700">
+                  {professionalStatus.availabilityMessage}
+                </p>
+                <p className="mt-4 text-sm leading-relaxed text-slate-500">
+                  {professionalStatus.sitePurposeMessage}
+                </p>
               </div>
             </aside>
           </div>
@@ -158,44 +174,50 @@ export default function Home() {
       </section>
 
       {/* Credenziali */}
-      <section className="bg-white py-12">
+      <section className="bg-white py-16">
         <div className="mx-auto max-w-5xl px-6">
-          <div className="grid gap-6 rounded-xl border border-gray-200 bg-white p-6 shadow-sm md:grid-cols-3">
+          <div className="grid gap-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:grid-cols-3 md:p-8">
             <div>
-              <p className="text-sm uppercase tracking-wide text-gray-500">Ruolo</p>
-              <p className="mt-1 font-semibold text-brand-text">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+                Ruolo
+              </p>
+              <p className="mt-3 text-lg font-semibold text-brand-text">
                 Dirigente Psicologo – AULSS 7 Pedemontana
               </p>
             </div>
             <div>
-              <p className="text-sm uppercase tracking-wide text-gray-500">Associazione</p>
-              <p className="mt-1 font-semibold text-brand-text">Vicepresidente “La Recherche”</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+                Associazione
+              </p>
+              <p className="mt-3 text-lg font-semibold text-brand-text">Vicepresidente “La Recherche”</p>
             </div>
             <div>
-              <p className="text-sm uppercase tracking-wide text-gray-500">Esperienza</p>
-              <p className="mt-1 font-semibold text-brand-text">20+ anni di lavoro clinico</p>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+                Esperienza
+              </p>
+              <p className="mt-3 text-lg font-semibold text-brand-text">20+ anni di lavoro clinico</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Blog teaser (dinamico) */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-slate-50 py-20">
         <div className="mx-auto max-w-5xl px-6">
-          <h2 className="text-2xl md:text-3xl font-semibold text-brand-text text-center mb-2">
+          <h2 className="text-2xl font-semibold text-brand-text text-center md:text-3xl">
             Approfondimenti
           </h2>
-          <p className="mt-2 text-gray-600 text-center mx-auto max-w-3xl">
+          <p className="mx-auto mt-4 max-w-3xl text-center text-base leading-relaxed text-slate-600">
             Ultimi articoli dal blog.
           </p>
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
             {posts.length > 0
               ? posts.map((p) => (
                   <article
                     key={p.slug}
-                    className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm"
+                    className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
                   >
-                    <time className="text-xs uppercase tracking-wide text-gray-500">
+                    <time className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
                       {fmt(p.date)}
                     </time>
                     <h3 className="mt-2 text-lg font-semibold text-brand-text">
@@ -206,10 +228,10 @@ export default function Home() {
                         {p.title}
                       </Link>
                     </h3>
-                    {p.excerpt && <p className="mt-2 text-gray-700">{p.excerpt}</p>}
+                    {p.excerpt && <p className="mt-3 text-base leading-relaxed text-slate-700">{p.excerpt}</p>}
                     <Link
                       href={`/blog/${p.slug}`}
-                      className="mt-3 inline-block text-brand-primary underline underline-offset-4 hover:no-underline focus-visible:underline"
+                      className="mt-4 inline-block text-sm font-medium text-brand-primary underline underline-offset-4 hover:no-underline focus-visible:underline"
                     >
                       Leggi tutto
                     </Link>
@@ -218,15 +240,15 @@ export default function Home() {
               : [1, 2, 3].map((i) => (
                   <article
                     key={i}
-                    className="rounded-xl border border-gray-200 bg-white p-6 shadow-sm"
+                    className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
                   >
                     <h3 className="text-lg font-semibold text-brand-text">Titolo articolo {i}</h3>
-                    <p className="mt-2 text-gray-700">
+                    <p className="mt-3 text-base leading-relaxed text-slate-700">
                       Breve estratto di 1–2 righe per invogliare alla lettura.
                     </p>
                     <Link
                       href="/blog"
-                      className="mt-3 inline-block text-brand-primary underline underline-offset-4 hover:no-underline focus-visible:underline"
+                      className="mt-4 inline-block text-sm font-medium text-brand-primary underline underline-offset-4 hover:no-underline focus-visible:underline"
                     >
                       Leggi tutto
                     </Link>
@@ -245,13 +267,13 @@ export default function Home() {
       </section>
 
       {/* Contact CTA */}
-      <section className="bg-brand-bg py-16">
+      <section className="bg-white py-20">
         <div className="mx-auto max-w-5xl px-6 text-center">
-          <div className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-brand-primary/5 ring-1 ring-brand-primary/20">
+          <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-slate-100 ring-1 ring-slate-200">
             <EnvelopeIcon className="h-5 w-5 text-brand-primary/80" aria-hidden="true" />
           </div>
-          <h2 className="text-2xl md:text-3xl font-semibold text-brand-text">Hai domande?</h2>
-          <p className="mt-2 text-gray-700">
+          <h2 className="text-2xl font-semibold text-brand-text md:text-3xl">Hai domande?</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-700">
             Per informazioni generali o professionali consulta la pagina{' '}
             <Link
               href="/contatti"
@@ -261,7 +283,7 @@ export default function Home() {
             </Link>
             .
           </p>
-          <p className="mt-4 text-xs text-gray-500">
+          <p className="mt-5 text-sm leading-relaxed text-slate-500">
             Vedi l&apos;informativa su{' '}
             <Link
               href="/privacy"
