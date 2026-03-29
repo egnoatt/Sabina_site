@@ -17,6 +17,6 @@ export const professionalStatus: ProfessionalStatus = {
   sitePurposeMessage: 'Il sito resta online come profilo professionale e informativo.',
   contactMessage:
     'Per comunicazioni generali o professionali è possibile utilizzare i contatti indicati. Non sono attive prese in carico private.',
-  infoCtaLabel: 'Richiedi informazioni generali',
+  infoCtaLabel: 'Informazioni (attività privata sospesa)',
   infoLinkLabel: 'Maggiori informazioni',
 };

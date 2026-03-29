@@ -55,6 +55,9 @@ export default function ContattiPage() {
           Informazioni generali e professionali, con indicazione chiara dello stato attuale
           dell’attività.
         </p>
+        <p className="mt-3 text-sm text-gray-500">
+          Per comunicazioni generali e istituzionali (non per prenotazioni private).
+        </p>
       </section>
 
       {/* Cards: Email + Social */}

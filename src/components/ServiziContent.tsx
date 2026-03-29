@@ -18,7 +18,7 @@ export default function ServiziContent() {
           Ambiti professionali
         </p>
         <h1 className="mt-4 text-3xl font-bold text-brand-text md:text-4xl">
-          Ambiti di Esperienza Clinica e Professionale
+          Ambiti di esperienza clinica
         </h1>
         <p className="mx-auto mt-5 max-w-3xl text-lg leading-relaxed text-slate-600">
           Una panoramica sintetica del percorso clinico e professionale maturato nel tempo

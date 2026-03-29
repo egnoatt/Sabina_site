@@ -8,7 +8,7 @@ const Header = () => {
   const navLinks = [
     { label: 'Home', href: '/' },
     { label: 'Chi Sono', href: '/chi-sono' },
-    { label: 'Servizi', href: '/servizi' },
+    { label: 'Ambiti di esperienza', href: '/servizi' },
     { label: 'Formazione', href: '/formazione' },
     { label: 'Blog', href: '/blog' },
     { label: 'Contatti', href: '/contatti' },
