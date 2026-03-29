@@ -41,3 +41,7 @@ yarn-error.log*
 next-env.d.ts
 *.bak
 .devcontainer/
+
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/keybindings.json
