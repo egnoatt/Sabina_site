@@ -14,23 +14,31 @@ function addDays(date: Date, days: number) {
 }
 
 export default function SiteBanner() {
-  const [visible, setVisible] = useState(false);
+  // Render visible on the server and on the first client paint to avoid
+  // inserting the banner after hydration, which shifts the hero below.
+  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
+    if (professionalStatus.isPrivatePracticeActive) {
+      setVisible(false);
+      return;
+    }
+
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
-      const now = new Date();
-      if (raw) {
-        const until = new Date(raw);
-        if (until > now) {
-          setVisible(false);
-          return;
-        }
+
+      if (!raw) {
+        return;
       }
-      setVisible(true);
+
+      const now = new Date();
+      const until = new Date(raw);
+
+      if (until > now) {
+        setVisible(false);
+      }
     } catch {
-      // Storage unavailable (SSR or privacy mode): show the banner
-      setVisible(true);
+      // Storage unavailable (privacy mode, blocked storage): keep visible
     }
   }, []);
 
@@ -49,7 +57,7 @@ export default function SiteBanner() {
   return (
     <div className="w-full border-b border-slate-200 bg-white/95" role="status" aria-live="polite">
       <div className="mx-auto max-w-5xl px-4 py-4">
-        <div className="flex items-start gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm text-slate-700 shadow-sm md:px-5 md:py-4 md:text-base">
+        <div className="flex min-h-[7rem] items-start gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm text-slate-700 shadow-sm md:min-h-[5.5rem] md:px-5 md:py-4 md:text-base">
           <span className="rounded-full bg-slate-200 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-slate-700">
             Aggiornamento
           </span>
