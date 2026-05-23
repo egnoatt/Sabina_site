@@ -20,6 +20,7 @@ export default function SiteBanner() {
 
   useEffect(() => {
     if (professionalStatus.isPrivatePracticeActive) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- intentionally hides the hydrated banner when public availability changes.
       setVisible(false);
       return;
     }

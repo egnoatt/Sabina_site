@@ -7,7 +7,6 @@ type WithBundleAnalyzer = (opts: { enabled?: boolean }) => (cfg: NextConfig) => 
 let withBundleAnalyzer: WithBundleAnalyzer = () => (cfg) => cfg;
 
 try {
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
   const mod = require('@next/bundle-analyzer');
   withBundleAnalyzer = (mod.default ?? mod) as WithBundleAnalyzer;
 } catch {
