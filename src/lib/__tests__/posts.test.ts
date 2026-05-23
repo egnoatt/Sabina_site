@@ -1,7 +1,6 @@
 import fs from 'fs';
 import os from 'os';
 import path from 'path';
-import { getAllPosts } from '../posts';
 
 // Helper to create temporary markdown posts
 function createMarkdownPost(dir: string, slug: string, date: string) {
@@ -22,7 +21,7 @@ describe('getAllPosts', () => {
     jest.resetModules();
   });
 
-  test('returns posts sorted in descending date order', () => {
+  test('returns posts sorted in descending date order', async () => {
     const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'posts-test-'));
     createMarkdownPost(tempDir, 'first', '2021-01-01');
     createMarkdownPost(tempDir, 'second', '2023-05-10');
@@ -31,6 +30,7 @@ describe('getAllPosts', () => {
     process.chdir(tempDir);
     jest.resetModules();
 
+    const { getAllPosts } = await import('../posts');
     const result = getAllPosts();
     const slugs = result.map(p => p.slug);
     expect(slugs).toEqual(['second', 'third', 'first']);
