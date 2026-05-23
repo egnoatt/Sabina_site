@@ -86,12 +86,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }),
           }}
         />
-        <link
-          rel="alternate"
-          type="application/rss+xml"
-          title="Sabina Scattola — Blog"
-          href="/api/feed"
-        />
       </head>
       <body className="flex flex-col min-h-screen">
         <a

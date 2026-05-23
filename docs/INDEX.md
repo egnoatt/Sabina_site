@@ -1,27 +1,19 @@
-# 📚 Documentazione — Sabina Scattola Site
+# Documentazione pubblica - Sabina Scattola Site
 
-Questo indice raccoglie e collega tutti i documenti di progetto presenti nella cartella `docs/`.
+Questa cartella raccoglie solo documentazione pubblica e tecnica essenziale del sito.
 
-## 📄 Documenti principali
+## Contenuto
 
-- [PROGETTO.md](./PROGETTO.md) — Specifica e obiettivi del progetto
-- [ROADMAP.md](./ROADMAP.md) — Evoluzione pianificata, milestones e obiettivi
-- [ProgressLog.md](./ProgressLog.md) — Diario tecnico, attività svolte e avanzamento
-- [TASKS.md](./TASKS.md) — Elenco delle attività completate, in corso e future
-- [INDEX.md](./INDEX.md) — Indice e panoramica dei documenti
+- [README principale](../README.md): panoramica del progetto, stack e setup locale.
+- [Struttura del progetto](./site-structure.md): mappa sintetica dei file principali.
 
-## ✍️ Articoli e contenuti
+## Stato pubblico
 
-- [articolo-1000.md](./articolo-1000.md) — Bozza articolo/approfondimento editoriale
+- Il sito è una presenza web pubblica e informativa.
+- I contenuti editoriali pubblicati sono in `src/content/blog`.
+- La configurazione SEO principale è distribuita tra `src/app/layout.tsx`, `src/app/sitemap.ts` e `src/app/robots.ts`.
+- L'anteprima social usa un'immagine Open Graph statica in `public/og.png`.
 
-## 🔗 Collegamenti rapidi
+## Confini della documentazione
 
-- [README.md](../README.md) — Panoramica sintetica del progetto
-- [SEO & Accessibilità (in PROGETTO.md)](./PROGETTO.md#seo--accessibilità)
-- [Design Tokens / Palette Brand (in PROGETTO.md)](./PROGETTO.md#design-tokens--palette-brand)
-- [Roadmap v1.1 (in ROADMAP.md)](./ROADMAP.md#roadmap-v1-1)
-- Deploy online: _(aggiungere URL Vercel o dominio definitivo)_
-
----
-
-➡️ Utilizzare questo `INDEX.md` come punto d’ingresso per orientarsi tra i vari documenti, tutti aggiornati e allineati alla versione v1.1.
+Non mantenere in questa cartella bozze private, log operativi, note di meeting, dati personali non necessari, credenziali, file esportati temporanei o pianificazioni interne.
