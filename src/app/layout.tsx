@@ -1,10 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-const inter = Inter({ subsets: ['latin'] });
 const siteUrl = 'https://sabinascattola.com';
 const homeTitle = 'Sabina Scattola – Psicologa e Psicoterapeuta';
 const homeDescription =
@@ -50,25 +48,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="it" className={inter.className}>
+    <html lang="it">
       <head>
         <link
           rel="preload"
           href="/fonts/OpenSans/OpenSans-Regular.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/OpenSans/OpenSans-Bold.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/OpenSans/OpenSans-Italic.woff2"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
