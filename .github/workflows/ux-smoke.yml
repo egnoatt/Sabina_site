@@ -2,9 +2,13 @@ name: UX browser smoke
 
 on:
   pull_request:
-  push:
-    branches:
-      - codex/sabina-ux-design-20261014
+    paths:
+      - 'src/components/Header.tsx'
+      - 'src/app/page.tsx'
+      - 'src/app/globals.css'
+      - 'tailwind.config.js'
+      - 'scripts/ux_smoke.py'
+      - '.github/workflows/ux-smoke.yml'
 
 permissions:
   contents: read
