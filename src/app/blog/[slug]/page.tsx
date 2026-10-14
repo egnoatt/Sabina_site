@@ -50,19 +50,19 @@ export default async function BlogPost({ params }: PageProps) {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://sabinascattola.com/',
+        item: 'https://www.sabinascattola.com/',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Blog',
-        item: 'https://sabinascattola.com/blog',
+        item: 'https://www.sabinascattola.com/blog',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: post.data.title,
-        item: `https://sabinascattola.com/blog/${slug}`,
+        item: `https://www.sabinascattola.com/blog/${slug}`,
       },
     ],
   };
@@ -111,7 +111,7 @@ export default async function BlogPost({ params }: PageProps) {
               '@type': 'Article',
               headline: post.data.title,
               keywords: post.data.tags ? post.data.tags.join(', ') : undefined,
-              image: post.data.image ? `https://sabinascattola.com${post.data.image}` : undefined,
+              image: post.data.image ? `https://www.sabinascattola.com${post.data.image}` : undefined,
               datePublished: post.data.date,
               dateModified: post.data.updated ?? post.data.date,
               author: {
@@ -121,11 +121,11 @@ export default async function BlogPost({ params }: PageProps) {
               publisher: {
                 '@type': 'Organization',
                 name: 'Sabina Scattola',
-                url: 'https://sabinascattola.com',
+                url: 'https://www.sabinascattola.com',
               },
               mainEntityOfPage: {
                 '@type': 'WebPage',
-                '@id': `https://sabinascattola.com/blog/${slug}`,
+                '@id': `https://www.sabinascattola.com/blog/${slug}`,
               },
               description: post.data.excerpt || post.content.substring(0, 160).replace(/\n/g, ' '),
             }),

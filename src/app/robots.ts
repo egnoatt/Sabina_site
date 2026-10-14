@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://sabinascattola.com/sitemap.xml',
+    sitemap: 'https://www.sabinascattola.com/sitemap.xml',
   };
 }
