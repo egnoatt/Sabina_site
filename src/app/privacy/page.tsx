@@ -1,85 +1,64 @@
-// src/app/privacy/page.tsx
-import { ShieldCheckIcon } from '@heroicons/react/24/outline';
+import type { Metadata } from 'next';
+import Link from 'next/link';
 
+export const metadata: Metadata = {
+  title: 'Privacy e trattamento dei dati | Sabina Scattola',
+  description: 'Informazioni sul trattamento dei dati nella navigazione e nelle comunicazioni al sito.',
+  alternates: { canonical: '/privacy' },
+};
+
+/**
+ * REVIEW GATE: testo provvisorio. NON pubblicare finché il titolare non avrà
+ * verificato: identità e recapiti, hosting e log, basi giuridiche, tempi di
+ * conservazione, destinatari, trasferimenti, diritti e tecnologie di tracking.
+ */
 export default function PrivacyPolicy() {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
-      {/* Hero Section */}
-      <section className="relative flex flex-col justify-center items-center text-center py-32 bg-gradient-to-r from-[#2e7d32] to-[#102027]">
-        <ShieldCheckIcon className="h-16 w-16 text-white/70 mb-4" />
-        <h1 className="text-5xl md:text-7xl font-bold text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
-          Privacy Policy
-        </h1>
-        <p className="mt-4 text-lg md:text-xl text-white/80 italic drop-shadow-sm">
-          Informazioni sulla privacy e trattamento dati
+    <main className="mx-auto max-w-3xl px-6 py-12 text-base leading-relaxed text-slate-700 md:py-16">
+      <h1 className="text-3xl font-bold text-slate-900 md:text-4xl">
+        Privacy e trattamento dei dati
+      </h1>
+      <p className="mt-6 rounded-xl border border-amber-300 bg-amber-50 p-4 text-sm text-amber-950">
+        Informativa in revisione. Prima della pubblicazione definitiva devono essere
+        confermati dal titolare del sito i trattamenti effettivi e i relativi dettagli.
+      </p>
+
+      <section className="mt-10 space-y-4">
+        <h2 className="text-2xl font-semibold text-slate-900">Navigazione e contatti</h2>
+        <p>
+          Il sito non presenta moduli per prenotazioni o raccolta di informazioni cliniche.
+          La navigazione può comportare il trattamento di dati tecnici, come indirizzi IP
+          e log di accesso, da parte dei servizi infrastrutturali utilizzati.
+        </p>
+        <p>
+          Se invii volontariamente un&apos;email, l&apos;indirizzo del mittente e il contenuto
+          del messaggio vengono utilizzati per gestire la comunicazione. Ti invitiamo a
+          non trasmettere dati sanitari o dettagli clinici tramite email ordinaria.
+        </p>
+        <p>
+          Il banner informativo utilizza la memoria locale del browser (localStorage)
+          per ricordare, per un massimo di 30 giorni, la scelta di chiudere l&apos;avviso.
+          L&apos;eventuale presenza di altre tecnologie di archiviazione o misurazione
+          dipende anche dalla configurazione effettiva dei servizi di hosting.
         </p>
       </section>
 
-      {/* Contenuto centrale */}
-      <section className="max-w-3xl mx-auto px-6 py-12 space-y-6 text-gray-700 text-base leading-relaxed">
-        <h2 className="text-2xl font-semibold text-brand-text">Privacy Policy del sito</h2>
-        <p className="text-lg">
-          Questo sito non raccoglie, utilizza o conserva alcun tipo di dato personale degli utenti.
-          Non utilizziamo cookie per profilazione o tracciamento e non raccogliamo dati personali
-          tramite form, email o altri mezzi. La navigazione è completamente anonima e sicura.
+      <section className="mt-10 space-y-4">
+        <h2 className="text-2xl font-semibold text-slate-900">
+          Informazioni da verificare
+        </h2>
+        <p>
+          Identità e contatti del titolare, finalità e basi giuridiche dei trattamenti,
+          destinatari, eventuali trasferimenti, tempi di conservazione, diritti degli
+          interessati e modalità di reclamo saranno precisati al termine della revisione.
         </p>
-        <p className="text-lg">
-          Per eventuali chiarimenti o maggiori informazioni, potete contattare direttamente il
-          titolare del sito utilizzando le informazioni presenti nella pagina Contatti.
+        <p>
+          Per comunicazioni relative al sito consulta la pagina{' '}
+          <Link className="font-medium text-[#1F5C4A] underline" href="/contatti">
+            Contatti
+          </Link>.
         </p>
-        {/* Sezione Cookie Policy */}
-        <section className="max-w-3xl mx-auto px-6 py-12 space-y-6 text-gray-700">
-          <h2 className="text-2xl font-semibold text-brand-text">Cookie Policy</h2>
-          <p className="text-lg">
-            Questo sito utilizza esclusivamente cookie tecnici necessari per garantire il corretto
-            funzionamento e la navigabilità del sito web. Non vengono utilizzati cookie di
-            profilazione né cookie analitici di terze parti.
-          </p>
-          <p className="text-lg">
-            I cookie tecnici non richiedono consenso esplicito da parte degli utenti poiché sono
-            essenziali per il funzionamento del sito. Tuttavia, è possibile disabilitare o eliminare
-            questi cookie modificando le impostazioni del proprio browser web.
-          </p>
-          <p className="text-lg">
-            Per ulteriori informazioni su come gestire o disabilitare i cookie tramite browser,
-            visita i seguenti link:
-          </p>
-          <ul className="list-disc list-inside text-lg">
-            <li>
-              <a
-                href="https://support.google.com/chrome/answer/95647"
-                className="text-brand-primary hover:underline focus-visible:underline underline-offset-4"
-              >
-                Google Chrome
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://support.mozilla.org/it/kb/Gestione%20dei%20cookie"
-                className="text-brand-primary hover:underline focus-visible:underline underline-offset-4"
-              >
-                Mozilla Firefox
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://support.apple.com/it-it/guide/safari/sfri11471/mac"
-                className="text-brand-primary hover:underline focus-visible:underline underline-offset-4"
-              >
-                Apple Safari
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://support.microsoft.com/it-it/windows/eliminare-e-gestire-i-cookie-168dab11-0753-043d-7c16-ede5947fc64d"
-                className="text-brand-primary hover:underline focus-visible:underline underline-offset-4"
-              >
-                Microsoft Edge
-              </a>
-            </li>
-          </ul>
-        </section>
       </section>
-    </div>
+    </main>
   );
 }

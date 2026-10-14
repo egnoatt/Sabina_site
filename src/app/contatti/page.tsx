@@ -51,6 +51,7 @@ export default function ContattiPage() {
         </p>
         <p className="mt-3 text-sm text-gray-500">
           Per comunicazioni generali e istituzionali (non per prenotazioni private).
+          Non inviare via email ordinaria informazioni sanitarie o dettagli clinici personali.
         </p>
       </section>
 

@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { professionalStatus } from '@/config/professionalStatus';
 
 export const metadata: Metadata = {
-  title: 'Aggiornamenti | Sabina Scattola',
+  title: 'Archivio aggiornamenti | Sabina Scattola',
   description:
-    'Aggiornamenti professionali e informativi relativi al profilo della Dott.ssa Sabina Scattola.',
+    'Archivio storico delle comunicazioni professionali della Dott.ssa Sabina Scattola.',
 };
 
 import { ChatBubbleOvalLeftEllipsisIcon } from '@heroicons/react/24/outline';
@@ -53,8 +53,8 @@ export default function News() {
       {/* Hero Section */}
       <div className="text-center mb-12">
         <ChatBubbleOvalLeftEllipsisIcon className="mx-auto h-16 w-16 text-brand-primary" />
-        <h1 className="mt-4 text-4xl font-bold text-brand-text">News</h1>
-        <p className="mt-2 text-xl text-gray-500">Aggiornamenti professionali e informativi</p>
+        <h1 className="mt-4 text-4xl font-bold text-brand-text">Archivio aggiornamenti</h1>
+        <p className="mt-2 text-xl text-gray-500">Comunicazioni professionali pubblicate nel 2025</p>
       </div>
 
       {/* Lista delle News */}

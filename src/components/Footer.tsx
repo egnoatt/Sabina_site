@@ -1,4 +1,4 @@
-import { GlobeAltIcon, MapPinIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
+import { GlobeAltIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
 import { professionalStatus } from '@/config/professionalStatus';
 
 const Footer = () => {
@@ -11,22 +11,6 @@ const Footer = () => {
         <hr className="mx-auto my-8 max-w-5xl border-t border-slate-700" />
         <div className="mt-6 flex flex-col items-center gap-3 text-sm leading-relaxed text-slate-200 sm:flex-row sm:justify-center sm:gap-6">
           <a
-            href="https://www.google.com/maps/search/?api=1&query=Via+XI+Settembre+2001+3,+36065+Mussolente+VI"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-slate-200 transition hover:text-white focus-visible:underline underline-offset-4"
-          >
-            <MapPinIcon className="w-4 h-4" aria-hidden="true" />
-            Via XI Settembre 2001 3, 36065 Mussolente (VI)
-          </a>
-          <a
-            href="tel:+393884279266"
-            className="flex items-center gap-2 text-slate-200 transition hover:text-white focus-visible:underline underline-offset-4"
-          >
-            <PhoneIcon className="w-4 h-4" aria-hidden="true" />
-            +39 388 4279266
-          </a>
-          <a
             href="mailto:sabinascat@live.com"
             className="flex items-center gap-2 text-slate-200 transition hover:text-white focus-visible:underline underline-offset-4"
           >
@@ -34,9 +18,10 @@ const Footer = () => {
             sabinascat@live.com
           </a>
         </div>
+        <p className="mt-4 text-sm text-slate-300">Nessuna prenotazione privata attualmente disponibile.</p>
         <div className="mt-3 flex justify-center gap-4 items-center">
           <a
-            href="https://www.facebook.com/sabinascattola"
+            href="https://www.facebook.com/sabinascattolapsicologa"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-slate-200 transition hover:text-white focus-visible:underline underline-offset-4"
