@@ -15,7 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/privacy',
     '/approfondimenti/clinici',
     '/approfondimenti/curiosita',
-    '/approfondimenti/curiosita/clinici',
   ];
 
   const pages: MetadataRoute.Sitemap = staticPaths.map((path) => ({
