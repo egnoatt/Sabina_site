@@ -24,7 +24,7 @@ interface Post {
 
 export function getAllPosts(): Post[] {
   const fileNames = fs.readdirSync(postsDirectory);
-  const posts: Post[] = fileNames.map((fileName) => {
+  const posts: Post[] = fileNames.filter((fileName) => fileName.endsWith('.md')).map((fileName) => {
     const slug = fileName.replace(/\.md$/, '');
     const { data } = getPostContent(slug);
     return {

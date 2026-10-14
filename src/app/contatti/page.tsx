@@ -7,12 +7,12 @@ export default function ContattiPage() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sabinascattola.com/' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.sabinascattola.com/' },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Contatti',
-        item: 'https://sabinascattola.com/contatti',
+        item: 'https://www.sabinascattola.com/contatti',
       },
     ],
   };

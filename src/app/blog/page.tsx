@@ -7,6 +7,18 @@ import BlogContent from '@/components/BlogContent';
 export const metadata = {
   title: 'Blog | Sabina Scattola – Psicologa e Psicoterapeuta',
   description: 'Articoli e approfondimenti su psicologia e psicoterapia.',
+  alternates: { canonical: '/blog' },
+  openGraph: {
+    type: 'website',
+    title: 'Blog | Sabina Scattola',
+    description: 'Articoli e approfondimenti su psicologia e psicoterapia.',
+    url: '/blog',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog | Sabina Scattola',
+    description: 'Articoli e approfondimenti su psicologia e psicoterapia.',
+  },
 };
 
 export type Post = {
@@ -43,8 +55,8 @@ export default function BlogPage() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sabinascattola.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://sabinascattola.com/blog' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.sabinascattola.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.sabinascattola.com/blog' },
     ],
   };
 
