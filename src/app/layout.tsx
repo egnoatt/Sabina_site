@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-const siteUrl = 'https://sabinascattola.com';
+const siteUrl = 'https://www.sabinascattola.com';
 const homeTitle = 'Sabina Scattola – Psicologa e Psicoterapeuta';
 const homeDescription =
   'Profilo professionale della Dott.ssa Sabina Scattola. Attività libero-professionale attualmente sospesa. Informazioni su esperienza clinica, formazione e approfondimenti.';
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: homeDescription,
   keywords:
     'Sabina Scattola, psicologa, psicoterapeuta, profilo professionale, esperienza clinica, formazione, approfondimenti psicologici',
-  authors: [{ name: 'Sabina Scattola', url: 'https://sabinascattola.com' }],
+  authors: [{ name: 'Sabina Scattola', url: 'https://www.sabinascattola.com' }],
   alternates: {
     canonical: '/',
   },
