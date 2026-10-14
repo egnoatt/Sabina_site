@@ -1,8 +1,11 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { AcademicCapIcon, EnvelopeIcon, SparklesIcon } from '@heroicons/react/24/outline';
 import { getAllPosts } from '@/lib/posts';
 import { professionalStatus } from '@/config/professionalStatus';
 import SiteBanner from '../components/SiteBanner';
+
+export const metadata: Metadata = { alternates: { canonical: '/' } };
 
 type BlogTeaser = {
   title: string;

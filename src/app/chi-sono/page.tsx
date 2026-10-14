@@ -7,12 +7,12 @@ export default function ChiSono() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sabinascattola.com/' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.sabinascattola.com/' },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Chi sono',
-        item: 'https://sabinascattola.com/chi-sono',
+        item: 'https://www.sabinascattola.com/chi-sono',
       },
     ],
   };

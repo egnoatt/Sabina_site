@@ -6,12 +6,12 @@ export default function Servizi() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sabinascattola.com/' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.sabinascattola.com/' },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Ambiti di esperienza',
-        item: 'https://sabinascattola.com/servizi',
+        item: 'https://www.sabinascattola.com/servizi',
       },
     ],
   };

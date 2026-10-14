@@ -15,9 +15,6 @@ export const metadata: Metadata = {
   keywords:
     'Sabina Scattola, psicologa, psicoterapeuta, profilo professionale, esperienza clinica, formazione, approfondimenti psicologici',
   authors: [{ name: 'Sabina Scattola', url: 'https://www.sabinascattola.com' }],
-  alternates: {
-    canonical: '/',
-  },
   openGraph: {
     type: 'website',
     locale: 'it_IT',

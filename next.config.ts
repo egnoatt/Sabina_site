@@ -14,6 +14,9 @@ try {
 }
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [{ source: '/approfondimenti/curiosita/clinici', destination: '/approfondimenti/clinici', permanent: true }];
+  },
   compress: true,
   images: {
     remotePatterns: [
