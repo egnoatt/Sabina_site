@@ -24,8 +24,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const articles: MetadataRoute.Sitemap = getAllPosts().map((post) => ({
     url: `${baseUrl}/blog/${encodeURIComponent(post.slug)}`,
-    // Use the editorial date, not the current build date.
-    ...(post.date ? { lastModified: new Date(post.date) } : {}),
+    // Last significant edit only; publication date alone is not a reliable lastmod.
+    ...(typeof post.updated === 'string' && !Number.isNaN(Date.parse(post.updated))
+      ? { lastModified: new Date(post.updated) }
+      : {}),
   }));
 
   return [...pages, ...articles];
