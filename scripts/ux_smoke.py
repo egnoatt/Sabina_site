@@ -48,7 +48,8 @@ def check_width(browser, width: int) -> None:
         assert not nav_links.is_visible(), "Escape did not close menu"
         menu.click()
         nav_links.get_by_role("link", name="Blog").click()
-        assert page.url.endswith("/blog"), "Blog navigation failed"
+        page.wait_for_url("**/blog", timeout=10000)
+        assert page.url.endswith("/blog"), f"Blog navigation failed: {page.url}"
         assert not nav_links.is_visible(), "Menu did not close on navigation"
         page.screenshot(path=str(ARTIFACTS / f"blog-mobile-{width}.png"), full_page=True)
     else:
