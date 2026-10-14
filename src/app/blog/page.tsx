@@ -8,6 +8,17 @@ export const metadata = {
   title: 'Blog | Sabina Scattola – Psicologa e Psicoterapeuta',
   description: 'Articoli e approfondimenti su psicologia e psicoterapia.',
   alternates: { canonical: '/blog' },
+  openGraph: {
+    type: 'website',
+    title: 'Blog | Sabina Scattola',
+    description: 'Articoli e approfondimenti su psicologia e psicoterapia.',
+    url: '/blog',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog | Sabina Scattola',
+    description: 'Articoli e approfondimenti su psicologia e psicoterapia.',
+  },
 };
 
 export type Post = {
