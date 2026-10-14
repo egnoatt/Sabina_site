@@ -40,6 +40,10 @@ def check_width(browser, width: int) -> None:
         assert menu.is_visible(), f"Menu button not visible at {width}px"
         assert not nav_links.is_visible(), f"Collapsed menu visible at {width}px"
         assert menu.get_attribute("aria-expanded") == "false"
+        banner_text = page.locator('[role="status"] p').first
+        assert banner_text.bounding_box()["width"] >= width * 0.62, (
+            f"Status banner is too narrow at {width}px"
+        )
         menu.click()
         assert nav_links.is_visible(), f"Menu did not open at {width}px"
         assert menu.get_attribute("aria-expanded") == "true"
