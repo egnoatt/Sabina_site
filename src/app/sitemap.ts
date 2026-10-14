@@ -1,9 +1,10 @@
 import type { MetadataRoute } from 'next';
+import { getAllPosts } from '@/lib/posts';
 
 const baseUrl = 'https://sabinascattola.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
+  const staticPaths = [
     '',
     '/chi-sono',
     '/servizi',
@@ -11,11 +12,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/formazione',
     '/news',
     '/blog',
+    '/privacy',
     '/approfondimenti/clinici',
     '/approfondimenti/curiosita',
     '/approfondimenti/curiosita/clinici',
-  ].map((path) => ({
+  ];
+
+  const pages: MetadataRoute.Sitemap = staticPaths.map((path) => ({
     url: `${baseUrl}${path}`,
-    lastModified: new Date(),
   }));
+
+  const articles: MetadataRoute.Sitemap = getAllPosts().map((post) => ({
+    url: `${baseUrl}/blog/${encodeURIComponent(post.slug)}`,
+    // Use the editorial date, not the current build date.
+    ...(post.date ? { lastModified: new Date(post.date) } : {}),
+  }));
+
+  return [...pages, ...articles];
 }

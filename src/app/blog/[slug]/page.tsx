@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Markdown from 'react-markdown';
 import { getPostContent } from '@/lib/posts';
 import fs from 'fs';
@@ -19,7 +20,24 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
-// Pagina dinamica corretta per Next.js >=13.3 (incluso 15.3)
+// Metadati specifici per ciascun articolo; evitano titoli e canonical generici.
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = getPostContent(slug);
+  const title = String(post.data.title ?? 'Approfondimento');
+  const description = String(post.data.description ?? post.data.excerpt ?? post.content.slice(0, 160)).trim();
+  const url = `/blog/${encodeURIComponent(slug)}`;
+
+  return {
+    title: `${title} | Sabina Scattola`,
+    description,
+    alternates: { canonical: url },
+    openGraph: { type: 'article', title, description, url },
+    twitter: { card: 'summary_large_image', title, description },
+  };
+}
+
+// Pagina articolo
 export default async function BlogPost({ params }: PageProps) {
   const { slug } = await params;
   const post = await getPostContent(slug);
@@ -95,7 +113,7 @@ export default async function BlogPost({ params }: PageProps) {
               keywords: post.data.tags ? post.data.tags.join(', ') : undefined,
               image: post.data.image ? `https://sabinascattola.com${post.data.image}` : undefined,
               datePublished: post.data.date,
-              dateModified: new Date().toISOString(),
+              dateModified: post.data.updated ?? post.data.date,
               author: {
                 '@type': 'Person',
                 name: 'Sabina Scattola',

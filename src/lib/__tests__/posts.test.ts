@@ -26,6 +26,7 @@ describe('getAllPosts', () => {
     createMarkdownPost(tempDir, 'first', '2021-01-01');
     createMarkdownPost(tempDir, 'second', '2023-05-10');
     createMarkdownPost(tempDir, 'third', '2022-06-15');
+    fs.writeFileSync(path.join(tempDir, 'src', 'content', 'blog', 'NOT_A_POST.txt'), 'ignored');
 
     process.chdir(tempDir);
     jest.resetModules();

@@ -7,6 +7,7 @@ import BlogContent from '@/components/BlogContent';
 export const metadata = {
   title: 'Blog | Sabina Scattola – Psicologa e Psicoterapeuta',
   description: 'Articoli e approfondimenti su psicologia e psicoterapia.',
+  alternates: { canonical: '/blog' },
 };
 
 export type Post = {
