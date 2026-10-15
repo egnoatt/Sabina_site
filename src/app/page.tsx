@@ -1,301 +1,237 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { AcademicCapIcon, EnvelopeIcon, SparklesIcon } from '@heroicons/react/24/outline';
 import { getAllPosts } from '@/lib/posts';
 import { professionalStatus } from '@/config/professionalStatus';
-import SiteBanner from '../components/SiteBanner';
+import SiteBanner from '@/components/SiteBanner';
+import EditorialBotanical from '@/components/EditorialBotanical';
 
 export const metadata: Metadata = { alternates: { canonical: '/' } };
 
 type BlogTeaser = {
-  title: string;
-  date?: string;
-  excerpt?: string;
   slug: string;
+  title?: string;
+  date?: string;
+  description?: string;
+  excerpt?: string;
 };
 
+const experience = [
+  { title: 'Ansia', text: 'Comprendere i sintomi per ritrovare respiro e ritmo.' },
+  { title: 'Umore', text: 'Riconnettersi a energie e interessi in modo graduale.' },
+  { title: 'Stress lavoro', text: 'Riorganizzare confini e priorità per maggiore equilibrio.' },
+  { title: 'Caregiver', text: 'Sostenere chi assiste, senza dimenticare se stessi.' },
+  { title: 'Cognitivo', text: 'Valutazioni e interventi in età adulta e anziana.' },
+  { title: 'Relazioni', text: 'Leggere i pattern relazionali e trovare nuove strade.' },
+];
+
+const chapters = [
+  { label: '01', title: 'Il mio percorso', description: 'Esperienza e approccio', href: '/chi-sono' },
+  { label: '02', title: 'Formazione', description: 'Studi e aggiornamento', href: '/formazione' },
+  { label: '03', title: 'Gli articoli', description: 'Riflessioni e approfondimenti', href: '/blog' },
+];
+
+function formatDate(value?: string): string {
+  if (!value) return '';
+  const date = new Date(value);
+  return Number.isNaN(date.getTime())
+    ? String(value)
+    : new Intl.DateTimeFormat('it-IT', { day: 'numeric', month: 'long', year: 'numeric' }).format(date);
+}
+
 export default function Home() {
-  const posts: BlogTeaser[] = getAllPosts().slice(0, 3) as BlogTeaser[];
-  const fmt = (iso?: string) =>
-    iso ? new Intl.DateTimeFormat('it-IT', { dateStyle: 'medium' }).format(new Date(iso)) : '';
+  const posts = getAllPosts().slice(0, 3) as BlogTeaser[];
 
   return (
-    <div className="flex flex-col min-h-screen bg-white">
-      {/* Site-wide informational banner (non-blocking) */}
+    <div className="bg-editorial-paper text-brand-text">
       <SiteBanner />
 
-      {/* HERO */}
-      <section className="relative isolate overflow-hidden bg-gradient-to-br from-[#1F5C4A] via-[#5C8976] to-[#F7FAF9] py-20 md:py-28">
-        <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
-          <svg
-            viewBox="0 0 1440 900"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            className="h-full w-full"
-          >
-            <defs>
-              <linearGradient id="heroGrad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stopColor="#1F5C4A" />
-                <stop offset="60%" stopColor="#78A18A" />
-                <stop offset="100%" stopColor="#ffffff" />
-              </linearGradient>
-              <linearGradient id="wave1" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0%" stopColor="#ffffff" stopOpacity="0.20" />
-                <stop offset="100%" stopColor="#ffffff" stopOpacity="0.0" />
-              </linearGradient>
-              <linearGradient id="wave2" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0%" stopColor="#ffffff" stopOpacity="0.28" />
-                <stop offset="100%" stopColor="#ffffff" stopOpacity="0.0" />
-              </linearGradient>
-            </defs>
-            <rect width="1440" height="900" fill="url(#heroGrad)" />
-            <path
-              d="M0 610 C 240 560, 480 660, 720 610 C 960 560, 1200 660, 1440 610 L 1440 900 L 0 900 Z"
-              fill="url(#wave1)"
-            />
-            <path
-              d="M0 720 C 240 680, 480 760, 720 720 C 960 680, 1200 760, 1440 720 L 1440 900 L 0 900 Z"
-              fill="url(#wave2)"
-            />
-          </svg>
-        </div>
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 -z-10 [background:linear-gradient(to_bottom,rgba(16,32,39,0.32),rgba(16,32,39,0.14),transparent)]"
-        />
-        <div className="relative z-10 mx-auto max-w-5xl px-6">
-          <div className="mx-auto max-w-4xl rounded-[2rem] border border-white/20 bg-[#102027]/90 px-6 py-10 text-center shadow-[0_24px_80px_rgba(16,32,39,0.12)] backdrop-blur-sm md:px-12 md:py-14">
-            <SparklesIcon className="mx-auto mb-6 h-14 w-14 text-white/90" aria-hidden="true" />
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/75">
-              Sito personale
+      <section aria-labelledby="home-title" className="overflow-hidden border-b border-editorial-line">
+        <div className="mx-auto grid max-w-6xl items-center gap-8 px-6 pb-16 pt-14 sm:pt-20 lg:min-h-[650px] lg:grid-cols-[minmax(0,1.13fr)_minmax(0,0.87fr)] lg:gap-12 lg:py-20">
+          <div className="relative z-10 max-w-2xl">
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-brand-primary sm:text-sm">
+              Sito personale · Psicologia e psicoterapia
             </p>
-            <h1 className="mt-4 text-4xl font-bold tracking-tight text-white md:text-6xl">
-              Sabina Scattola
+            <h1 id="home-title" className="mt-7 font-display text-[clamp(3.35rem,7vw,6.5rem)] font-normal leading-[1.03] tracking-[-0.045em] text-brand-text">
+              Sabina<br />Scattola
             </h1>
-            <p className="mt-4 text-xl font-medium text-white md:text-2xl">
+            <p className="mt-5 font-display text-[clamp(1.5rem,2.5vw,2rem)] leading-tight text-brand-primary">
               Psicologa e Psicoterapeuta
             </p>
-            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-white/85 md:text-lg">
+            <p className="mt-7 max-w-[54ch] text-base leading-8 text-slate-700 sm:text-lg">
               Esperienza clinica, formazione e approfondimenti in ambito psicologico e
               psicoterapeutico.
             </p>
-            <p className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-white/70 md:text-base">
+            <p className="mt-4 max-w-[60ch] text-sm leading-7 text-slate-600 sm:text-base">
               Questo sito personale raccoglie informazioni sul percorso e sull&apos;esperienza
               di Sabina Scattola. L&apos;attività privata è chiusa.
             </p>
-
-            <div className="mt-10 flex items-center justify-center">
-              <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
-                <Link
-                  href="/contatti"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-brand-text shadow-sm hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
-                >
-                  <EnvelopeIcon className="h-5 w-5" aria-hidden="true" />
-                  {professionalStatus.infoCtaLabel}
-                </Link>
-                <Link
-                  href="/chi-sono"
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-white/35 px-6 py-3 text-sm font-medium text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
-                >
-                  <AcademicCapIcon className="h-5 w-5" aria-hidden="true" />
-                  Chi sono
-                </Link>
-              </div>
+            <div className="mt-9 flex flex-wrap items-center gap-4">
+              <Link
+                href="/blog"
+                className="inline-flex min-h-12 items-center justify-center rounded-full bg-brand-primary px-6 py-3 font-semibold text-white transition-colors hover:bg-brand-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-primary"
+              >
+                Leggi gli articoli <span aria-hidden="true" className="ml-3">↗</span>
+              </Link>
+              <Link
+                href="/chi-sono"
+                className="inline-flex min-h-12 items-center justify-center border-b border-brand-primary px-2 py-3 font-semibold text-brand-primary transition-colors hover:text-brand-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-primary"
+              >
+                Il mio percorso <span aria-hidden="true" className="ml-3">→</span>
+              </Link>
             </div>
           </div>
+          <EditorialBotanical />
         </div>
       </section>
 
-      {/* Per chi e per cosa (pillars) */}
-      <section className="bg-white py-20">
-        <div className="mx-auto max-w-5xl px-6">
-          <h2 className="text-2xl font-semibold text-brand-text text-center md:text-3xl">
-            Ambiti di esperienza clinica
-          </h2>
-          <p className="mx-auto mt-4 max-w-3xl text-center text-base leading-relaxed text-slate-600">
-            Una sintesi dei principali ambiti clinici e professionali maturati nel corso
-            dell&apos;esperienza.
-          </p>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              { title: 'Ansia', text: 'Comprendere i sintomi per ritrovare respiro e ritmo.' },
-              { title: 'Umore', text: 'Riconnettersi a energie e interessi in modo graduale.' },
-              {
-                title: 'Stress lavoro',
-                text: 'Riorganizzare confini e priorità per maggiore equilibrio.',
-              },
-              { title: 'Caregiver', text: 'Sostenere chi assiste, senza dimenticare se stessi.' },
-              { title: 'Cognitivo', text: 'Valutazioni e interventi in età adulta e anziana.' },
-              { title: 'Relazioni', text: 'Leggere i pattern relazionali e trovare nuove strade.' },
-            ].map((item) => (
-              <div
-                key={item.title}
-                className="rounded-2xl border border-slate-200 bg-slate-50/70 p-6 shadow-sm"
-              >
-                <h3 className="text-lg font-semibold text-brand-text">{item.title}</h3>
-                <p className="mt-3 text-base leading-relaxed text-slate-700">{item.text}</p>
+      <nav aria-label="Esplora il sito" className="border-b border-editorial-line bg-white/70">
+        <div className="mx-auto grid max-w-6xl divide-y divide-editorial-line px-6 md:grid-cols-3 md:divide-x md:divide-y-0">
+          {chapters.map((chapter) => (
+            <Link
+              key={chapter.href}
+              href={chapter.href}
+              className="group flex items-start gap-4 py-8 transition-colors hover:text-brand-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-brand-primary md:px-6 md:first:pl-0 md:last:pr-0"
+            >
+              <span className="mt-1 text-xs font-bold tracking-widest text-brand-primary">{chapter.label}</span>
+              <span className="flex-1">
+                <span className="block font-display text-2xl leading-snug">{chapter.title}</span>
+                <span className="mt-1 block text-sm text-slate-600">{chapter.description}</span>
+              </span>
+              <span aria-hidden="true" className="mt-1 text-brand-primary transition-transform group-hover:translate-x-1">↗</span>
+            </Link>
+          ))}
+        </div>
+      </nav>
+
+      <section aria-labelledby="experience-heading" className="bg-white py-16 sm:py-24">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="grid gap-5 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:items-end">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-primary">Esperienza</p>
+              <h2 id="experience-heading" className="mt-4 max-w-xl font-display text-4xl leading-tight sm:text-5xl">
+                Ambiti di esperienza clinica
+              </h2>
+            </div>
+            <p className="max-w-[58ch] text-base leading-8 text-slate-700 md:justify-self-end">
+              Una sintesi dei principali ambiti clinici e professionali maturati nel corso
+              dell&apos;esperienza.
+            </p>
+          </div>
+          <div className="mt-12 grid gap-x-10 gap-y-0 sm:grid-cols-2 lg:grid-cols-3">
+            {experience.map((item, index) => (
+              <div key={item.title} className="border-t border-editorial-line py-6">
+                <span className="text-xs font-semibold tracking-widest text-brand-primary">
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <h3 className="mt-3 font-display text-2xl leading-tight">{item.title}</h3>
+                <p className="mt-3 text-base leading-7 text-slate-700">{item.text}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Approccio & nota informativa */}
-      <section className="bg-slate-50 py-20">
-        <div className="mx-auto max-w-5xl px-6">
-          <div className="grid items-start gap-8 md:grid-cols-12">
-            <div className="md:col-span-7 md:pr-6">
-              <h2 className="text-2xl font-semibold text-brand-text md:text-3xl">
-                Approccio professionale
-              </h2>
-              <p className="mt-5 text-base leading-relaxed text-slate-700">
-                L&apos;approccio psicodinamico e la centralità della relazione terapeutica hanno
-                orientato il mio lavoro clinico e istituzionale, con attenzione alla storia della
-                persona e al significato dei vissuti emotivi.
-              </p>
-              <p className="mt-4 text-base leading-relaxed text-slate-700">
-                Questa prospettiva continua a informare il profilo professionale e i contenuti
-                pubblicati su questo sito.
-              </p>
-            </div>
-            <aside className="md:col-span-5">
-              <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
-                  Nota istituzionale
-                </p>
-                <h3 className="mt-3 text-lg font-semibold text-brand-text">Stato attuale</h3>
-                <p className="mt-3 text-base leading-relaxed text-slate-700">
-                  {professionalStatus.availabilityMessage}
-                </p>
-                <p className="mt-4 text-sm leading-relaxed text-slate-500">
-                  {professionalStatus.sitePurposeMessage}
-                </p>
-              </div>
-            </aside>
+      <section aria-labelledby="approach-heading" className="border-y border-editorial-line bg-editorial-mist py-16 sm:py-24">
+        <div className="mx-auto grid max-w-6xl gap-12 px-6 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,0.7fr)] lg:gap-20">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-primary">Un percorso</p>
+            <h2 id="approach-heading" className="mt-4 font-display text-4xl leading-tight sm:text-5xl">Approccio professionale</h2>
+            <p className="mt-6 max-w-[62ch] text-base leading-8 text-slate-700">
+              L&apos;approccio psicodinamico e la centralità della relazione terapeutica hanno
+              orientato il mio lavoro clinico e istituzionale, con attenzione alla storia della
+              persona e al significato dei vissuti emotivi.
+            </p>
+            <p className="mt-4 max-w-[62ch] text-base leading-8 text-slate-700">
+              Questa prospettiva continua a informare il profilo professionale e i contenuti
+              pubblicati su questo sito.
+            </p>
           </div>
+          <aside className="border-l-2 border-brand-primary pl-6 lg:self-center">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-primary">Stato attuale</p>
+            <p className="mt-4 font-display text-2xl leading-snug text-brand-text">
+              {professionalStatus.availabilityMessage}
+            </p>
+            <p className="mt-4 text-sm leading-7 text-slate-700">{professionalStatus.sitePurposeMessage}</p>
+          </aside>
         </div>
       </section>
 
-      {/* Credenziali */}
-      <section className="bg-white py-16">
-        <div className="mx-auto max-w-5xl px-6">
-          <div className="grid gap-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:grid-cols-3 md:p-8">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
-                Ruolo
-              </p>
-              <p className="mt-3 text-lg font-semibold text-brand-text">
-                Dirigente Psicologo – AULSS 7 Pedemontana
-              </p>
+      <section aria-label="Profilo in sintesi" className="bg-white py-12 sm:py-16">
+        <div className="mx-auto grid max-w-6xl gap-8 px-6 sm:grid-cols-3">
+          {[
+            { label: 'Ruolo', value: 'Dirigente Psicologo – AULSS 7 Pedemontana' },
+            { label: 'Associazione', value: 'Vicepresidente “La Recherche”' },
+            { label: 'Esperienza', value: '20+ anni di lavoro clinico' },
+          ].map((item) => (
+            <div key={item.label} className="border-t border-editorial-line pt-5">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-primary">{item.label}</p>
+              <p className="mt-3 font-display text-xl leading-snug sm:text-2xl">{item.value}</p>
             </div>
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
-                Associazione
-              </p>
-              <p className="mt-3 text-lg font-semibold text-brand-text">Vicepresidente “La Recherche”</p>
-            </div>
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
-                Esperienza
-              </p>
-              <p className="mt-3 text-lg font-semibold text-brand-text">20+ anni di lavoro clinico</p>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 
-      {/* Blog teaser (dinamico) */}
-      <section className="bg-slate-50 py-20">
-        <div className="mx-auto max-w-5xl px-6">
-          <h2 className="text-2xl font-semibold text-brand-text text-center md:text-3xl">
-            Approfondimenti
-          </h2>
-          <p className="mx-auto mt-4 max-w-3xl text-center text-base leading-relaxed text-slate-600">
-            Ultimi articoli dal blog.
-          </p>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {posts.length > 0
-              ? posts.map((p) => (
-                  <article
-                    key={p.slug}
-                    className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
-                  >
-                    <time className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
-                      {fmt(p.date)}
-                    </time>
-                    <h3 className="mt-2 text-lg font-semibold text-brand-text">
-                      <Link
-                        href={`/blog/${p.slug}`}
-                        className="hover:underline focus-visible:underline underline-offset-4"
-                      >
-                        {p.title}
-                      </Link>
-                    </h3>
-                    {p.excerpt && <p className="mt-3 text-base leading-relaxed text-slate-700">{p.excerpt}</p>}
+      <section aria-labelledby="articles-heading" className="border-t border-editorial-line bg-editorial-paper py-16 sm:py-24">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="flex flex-wrap items-end justify-between gap-5">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-primary">Letture</p>
+              <h2 id="articles-heading" className="mt-4 font-display text-4xl leading-tight sm:text-5xl">Approfondimenti</h2>
+              <p className="mt-4 max-w-[58ch] text-base leading-8 text-slate-700">Ultimi articoli dal blog.</p>
+            </div>
+            <Link href="/blog" className="inline-flex min-h-11 items-center font-semibold text-brand-primary underline underline-offset-4 hover:text-brand-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-primary">
+              Tutti gli articoli <span aria-hidden="true" className="ml-2">↗</span>
+            </Link>
+          </div>
+          {posts.length > 0 ? (
+            <div className="mt-10 grid gap-8 md:grid-cols-3">
+              {posts.map((post) => (
+                <article key={post.slug} className="border-t border-editorial-line pt-6">
+                  {post.date && <time dateTime={String(post.date)} className="text-sm text-slate-600">{formatDate(String(post.date))}</time>}
+                  <h3 className="mt-3 font-display text-[1.65rem] leading-tight text-brand-text">
                     <Link
-                      href={`/blog/${p.slug}`}
-                      className="mt-4 inline-block text-sm font-medium text-brand-primary underline underline-offset-4 hover:no-underline focus-visible:underline"
+                      href={'/blog/' + encodeURIComponent(post.slug)}
+                      className="underline decoration-transparent underline-offset-4 transition-colors hover:text-brand-primary hover:decoration-current focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-primary"
                     >
-                      Leggi tutto
+                      {post.title ?? 'Approfondimento'}
                     </Link>
-                  </article>
-                ))
-              : [1, 2, 3].map((i) => (
-                  <article
-                    key={i}
-                    className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+                  </h3>
+                  {(post.excerpt || post.description) && (
+                    <p className="mt-4 text-base leading-7 text-slate-700">{post.excerpt || post.description}</p>
+                  )}
+                  <Link
+                    href={'/blog/' + encodeURIComponent(post.slug)}
+                    className="mt-5 inline-flex min-h-11 items-center text-sm font-semibold text-brand-primary underline underline-offset-4 hover:text-brand-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-primary"
                   >
-                    <h3 className="text-lg font-semibold text-brand-text">Titolo articolo {i}</h3>
-                    <p className="mt-3 text-base leading-relaxed text-slate-700">
-                      Breve estratto di 1–2 righe per invogliare alla lettura.
-                    </p>
-                    <Link
-                      href="/blog"
-                      className="mt-4 inline-block text-sm font-medium text-brand-primary underline underline-offset-4 hover:no-underline focus-visible:underline"
-                    >
-                      Leggi tutto
-                    </Link>
-                  </article>
-                ))}
-          </div>
-          <div className="mt-8 text-center">
-            <Link
-              href="/blog"
-              className="text-brand-primary underline underline-offset-4 hover:no-underline focus-visible:underline"
-            >
-              Tutti gli articoli
-            </Link>
-          </div>
+                    Leggi l&apos;articolo <span aria-hidden="true" className="ml-2">→</span>
+                  </Link>
+                </article>
+              ))}
+            </div>
+          ) : (
+            <p className="mt-10 text-base text-slate-700">Nessun articolo disponibile al momento.</p>
+          )}
         </div>
       </section>
 
-      {/* Contact CTA */}
-      <section className="bg-white py-20">
-        <div className="mx-auto max-w-5xl px-6 text-center">
-          <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-slate-100 ring-1 ring-slate-200">
-            <EnvelopeIcon className="h-5 w-5 text-brand-primary/80" aria-hidden="true" />
+      <section aria-labelledby="contacts-heading" className="border-t border-editorial-line bg-white py-14 sm:py-20">
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-primary">Informazioni</p>
+            <h2 id="contacts-heading" className="mt-3 font-display text-3xl sm:text-4xl">Contatti e informazioni</h2>
+            <p className="mt-3 max-w-[60ch] text-base leading-7 text-slate-700">
+              Per informazioni generali o professionali consulta la pagina contatti.
+              Le prestazioni private non sono disponibili.
+            </p>
           </div>
-          <h2 className="text-2xl font-semibold text-brand-text md:text-3xl">Hai domande?</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-700">
-            Per informazioni generali o professionali consulta la pagina{' '}
-            <Link
-              href="/contatti"
-              className="underline underline-offset-4 hover:no-underline focus-visible:underline"
-            >
-              contatti
-            </Link>
-            .
-          </p>
-          <p className="mt-5 text-sm leading-relaxed text-slate-500">
-            Vedi l&apos;informativa su{' '}
-            <Link
-              href="/privacy"
-              className="underline underline-offset-4 hover:no-underline focus-visible:underline"
-            >
-              privacy
-            </Link>
-            .
-          </p>
+          <Link href="/contatti" className="inline-flex min-h-12 shrink-0 items-center justify-center rounded-full border border-brand-primary px-6 py-3 font-semibold text-brand-primary transition-colors hover:bg-editorial-mist focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-primary">
+            Vai ai contatti <span aria-hidden="true" className="ml-3">↗</span>
+          </Link>
+        </div>
+        <div className="mx-auto mt-6 max-w-6xl px-6">
+          <Link href="/privacy" className="text-sm text-brand-primary underline underline-offset-4 hover:text-brand-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-primary">
+            Informativa privacy
+          </Link>
         </div>
       </section>
     </div>

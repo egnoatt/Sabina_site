@@ -61,6 +61,15 @@ def check_width(browser, width: int) -> None:
         assert nav_links.is_visible(), f"Desktop navigation missing at {width}px"
         page.screenshot(path=str(ARTIFACTS / f"home-desktop-{width}.png"), full_page=True)
 
+    # Essenza vertical slice: every responsive size must render one real article.
+    article_url = ROOT + "/blog/cosa-devi-sapere"
+    article_response = page.goto(article_url, wait_until="networkidle", timeout=20000)
+    assert article_response is not None and article_response.status == 200
+    assert page.locator("article h1").count() == 1
+    assert page.locator("article .editorial-prose").count() == 1
+    assert page.get_by_role("link", name="Torna agli articoli").is_visible()
+    page.screenshot(path=str(ARTIFACTS / f"article-{width}.png"), full_page=True)
+
     dimensions = page.evaluate(
         "() => ({screen: document.documentElement.clientWidth,"
         " content: document.documentElement.scrollWidth})"

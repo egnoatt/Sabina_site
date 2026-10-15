@@ -1,0 +1,49 @@
+name: Essenza axe accessibility review
+
+on:
+  pull_request:
+    paths:
+      - 'src/app/page.tsx'
+      - 'src/app/blog/[slug]/page.tsx'
+      - 'src/components/EditorialBotanical.tsx'
+      - 'src/app/globals.css'
+      - 'tailwind.config.js'
+      - 'scripts/essenza_accessibility_audit.py'
+      - '.github/workflows/essenza-accessibility.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  axe-sample:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install project and audit tools
+        run: |
+          npm ci
+          npm install --no-save --ignore-scripts --package-lock=false axe-core@4.10.3
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+      - name: Build Next.js
+        run: npm run build
+      - name: Audit homepage and article at responsive widths
+        run: python scripts/essenza_accessibility_audit.py
+      - name: Preserve structured findings
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: essenza-axe-review
+          path: |
+            artifacts/essenza-a11y/axe-report.json
+            essenza-a11y-server.log
+          if-no-files-found: ignore
+          retention-days: 7

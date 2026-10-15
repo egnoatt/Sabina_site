@@ -10,9 +10,8 @@ import Link from 'next/link';
 export async function generateStaticParams() {
   const postsDir = path.join(process.cwd(), 'src', 'content', 'blog');
   const files = fs.readdirSync(postsDir);
-
-  return files.map((filename) => ({
-    slug: filename.replace('.md', ''),
+  return files.filter((filename) => filename.endsWith('.md')).map((filename) => ({
+    slug: filename.replace(/\.md$/, ''),
   }));
 }
 
@@ -26,10 +25,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const post = getPostContent(slug);
   const title = String(post.data.title ?? 'Approfondimento');
   const description = String(post.data.description ?? post.data.excerpt ?? post.content.slice(0, 160)).trim();
-  const url = `/blog/${encodeURIComponent(slug)}`;
+  const url = '/blog/' + encodeURIComponent(slug);
 
   return {
-    title: `${title} | Sabina Scattola`,
+    title: title + ' | Sabina Scattola',
     description,
     alternates: { canonical: url },
     openGraph: { type: 'article', title, description, url },
@@ -37,103 +36,93 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-// Pagina articolo
+function formatDate(value: unknown): string {
+  if (!value) return '';
+  const raw = String(value);
+  const date = new Date(raw);
+  return Number.isNaN(date.getTime())
+    ? raw
+    : new Intl.DateTimeFormat('it-IT', { day: 'numeric', month: 'long', year: 'numeric' }).format(date);
+}
+
+// Editorial template only; Markdown article content remains unchanged.
 export default async function BlogPost({ params }: PageProps) {
   const { slug } = await params;
-  const post = await getPostContent(slug);
+  const post = getPostContent(slug);
+  const title = String(post.data.title ?? 'Approfondimento');
+  const date = post.data.date;
 
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'Home',
-        item: 'https://www.sabinascattola.com/',
-      },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: 'Blog',
-        item: 'https://www.sabinascattola.com/blog',
-      },
-      {
-        '@type': 'ListItem',
-        position: 3,
-        name: post.data.title,
-        item: `https://www.sabinascattola.com/blog/${slug}`,
-      },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.sabinascattola.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.sabinascattola.com/blog' },
+      { '@type': 'ListItem', position: 3, name: title, item: 'https://www.sabinascattola.com/blog/' + slug },
     ],
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen py-16">
-      <nav
-        aria-label="Breadcrumb"
-        className="container max-w-4xl mx-auto px-6 -mt-4 mb-6 text-sm text-gray-600"
-      >
-        <ol className="flex items-center space-x-2">
-          <li>
-            <Link href="/" className="hover:underline focus-visible:underline underline-offset-4">
-              Home
-            </Link>
-          </li>
-          <li>/</li>
-          <li>
-            <Link
-              href="/blog"
-              className="hover:underline focus-visible:underline underline-offset-4"
-            >
-              Blog
-            </Link>
-          </li>
-          <li>/</li>
-          <li aria-current="page" className="font-semibold text-brand-text truncate max-w-[60ch]">
-            {post.data.title}
-          </li>
+    <div className="min-h-screen bg-editorial-paper pb-16 pt-8 sm:pb-24 sm:pt-12">
+      <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl px-6 text-sm text-slate-600">
+        <ol className="flex flex-wrap items-center gap-2">
+          <li><Link href="/" className="text-brand-primary underline-offset-4 hover:underline focus-visible:underline">Home</Link></li>
+          <li aria-hidden="true">/</li>
+          <li><Link href="/blog" className="text-brand-primary underline-offset-4 hover:underline focus-visible:underline">Blog</Link></li>
+          <li aria-hidden="true">/</li>
+          <li aria-current="page" className="max-w-full min-w-0 break-words text-brand-text">{title}</li>
         </ol>
       </nav>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-      />
-      <article className="container max-w-4xl mx-auto bg-white p-12 rounded-xl shadow-xl">
-        <header className="border-b pb-6 mb-8">
-          <h1 className="font-bold text-4xl text-brand-text mb-4">{post.data.title}</h1>
-          <time className="text-gray-500 italic">{post.data.date}</time>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+
+      <article className="mx-auto mt-10 max-w-5xl px-6 sm:mt-14">
+        <header className="max-w-[800px]">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-primary">Approfondimenti · Archivio</p>
+          <h1 className="mt-5 max-w-[19ch] break-words font-display text-[clamp(2.55rem,5.5vw,4.85rem)] font-normal leading-[1.08] tracking-[-0.035em] text-brand-text">
+            {title}
+          </h1>
+          {date && (
+            <time dateTime={String(date)} className="mt-6 block text-base text-slate-600">
+              {formatDate(date)}
+            </time>
+          )}
         </header>
+
+        <div className="mt-9 h-px w-full bg-editorial-line sm:mt-12" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Article',
-              headline: post.data.title,
+              headline: title,
               keywords: post.data.tags ? post.data.tags.join(', ') : undefined,
-              image: post.data.image ? `https://www.sabinascattola.com${post.data.image}` : undefined,
+              image: post.data.image ? 'https://www.sabinascattola.com' + post.data.image : undefined,
               datePublished: post.data.date,
               dateModified: post.data.updated ?? post.data.date,
-              author: {
-                '@type': 'Person',
-                name: 'Sabina Scattola',
-              },
-              publisher: {
-                '@type': 'Organization',
-                name: 'Sabina Scattola',
-                url: 'https://www.sabinascattola.com',
-              },
+              author: { '@type': 'Person', name: 'Sabina Scattola' },
+              publisher: { '@type': 'Person', name: 'Sabina Scattola', url: 'https://www.sabinascattola.com' },
               mainEntityOfPage: {
                 '@type': 'WebPage',
-                '@id': `https://www.sabinascattola.com/blog/${slug}`,
+                '@id': 'https://www.sabinascattola.com/blog/' + slug,
               },
               description: post.data.excerpt || post.content.substring(0, 160).replace(/\n/g, ' '),
             }),
           }}
         />
-        <section className="prose mx-auto">
+
+        <div className="editorial-prose prose prose-lg mt-10 max-w-[70ch] text-slate-700 sm:mt-14">
           <Markdown>{post.content}</Markdown>
-        </section>
+        </div>
+        <footer className="mt-16 max-w-[70ch] border-t border-editorial-line pt-8">
+          <Link
+            href="/blog"
+            className="inline-flex min-h-11 items-center font-semibold text-brand-primary underline underline-offset-4 hover:text-brand-text focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-primary"
+          >
+            <span aria-hidden="true" className="mr-2">←</span> Torna agli articoli
+          </Link>
+        </footer>
       </article>
     </div>
   );
