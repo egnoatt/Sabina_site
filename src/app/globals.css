@@ -31,7 +31,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-sans: 'Open Sans', sans-serif;
+  --font-sans: 'OpenSans', Arial, sans-serif;
   --font-mono: monospace;
 }
 
