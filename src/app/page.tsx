@@ -20,7 +20,7 @@ export default function Home() {
     iso ? new Intl.DateTimeFormat('it-IT', { dateStyle: 'medium' }).format(new Date(iso)) : '';
 
   return (
-    <main className="flex flex-col min-h-screen bg-white">
+    <div className="flex flex-col min-h-screen bg-white">
       {/* Site-wide informational banner (non-blocking) */}
       <SiteBanner />
 
@@ -298,6 +298,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Error({ reset }: { reset: () => void }) {
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16 text-center">
+    <div className="mx-auto max-w-3xl px-6 py-16 text-center">
       <h1 className="text-3xl md:text-4xl font-semibold text-[#1F5C4A]">
         Si è verificato un errore
       </h1>
@@ -19,6 +19,6 @@ export default function Error({ reset }: { reset: () => void }) {
           Home
         </Link>
       </div>
-    </main>
+    </div>
   );
 }

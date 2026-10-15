@@ -1,0 +1,33 @@
+name: Accessible landmarks
+
+on:
+  pull_request:
+    paths:
+      - 'src/app/**'
+      - 'scripts/landmark_smoke.py'
+      - '.github/workflows/landmarks.yml'
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  landmark-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: npm ci
+      - run: |
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+      - run: npm run build
+      - run: python scripts/landmark_smoke.py
