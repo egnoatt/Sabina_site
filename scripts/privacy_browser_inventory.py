@@ -46,6 +46,15 @@ def run():
                 storage_keys = page.evaluate(
                     "() => ({local: Object.keys(localStorage), session: Object.keys(sessionStorage)})"
                 )
+                # Separately inspect the user-triggered technical banner preference.
+                page.goto(ROOT, wait_until="networkidle", timeout=30000)
+                close_button = page.get_by_role("button", name="Chiudi avviso")
+                assert close_button.is_visible(), "Expected informational banner"
+                close_button.click()
+                saved_keys = page.evaluate("() => Object.keys(localStorage)")
+                assert "siteBannerDismissedUntil-v2" in saved_keys, (
+                    "Closing the banner did not save expected preference"
+                )
                 details = {
                     "viewport": name,
                     "pages": PAGES,
@@ -54,6 +63,7 @@ def run():
                     "cookie_names": sorted(set(c["name"] for c in cookies)),
                     "local_storage_key_names": sorted(storage_keys["local"]),
                     "session_storage_key_names": sorted(storage_keys["session"]),
+                    "local_storage_after_banner_close_key_names": sorted(saved_keys),
                     "limits": [
                         "Production site only; platform settings require owner confirmation",
                         "Browser default context only, not all user regions or consent variants",
