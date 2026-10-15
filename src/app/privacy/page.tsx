@@ -39,7 +39,6 @@ export default function PrivacyPolicy() {
           <Link href="/contatti" className="text-brand-primary underline underline-offset-4">
             Contatti
           </Link>.
-          Non è necessario un indirizzo email separato per queste richieste.
         </p>
       </section>
 
