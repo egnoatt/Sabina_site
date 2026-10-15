@@ -2,6 +2,8 @@
 
 **Data:** 15 ottobre 2026 · **Natura:** nota di rilascio pubblica, senza informazioni riservate.
 
+**Aggiornamento successivo:** vedere l'addendum in fondo a questa nota per lo stato del registrar Namecheap e della PR privacy #11.
+
 ## Obiettivo della sessione
 
 Migliorare affidabilità tecnica, SEO, navigazione mobile e accessibilità del sito informativo; predisporre la revisione privacy/editoriale; registrare la baseline visuale per cambi futuri.
@@ -20,7 +22,7 @@ Produzione osservata su **https://www.sabinascattola.com**, Vercel `sabina-site`
 
 Il riferimento versionato è [Design System v1.0](../design-system.md). I token CURRENT sono su `tailwind.config.js`; tipografia OpenSans locale su `globals.css`. La pagina di design è una specifica **descrittiva**: un redesign futuro richiede nuova proposta, screenshot e verifiche.
 
-## In corso / non approvato
+## In corso / non approvato — snapshot prima dei merge successivi
 
 - [PR #11 — Privacy & Editorial](https://github.com/egnoatt/Sabina_site/pull/11): **DRAFT / BLOCKED**. Preparati inventario e struttura articolo 13 GDPR in bozza; nessun merge automatico. Mancano conferma del titolare, retentions, fornitori, diritti, cookie/analytics e validazione editoriale di Sabina. Non dichiarare conformità GDPR o pubblicare una bozza incompleta.
 - [Issue #13 — Dominio apex](https://github.com/egnoatt/Sabina_site/issues/13): **DEFERRED** per volontà del proprietario. È stato riferito un trasferimento del registrar da SiteGround a fornitore non ancora confermato; i nameserver visibili in Vercel possono rimanere SiteGround. Nessuna modifica DNS richiesta.
@@ -42,3 +44,13 @@ Il riferimento versionato è [Design System v1.0](../design-system.md). I token 
 4. **Evoluzione grafica:** partire da `docs/design-system.md`, creare candidate e review senza alterare silenziosamente la baseline.
 
 **Decisione di closeout:** sessione tecnica/documentale registrata; attività aperte tracciate su GitHub. Closeout di documentazione non equivale alla chiusura della PR #11 o della issue #13.
+
+
+## Addendum — 15 ottobre 2026, aggiornamento di stato
+
+- **Registrar del dominio `sabinascattola.com`: Namecheap**, confermato dal proprietario indicando il portale [Namecheap](https://ap.www.namecheap.com). Il trasferimento da SiteGround è dichiarato completato, senza dettagli disponibili su data o operazione contrattuale.
+- **Provider DNS / nameserver:** distinto dal registrar. Vercel continua a rilevare `ns1.siteground.net` e `ns2.siteground.net` al controllo del 15 ottobre; non è verificato chi oggi abbia il controllo effettivo della zona. Il dominio apex senza `www` risulta non configurato su Vercel. Nessun cambio DNS, NS o redirect è stato eseguito. Attività **rinviata** in [issue #13](https://github.com/egnoatt/Sabina_site/issues/13).
+- **PR #11 Privacy & Editorial:** successivamente al closeout originale, l'utente ha effettuato il [merge della PR #11](https://github.com/egnoatt/Sabina_site/pull/11) (`f220a4a5d5bda872b4edf52abe9a69a69773c82d`), con deploy Vercel `READY`. La pagina privacy pubblicata contiene **ancora una bozza esplicitamente in revisione** e richiede integrazioni GDPR documentate in [issue #17](https://github.com/egnoatt/Sabina_site/issues/17). Merge tecnico e conformità privacy sono fatti distinti.
+- **Design System:** baseline disponibile in [`docs/design-system.md`](../design-system.md), invariata; nessun redesign introdotto con questo addendum.
+
+**Stato del closeout:** i lavori tecnici completati restano registrati; DNS e informativa definitiva sono open action tracciate, non chiuse.
