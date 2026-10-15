@@ -23,7 +23,7 @@ La pagina `/privacy` è **pubblicata e senza avviso DRAFT** dopo le PR #19 e #21
 | Funzioni di contatto | **VERIFIED IN CODE** | Solo collegamento `mailto:`; nessun modulo web per appuntamenti o dati sanitari. I contenuti delle email ricevute sono un trattamento distinto. |
 | Casella email | **OWNER CONFIRMED / PROVIDER POLICY** | `sabinascat@live.com`, servizio Outlook.com consumer secondo informativa Microsoft. Policy Microsoft verificabile, ma regole di conservazione della titolare non ancora dichiarate. [Microsoft Privacy](https://www.microsoft.com/it-it/privacy/privacystatement). |
 | Retention dei messaggi della titolare | **UNKNOWN / BLOCKING** | Sabina deve indicare se conserva le conversazioni, per quanto tempo o secondo quale criterio, e come gestisce richieste di cancellazione. Non inventare 30/90/365 giorni. |
-| Retention tecnica Vercel | **PARTIAL / BLOCKING** | Vercel espone log di breve termine e attribuisce al cliente la responsabilità di eventuali drain per conservazione lunga. L'API del progetto non indica una durata contrattuale del trattamento dei log CDN. Nessun drain configurato per il progetto; questo **non** significa nessun log. [Shared responsibility](https://vercel.com/docs/security/shared-responsibility). |
+| Retention tecnica Vercel | **PARTIAL / BLOCKING** | [Vercel Runtime Logs](https://vercel.com/docs/logs/runtime) indica **1 giorno** di retention runtime sul piano Pro standard e **30 giorni** con Observability Plus; la presenza dell'add-on nel workspace non è verificata. Questo limite di visibilità dei *runtime logs* **non descrive necessariamente tutti i log CDN/rete, build log o service-generated data**. Nessun drain configurato. [Shared responsibility](https://vercel.com/docs/security/shared-responsibility). |
 | Log Drains e project connectors | **VERIFIED NONE** | API Vercel: `list_drains(projectId)` vuoto, `list_project_connector_connections` vuoto. La mancata presenza non esclude subprocessor della piattaforma o destinatari della posta elettronica. |
 | Base giuridica per navigazione/sicurezza | **CANDIDATE, NOT APPROVED** | Art. 6(1)(f) GDPR (legittimo interesse alla sicurezza e alla fruizione tecnica), da valutare e documentare con relativo bilanciamento. Non attribuire una base a Vercel automaticamente. |
 | Base giuridica per comunicazioni volontarie | **CANDIDATE, NOT APPROVED** | Art. 6(1)(f) per gestire e rispondere a contatti generali, previa valutazione. Art. 6(1)(b) non si presume quando non esiste offerta di prestazioni private. Il solo invio di un'email non equivale automaticamente a consenso GDPR. |
@@ -44,6 +44,8 @@ La pagina `/privacy` è **pubblicata e senza avviso DRAFT** dopo le PR #19 e #21
 - [GDPR artt. 6, 12–13, 28](https://eur-lex.europa.eu/eli/reg/2016/679/oj/ita)
 - [Garante — Cookie e strumenti di tracciamento](https://www.garanteprivacy.it/faq/Cookie)
 - [Vercel — Data Processing Addendum](https://vercel.com/legal/dpa)
+- [Vercel — Runtime Logs, limiti di retention](https://vercel.com/docs/logs/runtime)
+- [Vercel — Observability Plus](https://vercel.com/docs/observability/observability-plus)
 - [Vercel — Shared Responsibility](https://vercel.com/docs/security/shared-responsibility)
 - [Microsoft — Informativa privacy](https://www.microsoft.com/it-it/privacy/privacystatement)
 
