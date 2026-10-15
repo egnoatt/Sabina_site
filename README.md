@@ -1,8 +1,10 @@
-# Sabina Scattola - Sito ufficiale
+# Sabina Scattola — Sito personale
 
 [sabinascattola.com](https://www.sabinascattola.com)
 
-Sito web pubblico sviluppato con **Next.js 16**, **TypeScript**, **Tailwind CSS 3**, App Router e Vercel.
+Sito personale, informativo e divulgativo; l'attività privata è chiusa e non sono disponibili prenotazioni.
+
+Il sito è sviluppato con **Next.js 16**, **TypeScript**, **Tailwind CSS 3**, App Router e Vercel.
 Il repository contiene il codice del sito, i contenuti editoriali pubblici e una documentazione tecnica essenziale.
 
 ![Anteprima Open Graph](public/og.png)
@@ -30,7 +32,7 @@ Poi apri [http://localhost:3000](http://localhost:3000).
 
 - [Documentazione pubblica](./docs/INDEX.md)
 - [Struttura del progetto](./docs/site-structure.md)
-- [Design System v1.0 — colori, tipografia, componenti e regole](./docs/design-system.md)
+- [Design System v2.0 — Essenza, homepage e template articoli](./docs/design-system.md)
 - [Nota di release/closeout — 15 ottobre 2026](./docs/releases/2026-10-15-site-hardening.md)
 
 La cartella `docs/` contiene solo documentazione tecnica pubblica, design system e note di rilascio prive di dati riservati. Bozze private, credenziali, log operativi e pianificazioni interne non appartengono a questa documentazione.
@@ -41,6 +43,7 @@ La cartella `docs/` contiene solo documentazione tecnica pubblica, design system
 - Pagine principali: home, chi sono, formazione, servizi, blog, approfondimenti, contatti, privacy
 - Blog basato su Markdown locale
 - Metadata SEO con sitemap e robots
+- Essenza v2.0 pubblicato sulla homepage e sul template degli articoli; altre pagine mantengono il design precedente
 - Componenti condivisi per header, footer, contenuti blog, servizi e banner informativo
 - Test unitari configurati per le utilità blog
 
