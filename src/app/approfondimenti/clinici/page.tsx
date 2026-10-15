@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function ApprofondimentiClinici() {
   return (
-    <main className="mx-auto max-w-5xl px-6 py-10 text-base leading-relaxed">
+    <div className="mx-auto max-w-5xl px-6 py-10 text-base leading-relaxed">
       <nav aria-label="Breadcrumb" className="mb-6 text-sm text-gray-600">
         <ol className="flex items-center space-x-2">
           <li>
@@ -36,13 +36,13 @@ export default function ApprofondimentiClinici() {
                 '@type': 'ListItem',
                 position: 1,
                 name: 'Home',
-                item: 'https://sabinascattola.com/',
+                item: 'https://www.sabinascattola.com/',
               },
               {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Approfondimenti clinici',
-                item: 'https://sabinascattola.com/approfondimenti/clinici',
+                item: 'https://www.sabinascattola.com/approfondimenti/clinici',
               },
             ],
           }),
@@ -95,6 +95,6 @@ export default function ApprofondimentiClinici() {
           {professionalStatus.infoCtaLabel}
         </Link>
       </section>
-    </main>
+    </div>
   );
 }

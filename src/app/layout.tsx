@@ -1,11 +1,9 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-const inter = Inter({ subsets: ['latin'] });
-const siteUrl = 'https://sabinascattola.com';
+const siteUrl = 'https://www.sabinascattola.com';
 const homeTitle = 'Sabina Scattola – Psicologa e Psicoterapeuta';
 const homeDescription =
   'Profilo professionale della Dott.ssa Sabina Scattola. Attività libero-professionale attualmente sospesa. Informazioni su esperienza clinica, formazione e approfondimenti.';
@@ -16,10 +14,7 @@ export const metadata: Metadata = {
   description: homeDescription,
   keywords:
     'Sabina Scattola, psicologa, psicoterapeuta, profilo professionale, esperienza clinica, formazione, approfondimenti psicologici',
-  authors: [{ name: 'Sabina Scattola', url: 'https://sabinascattola.com' }],
-  alternates: {
-    canonical: '/',
-  },
+  authors: [{ name: 'Sabina Scattola', url: 'https://www.sabinascattola.com' }],
   openGraph: {
     type: 'website',
     locale: 'it_IT',
@@ -50,29 +45,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="it" className={inter.className}>
+    <html lang="it">
       <head>
-        <link
-          rel="preload"
-          href="/fonts/OpenSans/OpenSans-Regular.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/OpenSans/OpenSans-Bold.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/OpenSans/OpenSans-Italic.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

@@ -7,18 +7,18 @@ export default function ChiSono() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sabinascattola.com/' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.sabinascattola.com/' },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Chi sono',
-        item: 'https://sabinascattola.com/chi-sono',
+        item: 'https://www.sabinascattola.com/chi-sono',
       },
     ],
   };
 
   return (
-    <main className="mx-auto max-w-5xl px-6 py-12 text-base leading-relaxed md:py-16">
+    <div className="mx-auto max-w-5xl px-6 py-12 text-base leading-relaxed md:py-16">
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="mb-6 text-sm text-gray-600">
         <ol className="flex items-center space-x-2">
@@ -147,6 +147,6 @@ export default function ChiSono() {
           {professionalStatus.infoCtaLabel}
         </Link>
       </div>
-    </main>
+    </div>
   );
 }

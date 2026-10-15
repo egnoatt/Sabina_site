@@ -6,6 +6,8 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: { brand: { primary: '#1F5C4A', text: '#172E29', accent: '#BFD8CC' } },
+      fontFamily: { sans: ['OpenSans', 'Arial', 'sans-serif'] },
       typography: {
         DEFAULT: {
           css: {

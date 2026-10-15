@@ -29,3 +29,9 @@ La versione precedente dichiarava in modo assoluto che nessun dato personale ven
 - [ ] Lint, TypeScript, Jest, build
 - [ ] Controllo navigazione e leggibilità desktop/mobile
 - [ ] Conferma esplicita del contenuto da parte di Sabina prima del merge
+
+## Allineamento al baseline GitHub (15 ottobre 2026)
+
+- Branch riallineato ai merge SEO #10, UX #12 e accessibilità #15, senza pubblicare alcun contenuto di questa PR.
+- Tutte le pagine conservano un unico landmark `main` fornito dal layout globale.
+- **Stato: ancora DRAFT/BLOCKED.** Informativa provvisoria non idonea al merge finché non viene approvata e completata.

@@ -1,8 +1,11 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { AcademicCapIcon, EnvelopeIcon, SparklesIcon } from '@heroicons/react/24/outline';
 import { getAllPosts } from '@/lib/posts';
 import { professionalStatus } from '@/config/professionalStatus';
 import SiteBanner from '../components/SiteBanner';
+
+export const metadata: Metadata = { alternates: { canonical: '/' } };
 
 type BlogTeaser = {
   title: string;
@@ -17,7 +20,7 @@ export default function Home() {
     iso ? new Intl.DateTimeFormat('it-IT', { dateStyle: 'medium' }).format(new Date(iso)) : '';
 
   return (
-    <main className="flex flex-col min-h-screen bg-white">
+    <div className="flex flex-col min-h-screen bg-white">
       {/* Site-wide informational banner (non-blocking) */}
       <SiteBanner />
 
@@ -61,7 +64,7 @@ export default function Home() {
           className="absolute inset-0 -z-10 [background:linear-gradient(to_bottom,rgba(16,32,39,0.32),rgba(16,32,39,0.14),transparent)]"
         />
         <div className="relative z-10 mx-auto max-w-5xl px-6">
-          <div className="mx-auto max-w-4xl rounded-[2rem] border border-white/20 bg-white/10 px-6 py-10 text-center shadow-[0_24px_80px_rgba(16,32,39,0.12)] backdrop-blur-sm md:px-12 md:py-14">
+          <div className="mx-auto max-w-4xl rounded-[2rem] border border-white/20 bg-[#102027]/90 px-6 py-10 text-center shadow-[0_24px_80px_rgba(16,32,39,0.12)] backdrop-blur-sm md:px-12 md:py-14">
             <SparklesIcon className="mx-auto mb-6 h-14 w-14 text-white/90" aria-hidden="true" />
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/75">
               Profilo professionale
@@ -295,6 +298,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

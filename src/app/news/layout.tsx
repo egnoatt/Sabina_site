@@ -1,9 +1,11 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Aggiornamenti | Sabina Scattola',
-  description:
-    'Aggiornamenti professionali e informativi relativi al profilo della Dott.ssa Sabina Scattola.',
+  title: "Aggiornamenti | Sabina Scattola",
+  description: "Aggiornamenti professionali e informativi relativi al profilo della Dott.ssa Sabina Scattola.",
+  alternates: { canonical: "/news" },
+  openGraph: { title: "Aggiornamenti | Sabina Scattola", description: "Aggiornamenti professionali e informativi relativi al profilo della Dott.ssa Sabina Scattola.", url: "/news" },
+  twitter: { card: 'summary_large_image', title: "Aggiornamenti | Sabina Scattola", description: "Aggiornamenti professionali e informativi relativi al profilo della Dott.ssa Sabina Scattola." },
 };
 
 export default function NewsLayout({

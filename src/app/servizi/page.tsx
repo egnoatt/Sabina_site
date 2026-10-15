@@ -6,18 +6,18 @@ export default function Servizi() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sabinascattola.com/' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.sabinascattola.com/' },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Ambiti di esperienza',
-        item: 'https://sabinascattola.com/servizi',
+        item: 'https://www.sabinascattola.com/servizi',
       },
     ],
   };
 
   return (
-    <main className="mx-auto max-w-5xl px-6 py-10 text-base leading-relaxed">
+    <div className="mx-auto max-w-5xl px-6 py-10 text-base leading-relaxed">
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="mb-6 text-sm text-gray-600">
         <ol className="flex items-center space-x-2">
@@ -41,6 +41,6 @@ export default function Servizi() {
 
       {/* Contenuto */}
       <ServiziContent />
-    </main>
+    </div>
   );
 }

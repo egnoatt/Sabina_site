@@ -1,4 +1,5 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Markdown from 'react-markdown';
 import { getPostContent } from '@/lib/posts';
 import fs from 'fs';
@@ -19,7 +20,24 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
-// Pagina dinamica corretta per Next.js >=13.3 (incluso 15.3)
+// Metadati specifici per ciascun articolo; evitano titoli e canonical generici.
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = getPostContent(slug);
+  const title = String(post.data.title ?? 'Approfondimento');
+  const description = String(post.data.description ?? post.data.excerpt ?? post.content.slice(0, 160)).trim();
+  const url = `/blog/${encodeURIComponent(slug)}`;
+
+  return {
+    title: `${title} | Sabina Scattola`,
+    description,
+    alternates: { canonical: url },
+    openGraph: { type: 'article', title, description, url },
+    twitter: { card: 'summary_large_image', title, description },
+  };
+}
+
+// Pagina articolo
 export default async function BlogPost({ params }: PageProps) {
   const { slug } = await params;
   const post = await getPostContent(slug);
@@ -32,25 +50,25 @@ export default async function BlogPost({ params }: PageProps) {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://sabinascattola.com/',
+        item: 'https://www.sabinascattola.com/',
       },
       {
         '@type': 'ListItem',
         position: 2,
         name: 'Blog',
-        item: 'https://sabinascattola.com/blog',
+        item: 'https://www.sabinascattola.com/blog',
       },
       {
         '@type': 'ListItem',
         position: 3,
         name: post.data.title,
-        item: `https://sabinascattola.com/blog/${slug}`,
+        item: `https://www.sabinascattola.com/blog/${slug}`,
       },
     ],
   };
 
   return (
-    <main className="bg-gray-100 min-h-screen py-16">
+    <div className="bg-gray-100 min-h-screen py-16">
       <nav
         aria-label="Breadcrumb"
         className="container max-w-4xl mx-auto px-6 -mt-4 mb-6 text-sm text-gray-600"
@@ -93,9 +111,9 @@ export default async function BlogPost({ params }: PageProps) {
               '@type': 'Article',
               headline: post.data.title,
               keywords: post.data.tags ? post.data.tags.join(', ') : undefined,
-              image: post.data.image ? `https://sabinascattola.com${post.data.image}` : undefined,
+              image: post.data.image ? `https://www.sabinascattola.com${post.data.image}` : undefined,
               datePublished: post.data.date,
-              dateModified: new Date().toISOString(),
+              dateModified: post.data.updated ?? post.data.date,
               author: {
                 '@type': 'Person',
                 name: 'Sabina Scattola',
@@ -103,11 +121,11 @@ export default async function BlogPost({ params }: PageProps) {
               publisher: {
                 '@type': 'Organization',
                 name: 'Sabina Scattola',
-                url: 'https://sabinascattola.com',
+                url: 'https://www.sabinascattola.com',
               },
               mainEntityOfPage: {
                 '@type': 'WebPage',
-                '@id': `https://sabinascattola.com/blog/${slug}`,
+                '@id': `https://www.sabinascattola.com/blog/${slug}`,
               },
               description: post.data.excerpt || post.content.substring(0, 160).replace(/\n/g, ' '),
             }),
@@ -117,6 +135,6 @@ export default async function BlogPost({ params }: PageProps) {
           <Markdown>{post.content}</Markdown>
         </section>
       </article>
-    </main>
+    </div>
   );
 }

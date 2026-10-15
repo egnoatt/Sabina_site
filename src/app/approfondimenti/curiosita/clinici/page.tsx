@@ -3,7 +3,7 @@ import { professionalStatus } from '@/config/professionalStatus';
 
 export default function ApprofondimentiClinici() {
   return (
-    <main className="container mx-auto py-16 px-4">
+    <div className="container mx-auto py-16 px-4">
       {/* Hero Section */}
       <div className="text-center mb-12">
         <BookOpenIcon className="mx-auto h-16 w-16 text-green-600" />
@@ -48,6 +48,6 @@ export default function ApprofondimentiClinici() {
           <EnvelopeIcon className="h-6 w-6" /> {professionalStatus.infoCtaLabel}
         </a>
       </section>
-    </main>
+    </div>
   );
 }

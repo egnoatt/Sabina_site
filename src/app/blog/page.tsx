@@ -7,6 +7,18 @@ import BlogContent from '@/components/BlogContent';
 export const metadata = {
   title: 'Blog | Sabina Scattola – Psicologa e Psicoterapeuta',
   description: 'Articoli e approfondimenti su psicologia e psicoterapia.',
+  alternates: { canonical: '/blog' },
+  openGraph: {
+    type: 'website',
+    title: 'Blog | Sabina Scattola',
+    description: 'Articoli e approfondimenti su psicologia e psicoterapia.',
+    url: '/blog',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog | Sabina Scattola',
+    description: 'Articoli e approfondimenti su psicologia e psicoterapia.',
+  },
 };
 
 export type Post = {
@@ -43,13 +55,13 @@ export default function BlogPage() {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sabinascattola.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://sabinascattola.com/blog' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.sabinascattola.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.sabinascattola.com/blog' },
     ],
   };
 
   return (
-    <main className="mx-auto max-w-5xl px-6 py-10 text-base leading-relaxed">
+    <div className="mx-auto max-w-5xl px-6 py-10 text-base leading-relaxed">
       <nav aria-label="Breadcrumb" className="mb-6 text-sm text-gray-600">
         <ol className="flex items-center space-x-2">
           <li>
@@ -76,6 +88,6 @@ export default function BlogPage() {
       </section>
 
       <BlogContent posts={posts} />
-    </main>
+    </div>
   );
 }
