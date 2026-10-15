@@ -6,6 +6,8 @@ on:
       - 'src/components/Header.tsx'
       - 'src/components/SiteBanner.tsx'
       - 'src/app/page.tsx'
+      - 'src/app/blog/[slug]/page.tsx'
+      - 'src/components/EditorialBotanical.tsx'
       - 'src/app/globals.css'
       - 'tailwind.config.js'
       - 'scripts/ux_smoke.py'
