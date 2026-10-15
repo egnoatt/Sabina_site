@@ -4,16 +4,16 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 const siteUrl = 'https://www.sabinascattola.com';
-const homeTitle = 'Sabina Scattola – Psicologa e Psicoterapeuta';
+const homeTitle = 'Sabina Scattola – Sito personale';
 const homeDescription =
-  'Profilo professionale della Dott.ssa Sabina Scattola. Attività libero-professionale attualmente sospesa. Informazioni su esperienza clinica, formazione e approfondimenti.';
+  'Sito personale di Sabina Scattola: biografia, percorso, esperienza e contenuti divulgativi. L’attività privata è chiusa e non sono offerte prestazioni private.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: homeTitle,
   description: homeDescription,
   keywords:
-    'Sabina Scattola, psicologa, psicoterapeuta, profilo professionale, esperienza clinica, formazione, approfondimenti psicologici',
+    'Sabina Scattola, sito personale, biografia, esperienza clinica, formazione, approfondimenti psicologici',
   authors: [{ name: 'Sabina Scattola', url: 'https://www.sabinascattola.com' }],
   openGraph: {
     type: 'website',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: '/og.png',
         width: 1200,
         height: 630,
-        alt: 'Sabina Scattola – Profilo professionale',
+        alt: 'Sabina Scattola – Sito personale',
       },
     ],
   },
