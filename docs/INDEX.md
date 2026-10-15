@@ -6,6 +6,8 @@ Questa cartella raccoglie solo documentazione pubblica e tecnica essenziale del 
 
 - [README principale](../README.md): panoramica del progetto, stack e setup locale.
 - [Struttura del progetto](./site-structure.md): mappa sintetica dei file principali.
+- [Design System v1.0](./design-system.md): baseline visuale implementata e regole di modifica.
+- [Release / closeout 15 ottobre 2026](./releases/2026-10-15-site-hardening.md): risultati pubblicati e backlog non risolto.
 
 ## Stato pubblico
 
@@ -16,4 +18,4 @@ Questa cartella raccoglie solo documentazione pubblica e tecnica essenziale del 
 
 ## Confini della documentazione
 
-Non mantenere in questa cartella bozze private, log operativi, note di meeting, dati personali non necessari, credenziali, file esportati temporanei o pianificazioni interne.
+Non mantenere in questa cartella bozze private, log operativi, dati personali non necessari, credenziali, file esportati temporanei o pianificazioni interne. Le note di release sono pubbliche e limitate allo stato dei cambiamenti del sito.
