@@ -18,7 +18,7 @@ export default function ChiSono() {
   };
 
   return (
-    <main className="mx-auto max-w-5xl px-6 py-12 text-base leading-relaxed md:py-16">
+    <div className="mx-auto max-w-5xl px-6 py-12 text-base leading-relaxed md:py-16">
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="mb-6 text-sm text-gray-600">
         <ol className="flex items-center space-x-2">
@@ -147,6 +147,6 @@ export default function ChiSono() {
           {professionalStatus.infoCtaLabel}
         </Link>
       </div>
-    </main>
+    </div>
   );
 }

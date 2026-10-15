@@ -68,7 +68,7 @@ export default async function BlogPost({ params }: PageProps) {
   };
 
   return (
-    <main className="bg-gray-100 min-h-screen py-16">
+    <div className="bg-gray-100 min-h-screen py-16">
       <nav
         aria-label="Breadcrumb"
         className="container max-w-4xl mx-auto px-6 -mt-4 mb-6 text-sm text-gray-600"
@@ -135,6 +135,6 @@ export default async function BlogPost({ params }: PageProps) {
           <Markdown>{post.content}</Markdown>
         </section>
       </article>
-    </main>
+    </div>
   );
 }

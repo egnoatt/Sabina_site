@@ -17,7 +17,7 @@ export default function Servizi() {
   };
 
   return (
-    <main className="mx-auto max-w-5xl px-6 py-10 text-base leading-relaxed">
+    <div className="mx-auto max-w-5xl px-6 py-10 text-base leading-relaxed">
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="mb-6 text-sm text-gray-600">
         <ol className="flex items-center space-x-2">
@@ -41,6 +41,6 @@ export default function Servizi() {
 
       {/* Contenuto */}
       <ServiziContent />
-    </main>
+    </div>
   );
 }
