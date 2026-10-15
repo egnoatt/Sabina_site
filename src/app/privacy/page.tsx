@@ -28,24 +28,28 @@ export default function PrivacyPolicy() {
       </p>
 
       <section className="mt-10 space-y-3">
-        <h2 className="text-2xl font-semibold text-brand-text">1. Titolare del trattamento</h2>
+        <h2 className="text-2xl font-semibold text-brand-text">1. Titolare del trattamento e contatti</h2>
         <p>
-          L&apos;identità e i recapiti del titolare del trattamento devono
-          essere formalmente confermati per questo sito. Per comunicazioni
-          generali è disponibile il recapito nella pagina{' '}
+          Il titolare del trattamento dei dati personali connessi a questo sito
+          è la Dott.ssa Sabina Scattola, che gestisce il proprio sito personale.
+        </p>
+        <p>
+          Per comunicazioni e per esercitare i diritti relativi ai dati personali
+          è possibile utilizzare i recapiti pubblicati nella pagina{' '}
           <Link href="/contatti" className="text-brand-primary underline underline-offset-4">
             Contatti
           </Link>.
-          La sua eventuale designazione come indirizzo dedicato all&apos;esercizio
-          dei diritti privacy deve essere approvata.
+          Non è necessario un indirizzo email separato per queste richieste.
         </p>
       </section>
 
       <section className="mt-10 space-y-3">
         <h2 className="text-2xl font-semibold text-brand-text">2. Dati e finalità</h2>
         <p>
-          Il sito ha finalità di presentazione professionale e divulgazione.
-          Non include moduli per prenotazioni, registrazione utenti o invio
+          Questo è un sito personale con finalità informative e divulgative.
+          L&apos;attività libero-professionale privata della Dott.ssa Sabina
+          Scattola è chiusa: non sono offerti servizi o prenotazioni private.
+          Non include moduli di prenotazione, registrazione utenti o invio
           di informazioni cliniche.
         </p>
         <ul className="list-disc space-y-3 pl-6">

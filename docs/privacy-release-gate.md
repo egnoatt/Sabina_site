@@ -8,8 +8,8 @@
 | Voce | Evidenza | Esito |
 | --- | --- | --- |
 | Sito | `www.sabinascattola.com` distribuito da Vercel, Next.js e Vercel Project `sabina-site` | VERIFIED |
-| Stato del servizio | Il profilo è informativo, l'attività privata è indicata come sospesa in `src/config/professionalStatus.ts` | VERIFIED IN CODE |
-| Contatto pubblico | `sabinascat@live.com` presente nelle pagine Contatti e Footer, indicato dall'owner quale unico indirizzo utilizzato | VERIFIED CONTACT, NOT LEGAL CONTROLLER CHANNEL |
+| Stato del servizio | Il proprietario conferma attività privata definitivamente chiusa, nessuna partita IVA attiva, sito personale non commerciale; testi del sito aggiornati nella PR | OWNER CONFIRMED + UPDATED IN PR |
+| Contatti e privacy | L'owner conferma Sabina Scattola quale titolare GDPR e preferisce rimandare alla pagina Contatti anche per i diritti, senza ripetere l'email nell'informativa | OWNER CONFIRMED + LINKED |
 | Moduli | Nessuna form di registrazione/prenotazione/intake sanitario nell'app attuale | VERIFIED IN CODE |
 | Storage banner | Chiave `siteBannerDismissedUntil-v2`, con scadenza di 30 giorni tramite `localStorage` | VERIFIED IN CODE |
 | Librerie analytics | Assenza di SDK analytics/tracking espliciti in `package.json` e nei componenti esaminati | VERIFIED IN SOURCE ONLY |
@@ -20,8 +20,8 @@
 
 ## Informazioni e decisioni necessarie al titolare
 
-- [ ] **Chi è il titolare GDPR?** Indicare identità esatta e recapiti validi (senza presumere che webmaster e professionista siano la stessa persona).
-- [ ] **Canale richieste privacy:** confermare se `sabinascat@live.com` è autorizzato anche per richieste GDPR. Indicare eventuale DPO solo se formalmente nominato.
+- [x] **Titolare GDPR:** Dott.ssa Sabina Scattola, confermato dall'owner del progetto; inserito nell'informativa, non confondere con webmaster.
+- [x] **Canale richieste privacy:** stessa pagina Contatti usata per comunicazioni generali, come richiesto dall'owner; nessuna duplicazione email nella pagina Privacy. La gestione delle richieste rimane da organizzare operativamente. Un DPO va indicato solo se applicabile.
 - [ ] **Basi giuridiche:** approvare, per ogni finalità, base articolo 6 (navigazione/sicurezza, risposte ai messaggi e altri eventuali trattamenti) e l'eventuale legittimo interesse.
 - [ ] **Conservazione log:** identificare livello di piano Vercel, log accessibili, categorie di dati, retention effettiva e destinatari.
 - [ ] **Conservazione email:** definire durata o criterio di cancellazione dei messaggi, e procedure per richieste di cancellazione.
@@ -57,3 +57,10 @@ Workflow GitHub [Privacy browser inventory — run #38785135545](https://github.
 - [x] Nessuna richiesta a terzi rilevata durante le sessioni testate.
 
 **Limite:** il test non certifica tutte le possibili regioni, browser, impostazioni Vercel, servizi attivi nel dashboard o percorsi non visitati. Nessun cookie value o dato personale è stato salvato. Conferma contrattuale/privacy della piattaforma **ancora necessaria**.
+
+## Conferma owner — attività privata chiusa (15 ottobre 2026)
+
+- Sabina Scattola è titolare dei dati connessi al proprio sito personale: conferma esplicita del proprietario nella chat.
+- Attività privata definitivamente chiusa, partita IVA non più attiva; il sito non vende prestazioni e non accetta prenotazioni. Nessun numero IVA inserito nel sito.
+- Recapiti raggruppati sulla pagina Contatti; nessuna casella dedicata o duplicata sull'informativa Privacy. I diritti GDPR si richiedono attraverso gli stessi contatti.
+- **Restano aperti:** basi giuridiche, log/retention email e Vercel, destinatari/responsabili, eventuali trasferimenti, validazione finale. Non considerare il solo stato personale come esenzione automatica da obblighi GDPR.

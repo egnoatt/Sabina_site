@@ -46,11 +46,10 @@ export default function ContattiPage() {
         </p>
         <h1 className="mt-4 text-3xl font-bold text-brand-text md:text-4xl">Contatti</h1>
         <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-slate-600">
-          Informazioni generali e professionali, con indicazione chiara dello stato attuale
-          dell’attività.
+          Contatti per comunicazioni generali e informazioni relative al sito personale.
         </p>
         <p className="mt-3 text-sm text-gray-500">
-          Per comunicazioni generali e istituzionali (non per prenotazioni private).
+          L&apos;attività privata è chiusa e non si accettano prenotazioni.
           Non inviare via email ordinaria informazioni sanitarie o dettagli clinici personali.
         </p>
       </section>
@@ -63,7 +62,7 @@ export default function ContattiPage() {
             <h2 className="text-lg font-semibold text-brand-text">Email</h2>
           </div>
           <p className="mt-4 text-base leading-relaxed text-slate-700">
-            Per comunicazioni generali o professionali scrivi a
+            Per comunicazioni generali scrivi a
             <a
               href="mailto:sabinascat@live.com"
               className="ml-2 font-medium text-brand-primary hover:underline focus-visible:underline underline-offset-4"
@@ -90,6 +89,12 @@ export default function ContattiPage() {
           </p>
         </article>
       </section>
+
+      <p className="mb-10 text-sm leading-relaxed text-slate-600">
+        Per richieste relative al trattamento dei dati personali puoi utilizzare
+        questi stessi contatti, specificando nell&apos;oggetto che si tratta di
+        una richiesta privacy.
+      </p>
 
       {/* Note informative (come nel PDF) */}
       <section className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm md:p-8">

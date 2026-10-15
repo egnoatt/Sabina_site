@@ -67,7 +67,7 @@ export default function Home() {
           <div className="mx-auto max-w-4xl rounded-[2rem] border border-white/20 bg-[#102027]/90 px-6 py-10 text-center shadow-[0_24px_80px_rgba(16,32,39,0.12)] backdrop-blur-sm md:px-12 md:py-14">
             <SparklesIcon className="mx-auto mb-6 h-14 w-14 text-white/90" aria-hidden="true" />
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/75">
-              Profilo professionale
+              Sito personale
             </p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-white md:text-6xl">
               Sabina Scattola
@@ -80,8 +80,8 @@ export default function Home() {
               psicoterapeutico.
             </p>
             <p className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-white/70 md:text-base">
-              Il sito resta online come spazio professionale e informativo, con contenuti ordinati
-              per ruolo, esperienza clinica e aggiornamento.
+              Questo sito personale raccoglie informazioni sul percorso e sull&apos;esperienza
+              di Sabina Scattola. L&apos;attività privata è chiusa.
             </p>
 
             <div className="mt-10 flex items-center justify-center">
