@@ -36,7 +36,8 @@ Vercel pubblica [DPA per Pro/Enterprise](https://vercel.com/legal/dpa), ma l'app
 ### DR-04 — Log e tempi — BLOCKING
 - I log CDN/sicurezza che Vercel tratta per conto del servizio non sono uguali alla preferenza di banner 30 giorni.
 - Nessun drain Vercel attivo: non è prova dell'assenza di log.
-- Richiedere/chiarire retention tecnica applicabile al piano/account/servizio, o quantomeno **criterio reale** di conservazione da descrivere nell'informativa.
+- Il [documento Runtime Logs](https://vercel.com/docs/logs/runtime) indica **1 giorno sul Pro standard**, e 30 giorni con Observability Plus. **Add-on non verificato**; il limite runtime non copre per definizione tutte le possibili categorie di dati tecnici della piattaforma.
+- Richiedere/chiarire retention tecnica applicabile al piano/account/servizio, incluso CDN/service-generated data, o quantomeno il **criterio reale** di conservazione da descrivere nell'informativa.
 - Valutare accesso log e configurazione secondo principio di minimizzazione.
 
 ### DR-05 — Strumenti di misurazione — PARZIALMENTE RISOLTO
