@@ -11,7 +11,8 @@ Per dettagli e gate vedere [privacy-release-gate.md](./privacy-release-gate.md).
 | Nessun form sanitario nell'app | VERIFIED IN CODE | `src/app` |
 | Banner localStorage 30 giorni | VERIFIED IN CODE | `src/components/SiteBanner.tsx` |
 | Assenza SDK analytics espliciti | VERIFIED IN SOURCE ONLY | `package.json` |
-| Analytics/cookie/requests effettivi della piattaforma | UNKNOWN | Verifica browser e impostazioni Vercel necessaria |
+| Cookie e richieste lato browser nel percorso di test | VERIFIED IN LIMITED BROWSER RUN | Chromium mobile/desktop: solo host proprio, zero cookie su fresh session; localStorage creato dopo chiusura banner. [Run #38785135545](https://github.com/egnoatt/Sabina_site/actions/runs/38785135545) |
+| Analytics/cookie/requests effettivi della piattaforma | PARTIAL / ACCOUNT SETTINGS UNKNOWN | Test browser circoscritto completato; Vercel Analytics e altre opzioni account da verificare |
 | Titolare privacy (identità e recapiti) | UNKNOWN | Decisione del titolare |
 | Basi giuridiche / interesse legittimo | UNKNOWN | Approvazione legale |
 | Retention email, log e servizi | UNKNOWN | Policy del titolare/fornitori |
