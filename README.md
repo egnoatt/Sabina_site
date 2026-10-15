@@ -30,8 +30,10 @@ Poi apri [http://localhost:3000](http://localhost:3000).
 
 - [Documentazione pubblica](./docs/INDEX.md)
 - [Struttura del progetto](./docs/site-structure.md)
+- [Design System v1.0 — colori, tipografia, componenti e regole](./docs/design-system.md)
+- [Nota di release/closeout — 15 ottobre 2026](./docs/releases/2026-10-15-site-hardening.md)
 
-La cartella `docs/` contiene solo documentazione pubblica e tecnica essenziale. Note operative, bozze, log di lavoro e pianificazioni interne non sono parte della documentazione corrente.
+La cartella `docs/` contiene solo documentazione tecnica pubblica, design system e note di rilascio prive di dati riservati. Bozze private, credenziali, log operativi e pianificazioni interne non appartengono a questa documentazione.
 
 ## Stato del progetto
 

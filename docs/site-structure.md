@@ -7,6 +7,8 @@ Mappa sintetica dei file principali nel repository pubblico.
 ├── .github/workflows/ci.yml
 ├── docs/
 │   ├── INDEX.md
+│   ├── design-system.md
+│   ├── releases/2026-10-15-site-hardening.md
 │   └── site-structure.md
 ├── public/
 │   ├── fonts/OpenSans/
