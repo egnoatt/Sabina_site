@@ -45,3 +45,15 @@
 - [Vercel — Data Processing Addendum](https://vercel.com/legal/dpa) (verificare applicabilità in base al piano reale)
 
 **Nota:** La PR #11 è stata già integrata e ha pubblicato una bozza; questa PR correttiva non è un'autorizzazione a rendere definitiva la privacy senza i dati mancanti.
+
+## Test browser ripetibile — evidenza osservata (15 ottobre 2026)
+
+Workflow GitHub [Privacy browser inventory — run #38785135545](https://github.com/egnoatt/Sabina_site/actions/runs/38785135545) contro **Production**, Chromium headless in contesto nuovo, viewport 375 e 1280 px, visitando `/`, `/privacy`, `/contatti`:
+
+- [x] HTTP 200 per tutte le pagine visitate.
+- [x] Host delle richieste osservate: solo `www.sabinascattola.com`.
+- [x] Cookie rilevati all'arrivo: nessuno. Session/local storage iniziale: vuoto.
+- [x] Dopo clic su «Chiudi avviso»: presente unicamente `localStorage.siteBannerDismissedUntil-v2` (nome chiave, nessun valore registrato).
+- [x] Nessuna richiesta a terzi rilevata durante le sessioni testate.
+
+**Limite:** il test non certifica tutte le possibili regioni, browser, impostazioni Vercel, servizi attivi nel dashboard o percorsi non visitati. Nessun cookie value o dato personale è stato salvato. Conferma contrattuale/privacy della piattaforma **ancora necessaria**.
