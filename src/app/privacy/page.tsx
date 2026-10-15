@@ -3,111 +3,156 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Privacy e trattamento dei dati | Sabina Scattola',
-  description: 'Informazioni sulla navigazione, sulle comunicazioni e sui dati tecnici relativi al sito.',
+  description: 'Informazioni sul trattamento dei dati per navigazione, contatti e funzionalità tecniche del sito.',
   alternates: { canonical: '/privacy' },
 };
 
 /**
- * DRAFT / LEGAL APPROVAL REQUIRED.
- * This page intentionally distinguishes facts verifiable in the repository
- * from contractual and organizational details not yet established.
- * Do not merge before owner/legal review in docs/privacy-evidence-matrix.md.
+ * FOR OWNER / LEGAL REVIEW — NOT FOR PUBLIC RELEASE AS FINAL NOTICE.
+ * Unconfirmed Article 13 details are not silently invented.
+ * Release gate: docs/privacy-release-gate.md.
  */
 export default function PrivacyPolicy() {
   return (
     <div className="mx-auto max-w-3xl px-6 py-12 text-base leading-relaxed text-slate-700 md:py-16">
-      <p className="text-xs font-semibold uppercase tracking-widest text-brand-primary">
-        Sito professionale informativo
+      <p className="text-sm font-semibold uppercase tracking-wider text-brand-primary">
+        Informazioni sul sito
       </p>
       <h1 className="mt-3 text-3xl font-bold text-brand-text md:text-4xl">
         Privacy e trattamento dei dati
       </h1>
       <p className="mt-5 rounded-xl border border-amber-300 bg-amber-50 p-4 text-sm text-amber-950">
-        Documento in fase di revisione: i dettagli organizzativi e contrattuali indicati
-        di seguito devono essere confermati dal titolare prima della pubblicazione
-        definitiva. Questa bozza non sostituisce l&apos;informativa completa prevista
-        dagli articoli 12 e 13 del GDPR.
+        Informativa in revisione. Alcuni elementi richiesti dagli articoli 12 e 13
+        del Regolamento (UE) 2016/679 sono in attesa di conferma da parte del
+        titolare. Questa versione non è ancora un&apos;informativa definitiva.
       </p>
 
-      <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-brand-text">1. Finalità del sito</h2>
+      <section className="mt-10 space-y-3">
+        <h2 className="text-2xl font-semibold text-brand-text">1. Titolare del trattamento</h2>
         <p>
-          Il sito presenta il profilo e i contenuti informativi della Dott.ssa Sabina
-          Scattola. Non offre prenotazioni private né moduli di invio di informazioni
-          cliniche. Le comunicazioni tramite recapiti pubblicati sono destinate a
-          richieste generali o professionali, non a consulenze sanitarie.
+          L&apos;identità e i recapiti del titolare del trattamento devono
+          essere formalmente confermati per questo sito. Per comunicazioni
+          generali è disponibile il recapito nella pagina{' '}
+          <Link href="/contatti" className="text-brand-primary underline underline-offset-4">
+            Contatti
+          </Link>.
+          La sua eventuale designazione come indirizzo dedicato all&apos;esercizio
+          dei diritti privacy deve essere approvata.
         </p>
       </section>
 
-      <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-brand-text">2. Dati trattati durante la navigazione</h2>
+      <section className="mt-10 space-y-3">
+        <h2 className="text-2xl font-semibold text-brand-text">2. Dati e finalità</h2>
         <p>
-          Per rendere accessibile il sito, i sistemi di hosting e rete possono
-          trattare dati tecnici, inclusi l&apos;indirizzo IP, gli identificativi
-          della richiesta e i log di accesso o sicurezza. Occorre verificare
-          le impostazioni effettive del servizio, i destinatari e i tempi di
-          conservazione di tali dati.
+          Il sito ha finalità di presentazione professionale e divulgazione.
+          Non include moduli per prenotazioni, registrazione utenti o invio
+          di informazioni cliniche.
+        </p>
+        <ul className="list-disc space-y-3 pl-6">
+          <li>
+            <strong>Navigazione:</strong> l&apos;infrastruttura che distribuisce il sito
+            può trattare indirizzi IP, dati tecnici delle richieste e log,
+            per fornire le pagine e proteggere il servizio. Devono essere
+            verificati configurazioni, accessibilità ai log e tempi di conservazione.
+          </li>
+          <li>
+            <strong>Messaggi email:</strong> scrivendo spontaneamente al recapito
+            pubblicato vengono trasmessi indirizzo del mittente, contenuto
+            ed eventuali allegati, per poter esaminare e rispondere alla richiesta.
+            Non inviare dati sanitari o documenti clinici via email ordinaria.
+          </li>
+          <li>
+            <strong>Preferenza dell&apos;avviso:</strong> la chiusura del banner
+            informativo salva nel browser una data di scadenza in
+            <em> localStorage</em>, impostata a 30 giorni. Non è una funzione
+            di profilazione prevista dal codice del banner.
+          </li>
+        </ul>
+        <p>
+          Per ciascuna finalità devono essere confermate le pertinenti basi
+          giuridiche ai sensi dell&apos;articolo 6 GDPR prima del rilascio finale.
+          Non sono qui attribuiti consensi o interessi legittimi non verificati.
         </p>
       </section>
 
-      <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-brand-text">3. Comunicazioni volontarie</h2>
+      <section className="mt-10 space-y-3">
+        <h2 className="text-2xl font-semibold text-brand-text">3. Cookie e strumenti analoghi</h2>
         <p>
-          Scrivendo all&apos;indirizzo email indicato nei <Link href="/contatti"
-          className="font-semibold text-brand-primary underline underline-offset-4">
-          contatti</Link>, il mittente trasmette almeno il proprio indirizzo,
-          il testo e gli eventuali allegati. Tali dati possono essere trattati
-          per gestire la comunicazione; modalità e tempi di conservazione della
-          casella email devono essere verificati.
+          Il codice dell&apos;avviso utilizza la memoria locale del browser per
+          ricordarne la chiusura. Non risultano implementati nel codice
+          applicativo esaminato moduli di profilazione o analytics espliciti.
+          L&apos;eventuale utilizzo di cookie, sistemi di misurazione, log o altri
+          strumenti predisposti dai servizi di hosting richiede una verifica
+          dell&apos;ambiente realmente attivo prima di dichiararne la completa assenza.
         </p>
-        <p className="font-medium">
-          Non inviare tramite email ordinaria dati relativi alla salute,
-          referti o informazioni cliniche personali.
+        <p>
+          Se vengono utilizzati strumenti non strettamente tecnici, occorre
+          applicare le relative regole di informativa e, quando richiesto,
+          di consenso preventivo.
         </p>
       </section>
 
-      <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-brand-text">4. Memoria locale e strumenti tecnici</h2>
+      <section className="mt-10 space-y-3">
+        <h2 className="text-2xl font-semibold text-brand-text">4. Fornitori e destinatari</h2>
         <p>
-          La scelta di chiudere l&apos;avviso sull&apos;attività privata viene
-          memorizzata nel <em>localStorage</em> del browser con una scadenza
-          impostata a 30 giorni. Il codice del sito non implementa un form di
-          prenotazione o un sistema di profilazione; la presenza di eventuali
-          cookie, strumenti statistici e tecnologie aggiunte a livello di
-          piattaforma richiede una verifica sulla configurazione realmente attiva.
+          Il sito è distribuito tramite la piattaforma di hosting Vercel;
+          l&apos;invio volontario di email comporta anche l&apos;utilizzo del
+          servizio di posta del recapito pubblicato. Devono essere convalidati
+          i soggetti coinvolti, il loro ruolo privacy, gli eventuali responsabili
+          e sub-responsabili, le categorie di destinatari e, se applicabile,
+          le garanzie relative a trasferimenti fuori dallo Spazio Economico Europeo.
+        </p>
+        <p>
+          I collegamenti a Facebook e ad altri siti esterni portano fuori dal
+          presente sito. Le informative dei rispettivi gestori si applicano
+          alle visite alle loro pagine.
         </p>
       </section>
 
-      <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-brand-text">5. Collegamenti esterni</h2>
+      <section className="mt-10 space-y-3">
+        <h2 className="text-2xl font-semibold text-brand-text">5. Conservazione</h2>
         <p>
-          Alcuni link possono condurre a siti e servizi esterni, ad esempio
-          piattaforme social o servizi cartografici. Dopo l&apos;apertura del
-          collegamento si applicano le condizioni e le informative del sito
-          di destinazione. Il solo collegamento non dimostra l&apos;esistenza
-          di un servizio incorporato nella pagina.
+          La preferenza del banner prevede una scadenza di 30 giorni nel
+          browser. Questo periodo non descrive la conservazione dei dati
+          sui server. I tempi o criteri di conservazione dei log tecnici
+          e dei messaggi email devono ancora essere verificati e definiti
+          nell&apos;informativa finale.
         </p>
       </section>
 
-      <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-brand-text">6. Titolare, basi giuridiche e conservazione</h2>
+      <section className="mt-10 space-y-3">
+        <h2 className="text-2xl font-semibold text-brand-text">6. Facoltatività e decisioni automatizzate</h2>
         <p>
-          Prima della pubblicazione definitiva devono essere completati e
-          verificati: identità e recapiti del titolare del trattamento, finalità
-          e basi giuridiche specifiche, destinatari e responsabili del trattamento,
-          eventuali trasferimenti extra SEE e relativi presupposti, periodi o
-          criteri di conservazione per ciascuna categoria di dati.
+          L&apos;invio di email è facoltativo; senza dati di contatto non è possibile
+          rispondere a una richiesta individuale. Il sito non implementa nel
+          codice applicativo sistemi decisionali automatizzati relativi ai
+          visitatori. Queste circostanze devono essere confermate rispetto
+          all&apos;operatività reale prima della pubblicazione finale.
         </p>
       </section>
 
-      <section className="mt-10 space-y-4">
+      <section className="mt-10 space-y-3">
         <h2 className="text-2xl font-semibold text-brand-text">7. Diritti degli interessati</h2>
         <p>
-          Il GDPR riconosce, alle condizioni previste, diritti di accesso,
-          rettifica, cancellazione, limitazione, opposizione e portabilità.
-          È inoltre possibile proporre reclamo al Garante per la protezione
-          dei dati personali. La procedura di esercizio dei diritti e i relativi
-          recapiti devono essere specificati nell&apos;informativa definitiva.
+          Nei casi previsti dal GDPR possono essere esercitati i diritti di
+          accesso, rettifica, cancellazione, limitazione, opposizione e
+          portabilità, nonché il diritto di proporre reclamo al{' '}
+          <a href="https://www.garanteprivacy.it/"
+            target="_blank" rel="noopener noreferrer"
+            className="text-brand-primary underline underline-offset-4">
+            Garante per la protezione dei dati personali
+          </a>.
+          Il titolare deve confermare il canale e le modalità pratiche per
+          ricevere queste richieste.
+        </p>
+      </section>
+
+      <section className="mt-10 space-y-3">
+        <h2 className="text-2xl font-semibold text-brand-text">8. Aggiornamenti</h2>
+        <p>
+          L&apos;informativa sarà completata e aggiornata sulla base dei
+          trattamenti effettivamente svolti e delle verifiche richieste.
+          Non sono indicate date di validazione o versioni legali non approvate.
         </p>
       </section>
     </div>
