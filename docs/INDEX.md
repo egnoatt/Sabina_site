@@ -1,21 +1,17 @@
-# Documentazione pubblica - Sabina Scattola Site
+# Documentazione pubblica — SabinaScattola.com
 
-Questa cartella raccoglie solo documentazione pubblica e tecnica essenziale del sito.
+Questa cartella contiene solo documentazione pubblica e tecnica del sito **personale e informativo** di Sabina Scattola; l'attività privata è chiusa.
 
-## Contenuto
+## Navigazione
 
-- [README principale](../README.md): panoramica del progetto, stack e setup locale.
-- [Struttura del progetto](./site-structure.md): mappa sintetica dei file principali.
-- [Design System v1.0](./design-system.md): baseline visuale implementata e regole di modifica.
-- [Release / closeout 15 ottobre 2026](./releases/2026-10-15-site-hardening.md): risultati pubblicati e backlog non risolto.
+- [README principale](../README.md): panoramica, stack e sviluppo locale.
+- [Struttura del progetto](./site-structure.md): percorsi, componenti e file.
+- [Design System v2.0 — Essenza](./design-system.md): **CURRENT per homepage e articoli**, non ancora per il resto del sito.
+- [Vertical slice Essenza — Fase B](./design-concepts/v2.0-phase-b-essenza.md): requisiti e registro tecnico del rilascio.
+- [Release / closeout — 15 ottobre 2026](./releases/2026-10-15-site-hardening.md): cronologia e ultimo addendum.
+- [Privacy evidence matrix](./privacy-evidence-matrix.md): verifiche distinte dalla governance grafica.
 
-## Stato pubblico
+## Confini
+Il sito utilizza Next.js, Markdown e Vercel. La baseline v2.0 è **parziale**: homepage e template articoli. Le altre route conservano componenti preesistenti.
 
-- Il sito è una presenza web pubblica e informativa.
-- I contenuti editoriali pubblicati sono in `src/content/blog`.
-- La configurazione SEO principale è distribuita tra `src/app/layout.tsx`, `src/app/sitemap.ts` e `src/app/robots.ts`.
-- L'anteprima social usa un'immagine Open Graph statica in `public/og.png`.
-
-## Confini della documentazione
-
-Non mantenere in questa cartella bozze private, log operativi, dati personali non necessari, credenziali, file esportati temporanei o pianificazioni interne. Le note di release sono pubbliche e limitate allo stato dei cambiamenti del sito.
+Non mantenere qui credenziali, dati clinici o personali non necessari, segreti, log identificativi o copie di documenti riservati.

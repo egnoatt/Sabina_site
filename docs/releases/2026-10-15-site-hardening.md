@@ -54,3 +54,20 @@ Il riferimento versionato è [Design System v1.0](../design-system.md). I token 
 - **Design System:** baseline disponibile in [`docs/design-system.md`](../design-system.md), invariata; nessun redesign introdotto con questo addendum.
 
 **Stato del closeout:** i lavori tecnici completati restano registrati; DNS e informativa definitiva sono open action tracciate, non chiuse.
+
+
+---
+
+## Addendum di chiusura grafica — Essenza v2.0 (15 ottobre 2026)
+
+> I paragrafi precedenti sono **snapshot storici**. Questo addendum aggiorna lo stato del Design System e riporta i collegamenti alle azioni successive.
+
+- **[PR #23](https://github.com/egnoatt/Sabina_site/pull/23) MERGED**, commit \`524eeea78c570c6ab90f07355e52d7baa367fa71\`; Vercel Production **READY**.
+- **Homepage Essenza** e **template editoriale degli articoli** pubblicati; testo dei Markdown invariato; nuovi token cromatici e font-display Georgia di sistema.
+- [Design System v2.0 CURRENT](../design-system.md) per le due superfici effettivamente implementate; header/footer, indice Blog e pagine interne restano nello stile precedente finché non migrati con PR.
+- CI, test responsive 320/375/768/1280, landmark e campione axe-core PASS. **Non equivale** ad audit WCAG completo o Core Web Vitals.
+- Privacy: [PR #19](https://github.com/egnoatt/Sabina_site/pull/19) e [#21](https://github.com/egnoatt/Sabina_site/pull/21) pubblicate; [issue #20](https://github.com/egnoatt/Sabina_site/issues/20) aperta per dati sostanziali GDPR.
+- DNS: Namecheap/Vercel operativo; [issue #13](https://github.com/egnoatt/Sabina_site/issues/13) contiene verifiche residue su TXT Google e altri record.
+- La [PR #22](https://github.com/egnoatt/Sabina_site/pull/22) è documentazione candidata A/B non integrata, storicamente precedente alla decisione Essenza.
+
+**Decisione:** promuovere documentalmente alla v2.0 soltanto il codice già pubblicato; conservare l'archivio storico senza riscriverne gli snapshot.

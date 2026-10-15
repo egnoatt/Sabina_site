@@ -29,6 +29,7 @@ Mappa sintetica dei file principali nel repository pubblico.
 │   │   └── sitemap.ts
 │   ├── components/
 │   │   ├── BlogContent.tsx
+│   │   ├── EditorialBotanical.tsx
 │   │   ├── Footer.tsx
 │   │   ├── Header.tsx
 │   │   ├── ServiziContent.tsx
@@ -43,6 +44,9 @@ Mappa sintetica dei file principali nel repository pubblico.
 ├── package.json
 ├── tailwind.config.js
 ├── tsconfig.json
+├── scripts/
+│   ├── ux_smoke.py
+│   └── essenza_accessibility_audit.py
 └── vercel.json
 ```
 
@@ -50,4 +54,5 @@ Mappa sintetica dei file principali nel repository pubblico.
 
 - I contenuti editoriali pubblici sono file Markdown in `src/content/blog`.
 - I metadata globali e l'immagine Open Graph sono configurati in `src/app/layout.tsx`.
+- Essenza v2.0 è su `src/app/page.tsx`, `src/app/blog/[slug]/page.tsx` e `EditorialBotanical.tsx`. I token aggiuntivi sono in `tailwind.config.js`. Le altre route non sono interamente migrate.
 - `docs/` non contiene roadmap, appunti di lavoro o log operativi.
