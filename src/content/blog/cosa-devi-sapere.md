@@ -35,9 +35,9 @@ Ciò che viene discusso in terapia è riservato e protetto da norme di segreto p
 
 ---
 
-## 6. Il tuo terapeuta non ti cerca su internet
+## 6. La riservatezza riguarda anche le informazioni online
 
-Il rispetto della privacy implica anche non cercare informazioni sui pazienti al di fuori delle sedute.
+Se hai dubbi sull’uso di informazioni online che ti riguardano, puoi parlarne con il terapeuta e chiarire questo aspetto della relazione terapeutica.
 
 ---
 
@@ -94,5 +94,9 @@ Ascoltare storie complesse quotidianamente può essere faticoso, ma fa parte del
 Quando la terapia funziona, offre strumenti per affrontare la vita in modo diverso e più efficace.
 
 
+
+### Fonte
+
+Sintesi e adattamento da [Casey Gueren, «15 Things Therapists Actually Want You To Know», BuzzFeed, 10 dicembre 2015](https://www.buzzfeed.com/caseygueren/15-things-therapists-actually-want-you-to-know).
 
 *[Ritorna alla Home](/)*

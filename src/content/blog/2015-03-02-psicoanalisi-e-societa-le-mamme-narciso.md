@@ -32,7 +32,9 @@ La spinta divoratrice della madre coccodrillo si è trasfigurata nell’ossessio
 
 Se la maternità è vissuta come un ostacolo alla propria vita è perché si è perduta quella connessione che deve poter unire generativamente l’essere madre all’essere donna. Se c’è stato un tempo, quello della cultura patriarcale, dove la madre tendeva a uccidere la donna, adesso il rischio è l’opposto; è quello che la donna possa sopprimere la madre.
 
-*Massimo Recalcati, La Repubblica, 28 febbraio 2015*
+### Fonte
+
+Massimo Recalcati, la Repubblica, 28 febbraio 2015. Il contributo è registrato nella [bibliografia dell’autore](https://www.massimorecalcati.it/articoli).
 
 
 *[Ritorna alla Home](/)*

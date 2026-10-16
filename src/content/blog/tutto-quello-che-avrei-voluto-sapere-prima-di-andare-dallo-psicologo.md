@@ -1,7 +1,7 @@
 ---
 title: "Tutto quello che avrei voluto sapere prima di iniziare ad andare dallo psicologo"
 date: "2024-09-14"
-description: "Una paziente anonima condivide le sue esperienze e riflessioni sulla terapia psicologica."
+description: "Una testimonianza personale sull’esperienza della terapia psicologica, tratta da un articolo di Hannah Ewens."
 ---
 
 “Ho 25 anni, e sono in terapia da parecchi anni. In questo decennio ho avuto esperienza di uno psicologo infantile, diversi tentativi con la terapia cognitivo-comportamentale e l’analisi, e numerosi psicologi. Se fosse un matrimonio, starei festeggiando le nozze di alluminio—ovvero un legame che può piegarsi ma non venire spezzato. Non mi viene in mente di meglio, considerando che ho attraversato fasi in cui pensavo di smettere, salvo poi tornare con la coda tra le gambe.
@@ -54,7 +54,9 @@ Forse sono solo egocentrica, ma penso sempre che gli psicologi mi cerchino su Go
 
 Spesso mi sono chiesta se la terapia non sia diventata per me una specie di paracadute.
 
-*Articolo scritto da una paziente anonima per altri potenziali pazienti anonimi…*
+### Fonte
+
+Tratto, con adattamenti, da [Hannah Ewens, VICE, 13 settembre 2017](https://www.vice.com/it/article/cose-da-sapere-prima-di-andare-in-terapia-psicologo-psichiatra/).
 
 
 *[Ritorna alla Home](/)*
