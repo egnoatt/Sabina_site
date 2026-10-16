@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: title + ' | Sabina Scattola',
     description,
     alternates: { canonical: url },
-    openGraph: { type: 'article', title, description, url },
-    twitter: { card: 'summary_large_image', title, description },
+    openGraph: { images: ['/og.png'], type: 'article', title, description, url },
+    twitter: { images: ['/og.png'], card: 'summary_large_image', title, description },
   };
 }
 

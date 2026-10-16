@@ -7,12 +7,14 @@ export const metadata = {
   description: 'Articoli e approfondimenti su psicologia e psicoterapia.',
   alternates: { canonical: '/blog' },
   openGraph: {
+    images: ['/og.png'],
     type: 'website',
     title: 'Blog | Sabina Scattola',
     description: 'Articoli e approfondimenti su psicologia e psicoterapia.',
     url: '/blog',
   },
   twitter: {
+    images: ['/og.png'],
     card: 'summary_large_image',
     title: 'Blog | Sabina Scattola',
     description: 'Articoli e approfondimenti su psicologia e psicoterapia.',
