@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-16",
+  "baseline": "aad2f9f8e922571080045667366bd7226b0a11d1",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "node": "20.20.2",
+  "python": "3.9.6",
+  "playwright": "1.60.0",
+  "chromium": "148.0.7778.96",
+  "axeCore": "4.10.3",
+  "build": "npm ci then npm run build PASS",
+  "lint": "npm run lint:ci PASS",
+  "privacy": "Existing generic audit enumerates privacy as route only; no legal assessment or source edits."
+}
