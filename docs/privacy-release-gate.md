@@ -15,7 +15,7 @@ Questo documento **sostituisce le checklist pre-merge della PR #11 e della #19**
 
 ## Gate bloccanti per dichiarare completa l'informativa
 
-- [ ] **G1 — Retention posta della titolare:** periodo/criterio che corrisponda alla gestione reale della casella Live.com e gestione di dati particolari non richiesti.
+- [x] **G1 — Criterio di conservazione della titolare:** Sabina elimina le email immediatamente dopo aver risposto e svolge una pulizia mensile anche dei messaggi senza risposta (conferma 16 ottobre 2026). Tempi tecnici del provider e gestione di eventuali eccezioni rimangono in G4/G6.
 - [ ] **G2 — Basi giuridiche:** finalità e base art. 6 per navigazione/sicurezza, messaggi, diritti; eventuale legittimo interesse valutato, non presunto.
 - [ ] **G3 — Catena soggetti/contratti:** distinguere titolare Sabina, eventuale manutentore, intestatario workspace Pro, Vercel e il servizio Outlook.com consumer.
 - [ ] **G4 — Hosting e trasferimenti:** natura/criterio di retention log e categorie di destinatari; DPA, subprocessor e trasferimenti coerenti con gli accordi effettivi.
