@@ -19,7 +19,7 @@ Luigi Janiri del Gemelli di Roma sottolinea che la prevalenza della depressione 
 La Società Italiana di Psichiatria ha chiesto ripetutamente al governo di non tagliare i fondi riservati alla salute mentale, evidenziando che paesi come Svezia e Finlandia, potenziando tali servizi, hanno ridotto il tasso di suicidi. 
 
 ### Il legame con la cronaca  
-Spesso la depressione è responsabile di efferati delitti, come la depressione post-partum o le stragi familiari. Janiri sottolinea che gli omicidi compiuti rappresentano spesso una sorta di ‘suicidio allargato’ alle persone amate. 
+Il riferimento a singoli fatti di cronaca non permette di attribuire alla depressione, in generale, comportamenti violenti.
 
 ### Terapie e trattamento  
 L’82% dei pazienti depressi segue una terapia solamente farmacologica, mentre solo il 14% integra farmaci e psicoterapia, sebbene studi dimostrino una maggior efficacia della terapia combinata.
@@ -37,5 +37,11 @@ Giovanna racconta la sua esperienza con la depressione post-partum, evidenziando
 
 - [📺 Guarda il video "Living with Black Dog"](https://youtu.be/2VRRx7Mtep8)
 - [📖 Libretto guida: "Parliamone! Scopri l’origine della tua depressione e come affrontarla"](https://issuu.com/egnoatto/docs/paliamone_libretto-paziente_1_?utm_medium=referral&utm_source=www.sabinascattola.com)
+
+### Fonte e contesto storico
+
+Rielaborazione da [Sara Ficocelli, «La depressione oscura il nostro futuro», la Repubblica, 17 ottobre 2014](https://inchieste.repubblica.it/it/repubblica/rep-it/2014/10/17/news/la_depressione_al_tempo_della_crisi-97695717/index.html), inchiesta con un commento di Michele Bocci.
+
+*Articolo d’archivio: dati e previsioni, compreso il riferimento al 2020, appartengono al contesto della fonte del 2014 e non sono stati aggiornati.*
 
 *[Ritorna alla Home](/)*

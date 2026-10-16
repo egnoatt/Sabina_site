@@ -43,7 +43,9 @@ Secondo Kernberg, «la psicoanalisi è stata limitata in passato per aver ignora
 
 Se l’obiettivo di Freud era dimostrare l’importanza dell’inconscio, le neuroscienze confermano che gran parte dell’attività mentale avviene sotto il livello di coscienza. «La sfida ora è spiegare con gli strumenti neuroscientifici cosa sia la coscienza», osserva Falci. Gli alfieri della neuropsicoanalisi sono convinti che lo scopritore dell’inconscio sarebbe dalla loro parte: «Freud attendeva il momento in cui le sue teorie si sarebbero integrate con le scoperte neuroscientifiche», conclude Peterson: «Se fosse vivo oggi, lavorerebbe con noi».
 
-_Paola Emilia Cicerone – tratto da L’Espresso._
+### Fonte
+
+Tratto, con adattamenti, da [Paola Emilia Cicerone, «Sigmund Freud aveva ragione: le nuove ricerche lo “riabilitano”», L’Espresso, 8 settembre 2015](https://lespresso.it/c/idee/2015/9/7/sigmund-freud-aveva-ragione-le-nuove-ricerche-lo-riabilitano/42307).
 
 
 *[Ritorna alla Home](/)*
