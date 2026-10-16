@@ -1,12 +1,14 @@
 # Dossier decisionale per Sabina sugli otto articoli
 
-**Aggiornamento operativo del 16 ottobre 2026:** il proprietario ha richiesto di conservare gli articoli con modifiche minime e fonti in fondo. È preparata una bozza per cinque testi: crediti e collegamenti per #51/#53/#54/#55/#57, correzione della descrizione anonima in #54, del passaggio sulla violenza in #55 e della garanzia sul comportamento online in #57; nota storica in #55. Le ipotesi di sostituzione o revisione estesa sotto restano alternative istruttorie, non il piano operativo scelto. #52/#56/#58 rimangono invariati: nessuna nuova fonte puntuale viene inventata. La bozza non è pubblicata e attende l’approvazione di Sabina della versione concreta e il successivo via libera del proprietario. I crediti non attestano una licenza; i gate del registro restano aperti.
+**Stato corrente — 16 ottobre 2026, dopo PR #77.** Il proprietario ha comunicato l’approvazione di Sabina delle cinque versioni concrete #51/#53/#54/#55/#57 (head `cc301cf00ec2c768b744b60ec8b3f12fff65b8b6`) e ha autorizzato merge e pubblicazione. La PR #77 è pubblicata su `ce2f5dc0e22833f35d43533420248e8025bba674`, Vercel READY; CI pre/post merge e verifica delle cinque pagine PASS. Queste cinque schede sono chiuse per il lavoro editoriale richiesto. L’approvazione delle modifiche minime non attesta una revisione scientifica esaustiva.
 
-Istruttoria del 16 ottobre 2026, **non approvata per la pubblicazione**. Il dossier riunisce #51–#58 e serve a decidere il trattamento dei testi nell'epic [#29](https://github.com/egnoatt/Sabina_site/issues/29), dossier [#35](https://github.com/egnoatt/Sabina_site/issues/35) e attribuzioni [#36](https://github.com/egnoatt/Sabina_site/issues/36). Sostituisce le precedenti otto schede preliminari nello stesso file, mantenendo un solo registro.
+**Diritti separati:** il proprietario ha autorizzato di raccogliere provenienza e diritti non documentati in [#78](https://github.com/egnoatt/Sabina_site/issues/78), aperta. Non si richiedono di nuovo documenti Word già dichiarati assenti; non si deducono licenze né violazioni. #52/#56/#58 restano invariati e aperti per conferma specifica del mantenimento da parte di Sabina. #36 resta aperta per la proposta JSON-LD, che richiede approvazione separata. #49 conserva verifiche media e riferimenti.
+
+Le otto schede sotto conservano **l’istruttoria storica**, fonti e limiti, non una lista di riscritture ancora obbligatorie. Le alternative ampie non sono il piano scelto. Nessuna nuova modifica agli articoli o privacy è inclusa in questo aggiornamento.
 
 Base verificata: `main` = `aad2f9f8e922571080045667366bd7226b0a11d1`, release `essenza-nonprivacy-2026-10-16`. Le date riportate sotto distinguono il frontmatter del sito dalle pubblicazioni esterne. L'individuazione di una fonte non costituisce prova di una licenza. Non risultano allegati di autorizzazione nei documenti editoriali esaminati: questo non dimostra una violazione e non esclude accordi conservati privatamente.
 
-## Decisioni da prendere
+## Alternative dell’istruttoria storica (superate dal piano minimo per i cinque testi approvati)
 
 | Scheda | Proposta da discutere | Condizione decisiva |
 | --- | --- | --- |
@@ -139,17 +141,19 @@ Le fonti esterne sono state consultate il 16 ottobre 2026. Sono state lette le p
 
 Per #36 nessun campo di attribuzione è modificato. Prima dell'implementazione servirà una mappa approvata per ogni versione: autore del testo, curatore, traduttore se pertinente, editore/fonte, date documentate, revisore e data di revisione reale. Per testi compositi occorre rappresentare distintamente contributo originale e materiale derivato, senza promuovere il curatore ad autore unico.
 
-## Registro delle approvazioni
+## Registro corrente delle approvazioni
 
-| Issue | Scelta Sabina | Versione articolo approvata | Evidenza diritti | Via libera Enrico | Stato |
-| --- | --- | --- | --- | --- | --- |
-| #51 | Pendente | Nessuna | Da documentare | Non richiesto su versione assente | Aperta |
-| #52 | Pendente | Nessuna | Da documentare | Non richiesto su versione assente | Aperta |
-| #53 | Pendente | Nessuna | Da documentare | Non richiesto su versione assente | Aperta |
-| #54 | Pendente | Nessuna | Da documentare | Non richiesto su versione assente | Aperta |
-| #55 | Pendente | Nessuna | Da documentare | Non richiesto su versione assente | Aperta |
-| #56 | Pendente | Nessuna | Da documentare | Non richiesto su versione assente | Aperta |
-| #57 | Pendente | Nessuna | Da documentare | Non richiesto su versione assente | Aperta |
-| #58 | Pendente | Nessuna | Da documentare | Non richiesto su versione assente | Aperta |
+La conferma di Sabina è stata comunicata espressamente dal proprietario nella conversazione; non è una firma GitHub di Sabina. Registrazione anche nella [PR #77](https://github.com/egnoatt/Sabina_site/pull/77).
 
-Sabina può scegliere gli otto indirizzi in una sola revisione e indicare dove sono conservate le prove. Tale scelta permette di preparare le versioni, non di pubblicarle. Per ogni articolo seguiranno bozza concreta con diff identificabile, approvazione esplicita di Sabina su quella versione e sulle attribuzioni, PR isolata con QA, poi via libera del proprietario a merge e rilascio. Registrare data, versione/commit e riferimento non riservato dell'approvazione; non allegare licenze, email o dati sensibili al repository pubblico. #29, #35, #36 e #51–#58 restano aperte finché i relativi criteri non sono soddisfatti. Privacy #20 e PR #26 restano completamente separate.
+| Issue | Scelta/versione | Via libera Enrico | Stato editoriale | Diritti |
+| --- | --- | --- | --- | --- |
+| #51 | Mantenimento con fonte, cc301cf | Ricevuto; pubblicata #77 | Chiusa | #78 aperta |
+| #52 | Invariata; conferma specifica Sabina pendente | Nessuna nuova pubblicazione | Aperta | #78 aperta |
+| #53 | Mantenimento con fonte, cc301cf | Ricevuto; pubblicata #77 | Chiusa | #78 aperta |
+| #54 | Credito/descrizione corretti, cc301cf | Ricevuto; pubblicata #77 | Chiusa | #78 aperta |
+| #55 | Correzione minima e nota storica, cc301cf | Ricevuto; pubblicata #77 | Chiusa | #78 aperta |
+| #56 | Invariata; conferma specifica Sabina pendente | Nessuna nuova pubblicazione | Aperta | #78 aperta |
+| #57 | Correzione minima e fonte, cc301cf | Ricevuto; pubblicata #77 | Chiusa | #78 aperta |
+| #58 | Invariata; conferma specifica Sabina pendente | Nessuna nuova pubblicazione | Aperta | #78 aperta |
+
+#35 resta aperta soltanto per completare il registro delle tre decisioni residue. #29/#50 includono ancora #36, #78 e i gate pertinenti; la separazione evita duplicazioni, non cancella il residuo. Privacy #20/#26 separata e invariata.
