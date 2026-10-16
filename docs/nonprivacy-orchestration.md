@@ -18,6 +18,8 @@ Gli owner indicano responsabilità operative, non account GitHub inventati. Ogni
 
 ## Sequenza e isolamento
 
+La [matrice PR ed evidenze](./nonprivacy-validation.md) registra le dipendenze effettive. La versione finale dei test QA dipende dalle correzioni che verifica; la preparazione e i controlli locali sono avvenuti in parallelo.
+
 1. Governance, controllo deploy e copertura QA.
 2. Robustezza archivio e metadati; in parallelo fondazioni Essenza e dossier editoriale.
 3. PR per pagina sopra le fondazioni; shell condivisa separata; secondarie in un pacchetto distinto.
