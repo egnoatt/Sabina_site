@@ -1,5 +1,7 @@
 # QA di chiusura non privacy — 16 ottobre 2026
 
+**Aggiornamento successivo alla PR #77:** [verbale supplementare](post77-manual.md). #48 chiusa come baseline di laboratorio accettata; #47/#49 restano aperte con residui aggiornati. Le indicazioni di stato sotto sono lo snapshot precedente, le misure restano riferite alla baseline indicata.
+
 Baseline verificata: `aad2f9f8e922571080045667366bd7226b0a11d1`, release `essenza-nonprivacy-2026-10-16`. Issue #47/#48/#49; #50 resta aperta. Questa PR contiene prove e una sonda locale, senza modifiche alle pagine, alle attribuzioni, al design o alla produzione. Nessuna attestazione di conformità WCAG o di Core Web Vitals sul campo.
 
 ## Risultati riproducibili
