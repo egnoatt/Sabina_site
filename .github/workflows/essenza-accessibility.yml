@@ -3,12 +3,11 @@ name: Essenza axe accessibility review
 on:
   pull_request:
     paths:
-      - 'src/app/page.tsx'
-      - 'src/app/blog/[slug]/page.tsx'
-      - 'src/components/EditorialBotanical.tsx'
-      - 'src/app/globals.css'
-      - 'tailwind.config.js'
-      - 'scripts/essenza_accessibility_audit.py'
+      - 'src/**'
+      - 'public/**'
+      - 'package*.json'
+      - '*config*'
+      - 'scripts/**'
       - '.github/workflows/essenza-accessibility.yml'
 
 permissions:
@@ -35,7 +34,7 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Build Next.js
         run: npm run build
-      - name: Audit homepage and article at responsive widths
+      - name: Audit all public routes at responsive widths
         run: python scripts/essenza_accessibility_audit.py
       - name: Preserve structured findings
         if: always()
