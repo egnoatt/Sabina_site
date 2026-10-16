@@ -12,16 +12,16 @@ Scopo: completare il testo GDPR senza duplicare gli indirizzi email sul sito o r
 
 ## Decisioni richieste alla titolare prima di chiudere la #20
 
-### DR-01 — Politica concreta per le email ricevute — PARTIAL / TIMING BLOCKING
-**Conferma del proprietario del 16 ottobre 2026:** «Sabina cancella le email».
+### DR-01 — Criterio di conservazione delle email — OWNER CONFIRMED
 
-- [x] **Prassi generale dichiarata:** le email ricevute vengono cancellate; non viene dichiarata la conservazione indefinita.
-- [ ] **Precisare il criterio effettivo:** cancellazione dopo aver risposto, cancellazione periodica o altro criterio reale? Nessuna scadenza è ancora stata confermata; non attribuire 30/90/365 giorni.
-- [ ] **Precisare la portata:** eliminazione dalla posta ricevuta e, dove necessario, trattamento di cestino, copie e backup del provider secondo le condizioni applicabili; non presumere cancellazione tecnica immediata e irreversibile.
-- [ ] Per messaggi involontariamente contenenti dati sanitari, concordare gestione prudente e non trattarli come richieste cliniche.
-- [ ] Eventuali eccezioni per contestazioni/obblighi legali devono essere approvate, senza inventare categorie.
+**Conferma del proprietario, 16 ottobre 2026:**
+- [x] Sabina cancella le email cui risponde **subito dopo aver risposto**.
+- [x] Effettua una **pulizia mensile**, che include anche le email alle quali non ha risposto.
+- [x] Il criterio dichiarato è quindi: eliminazione dopo risposta e revisione/cancellazione mensile della posta residua.
 
-**Il punto G1 non è chiuso:** la dichiarazione «cancella le email» non soddisfa ancora, da sola, l'esigenza di definire un periodo o criterio di conservazione chiaro.
+**Distinzioni operative:** queste indicazioni descrivono la pratica di Sabina, non i tempi di eliminazione dal Cestino, dalle copie o dai backup del provider Microsoft. In presenza di eventuali dati sanitari ricevuti spontaneamente occorre seguire una gestione prudente, senza avviare trattamenti clinici sul sito.
+
+**Gate:** criterio della titolare documentato; resta la convalida del testo pubblico e delle eventuali eccezioni motivate.
 
 ### DR-02 — Basi giuridiche dei trattamenti — BLOCKING
 **Candidate, non verificate né automaticamente applicabili:**
