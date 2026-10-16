@@ -1,0 +1,1082 @@
+{
+  "method": "Chromium 148 local production build; mobile viewport375x812 DPR1, cache disabled, CDP CPU4x and network150ms/1.6Mbps down/0.75Mbps up, 3 cold contexts/state; sample at networkidle+1s. Third parties blocked. Shift sum is not session-window CLS; no INP or field data. Bundle gzip computed offline, not actual transfer encoding.",
+  "samples": [
+    {
+      "route": "/",
+      "bannerDismissed": false,
+      "run": 1,
+      "status": 200,
+      "probe": {
+        "lcpMs": 556,
+        "layoutShiftSum": 0.00024275947001868524
+      },
+      "resources": [
+        {
+          "name": "/_next/static/css/f30349d4d17fa9db.css",
+          "transferSize": 8190,
+          "encodedBodySize": 7890,
+          "decodedBodySize": 45039
+        },
+        {
+          "name": "/_next/static/chunks/webpack-650bc85863e2a9e7.js",
+          "transferSize": 1969,
+          "encodedBodySize": 1669,
+          "decodedBodySize": 3344
+        },
+        {
+          "name": "/_next/static/chunks/4bd1b696-deba172d32c79f82.js",
+          "transferSize": 62799,
+          "encodedBodySize": 62499,
+          "decodedBodySize": 198614
+        },
+        {
+          "name": "/_next/static/chunks/main-app-34b6eaa1f13ae2f6.js",
+          "transferSize": 813,
+          "encodedBodySize": 513,
+          "decodedBodySize": 513
+        },
+        {
+          "name": "/_next/static/chunks/794-e02d285919b32be1.js",
+          "transferSize": 52875,
+          "encodedBodySize": 52575,
+          "decodedBodySize": 195033
+        },
+        {
+          "name": "/_next/static/chunks/app/layout-3ea68bf65bb4035c.js",
+          "transferSize": 1682,
+          "encodedBodySize": 1382,
+          "decodedBodySize": 3312
+        },
+        {
+          "name": "/_next/static/chunks/500-b84d19d842172eba.js",
+          "transferSize": 3803,
+          "encodedBodySize": 3503,
+          "decodedBodySize": 8719
+        },
+        {
+          "name": "/_next/static/chunks/app/error-24e6b7bacac1685a.js",
+          "transferSize": 1213,
+          "encodedBodySize": 913,
+          "decodedBodySize": 913
+        },
+        {
+          "name": "/_next/static/chunks/app/page-87b90285b04707c8.js",
+          "transferSize": 1343,
+          "encodedBodySize": 1043,
+          "decodedBodySize": 2063
+        },
+        {
+          "name": "/_next/static/chunks/app/chi-sono/page-a47b995f0dd890b8.js",
+          "transferSize": 523,
+          "encodedBodySize": 223,
+          "decodedBodySize": 223
+        },
+        {
+          "name": "/_next/static/chunks/app/blog/page-a47b995f0dd890b8.js",
+          "transferSize": 523,
+          "encodedBodySize": 223,
+          "decodedBodySize": 223
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "bannerDismissed": false,
+      "run": 2,
+      "status": 200,
+      "probe": {
+        "lcpMs": 540,
+        "layoutShiftSum": 0.00024275947001868524
+      },
+      "resources": [
+        {
+          "name": "/_next/static/css/f30349d4d17fa9db.css",
+          "transferSize": 8190,
+          "encodedBodySize": 7890,
+          "decodedBodySize": 45039
+        },
+        {
+          "name": "/_next/static/chunks/webpack-650bc85863e2a9e7.js",
+          "transferSize": 1969,
+          "encodedBodySize": 1669,
+          "decodedBodySize": 3344
+        },
+        {
+          "name": "/_next/static/chunks/4bd1b696-deba172d32c79f82.js",
+          "transferSize": 62799,
+          "encodedBodySize": 62499,
+          "decodedBodySize": 198614
+        },
+        {
+          "name": "/_next/static/chunks/main-app-34b6eaa1f13ae2f6.js",
+          "transferSize": 813,
+          "encodedBodySize": 513,
+          "decodedBodySize": 513
+        },
+        {
+          "name": "/_next/static/chunks/794-e02d285919b32be1.js",
+          "transferSize": 52875,
+          "encodedBodySize": 52575,
+          "decodedBodySize": 195033
+        },
+        {
+          "name": "/_next/static/chunks/app/error-24e6b7bacac1685a.js",
+          "transferSize": 1213,
+          "encodedBodySize": 913,
+          "decodedBodySize": 913
+        },
+        {
+          "name": "/_next/static/chunks/app/layout-3ea68bf65bb4035c.js",
+          "transferSize": 1682,
+          "encodedBodySize": 1382,
+          "decodedBodySize": 3312
+        },
+        {
+          "name": "/_next/static/chunks/500-b84d19d842172eba.js",
+          "transferSize": 3803,
+          "encodedBodySize": 3503,
+          "decodedBodySize": 8719
+        },
+        {
+          "name": "/_next/static/chunks/app/page-87b90285b04707c8.js",
+          "transferSize": 1343,
+          "encodedBodySize": 1043,
+          "decodedBodySize": 2063
+        },
+        {
+          "name": "/_next/static/chunks/app/chi-sono/page-a47b995f0dd890b8.js",
+          "transferSize": 523,
+          "encodedBodySize": 223,
+          "decodedBodySize": 223
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "bannerDismissed": false,
+      "run": 3,
+      "status": 200,
+      "probe": {
+        "lcpMs": 532,
+        "layoutShiftSum": 0.00024275947001868524
+      },
+      "resources": [
+        {
+          "name": "/_next/static/css/f30349d4d17fa9db.css",
+          "transferSize": 8190,
+          "encodedBodySize": 7890,
+          "decodedBodySize": 45039
+        },
+        {
+          "name": "/_next/static/chunks/webpack-650bc85863e2a9e7.js",
+          "transferSize": 1969,
+          "encodedBodySize": 1669,
+          "decodedBodySize": 3344
+        },
+        {
+          "name": "/_next/static/chunks/main-app-34b6eaa1f13ae2f6.js",
+          "transferSize": 813,
+          "encodedBodySize": 513,
+          "decodedBodySize": 513
+        },
+        {
+          "name": "/_next/static/chunks/794-e02d285919b32be1.js",
+          "transferSize": 52875,
+          "encodedBodySize": 52575,
+          "decodedBodySize": 195033
+        },
+        {
+          "name": "/_next/static/chunks/4bd1b696-deba172d32c79f82.js",
+          "transferSize": 62799,
+          "encodedBodySize": 62499,
+          "decodedBodySize": 198614
+        },
+        {
+          "name": "/_next/static/chunks/500-b84d19d842172eba.js",
+          "transferSize": 3803,
+          "encodedBodySize": 3503,
+          "decodedBodySize": 8719
+        },
+        {
+          "name": "/_next/static/chunks/app/error-24e6b7bacac1685a.js",
+          "transferSize": 1213,
+          "encodedBodySize": 913,
+          "decodedBodySize": 913
+        },
+        {
+          "name": "/_next/static/chunks/app/layout-3ea68bf65bb4035c.js",
+          "transferSize": 1682,
+          "encodedBodySize": 1382,
+          "decodedBodySize": 3312
+        },
+        {
+          "name": "/_next/static/chunks/app/page-87b90285b04707c8.js",
+          "transferSize": 1343,
+          "encodedBodySize": 1043,
+          "decodedBodySize": 2063
+        },
+        {
+          "name": "/_next/static/chunks/app/chi-sono/page-a47b995f0dd890b8.js",
+          "transferSize": 523,
+          "encodedBodySize": 223,
+          "decodedBodySize": 223
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "bannerDismissed": true,
+      "run": 1,
+      "status": 200,
+      "probe": {
+        "lcpMs": 508,
+        "layoutShiftSum": 8.807744262984622e-06
+      },
+      "resources": [
+        {
+          "name": "/_next/static/css/f30349d4d17fa9db.css",
+          "transferSize": 8190,
+          "encodedBodySize": 7890,
+          "decodedBodySize": 45039
+        },
+        {
+          "name": "/_next/static/chunks/webpack-650bc85863e2a9e7.js",
+          "transferSize": 1969,
+          "encodedBodySize": 1669,
+          "decodedBodySize": 3344
+        },
+        {
+          "name": "/_next/static/chunks/4bd1b696-deba172d32c79f82.js",
+          "transferSize": 62799,
+          "encodedBodySize": 62499,
+          "decodedBodySize": 198614
+        },
+        {
+          "name": "/_next/static/chunks/main-app-34b6eaa1f13ae2f6.js",
+          "transferSize": 813,
+          "encodedBodySize": 513,
+          "decodedBodySize": 513
+        },
+        {
+          "name": "/_next/static/chunks/794-e02d285919b32be1.js",
+          "transferSize": 52875,
+          "encodedBodySize": 52575,
+          "decodedBodySize": 195033
+        },
+        {
+          "name": "/_next/static/chunks/app/error-24e6b7bacac1685a.js",
+          "transferSize": 1213,
+          "encodedBodySize": 913,
+          "decodedBodySize": 913
+        },
+        {
+          "name": "/_next/static/chunks/app/layout-3ea68bf65bb4035c.js",
+          "transferSize": 1682,
+          "encodedBodySize": 1382,
+          "decodedBodySize": 3312
+        },
+        {
+          "name": "/_next/static/chunks/500-b84d19d842172eba.js",
+          "transferSize": 3803,
+          "encodedBodySize": 3503,
+          "decodedBodySize": 8719
+        },
+        {
+          "name": "/_next/static/chunks/app/page-87b90285b04707c8.js",
+          "transferSize": 1343,
+          "encodedBodySize": 1043,
+          "decodedBodySize": 2063
+        },
+        {
+          "name": "/_next/static/chunks/app/chi-sono/page-a47b995f0dd890b8.js",
+          "transferSize": 523,
+          "encodedBodySize": 223,
+          "decodedBodySize": 223
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "bannerDismissed": true,
+      "run": 2,
+      "status": 200,
+      "probe": {
+        "lcpMs": 516,
+        "layoutShiftSum": 8.807744262984622e-06
+      },
+      "resources": [
+        {
+          "name": "/_next/static/css/f30349d4d17fa9db.css",
+          "transferSize": 8190,
+          "encodedBodySize": 7890,
+          "decodedBodySize": 45039
+        },
+        {
+          "name": "/_next/static/chunks/webpack-650bc85863e2a9e7.js",
+          "transferSize": 1969,
+          "encodedBodySize": 1669,
+          "decodedBodySize": 3344
+        },
+        {
+          "name": "/_next/static/chunks/4bd1b696-deba172d32c79f82.js",
+          "transferSize": 62799,
+          "encodedBodySize": 62499,
+          "decodedBodySize": 198614
+        },
+        {
+          "name": "/_next/static/chunks/main-app-34b6eaa1f13ae2f6.js",
+          "transferSize": 813,
+          "encodedBodySize": 513,
+          "decodedBodySize": 513
+        },
+        {
+          "name": "/_next/static/chunks/794-e02d285919b32be1.js",
+          "transferSize": 52875,
+          "encodedBodySize": 52575,
+          "decodedBodySize": 195033
+        },
+        {
+          "name": "/_next/static/chunks/500-b84d19d842172eba.js",
+          "transferSize": 3803,
+          "encodedBodySize": 3503,
+          "decodedBodySize": 8719
+        },
+        {
+          "name": "/_next/static/chunks/app/error-24e6b7bacac1685a.js",
+          "transferSize": 1213,
+          "encodedBodySize": 913,
+          "decodedBodySize": 913
+        },
+        {
+          "name": "/_next/static/chunks/app/layout-3ea68bf65bb4035c.js",
+          "transferSize": 1682,
+          "encodedBodySize": 1382,
+          "decodedBodySize": 3312
+        },
+        {
+          "name": "/_next/static/chunks/app/page-87b90285b04707c8.js",
+          "transferSize": 1343,
+          "encodedBodySize": 1043,
+          "decodedBodySize": 2063
+        },
+        {
+          "name": "/_next/static/chunks/app/chi-sono/page-a47b995f0dd890b8.js",
+          "transferSize": 523,
+          "encodedBodySize": 223,
+          "decodedBodySize": 223
+        }
+      ]
+    },
+    {
+      "route": "/",
+      "bannerDismissed": true,
+      "run": 3,
+      "status": 200,
+      "probe": {
+        "lcpMs": 524,
+        "layoutShiftSum": 8.807744262984622e-06
+      },
+      "resources": [
+        {
+          "name": "/_next/static/css/f30349d4d17fa9db.css",
+          "transferSize": 8190,
+          "encodedBodySize": 7890,
+          "decodedBodySize": 45039
+        },
+        {
+          "name": "/_next/static/chunks/webpack-650bc85863e2a9e7.js",
+          "transferSize": 1969,
+          "encodedBodySize": 1669,
+          "decodedBodySize": 3344
+        },
+        {
+          "name": "/_next/static/chunks/794-e02d285919b32be1.js",
+          "transferSize": 52875,
+          "encodedBodySize": 52575,
+          "decodedBodySize": 195033
+        },
+        {
+          "name": "/_next/static/chunks/4bd1b696-deba172d32c79f82.js",
+          "transferSize": 62799,
+          "encodedBodySize": 62499,
+          "decodedBodySize": 198614
+        },
+        {
+          "name": "/_next/static/chunks/main-app-34b6eaa1f13ae2f6.js",
+          "transferSize": 813,
+          "encodedBodySize": 513,
+          "decodedBodySize": 513
+        },
+        {
+          "name": "/_next/static/chunks/500-b84d19d842172eba.js",
+          "transferSize": 3803,
+          "encodedBodySize": 3503,
+          "decodedBodySize": 8719
+        },
+        {
+          "name": "/_next/static/chunks/app/error-24e6b7bacac1685a.js",
+          "transferSize": 1213,
+          "encodedBodySize": 913,
+          "decodedBodySize": 913
+        },
+        {
+          "name": "/_next/static/chunks/app/layout-3ea68bf65bb4035c.js",
+          "transferSize": 1682,
+          "encodedBodySize": 1382,
+          "decodedBodySize": 3312
+        },
+        {
+          "name": "/_next/static/chunks/app/page-87b90285b04707c8.js",
+          "transferSize": 1343,
+          "encodedBodySize": 1043,
+          "decodedBodySize": 2063
+        },
+        {
+          "name": "/_next/static/chunks/app/chi-sono/page-a47b995f0dd890b8.js",
+          "transferSize": 523,
+          "encodedBodySize": 223,
+          "decodedBodySize": 223
+        }
+      ]
+    },
+    {
+      "route": "/blog",
+      "bannerDismissed": false,
+      "run": 1,
+      "status": 200,
+      "probe": {
+        "lcpMs": 432,
+        "layoutShiftSum": 0.0006457175616976874
+      },
+      "resources": [
+        {
+          "name": "/_next/static/css/f30349d4d17fa9db.css",
+          "transferSize": 8190,
+          "encodedBodySize": 7890,
+          "decodedBodySize": 45039
+        },
+        {
+          "name": "/_next/static/chunks/webpack-650bc85863e2a9e7.js",
+          "transferSize": 1969,
+          "encodedBodySize": 1669,
+          "decodedBodySize": 3344
+        },
+        {
+          "name": "/_next/static/chunks/4bd1b696-deba172d32c79f82.js",
+          "transferSize": 62799,
+          "encodedBodySize": 62499,
+          "decodedBodySize": 198614
+        },
+        {
+          "name": "/_next/static/chunks/main-app-34b6eaa1f13ae2f6.js",
+          "transferSize": 813,
+          "encodedBodySize": 513,
+          "decodedBodySize": 513
+        },
+        {
+          "name": "/_next/static/chunks/app/layout-3ea68bf65bb4035c.js",
+          "transferSize": 1682,
+          "encodedBodySize": 1382,
+          "decodedBodySize": 3312
+        },
+        {
+          "name": "/_next/static/chunks/500-b84d19d842172eba.js",
+          "transferSize": 3803,
+          "encodedBodySize": 3503,
+          "decodedBodySize": 8719
+        },
+        {
+          "name": "/_next/static/chunks/794-e02d285919b32be1.js",
+          "transferSize": 52875,
+          "encodedBodySize": 52575,
+          "decodedBodySize": 195033
+        },
+        {
+          "name": "/_next/static/chunks/app/error-24e6b7bacac1685a.js",
+          "transferSize": 1213,
+          "encodedBodySize": 913,
+          "decodedBodySize": 913
+        },
+        {
+          "name": "/_next/static/chunks/app/blog/page-a47b995f0dd890b8.js",
+          "transferSize": 523,
+          "encodedBodySize": 223,
+          "decodedBodySize": 223
+        },
+        {
+          "name": "/_next/static/chunks/app/page-87b90285b04707c8.js",
+          "transferSize": 1343,
+          "encodedBodySize": 1043,
+          "decodedBodySize": 2063
+        }
+      ]
+    },
+    {
+      "route": "/blog",
+      "bannerDismissed": false,
+      "run": 2,
+      "status": 200,
+      "probe": {
+        "lcpMs": 436,
+        "layoutShiftSum": 0.0006457175616976874
+      },
+      "resources": [
+        {
+          "name": "/_next/static/css/f30349d4d17fa9db.css",
+          "transferSize": 8190,
+          "encodedBodySize": 7890,
+          "decodedBodySize": 45039
+        },
+        {
+          "name": "/_next/static/chunks/webpack-650bc85863e2a9e7.js",
+          "transferSize": 1969,
+          "encodedBodySize": 1669,
+          "decodedBodySize": 3344
+        },
+        {
+          "name": "/_next/static/chunks/794-e02d285919b32be1.js",
+          "transferSize": 52875,
+          "encodedBodySize": 52575,
+          "decodedBodySize": 195033
+        },
+        {
+          "name": "/_next/static/chunks/4bd1b696-deba172d32c79f82.js",
+          "transferSize": 62799,
+          "encodedBodySize": 62499,
+          "decodedBodySize": 198614
+        },
+        {
+          "name": "/_next/static/chunks/main-app-34b6eaa1f13ae2f6.js",
+          "transferSize": 813,
+          "encodedBodySize": 513,
+          "decodedBodySize": 513
+        },
+        {
+          "name": "/_next/static/chunks/app/error-24e6b7bacac1685a.js",
+          "transferSize": 1213,
+          "encodedBodySize": 913,
+          "decodedBodySize": 913
+        },
+        {
+          "name": "/_next/static/chunks/app/layout-3ea68bf65bb4035c.js",
+          "transferSize": 1682,
+          "encodedBodySize": 1382,
+          "decodedBodySize": 3312
+        },
+        {
+          "name": "/_next/static/chunks/500-b84d19d842172eba.js",
+          "transferSize": 3803,
+          "encodedBodySize": 3503,
+          "decodedBodySize": 8719
+        },
+        {
+          "name": "/_next/static/chunks/app/blog/page-a47b995f0dd890b8.js",
+          "transferSize": 523,
+          "encodedBodySize": 223,
+          "decodedBodySize": 223
+        },
+        {
+          "name": "/_next/static/chunks/app/page-87b90285b04707c8.js",
+          "transferSize": 1343,
+          "encodedBodySize": 1043,
+          "decodedBodySize": 2063
+        }
+      ]
+    },
+    {
+      "route": "/blog",
+      "bannerDismissed": false,
+      "run": 3,
+      "status": 200,
+      "probe": {
+        "lcpMs": 436,
+        "layoutShiftSum": 0.0006457175616976874
+      },
+      "resources": [
+        {
+          "name": "/_next/static/css/f30349d4d17fa9db.css",
+          "transferSize": 8190,
+          "encodedBodySize": 7890,
+          "decodedBodySize": 45039
+        },
+        {
+          "name": "/_next/static/chunks/webpack-650bc85863e2a9e7.js",
+          "transferSize": 1969,
+          "encodedBodySize": 1669,
+          "decodedBodySize": 3344
+        },
+        {
+          "name": "/_next/static/chunks/794-e02d285919b32be1.js",
+          "transferSize": 52875,
+          "encodedBodySize": 52575,
+          "decodedBodySize": 195033
+        },
+        {
+          "name": "/_next/static/chunks/4bd1b696-deba172d32c79f82.js",
+          "transferSize": 62799,
+          "encodedBodySize": 62499,
+          "decodedBodySize": 198614
+        },
+        {
+          "name": "/_next/static/chunks/main-app-34b6eaa1f13ae2f6.js",
+          "transferSize": 813,
+          "encodedBodySize": 513,
+          "decodedBodySize": 513
+        },
+        {
+          "name": "/_next/static/chunks/500-b84d19d842172eba.js",
+          "transferSize": 3803,
+          "encodedBodySize": 3503,
+          "decodedBodySize": 8719
+        },
+        {
+          "name": "/_next/static/chunks/app/layout-3ea68bf65bb4035c.js",
+          "transferSize": 1682,
+          "encodedBodySize": 1382,
+          "decodedBodySize": 3312
+        },
+        {
+          "name": "/_next/static/chunks/app/error-24e6b7bacac1685a.js",
+          "transferSize": 1213,
+          "encodedBodySize": 913,
+          "decodedBodySize": 913
+        },
+        {
+          "name": "/_next/static/chunks/app/blog/page-a47b995f0dd890b8.js",
+          "transferSize": 523,
+          "encodedBodySize": 223,
+          "decodedBodySize": 223
+        },
+        {
+          "name": "/_next/static/chunks/app/page-87b90285b04707c8.js",
+          "transferSize": 1343,
+          "encodedBodySize": 1043,
+          "decodedBodySize": 2063
+        }
+      ]
+    },
+    {
+      "route": "/blog/cosa-devi-sapere",
+      "bannerDismissed": false,
+      "run": 1,
+      "status": 200,
+      "probe": {
+        "lcpMs": 444,
+        "layoutShiftSum": 1.3944921012400205e-05
+      },
+      "resources": [
+        {
+          "name": "/_next/static/css/f30349d4d17fa9db.css",
+          "transferSize": 8190,
+          "encodedBodySize": 7890,
+          "decodedBodySize": 45039
+        },
+        {
+          "name": "/_next/static/chunks/webpack-650bc85863e2a9e7.js",
+          "transferSize": 1969,
+          "encodedBodySize": 1669,
+          "decodedBodySize": 3344
+        },
+        {
+          "name": "/_next/static/chunks/4bd1b696-deba172d32c79f82.js",
+          "transferSize": 62799,
+          "encodedBodySize": 62499,
+          "decodedBodySize": 198614
+        },
+        {
+          "name": "/_next/static/chunks/794-e02d285919b32be1.js",
+          "transferSize": 52875,
+          "encodedBodySize": 52575,
+          "decodedBodySize": 195033
+        },
+        {
+          "name": "/_next/static/chunks/main-app-34b6eaa1f13ae2f6.js",
+          "transferSize": 813,
+          "encodedBodySize": 513,
+          "decodedBodySize": 513
+        },
+        {
+          "name": "/_next/static/chunks/app/layout-3ea68bf65bb4035c.js",
+          "transferSize": 1682,
+          "encodedBodySize": 1382,
+          "decodedBodySize": 3312
+        },
+        {
+          "name": "/_next/static/chunks/500-b84d19d842172eba.js",
+          "transferSize": 3803,
+          "encodedBodySize": 3503,
+          "decodedBodySize": 8719
+        },
+        {
+          "name": "/_next/static/chunks/app/error-24e6b7bacac1685a.js",
+          "transferSize": 1213,
+          "encodedBodySize": 913,
+          "decodedBodySize": 913
+        },
+        {
+          "name": "/_next/static/chunks/app/blog/%5Bslug%5D/page-a47b995f0dd890b8.js",
+          "transferSize": 523,
+          "encodedBodySize": 223,
+          "decodedBodySize": 223
+        },
+        {
+          "name": "/_next/static/chunks/app/page-87b90285b04707c8.js",
+          "transferSize": 1343,
+          "encodedBodySize": 1043,
+          "decodedBodySize": 2063
+        }
+      ]
+    },
+    {
+      "route": "/blog/cosa-devi-sapere",
+      "bannerDismissed": false,
+      "run": 2,
+      "status": 200,
+      "probe": {
+        "lcpMs": 436,
+        "layoutShiftSum": 1.3944921012400205e-05
+      },
+      "resources": [
+        {
+          "name": "/_next/static/css/f30349d4d17fa9db.css",
+          "transferSize": 8190,
+          "encodedBodySize": 7890,
+          "decodedBodySize": 45039
+        },
+        {
+          "name": "/_next/static/chunks/webpack-650bc85863e2a9e7.js",
+          "transferSize": 1969,
+          "encodedBodySize": 1669,
+          "decodedBodySize": 3344
+        },
+        {
+          "name": "/_next/static/chunks/4bd1b696-deba172d32c79f82.js",
+          "transferSize": 62799,
+          "encodedBodySize": 62499,
+          "decodedBodySize": 198614
+        },
+        {
+          "name": "/_next/static/chunks/main-app-34b6eaa1f13ae2f6.js",
+          "transferSize": 813,
+          "encodedBodySize": 513,
+          "decodedBodySize": 513
+        },
+        {
+          "name": "/_next/static/chunks/794-e02d285919b32be1.js",
+          "transferSize": 52875,
+          "encodedBodySize": 52575,
+          "decodedBodySize": 195033
+        },
+        {
+          "name": "/_next/static/chunks/app/error-24e6b7bacac1685a.js",
+          "transferSize": 1213,
+          "encodedBodySize": 913,
+          "decodedBodySize": 913
+        },
+        {
+          "name": "/_next/static/chunks/app/layout-3ea68bf65bb4035c.js",
+          "transferSize": 1682,
+          "encodedBodySize": 1382,
+          "decodedBodySize": 3312
+        },
+        {
+          "name": "/_next/static/chunks/500-b84d19d842172eba.js",
+          "transferSize": 3803,
+          "encodedBodySize": 3503,
+          "decodedBodySize": 8719
+        },
+        {
+          "name": "/_next/static/chunks/app/blog/%5Bslug%5D/page-a47b995f0dd890b8.js",
+          "transferSize": 523,
+          "encodedBodySize": 223,
+          "decodedBodySize": 223
+        },
+        {
+          "name": "/_next/static/chunks/app/page-87b90285b04707c8.js",
+          "transferSize": 1343,
+          "encodedBodySize": 1043,
+          "decodedBodySize": 2063
+        }
+      ]
+    },
+    {
+      "route": "/blog/cosa-devi-sapere",
+      "bannerDismissed": false,
+      "run": 3,
+      "status": 200,
+      "probe": {
+        "lcpMs": 436,
+        "layoutShiftSum": 1.3944921012400205e-05
+      },
+      "resources": [
+        {
+          "name": "/_next/static/css/f30349d4d17fa9db.css",
+          "transferSize": 8190,
+          "encodedBodySize": 7890,
+          "decodedBodySize": 45039
+        },
+        {
+          "name": "/_next/static/chunks/webpack-650bc85863e2a9e7.js",
+          "transferSize": 1969,
+          "encodedBodySize": 1669,
+          "decodedBodySize": 3344
+        },
+        {
+          "name": "/_next/static/chunks/794-e02d285919b32be1.js",
+          "transferSize": 52875,
+          "encodedBodySize": 52575,
+          "decodedBodySize": 195033
+        },
+        {
+          "name": "/_next/static/chunks/4bd1b696-deba172d32c79f82.js",
+          "transferSize": 62799,
+          "encodedBodySize": 62499,
+          "decodedBodySize": 198614
+        },
+        {
+          "name": "/_next/static/chunks/main-app-34b6eaa1f13ae2f6.js",
+          "transferSize": 813,
+          "encodedBodySize": 513,
+          "decodedBodySize": 513
+        },
+        {
+          "name": "/_next/static/chunks/500-b84d19d842172eba.js",
+          "transferSize": 3803,
+          "encodedBodySize": 3503,
+          "decodedBodySize": 8719
+        },
+        {
+          "name": "/_next/static/chunks/app/error-24e6b7bacac1685a.js",
+          "transferSize": 1213,
+          "encodedBodySize": 913,
+          "decodedBodySize": 913
+        },
+        {
+          "name": "/_next/static/chunks/app/layout-3ea68bf65bb4035c.js",
+          "transferSize": 1682,
+          "encodedBodySize": 1382,
+          "decodedBodySize": 3312
+        },
+        {
+          "name": "/_next/static/chunks/app/blog/%5Bslug%5D/page-a47b995f0dd890b8.js",
+          "transferSize": 523,
+          "encodedBodySize": 223,
+          "decodedBodySize": 223
+        },
+        {
+          "name": "/_next/static/chunks/app/page-87b90285b04707c8.js",
+          "transferSize": 1343,
+          "encodedBodySize": 1043,
+          "decodedBodySize": 2063
+        }
+      ]
+    }
+  ],
+  "buildChunks": [
+    {
+      "path": "static/chunks/4bd1b696-deba172d32c79f82.js",
+      "bytes": 198614,
+      "gzipBytes": 62346
+    },
+    {
+      "path": "static/chunks/500-b84d19d842172eba.js",
+      "bytes": 8719,
+      "gzipBytes": 3502
+    },
+    {
+      "path": "static/chunks/794-e02d285919b32be1.js",
+      "bytes": 195033,
+      "gzipBytes": 52429
+    },
+    {
+      "path": "static/chunks/app/_global-error/page-7774afe1badcd38c.js",
+      "bytes": 189,
+      "gzipBytes": 160
+    },
+    {
+      "path": "static/chunks/app/_not-found/page-7774afe1badcd38c.js",
+      "bytes": 189,
+      "gzipBytes": 160
+    },
+    {
+      "path": "static/chunks/app/approfondimenti/clinici/layout-7774afe1badcd38c.js",
+      "bytes": 189,
+      "gzipBytes": 160
+    },
+    {
+      "path": "static/chunks/app/approfondimenti/clinici/page-a47b995f0dd890b8.js",
+      "bytes": 223,
+      "gzipBytes": 190
+    },
+    {
+      "path": "static/chunks/app/approfondimenti/curiosita/clinici/page-7774afe1badcd38c.js",
+      "bytes": 189,
+      "gzipBytes": 160
+    },
+    {
+      "path": "static/chunks/app/approfondimenti/curiosita/layout-7774afe1badcd38c.js",
+      "bytes": 189,
+      "gzipBytes": 160
+    },
+    {
+      "path": "static/chunks/app/approfondimenti/curiosita/page-a47b995f0dd890b8.js",
+      "bytes": 223,
+      "gzipBytes": 190
+    },
+    {
+      "path": "static/chunks/app/blog/[slug]/page-a47b995f0dd890b8.js",
+      "bytes": 223,
+      "gzipBytes": 190
+    },
+    {
+      "path": "static/chunks/app/blog/page-a47b995f0dd890b8.js",
+      "bytes": 223,
+      "gzipBytes": 190
+    },
+    {
+      "path": "static/chunks/app/chi-sono/layout-7774afe1badcd38c.js",
+      "bytes": 189,
+      "gzipBytes": 160
+    },
+    {
+      "path": "static/chunks/app/chi-sono/page-a47b995f0dd890b8.js",
+      "bytes": 223,
+      "gzipBytes": 190
+    },
+    {
+      "path": "static/chunks/app/contatti/layout-7774afe1badcd38c.js",
+      "bytes": 189,
+      "gzipBytes": 160
+    },
+    {
+      "path": "static/chunks/app/contatti/page-a47b995f0dd890b8.js",
+      "bytes": 223,
+      "gzipBytes": 190
+    },
+    {
+      "path": "static/chunks/app/error-24e6b7bacac1685a.js",
+      "bytes": 913,
+      "gzipBytes": 527
+    },
+    {
+      "path": "static/chunks/app/formazione/layout-7774afe1badcd38c.js",
+      "bytes": 189,
+      "gzipBytes": 160
+    },
+    {
+      "path": "static/chunks/app/formazione/page-a47b995f0dd890b8.js",
+      "bytes": 223,
+      "gzipBytes": 190
+    },
+    {
+      "path": "static/chunks/app/layout-3ea68bf65bb4035c.js",
+      "bytes": 3312,
+      "gzipBytes": 1382
+    },
+    {
+      "path": "static/chunks/app/news/layout-7774afe1badcd38c.js",
+      "bytes": 189,
+      "gzipBytes": 160
+    },
+    {
+      "path": "static/chunks/app/news/page-a47b995f0dd890b8.js",
+      "bytes": 223,
+      "gzipBytes": 190
+    },
+    {
+      "path": "static/chunks/app/not-found-a47b995f0dd890b8.js",
+      "bytes": 223,
+      "gzipBytes": 190
+    },
+    {
+      "path": "static/chunks/app/page-87b90285b04707c8.js",
+      "bytes": 2063,
+      "gzipBytes": 1043
+    },
+    {
+      "path": "static/chunks/app/privacy/layout-7774afe1badcd38c.js",
+      "bytes": 189,
+      "gzipBytes": 160
+    },
+    {
+      "path": "static/chunks/app/privacy/page-a47b995f0dd890b8.js",
+      "bytes": 223,
+      "gzipBytes": 190
+    },
+    {
+      "path": "static/chunks/app/robots.txt/route-7774afe1badcd38c.js",
+      "bytes": 189,
+      "gzipBytes": 160
+    },
+    {
+      "path": "static/chunks/app/servizi/layout-7774afe1badcd38c.js",
+      "bytes": 189,
+      "gzipBytes": 160
+    },
+    {
+      "path": "static/chunks/app/servizi/page-a47b995f0dd890b8.js",
+      "bytes": 223,
+      "gzipBytes": 190
+    },
+    {
+      "path": "static/chunks/app/sitemap.xml/route-7774afe1badcd38c.js",
+      "bytes": 189,
+      "gzipBytes": 160
+    },
+    {
+      "path": "static/chunks/framework-c80f5add3549a761.js",
+      "bytes": 182716,
+      "gzipBytes": 57691
+    },
+    {
+      "path": "static/chunks/main-app-34b6eaa1f13ae2f6.js",
+      "bytes": 513,
+      "gzipBytes": 223
+    },
+    {
+      "path": "static/chunks/main-e641ba692e8b109d.js",
+      "bytes": 129038,
+      "gzipBytes": 37316
+    },
+    {
+      "path": "static/chunks/next/dist/client/components/builtin/app-error-7774afe1badcd38c.js",
+      "bytes": 189,
+      "gzipBytes": 160
+    },
+    {
+      "path": "static/chunks/next/dist/client/components/builtin/forbidden-7774afe1badcd38c.js",
+      "bytes": 189,
+      "gzipBytes": 160
+    },
+    {
+      "path": "static/chunks/next/dist/client/components/builtin/global-error-ef6a7caae3823e47.js",
+      "bytes": 179,
+      "gzipBytes": 160
+    },
+    {
+      "path": "static/chunks/next/dist/client/components/builtin/unauthorized-7774afe1badcd38c.js",
+      "bytes": 189,
+      "gzipBytes": 160
+    },
+    {
+      "path": "static/chunks/polyfills-42372ed130431b0a.js",
+      "bytes": 112594,
+      "gzipBytes": 39373
+    },
+    {
+      "path": "static/chunks/webpack-650bc85863e2a9e7.js",
+      "bytes": 3344,
+      "gzipBytes": 1669
+    },
+    {
+      "path": "static/l6BNhmkHrZhbl0A1AJLAq/_buildManifest.js",
+      "bytes": 1008,
+      "gzipBytes": 328
+    },
+    {
+      "path": "static/l6BNhmkHrZhbl0A1AJLAq/_ssgManifest.js",
+      "bytes": 104,
+      "gzipBytes": 84
+    }
+  ]
+}

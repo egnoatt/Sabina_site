@@ -1,0 +1,197 @@
+{
+  "method": "Local Chromium, unthrottled; 3 cold contexts; 1s after networkidle; no interactions. layoutShiftSum is a diagnostic sum, not session-window field CLS. No INP measurement.",
+  "results": [
+    {
+      "width": 375,
+      "route": "/",
+      "bannerDismissed": false,
+      "run": 1,
+      "lcpMs": 68,
+      "layoutShiftSum": 0.0002127119341563786
+    },
+    {
+      "width": 375,
+      "route": "/",
+      "bannerDismissed": false,
+      "run": 2,
+      "lcpMs": 64,
+      "layoutShiftSum": 0.0002127119341563786
+    },
+    {
+      "width": 375,
+      "route": "/",
+      "bannerDismissed": false,
+      "run": 3,
+      "lcpMs": 52,
+      "layoutShiftSum": 0.0002127119341563786
+    },
+    {
+      "width": 375,
+      "route": "/",
+      "bannerDismissed": true,
+      "run": 1,
+      "lcpMs": 52,
+      "layoutShiftSum": 7.169547325102881e-06
+    },
+    {
+      "width": 375,
+      "route": "/",
+      "bannerDismissed": true,
+      "run": 2,
+      "lcpMs": 60,
+      "layoutShiftSum": 7.169547325102881e-06
+    },
+    {
+      "width": 375,
+      "route": "/",
+      "bannerDismissed": true,
+      "run": 3,
+      "lcpMs": 48,
+      "layoutShiftSum": 7.169547325102881e-06
+    },
+    {
+      "width": 375,
+      "route": "/blog",
+      "bannerDismissed": false,
+      "run": 1,
+      "lcpMs": 44,
+      "layoutShiftSum": 0.000526574074074074
+    },
+    {
+      "width": 375,
+      "route": "/blog",
+      "bannerDismissed": false,
+      "run": 2,
+      "lcpMs": 36,
+      "layoutShiftSum": 0.000526574074074074
+    },
+    {
+      "width": 375,
+      "route": "/blog",
+      "bannerDismissed": false,
+      "run": 3,
+      "lcpMs": 32,
+      "layoutShiftSum": 0.000526574074074074
+    },
+    {
+      "width": 375,
+      "route": "/blog/cosa-devi-sapere",
+      "bannerDismissed": false,
+      "run": 1,
+      "lcpMs": 48,
+      "layoutShiftSum": 1.1351234567901236e-05
+    },
+    {
+      "width": 375,
+      "route": "/blog/cosa-devi-sapere",
+      "bannerDismissed": false,
+      "run": 2,
+      "lcpMs": 28,
+      "layoutShiftSum": 1.1351234567901236e-05
+    },
+    {
+      "width": 375,
+      "route": "/blog/cosa-devi-sapere",
+      "bannerDismissed": false,
+      "run": 3,
+      "lcpMs": 44,
+      "layoutShiftSum": 1.1351234567901236e-05
+    },
+    {
+      "width": 1280,
+      "route": "/",
+      "bannerDismissed": false,
+      "run": 1,
+      "lcpMs": 120,
+      "layoutShiftSum": 0.0002406609429253472
+    },
+    {
+      "width": 1280,
+      "route": "/",
+      "bannerDismissed": false,
+      "run": 2,
+      "lcpMs": 56,
+      "layoutShiftSum": 0.00024921875
+    },
+    {
+      "width": 1280,
+      "route": "/",
+      "bannerDismissed": false,
+      "run": 3,
+      "lcpMs": 64,
+      "layoutShiftSum": 0.00024921875
+    },
+    {
+      "width": 1280,
+      "route": "/",
+      "bannerDismissed": true,
+      "run": 1,
+      "lcpMs": 56,
+      "layoutShiftSum": 0.00010256347656250001
+    },
+    {
+      "width": 1280,
+      "route": "/",
+      "bannerDismissed": true,
+      "run": 2,
+      "lcpMs": 52,
+      "layoutShiftSum": 0.00010256347656250001
+    },
+    {
+      "width": 1280,
+      "route": "/",
+      "bannerDismissed": true,
+      "run": 3,
+      "lcpMs": 52,
+      "layoutShiftSum": 0.00010256347656250001
+    },
+    {
+      "width": 1280,
+      "route": "/blog",
+      "bannerDismissed": false,
+      "run": 1,
+      "lcpMs": 40,
+      "layoutShiftSum": 0.0003251177469889323
+    },
+    {
+      "width": 1280,
+      "route": "/blog",
+      "bannerDismissed": false,
+      "run": 2,
+      "lcpMs": 28,
+      "layoutShiftSum": 0.0003251177469889323
+    },
+    {
+      "width": 1280,
+      "route": "/blog",
+      "bannerDismissed": false,
+      "run": 3,
+      "lcpMs": 32,
+      "layoutShiftSum": 0.0003251177469889323
+    },
+    {
+      "width": 1280,
+      "route": "/blog/cosa-devi-sapere",
+      "bannerDismissed": false,
+      "run": 1,
+      "lcpMs": 32,
+      "layoutShiftSum": 0.0001552978515625
+    },
+    {
+      "width": 1280,
+      "route": "/blog/cosa-devi-sapere",
+      "bannerDismissed": false,
+      "run": 2,
+      "lcpMs": 36,
+      "layoutShiftSum": 0.0001552978515625
+    },
+    {
+      "width": 1280,
+      "route": "/blog/cosa-devi-sapere",
+      "bannerDismissed": false,
+      "run": 3,
+      "lcpMs": 32,
+      "layoutShiftSum": 0.0001552978515625
+    }
+  ]
+}

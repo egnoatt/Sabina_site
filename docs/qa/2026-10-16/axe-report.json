@@ -1,0 +1,1818 @@
+[
+  {
+    "viewport": 320,
+    "route": "/",
+    "violations": [],
+    "passes": 23,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".px-2 > .ml-3[aria-hidden=\"true\"]"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"ml-3\">→</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              ".mt-5.min-h-11[href$=\"cosa-devi-sapere\"] > .ml-2[aria-hidden=\"true\"]"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"ml-2\">→</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "article:nth-child(2) > .mt-5.min-h-11.inline-flex > .ml-2[aria-hidden=\"true\"]"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"ml-2\">→</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "article:nth-child(3) > .mt-5.min-h-11.inline-flex > .ml-2[aria-hidden=\"true\"]"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"ml-2\">→</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 320,
+    "route": "/approfondimenti/clinici",
+    "violations": [],
+    "passes": 25,
+    "incomplete": []
+  },
+  {
+    "viewport": 320,
+    "route": "/approfondimenti/curiosita",
+    "violations": [],
+    "passes": 25,
+    "incomplete": []
+  },
+  {
+    "viewport": 320,
+    "route": "/approfondimenti/curiosita/clinici",
+    "violations": [],
+    "passes": 25,
+    "incomplete": []
+  },
+  {
+    "viewport": 320,
+    "route": "/blog",
+    "violations": [],
+    "passes": 25,
+    "incomplete": []
+  },
+  {
+    "viewport": 320,
+    "route": "/blog/2015-03-02-psicoanalisi-e-societa-le-mamme-narciso",
+    "violations": [],
+    "passes": 25,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 320,
+    "route": "/blog/8-segnali-per-andare-dallo-psicoterapeuta",
+    "violations": [],
+    "passes": 25,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 320,
+    "route": "/blog/cosa-devi-sapere",
+    "violations": [],
+    "passes": 25,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 320,
+    "route": "/blog/la-depressione-oscura-il-nostro-futuro",
+    "violations": [],
+    "passes": 25,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 320,
+    "route": "/blog/navigare-tra-piacere-e-dovere",
+    "violations": [],
+    "passes": 25,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 320,
+    "route": "/blog/neuroscienze-confermano-efficacia-terapia-psicoanalitica",
+    "violations": [],
+    "passes": 25,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 320,
+    "route": "/blog/psicoterapia-gruppo-coppia-individuale-informazioni-trattamenti",
+    "violations": [],
+    "passes": 25,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 320,
+    "route": "/blog/tutto-quello-che-avrei-voluto-sapere-prima-di-andare-dallo-psicologo",
+    "violations": [],
+    "passes": 25,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 320,
+    "route": "/chi-sono",
+    "violations": [],
+    "passes": 25,
+    "incomplete": []
+  },
+  {
+    "viewport": 320,
+    "route": "/contatti",
+    "violations": [],
+    "passes": 25,
+    "incomplete": []
+  },
+  {
+    "viewport": 320,
+    "route": "/formazione",
+    "violations": [],
+    "passes": 25,
+    "incomplete": []
+  },
+  {
+    "viewport": 320,
+    "route": "/news",
+    "violations": [],
+    "passes": 25,
+    "incomplete": []
+  },
+  {
+    "viewport": 320,
+    "route": "/privacy",
+    "violations": [],
+    "passes": 23,
+    "incomplete": []
+  },
+  {
+    "viewport": 320,
+    "route": "/servizi",
+    "violations": [],
+    "passes": 25,
+    "incomplete": []
+  },
+  {
+    "viewport": 375,
+    "route": "/",
+    "violations": [],
+    "passes": 23,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".px-2 > .ml-3[aria-hidden=\"true\"]"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"ml-3\">→</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              ".mt-5.min-h-11[href$=\"cosa-devi-sapere\"] > .ml-2[aria-hidden=\"true\"]"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"ml-2\">→</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "article:nth-child(2) > .mt-5.min-h-11.inline-flex > .ml-2[aria-hidden=\"true\"]"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"ml-2\">→</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "article:nth-child(3) > .mt-5.min-h-11.inline-flex > .ml-2[aria-hidden=\"true\"]"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"ml-2\">→</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 375,
+    "route": "/approfondimenti/clinici",
+    "violations": [],
+    "passes": 25,
+    "incomplete": []
+  },
+  {
+    "viewport": 375,
+    "route": "/approfondimenti/curiosita",
+    "violations": [],
+    "passes": 25,
+    "incomplete": []
+  },
+  {
+    "viewport": 375,
+    "route": "/approfondimenti/curiosita/clinici",
+    "violations": [],
+    "passes": 25,
+    "incomplete": []
+  },
+  {
+    "viewport": 375,
+    "route": "/blog",
+    "violations": [],
+    "passes": 25,
+    "incomplete": []
+  },
+  {
+    "viewport": 375,
+    "route": "/blog/2015-03-02-psicoanalisi-e-societa-le-mamme-narciso",
+    "violations": [],
+    "passes": 25,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 375,
+    "route": "/blog/8-segnali-per-andare-dallo-psicoterapeuta",
+    "violations": [],
+    "passes": 25,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 375,
+    "route": "/blog/cosa-devi-sapere",
+    "violations": [],
+    "passes": 25,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 375,
+    "route": "/blog/la-depressione-oscura-il-nostro-futuro",
+    "violations": [],
+    "passes": 25,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 375,
+    "route": "/blog/navigare-tra-piacere-e-dovere",
+    "violations": [],
+    "passes": 25,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 375,
+    "route": "/blog/neuroscienze-confermano-efficacia-terapia-psicoanalitica",
+    "violations": [],
+    "passes": 25,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 375,
+    "route": "/blog/psicoterapia-gruppo-coppia-individuale-informazioni-trattamenti",
+    "violations": [],
+    "passes": 25,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 375,
+    "route": "/blog/tutto-quello-che-avrei-voluto-sapere-prima-di-andare-dallo-psicologo",
+    "violations": [],
+    "passes": 25,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 375,
+    "route": "/chi-sono",
+    "violations": [],
+    "passes": 25,
+    "incomplete": []
+  },
+  {
+    "viewport": 375,
+    "route": "/contatti",
+    "violations": [],
+    "passes": 25,
+    "incomplete": []
+  },
+  {
+    "viewport": 375,
+    "route": "/formazione",
+    "violations": [],
+    "passes": 25,
+    "incomplete": []
+  },
+  {
+    "viewport": 375,
+    "route": "/news",
+    "violations": [],
+    "passes": 25,
+    "incomplete": []
+  },
+  {
+    "viewport": 375,
+    "route": "/privacy",
+    "violations": [],
+    "passes": 23,
+    "incomplete": []
+  },
+  {
+    "viewport": 375,
+    "route": "/servizi",
+    "violations": [],
+    "passes": 25,
+    "incomplete": []
+  },
+  {
+    "viewport": 768,
+    "route": "/",
+    "violations": [],
+    "passes": 23,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".px-2 > .ml-3[aria-hidden=\"true\"]"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"ml-3\">→</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              ".mt-5.min-h-11[href$=\"cosa-devi-sapere\"] > .ml-2[aria-hidden=\"true\"]"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"ml-2\">→</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "article:nth-child(2) > .mt-5.min-h-11.inline-flex > .ml-2[aria-hidden=\"true\"]"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"ml-2\">→</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "article:nth-child(3) > .mt-5.min-h-11.inline-flex > .ml-2[aria-hidden=\"true\"]"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"ml-2\">→</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 768,
+    "route": "/approfondimenti/clinici",
+    "violations": [],
+    "passes": 24,
+    "incomplete": []
+  },
+  {
+    "viewport": 768,
+    "route": "/approfondimenti/curiosita",
+    "violations": [],
+    "passes": 24,
+    "incomplete": []
+  },
+  {
+    "viewport": 768,
+    "route": "/approfondimenti/curiosita/clinici",
+    "violations": [],
+    "passes": 24,
+    "incomplete": []
+  },
+  {
+    "viewport": 768,
+    "route": "/blog",
+    "violations": [],
+    "passes": 24,
+    "incomplete": []
+  },
+  {
+    "viewport": 768,
+    "route": "/blog/2015-03-02-psicoanalisi-e-societa-le-mamme-narciso",
+    "violations": [],
+    "passes": 24,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 768,
+    "route": "/blog/8-segnali-per-andare-dallo-psicoterapeuta",
+    "violations": [],
+    "passes": 24,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 768,
+    "route": "/blog/cosa-devi-sapere",
+    "violations": [],
+    "passes": 24,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 768,
+    "route": "/blog/la-depressione-oscura-il-nostro-futuro",
+    "violations": [],
+    "passes": 24,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 768,
+    "route": "/blog/navigare-tra-piacere-e-dovere",
+    "violations": [],
+    "passes": 24,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 768,
+    "route": "/blog/neuroscienze-confermano-efficacia-terapia-psicoanalitica",
+    "violations": [],
+    "passes": 24,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 768,
+    "route": "/blog/psicoterapia-gruppo-coppia-individuale-informazioni-trattamenti",
+    "violations": [],
+    "passes": 24,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 768,
+    "route": "/blog/tutto-quello-che-avrei-voluto-sapere-prima-di-andare-dallo-psicologo",
+    "violations": [],
+    "passes": 24,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 768,
+    "route": "/chi-sono",
+    "violations": [],
+    "passes": 24,
+    "incomplete": []
+  },
+  {
+    "viewport": 768,
+    "route": "/contatti",
+    "violations": [],
+    "passes": 24,
+    "incomplete": []
+  },
+  {
+    "viewport": 768,
+    "route": "/formazione",
+    "violations": [],
+    "passes": 24,
+    "incomplete": []
+  },
+  {
+    "viewport": 768,
+    "route": "/news",
+    "violations": [],
+    "passes": 24,
+    "incomplete": []
+  },
+  {
+    "viewport": 768,
+    "route": "/privacy",
+    "violations": [],
+    "passes": 22,
+    "incomplete": []
+  },
+  {
+    "viewport": 768,
+    "route": "/servizi",
+    "violations": [],
+    "passes": 24,
+    "incomplete": []
+  },
+  {
+    "viewport": 1280,
+    "route": "/",
+    "violations": [],
+    "passes": 23,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              ".px-2 > .ml-3[aria-hidden=\"true\"]"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"ml-3\">→</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              ".mt-5.min-h-11[href$=\"cosa-devi-sapere\"] > .ml-2[aria-hidden=\"true\"]"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"ml-2\">→</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "article:nth-child(2) > .mt-5.min-h-11.inline-flex > .ml-2[aria-hidden=\"true\"]"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"ml-2\">→</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          },
+          {
+            "target": [
+              "article:nth-child(3) > .mt-5.min-h-11.inline-flex > .ml-2[aria-hidden=\"true\"]"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"ml-2\">→</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 1280,
+    "route": "/approfondimenti/clinici",
+    "violations": [],
+    "passes": 24,
+    "incomplete": []
+  },
+  {
+    "viewport": 1280,
+    "route": "/approfondimenti/curiosita",
+    "violations": [],
+    "passes": 24,
+    "incomplete": []
+  },
+  {
+    "viewport": 1280,
+    "route": "/approfondimenti/curiosita/clinici",
+    "violations": [],
+    "passes": 24,
+    "incomplete": []
+  },
+  {
+    "viewport": 1280,
+    "route": "/blog",
+    "violations": [],
+    "passes": 24,
+    "incomplete": []
+  },
+  {
+    "viewport": 1280,
+    "route": "/blog/2015-03-02-psicoanalisi-e-societa-le-mamme-narciso",
+    "violations": [],
+    "passes": 24,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 1280,
+    "route": "/blog/8-segnali-per-andare-dallo-psicoterapeuta",
+    "violations": [],
+    "passes": 24,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 1280,
+    "route": "/blog/cosa-devi-sapere",
+    "violations": [],
+    "passes": 24,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 1280,
+    "route": "/blog/la-depressione-oscura-il-nostro-futuro",
+    "violations": [],
+    "passes": 24,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 1280,
+    "route": "/blog/navigare-tra-piacere-e-dovere",
+    "violations": [],
+    "passes": 24,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 1280,
+    "route": "/blog/neuroscienze-confermano-efficacia-terapia-psicoanalitica",
+    "violations": [],
+    "passes": 24,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 1280,
+    "route": "/blog/psicoterapia-gruppo-coppia-individuale-informazioni-trattamenti",
+    "violations": [],
+    "passes": 24,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 1280,
+    "route": "/blog/tutto-quello-che-avrei-voluto-sapere-prima-di-andare-dallo-psicologo",
+    "violations": [],
+    "passes": 24,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "target": [
+              "span"
+            ],
+            "html": "<span aria-hidden=\"true\" class=\"mr-2\">←</span>",
+            "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters",
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "messageKey": "nonBmp"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element content contains only non-text characters"
+              }
+            ],
+            "all": [],
+            "none": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 1280,
+    "route": "/chi-sono",
+    "violations": [],
+    "passes": 24,
+    "incomplete": []
+  },
+  {
+    "viewport": 1280,
+    "route": "/contatti",
+    "violations": [],
+    "passes": 24,
+    "incomplete": []
+  },
+  {
+    "viewport": 1280,
+    "route": "/formazione",
+    "violations": [],
+    "passes": 24,
+    "incomplete": []
+  },
+  {
+    "viewport": 1280,
+    "route": "/news",
+    "violations": [],
+    "passes": 24,
+    "incomplete": []
+  },
+  {
+    "viewport": 1280,
+    "route": "/privacy",
+    "violations": [],
+    "passes": 22,
+    "incomplete": []
+  },
+  {
+    "viewport": 1280,
+    "route": "/servizi",
+    "violations": [],
+    "passes": 24,
+    "incomplete": []
+  }
+]
