@@ -38,7 +38,7 @@ Scopo: completare il testo GDPR senza duplicare gli indirizzi email sul sito o r
 - [x] Il sito di Sabina è ospitato nel **proprio account Vercel** del gestore tecnico, che **paga il servizio**.
 - [x] Il gestore tecnico amministra il sito e l'hosting **per conto di Sabina**.
 - [x] **Perimetro tecnico dichiarato:** il gestore opera tramite **GitHub e Vercel**; **non ha accesso alla casella di posta elettronica di Sabina**, alle email ricevute o ai relativi allegati.
-- [x] **Uso operativo dichiarato:** il gestore ha visibilità su Vercel ma si occupa concretamente di **aggiornamento, configurazione e pubblicazione** del sito, non di analizzare abitualmente i log dei visitatori.
+- [x] **Uso operativo dichiarato:** il gestore ha visibilità su Vercel ma si occupa concretamente di **aggiornamento, configurazione e pubblicazione** del sito, e **dichiara di non analizzare alcun dato degli utenti**.
 - [ ] **Privilegi effettivi:** verificare quali log, indirizzi IP o eventi di sicurezza risultino tecnicamente accessibili all'account amministrativo; distinguere capacità di accesso, consultazione occasionale e uso sistematico.
 - [x] La titolare del trattamento per il sito resta la Dott.ssa Sabina Scattola; intestatario/pagante del servizio hosting e titolare privacy non coincidono.
 
