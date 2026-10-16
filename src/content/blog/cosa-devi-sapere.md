@@ -95,7 +95,7 @@ Quando la terapia funziona, offre strumenti per affrontare la vita in modo diver
 
 
 
-### Fonte
+## Fonte
 
 Sintesi e adattamento da [Casey Gueren, «15 Things Therapists Actually Want You To Know», BuzzFeed, 10 dicembre 2015](https://www.buzzfeed.com/caseygueren/15-things-therapists-actually-want-you-to-know).
 

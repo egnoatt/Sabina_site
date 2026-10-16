@@ -54,7 +54,7 @@ Forse sono solo egocentrica, ma penso sempre che gli psicologi mi cerchino su Go
 
 Spesso mi sono chiesta se la terapia non sia diventata per me una specie di paracadute.
 
-### Fonte
+## Fonte
 
 Tratto, con adattamenti, da [Hannah Ewens, VICE, 13 settembre 2017](https://www.vice.com/it/article/cose-da-sapere-prima-di-andare-in-terapia-psicologo-psichiatra/).
 
