@@ -116,3 +116,7 @@ svg {
   }
   .editorial-page nav ol { @apply flex-wrap gap-y-2; }
 }
+
+/* A valid saved dismissal is applied in head before any banner can paint.
+   With scripts/storage unavailable the informative banner remains visible. */
+html[data-site-banner-dismissed='true'] .site-banner { display: none; }

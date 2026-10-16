@@ -45,8 +45,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="it">
+    // The pre-paint script owns only data-site-banner-dismissed on this element.
+    // Child markup still hydrates normally; no page-wide warning suppression.
+    <html lang="it" suppressHydrationWarning>
       <head>
+        <script
+          id="site-banner-prepaint"
+          dangerouslySetInnerHTML={{
+            __html: `try{var until=localStorage.getItem('siteBannerDismissedUntil-v2');if(until&&Date.parse(until)>Date.now()){document.documentElement.setAttribute('data-site-banner-dismissed','true')}}catch{}`,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
