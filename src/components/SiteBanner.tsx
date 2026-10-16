@@ -56,10 +56,10 @@ export default function SiteBanner() {
   if (professionalStatus.isPrivatePracticeActive || !visible) return null;
 
   return (
-    <div className="w-full border-b border-slate-200 bg-white/95" role="status" aria-live="polite">
+    <div className="w-full border-b border-editorial-line bg-editorial-paper" role="status" aria-live="polite">
       <div className="mx-auto max-w-5xl px-4 py-4">
-        <div className="flex min-h-[7rem] flex-wrap items-start gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm text-slate-700 shadow-sm sm:flex-nowrap md:min-h-[5.5rem] md:px-5 md:py-4 md:text-base">
-          <span className="order-1 rounded-full bg-slate-200 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-slate-700 sm:order-none">
+        <div className="flex min-h-[7rem] flex-wrap items-start gap-3 border border-editorial-line bg-editorial-mist px-4 py-4 text-sm text-slate-700 sm:flex-nowrap md:min-h-[5.5rem] md:px-5 md:py-4 md:text-base">
+          <span className="order-1 rounded-full bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-slate-700 sm:order-none">
             Aggiornamento
           </span>
           <div className="order-3 w-full min-w-0 sm:order-none sm:w-auto sm:flex-1">
@@ -76,7 +76,7 @@ export default function SiteBanner() {
           <button
             type="button"
             onClick={onClose}
-            className="order-2 ml-auto shrink-0 rounded-full border border-slate-300 bg-white px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-300 sm:order-none sm:ml-0"
+            className="order-2 ml-auto shrink-0 min-h-11 rounded-full border border-editorial-line bg-white px-3 py-1.5 text-sm text-slate-600 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-brand-primary sm:order-none sm:ml-0"
             aria-label="Chiudi avviso"
           >
             Chiudi
