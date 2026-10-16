@@ -32,10 +32,21 @@ Scopo: completare il testo GDPR senza duplicare gli indirizzi email sul sito o r
 
 **Gate:** validazione della titolare, preferibilmente con consulente GDPR, prima del rilascio.
 
-### DR-03 — Hosting, responsabilità e contratti — BLOCKING
-Il sito è su Vercel **Pro** (verificato per il workspace tecnico) mentre il titolare indicato è Sabina. Chiarire chi sottoscrive il servizio, eventuale rapporto tra manutentore e titolare, responsabilità del trattamento, accessi ai dati e istruzioni; verifica contrattuale DPA dove applicabile.
+### DR-03 — Hosting, responsabilità e contratti — FACTS CONFIRMED / FORMAL RELATION OPEN
 
-Vercel pubblica [DPA per Pro/Enterprise](https://vercel.com/legal/dpa), ma l'applicazione al rapporto specifico va confermata. Subprocessor e trasferimenti: consultare [security.vercel.com](https://security.vercel.com) e documentare le categorie pertinenti. Per Microsoft Live.com consumer consultare le [informazioni privacy Microsoft](https://www.microsoft.com/it-it/privacy/privacystatement); **non assumere automaticamente** che Microsoft sia un responsabile ex art. 28 con DPA business.
+**Conferma del proprietario del 16 ottobre 2026:**
+- [x] Il sito di Sabina è ospitato nel **proprio account Vercel** del gestore tecnico, che **paga il servizio**.
+- [x] Il gestore tecnico amministra il sito e l'hosting **per conto di Sabina**.
+- [x] La titolare del trattamento per il sito resta la Dott.ssa Sabina Scattola; intestatario/pagante del servizio hosting e titolare privacy non coincidono.
+
+**Da confermare, senza dedurre automaticamente qualifiche dalla titolarità del conto:**
+- [ ] Esiste un incarico/accordo scritto con Sabina per amministrazione, accessi, sicurezza, richieste privacy e trattamento dei dati? Verificare necessità di designazione come responsabile ex art. 28 GDPR in base ai trattamenti effettivamente affidati al gestore.
+- [ ] Stabilire se e a quali dati personali il gestore abbia effettivamente accesso, chi definisce finalità e mezzi, e documentare le istruzioni ove necessarie.
+- [ ] Verificare applicabilità al rapporto contrattuale concreto delle condizioni e della [DPA Vercel](https://vercel.com/legal/dpa), inclusa l'eventuale catena di responsabili/sub-responsabili.
+- [ ] Verificare [subprocessor Vercel](https://security.vercel.com) e trasferimenti/garanzie effettivamente applicabili.
+- [ ] Per l'indirizzo Live.com consumer, applicare [l'informativa Microsoft](https://www.microsoft.com/it-it/privacy/privacystatement) senza presumere un DPA business o una qualifica ex art. 28 già accertata.
+
+**Gate:** relazione economico-tecnica confermata; relazione formale/privacy ancora da qualificare e validare.
 
 ### DR-04 — Log e tempi — BLOCKING
 - I log CDN/sicurezza che Vercel tratta per conto del servizio non sono uguali alla preferenza di banner 30 giorni.

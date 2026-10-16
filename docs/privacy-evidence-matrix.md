@@ -13,8 +13,8 @@ La pagina `/privacy` è **pubblicata e senza avviso DRAFT** dopo le PR #19 e #21
 | Attività | **OWNER CONFIRMED** | Attività privata chiusa, non sospesa; nessuna P.IVA attiva; sito informativo, non raccoglie prenotazioni. |
 | Recapiti | **CONFIRMED** | Recapito generale su `/contatti` anche per richieste privacy; niente casella dedicata obbligatoria. Procedura operativa di risposta ancora da definire. |
 | Hosting | **VERIFIED** | Vercel Project `sabina-site`; workspace con piano **Pro** (API account), CDN/dominio personalizzato. |
-| Relazione contrattuale effettiva | **OPEN** | Il progetto Vercel risiede in un workspace tecnico; titolare dichiarata è Sabina. Da chiarire titolarità dell'accordo, ruolo dell'amministratore e relazione contrattuale tra eventuali soggetti. |
-| Vercel DPA | **PROVIDER-DOCUMENTED / ACCOUNT APPLICATION OPEN** | La DPA Vercel pubblica è prevista per Pro/Enterprise e tratta separatamente Customer Data e Service-Generated Data. Confermare applicabilità e catena controller/processor allo specifico rapporto contrattuale; non dedurla solo dal piano. [Vercel DPA](https://vercel.com/legal/dpa). |
+| Relazione contrattuale effettiva | **OWNER CONFIRMED / GDPR RELATION OPEN** | **16 ottobre 2026:** il proprietario conferma che il sito è ospitato sul **proprio account Vercel, da lui pagato e gestito per conto di Sabina**. Sabina resta la titolare dei dati del proprio sito. L'intestatario dell'account tecnico non coincide con Sabina; **qualifica GDPR dell'amministratore e relative istruzioni/accordi non ancora verificati**. |
+| Vercel DPA | **PROVIDER-DOCUMENTED / CHAIN OF OBLIGATIONS OPEN** | Il piano Pro è riferito all'account tecnico pagato dall'amministratore del sito, **non** a un contratto intestato direttamente a Sabina. Verificare condizioni e DPA applicabili al titolare dell'account, oltre al rapporto documentato tra Sabina e amministratore. Il pagamento non determina automaticamente ruoli o obblighi GDPR. [Vercel DPA](https://vercel.com/legal/dpa). |
 | Fornitori subordinati | **PROVIDER LIST AVAILABLE / ACCOUNT VALIDATION OPEN** | Vercel rinvia a [security.vercel.com](https://security.vercel.com) per la lista subprocessor. Ruoli/paesi e trasferimenti per il caso concreto ancora da documentare. |
 | Web Analytics | **VERIFIED DISABLED** | L'API Vercel `count_pageviews` sul progetto restituisce `400 web_analytics_not_enabled`. Non è necessario abilitarlo per verifiche privacy. |
 | Analytics e tracker nel codice | **VERIFIED IN CODE** | Assenza `@vercel/analytics`, `@vercel/speed-insights` e SDK analytics espliciti in `package.json`; nessuna forma d'intake clinico nelle route. Altre configurazioni future richiedono nuova verifica. |
@@ -36,7 +36,7 @@ La pagina `/privacy` è **pubblicata e senza avviso DRAFT** dopo le PR #19 e #21
 
 1. Non indica una base giuridica **approvata** distinta per navigazione, comunicazioni e richieste privacy.
 2. Indica la conservazione «secondo impostazioni e criteri dei servizi»: art. 13 richiede la durata o, se impossibile, i criteri **effettivi** per ogni categoria di dati.
-3. Nomina Vercel e il provider email in forma generica senza convalidare categorie di destinatari, responsabilità contrattuali e informazioni sui trasferimenti.
+3. Nomina Vercel e il provider email in forma generica; ora è confermato che l'account Vercel è posseduto e pagato dal gestore tecnico per conto di Sabina, ma restano da documentare le responsabilità contrattuali/privacy fra i soggetti, i destinatari e i trasferimenti.
 4. Il fatto che Web Analytics sia disattivato e il sito sia minimale semplifica la parte cookie, ma non prova l'assenza di trattamento IP/log da parte della rete.
 
 ## Riferimenti normativi e provider
