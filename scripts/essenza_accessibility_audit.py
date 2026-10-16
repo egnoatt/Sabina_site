@@ -1,4 +1,4 @@
-"""Automated axe-core sample audit for Essenza homepage and article.
+"""Automated local axe-core audit for public pages and all articles.
 
 This checks selected WCAG-tagged rules at responsive breakpoints. It is not
 a substitute for a manual WCAG 2.2 AA audit or assistive technology testing.
@@ -7,14 +7,17 @@ No request data, cookie values or personal information is recorded.
 from __future__ import annotations
 import json
 import subprocess
+import os
 import time
 import urllib.request
 from pathlib import Path
 from playwright.sync_api import sync_playwright
+from browser_routes import public_routes, local_requests_only
 
-ROOT = "http://127.0.0.1:3000"
+PORT = os.environ.get("QA_PORT", "3000")
+ROOT = f"http://127.0.0.1:{PORT}"
 SIZES = (320, 375, 768, 1280)
-ROUTES = ("/", "/blog/cosa-devi-sapere")
+ROUTES = public_routes()
 ARTIFACTS = Path("artifacts/essenza-a11y")
 ARTIFACTS.mkdir(parents=True, exist_ok=True)
 
@@ -37,6 +40,7 @@ def audit():
         try:
             for width in SIZES:
                 context = browser.new_context(viewport={"width": width, "height": 900}, bypass_csp=True)
+                local_requests_only(context)
                 page = context.new_page()
                 for route in ROUTES:
                     response = page.goto(ROOT + route, wait_until="networkidle", timeout=30000)
@@ -51,15 +55,24 @@ def audit():
                           id: v.id,
                           impact: v.impact,
                           description: v.description,
-                          targets: v.nodes.slice(0, 12).map(n => n.target)
+                          helpUrl: v.helpUrl,
+                          nodes: v.nodes.map(n => ({target: n.target, html: n.html, failureSummary: n.failureSummary}))
                         })),
                         passes: result.passes.length,
-                        incomplete: result.incomplete.length,
+                        incomplete: result.incomplete.map(v => ({
+                          id: v.id, impact: v.impact, help: v.help, helpUrl: v.helpUrl,
+                          nodes: v.nodes.map(n => ({target: n.target, html: n.html,
+                            failureSummary: n.failureSummary, any: n.any, all: n.all, none: n.none}))
+                        })),
                       };
                     }""")
                     result = {"viewport": width, "route": route, **report}
                     results.append(result)
-                    print(json.dumps(result, ensure_ascii=False))
+                    # Persist after every route, including when a later navigation fails.
+                    (ARTIFACTS / "axe-report.json").write_text(
+                        json.dumps(results, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+                    print(f"{width}px {route}: {len(report['violations'])} violations, "
+                          f"{len(report['incomplete'])} manual-review findings")
                 context.close()
         finally:
             browser.close()
@@ -79,7 +92,7 @@ def audit():
 def main():
     output = open("essenza-a11y-server.log", "w", encoding="utf-8")
     server = subprocess.Popen(
-        ["npm", "run", "start", "--", "-p", "3000"],
+        ["npm", "run", "start", "--", "-p", PORT],
         stdout=output, stderr=subprocess.STDOUT,
     )
     try:
