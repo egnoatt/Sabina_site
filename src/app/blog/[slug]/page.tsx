@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import Markdown from 'react-markdown';
 import { getAllPosts, getPostContent } from '@/lib/posts';
 import { notFound } from 'next/navigation';
+import { getArticleCitation } from '@/lib/article-sources';
 import Link from 'next/link';
 
 // Generazione dei parametri statici
@@ -98,7 +99,8 @@ export default async function BlogPost({ params }: PageProps) {
               image: post.data.image ? 'https://www.sabinascattola.com' + post.data.image : undefined,
               datePublished: post.data.date,
               dateModified: post.data.updated ?? post.data.date,
-              author: { '@type': 'Person', name: 'Sabina Scattola' },
+              // Local authorship/translation is unverified; do not infer it from site ownership.
+              citation: getArticleCitation(slug),
               publisher: { '@type': 'Person', name: 'Sabina Scattola', url: 'https://www.sabinascattola.com' },
               mainEntityOfPage: {
                 '@type': 'WebPage',
