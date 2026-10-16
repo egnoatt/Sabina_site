@@ -1,0 +1,126 @@
+{
+  "utc": "2026-10-16T20:04:31.124095+00:00",
+  "commit": "ce2f5dc0e22833f35d43533420248e8025bba674",
+  "scope": "HTTP routes only; privacy excluded; not WCAG or field CWV",
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "finalUrl": "https://www.sabinascattola.com/",
+      "pass": true
+    },
+    {
+      "route": "/blog",
+      "status": 200,
+      "finalUrl": "https://www.sabinascattola.com/blog",
+      "pass": true
+    },
+    {
+      "route": "/chi-sono",
+      "status": 200,
+      "finalUrl": "https://www.sabinascattola.com/chi-sono",
+      "pass": true
+    },
+    {
+      "route": "/formazione",
+      "status": 200,
+      "finalUrl": "https://www.sabinascattola.com/formazione",
+      "pass": true
+    },
+    {
+      "route": "/servizi",
+      "status": 200,
+      "finalUrl": "https://www.sabinascattola.com/servizi",
+      "pass": true
+    },
+    {
+      "route": "/contatti",
+      "status": 200,
+      "finalUrl": "https://www.sabinascattola.com/contatti",
+      "pass": true
+    },
+    {
+      "route": "/news",
+      "status": 200,
+      "finalUrl": "https://www.sabinascattola.com/news",
+      "pass": true
+    },
+    {
+      "route": "/approfondimenti/clinici",
+      "status": 200,
+      "finalUrl": "https://www.sabinascattola.com/approfondimenti/clinici",
+      "pass": true
+    },
+    {
+      "route": "/approfondimenti/curiosita",
+      "status": 200,
+      "finalUrl": "https://www.sabinascattola.com/approfondimenti/curiosita",
+      "pass": true
+    },
+    {
+      "route": "/approfondimenti/curiosita/clinici",
+      "status": 308,
+      "pass": false
+    },
+    {
+      "route": "/blog/tutto-quello-che-avrei-voluto-sapere-prima-di-andare-dallo-psicologo",
+      "status": 200,
+      "finalUrl": "https://www.sabinascattola.com/blog/tutto-quello-che-avrei-voluto-sapere-prima-di-andare-dallo-psicologo",
+      "pass": true
+    },
+    {
+      "route": "/blog/neuroscienze-confermano-efficacia-terapia-psicoanalitica",
+      "status": 200,
+      "finalUrl": "https://www.sabinascattola.com/blog/neuroscienze-confermano-efficacia-terapia-psicoanalitica",
+      "pass": true
+    },
+    {
+      "route": "/blog/psicoterapia-gruppo-coppia-individuale-informazioni-trattamenti",
+      "status": 200,
+      "finalUrl": "https://www.sabinascattola.com/blog/psicoterapia-gruppo-coppia-individuale-informazioni-trattamenti",
+      "pass": true
+    },
+    {
+      "route": "/blog/8-segnali-per-andare-dallo-psicoterapeuta",
+      "status": 200,
+      "finalUrl": "https://www.sabinascattola.com/blog/8-segnali-per-andare-dallo-psicoterapeuta",
+      "pass": true
+    },
+    {
+      "route": "/blog/cosa-devi-sapere",
+      "status": 200,
+      "finalUrl": "https://www.sabinascattola.com/blog/cosa-devi-sapere",
+      "pass": true
+    },
+    {
+      "route": "/blog/navigare-tra-piacere-e-dovere",
+      "status": 200,
+      "finalUrl": "https://www.sabinascattola.com/blog/navigare-tra-piacere-e-dovere",
+      "pass": true
+    },
+    {
+      "route": "/blog/2015-03-02-psicoanalisi-e-societa-le-mamme-narciso",
+      "status": 200,
+      "finalUrl": "https://www.sabinascattola.com/blog/2015-03-02-psicoanalisi-e-societa-le-mamme-narciso",
+      "pass": true
+    },
+    {
+      "route": "/blog/la-depressione-oscura-il-nostro-futuro",
+      "status": 200,
+      "finalUrl": "https://www.sabinascattola.com/blog/la-depressione-oscura-il-nostro-futuro",
+      "pass": true
+    },
+    {
+      "route": "/blog/nonexistent-closeout-check",
+      "status": 404,
+      "pass": true
+    }
+  ],
+  "redirectCrossCheck": {
+    "route": "/approfondimenti/curiosita/clinici",
+    "method": "curl GET -L",
+    "status": 200,
+    "finalUrl": "https://www.sabinascattola.com/approfondimenti/clinici",
+    "note": "Python urllib in this environment does not follow 308; original result preserved."
+  }
+}
