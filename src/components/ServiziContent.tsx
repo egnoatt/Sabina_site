@@ -10,14 +10,14 @@ import { professionalStatus } from '@/config/professionalStatus';
 
 export default function ServiziContent() {
   return (
-    <section className="mx-auto max-w-5xl px-6 py-12 text-base leading-relaxed md:py-16">
+    <section className="text-base leading-relaxed">
       {/* Hero Section */}
       <section className="mb-14 text-center">
         <SparklesIcon aria-hidden="true" className="mx-auto h-14 w-14 text-brand-primary" />
-        <p className="mt-4 text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+        <p className="mt-4 text-sm font-semibold uppercase tracking-[0.2em] text-slate-600">
           Ambiti professionali
         </p>
-        <h1 className="mt-4 text-3xl font-bold text-brand-text md:text-4xl">
+        <h1 className="editorial-title mt-4">
           Ambiti di esperienza clinica
         </h1>
         <p className="mx-auto mt-5 max-w-3xl text-lg leading-relaxed text-slate-600">
@@ -26,25 +26,25 @@ export default function ServiziContent() {
       </section>
 
       {/* Introduzione */}
-      <section className="mx-auto mb-14 max-w-3xl rounded-2xl border border-slate-200 bg-slate-50 px-6 py-6 text-center shadow-sm">
+      <section className="editorial-note mx-auto mb-14 max-w-3xl text-center">
         <p className="text-base leading-relaxed text-slate-700">
           Questa pagina presenta i principali ambiti di esperienza clinica e professionale della
           Dott.ssa Sabina Scattola, senza indicare servizi privati attualmente attivi.
         </p>
       </section>
 
-      <section className="mx-auto mb-16 max-w-3xl rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+      <section className="editorial-panel mx-auto mb-16 max-w-3xl">
+        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-600">
           Nota istituzionale
         </p>
-        <h2 className="mt-3 text-2xl font-semibold text-brand-text">Stato attuale</h2>
+        <h2 className="editorial-heading mt-3">Stato attuale</h2>
         <p className="mt-4 text-base leading-relaxed text-slate-700">
           {professionalStatus.availabilityMessage}
         </p>
         <p className="mt-4 text-base leading-relaxed text-slate-700">
           {professionalStatus.institutionalRoleMessage}
         </p>
-        <p className="mt-4 text-sm leading-relaxed text-slate-500">
+        <p className="mt-4 text-sm leading-relaxed text-slate-600">
           {professionalStatus.sitePurposeMessage}
         </p>
       </section>
@@ -52,12 +52,12 @@ export default function ServiziContent() {
       {/* Ambiti principali */}
       <section className="mx-auto mb-16 grid max-w-4xl grid-cols-1 gap-6 md:grid-cols-2">
         {/* Consulenza e valutazione */}
-        <div className="rounded-2xl border border-slate-200 bg-slate-50/80 p-6 shadow-sm md:p-7">
+        <div className="editorial-note">
           <ChatBubbleLeftRightIcon
             aria-hidden="true"
             className="mb-4 h-10 w-10 text-brand-primary"
           />
-          <h2 className="text-2xl font-semibold text-brand-text mb-2">
+          <h2 className="editorial-heading mb-2">
             Consulenza e Valutazione Clinica
           </h2>
           <p className="mt-4 text-base leading-relaxed text-slate-700">
@@ -77,9 +77,9 @@ export default function ServiziContent() {
         </div>
 
         {/* Psicoterapia Individuale */}
-        <div className="rounded-2xl border border-slate-200 bg-slate-50/80 p-6 shadow-sm md:p-7">
+        <div className="editorial-note">
           <UserIcon aria-hidden="true" className="mb-4 h-10 w-10 text-brand-primary" />
-          <h2 className="text-2xl font-semibold text-brand-text mb-2">
+          <h2 className="editorial-heading mb-2">
             Esperienza in Psicoterapia e Sostegno
           </h2>
           <p className="mt-4 text-base leading-relaxed text-slate-700">
@@ -98,12 +98,12 @@ export default function ServiziContent() {
         </div>
 
         {/* Supervisione Clinica */}
-        <div className="rounded-2xl border border-slate-200 bg-slate-50/80 p-6 shadow-sm md:col-span-2 md:p-7">
+        <div className="editorial-note md:col-span-2">
           <ClipboardDocumentCheckIcon
             aria-hidden="true"
             className="mb-4 h-10 w-10 text-brand-primary"
           />
-          <h2 className="text-2xl font-semibold text-brand-text mb-2">Supervisione Clinica</h2>
+          <h2 className="editorial-heading mb-2">Supervisione Clinica</h2>
           <p className="mt-4 text-base leading-relaxed text-slate-700">
             Esperienza di supervisione rivolta ad équipe del privato sociale e a professionisti
             interessati ad approfondire la pratica clinica attraverso:
@@ -122,13 +122,13 @@ export default function ServiziContent() {
       </section>
 
       {/* Aree di esperienza clinica */}
-      <section className="mx-auto mb-16 max-w-3xl rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+      <section className="editorial-panel mx-auto mb-16 max-w-3xl">
         <div className="text-center mb-6">
           <ExclamationCircleIcon
             aria-hidden="true"
             className="mx-auto h-10 w-10 text-brand-primary"
           />
-          <h2 className="text-2xl font-semibold text-brand-text mt-2">
+          <h2 className="editorial-heading mt-2">
             Aree di Esperienza Clinica
           </h2>
         </div>
@@ -150,7 +150,7 @@ export default function ServiziContent() {
       <section className="max-w-2xl mx-auto text-center">
         <Link
           href="/contatti"
-          className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-8 py-3 text-sm font-semibold text-brand-text shadow-sm transition hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary"
+          className="editorial-button"
         >
           {professionalStatus.infoCtaLabel}
         </Link>
