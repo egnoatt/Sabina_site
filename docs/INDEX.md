@@ -10,6 +10,7 @@ Questa cartella contiene solo documentazione pubblica e tecnica del sito **perso
 - [Vertical slice Essenza — Fase B](./design-concepts/v2.0-phase-b-essenza.md): requisiti e registro tecnico del rilascio.
 - [Release / closeout — 15 ottobre 2026](./releases/2026-10-15-site-hardening.md): cronologia e ultimo addendum.
 - [Privacy evidence matrix](./privacy-evidence-matrix.md): verifiche distinte dalla governance grafica.
+- [Closeout chat — 16 ottobre 2026](./releases/2026-10-16-chat-closeout.md): stato finale del sito, fatti confermati, riferimenti GitHub e attività residue.
 
 ## Confini
 Il sito utilizza Next.js, Markdown e Vercel. La baseline v2.0 è **parziale**: homepage e template articoli. Le altre route conservano componenti preesistenti.
