@@ -4,6 +4,7 @@ Run in CI against a local Next.js build; never reads secrets or live patient dat
 """
 from pathlib import Path
 import subprocess
+import signal
 import os
 import time
 import urllib.request
@@ -53,7 +54,9 @@ def check_width(browser, width: int) -> None:
         assert nav_links.is_visible(), f"Menu did not open at {width}px"
         assert menu.get_attribute("aria-expanded") == "true"
         page.screenshot(path=str(ARTIFACTS / f"home-mobile-{width}.png"), full_page=True)
+        nav_links.get_by_role("link", name="Blog").focus()
         page.keyboard.press("Escape")
+        expect(menu).to_be_focused()
         assert not nav_links.is_visible(), "Escape did not close menu"
         menu.focus()
         page.keyboard.press("Enter")
@@ -106,7 +109,7 @@ def main() -> None:
     server = subprocess.Popen(
         ["npm", "run", "start", "--", "-p", PORT],
         stdout=output,
-        stderr=subprocess.STDOUT,
+        stderr=subprocess.STDOUT, start_new_session=True,
     )
     try:
         wait_until_ready()
@@ -119,11 +122,11 @@ def main() -> None:
             finally:
                 browser.close()
     finally:
-        server.terminate()
+        os.killpg(server.pid, signal.SIGTERM)
         try:
             server.wait(timeout=5)
         except subprocess.TimeoutExpired:
-            server.kill()
+            os.killpg(server.pid, signal.SIGKILL)
         output.close()
 
 

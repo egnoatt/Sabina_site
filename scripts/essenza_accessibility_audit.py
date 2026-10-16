@@ -7,6 +7,7 @@ No request data, cookie values or personal information is recorded.
 from __future__ import annotations
 import json
 import subprocess
+import signal
 import os
 import time
 import urllib.request
@@ -93,17 +94,17 @@ def main():
     output = open("essenza-a11y-server.log", "w", encoding="utf-8")
     server = subprocess.Popen(
         ["npm", "run", "start", "--", "-p", PORT],
-        stdout=output, stderr=subprocess.STDOUT,
+        stdout=output, stderr=subprocess.STDOUT, start_new_session=True,
     )
     try:
         wait_ready()
         audit()
     finally:
-        server.terminate()
+        os.killpg(server.pid, signal.SIGTERM)
         try:
             server.wait(timeout=5)
         except subprocess.TimeoutExpired:
-            server.kill()
+            os.killpg(server.pid, signal.SIGKILL)
         output.close()
 
 if __name__ == "__main__":

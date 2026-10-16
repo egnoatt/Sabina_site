@@ -5,6 +5,8 @@ Third-party requests are blocked. Three cold contexts per route/state are record
 """
 import json
 import subprocess
+import signal
+import os
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 from browser_routes import local_requests_only
@@ -16,7 +18,7 @@ def main():
     output.mkdir(parents=True, exist_ok=True)
     rows = []
     with (output / 'server.log').open('w') as log:
-        server = subprocess.Popen(['npm', 'run', 'start', '--', '-p', PORT], stdout=log, stderr=log)
+        server = subprocess.Popen(['npm', 'run', 'start', '--', '-p', PORT], stdout=log, stderr=log, start_new_session=True)
         try:
             wait_until_ready()
             with sync_playwright() as p:
@@ -45,11 +47,11 @@ def main():
             (output / 'probe.json').write_text(json.dumps({'method': 'Local Chromium, unthrottled; 3 cold contexts; 1s after networkidle; no interactions. layoutShiftSum is a diagnostic sum, not session-window field CLS. No INP measurement.', 'results': rows}, indent=2) + '\n')
             print(f'Wrote {len(rows)} diagnostic samples to {output}/probe.json')
         finally:
-            server.terminate()
+            os.killpg(server.pid, signal.SIGTERM)
             try:
                 server.wait(timeout=5)
             except subprocess.TimeoutExpired:
-                server.kill()
+                os.killpg(server.pid, signal.SIGKILL)
 
 
 if __name__ == '__main__':

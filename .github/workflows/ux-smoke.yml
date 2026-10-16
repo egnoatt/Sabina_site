@@ -39,6 +39,8 @@ jobs:
         run: npm run build
       - name: Exercise mobile and desktop layouts
         run: python scripts/ux_smoke.py
+      - name: Verify banner states and configured CSP
+        run: python scripts/banner_regression.py
       - name: Upload browser screenshots
         if: always()
         uses: actions/upload-artifact@v4
@@ -46,6 +48,7 @@ jobs:
           name: sabina-ux-smoke
           path: |
             artifacts/ux/
+            artifacts/banner/
             next-smoke.log
           if-no-files-found: ignore
           retention-days: 7
