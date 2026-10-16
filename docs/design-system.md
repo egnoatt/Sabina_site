@@ -23,7 +23,8 @@ Il sito è **personale, informativo e divulgativo**, di Sabina Scattola. L'attiv
 | Elenco `/blog` | **v2.0 CURRENT** | [`BlogContent.tsx`](../src/components/BlogContent.tsx), `src/app/blog/page.tsx` — #68 |
 | Header, banner, footer | **v2.0 CURRENT** | `src/components/Header.tsx`, `SiteBanner.tsx`, `Footer.tsx` — #70/#71 |
 | Chi sono, formazione, servizi, contatti | **v2.0 CURRENT** | `src/app/{chi-sono,formazione,servizi,contatti}/page.tsx` — #64–#67 |
-| News, approfondimenti e 404 | **v2.0 CURRENT** | `src/app/news`, `src/app/approfondimenti`, `src/app/not-found.tsx` — #69 |
+| News, `/approfondimenti/clinici`, `/approfondimenti/curiosita` e 404 | **v2.0 CURRENT** | rispettivi `page.tsx`, `src/app/not-found.tsx` — #69 |
+| Route annidata `/approfondimenti/curiosita/clinici` | **Layout precedente**, shell Essenza | `src/app/approfondimenti/curiosita/clinici/page.tsx`; non inclusa nella migrazione #69 |
 | Privacy | **Contenuto/layout locale precedente; shell condivisa Essenza** | `src/app/privacy/page.tsx`; fuori dal redesign autorizzato |
 
 La presenza di un token v2.0 nella configurazione non significa che ogni pagina utilizzi già Essenza.
@@ -84,7 +85,7 @@ Le differenze di resa della famiglia Georgia tra browser/sistemi restano accetta
 
 ### Superfici interne e shell pubblicate
 
-Le pagine interne usano `.editorial-page`, titoli serif `.editorial-title` e `.editorial-heading`, sezioni con divisori `.editorial-panel`, note `.editorial-note` e collegamenti `.editorial-button` definiti in `globals.css`. Il blog mostra una lista editoriale con divisori e rendering server; il profilo, la formazione, gli ambiti e i contatti conservano i contenuti esistenti. News, approfondimenti e 404 adottano le stesse fondazioni.
+Le pagine interne usano `.editorial-page`, titoli serif `.editorial-title` e `.editorial-heading`, sezioni con divisori `.editorial-panel`, note `.editorial-note` e collegamenti `.editorial-button` definiti in `globals.css`. Il blog mostra una lista editoriale con divisori e rendering server; il profilo, la formazione, gli ambiti e i contatti conservano i contenuti esistenti. News, le due route principali degli approfondimenti e 404 adottano le stesse fondazioni. La route annidata `/approfondimenti/curiosita/clinici` conserva il layout precedente: non è necessario riaprire il redesign per documentare questa eccezione.
 
 Header sticky su fondo paper, footer mist e banner sono migrati; il menu mobile restituisce il focus alla chiusura con Escape. La gestione iniziale del banner limita gli spostamenti al ritorno. #72 aggiunge reflow e spazio per il focus rispetto all'header sticky. Queste proprietà del codice non sono una certificazione di tutti gli stati accessibili.
 
