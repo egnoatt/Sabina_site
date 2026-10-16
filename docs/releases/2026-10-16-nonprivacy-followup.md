@@ -22,3 +22,16 @@ La release registra integrazione e pubblicazione autorizzate delle 14 PR #59–#
 | Accettazione finale | Enrico esamina evidenze e rischi residui, approva merge/rilascio eventuali e verifica l'esito in produzione |
 
 Non chiudere #50, #31 o le issue editoriali per il solo completamento documentale. Nessun consenso editoriale viene dedotto da una risposta generica “procedi”. Non chiedere autorizzazioni a terzi, né cambiare articoli o attribuzioni JSON-LD senza i due gate. #20 e draft #26 restano separate e inalterate.
+
+## Risultati preparatori di questa orchestrazione
+
+Le seguenti PR sono **draft, non integrate**; costituiscono materiali da esaminare, non nuovi rilasci. I check correnti restano consultabili nelle rispettive PR, senza fissare in questo documento uno stato CI destinato a cambiare.
+
+| PR | Risultato concreto | Decisione/residuo |
+| --- | --- | --- |
+| [#74 Governance](https://github.com/egnoatt/Sabina_site/pull/74) | Design System riconciliato, proposta #73 verificata su permessi e check effettivi | Proprietario: approvare documenti e scegliere protezione A oppure B con revisore; impostazioni ancora inalterate |
+| [#75 Dossier editoriale](https://github.com/egnoatt/Sabina_site/pull/75) | Unico dossier con otto schede #51–#58, fonti verificate nei limiti dichiarati, autore/curatore/traduzione distinti, proposta per ogni testo | Sabina: diritti e decisioni/versioni concrete; fonti parziali segnalate e nessuna autorizzazione inventata. Poi via libera del proprietario |
+| [#76 Evidenze QA](https://github.com/egnoatt/Sabina_site/pull/76) | Report `docs/qa/2026-10-16/README.md`, 76 scansioni axe senza violazioni, 54 assert focus/testo PASS, 36 incomplete decorative analizzate; matrice WCAG e ispezione browser su tre route | #47 resta aperta: lettore di schermo e zoom browser reale non attestati; test automatici non equivalgono a WCAG completo |
+| [#76 Performance e riferimenti](https://github.com/egnoatt/Sabina_site/pull/76) | 12 campioni mobile simulati, 24 locali, inventario bundle (circa 120 KiB gzip JS nel campione); controlli link con risultati HTTP e limiti | #48 aperta: non sono CWV/INP in campo. #49 aperta: Issuu 404/403 inconclusivi, policy del browser impedisce verifica manuale; titolarità non dedotta |
+
+Il coordinatore ha verificato dopo il push di #74 che Vercel non ha creato deployment per il ramo preparatorio. Le nuove PR non cambiano la baseline di produzione. L'accettazione #50 resta aperta finché evidenze, limiti e decisioni umane non sono risolti o esplicitamente accettati nel loro ambito.
