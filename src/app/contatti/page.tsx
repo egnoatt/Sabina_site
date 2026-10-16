@@ -18,7 +18,7 @@ export default function ContattiPage() {
   };
 
   return (
-    <div className="mx-auto max-w-5xl px-6 py-12 text-base leading-relaxed md:py-16">
+    <div className="editorial-page">
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="mb-6 text-sm text-gray-600">
         <ol className="flex items-center space-x-2">
@@ -41,14 +41,14 @@ export default function ContattiPage() {
       {/* Hero */}
       <section className="mb-12 text-center">
         <EnvelopeIcon className="mx-auto h-14 w-14 text-brand-primary" aria-hidden="true" />
-        <p className="mt-4 text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
+        <p className="mt-4 text-sm font-semibold uppercase tracking-[0.2em] text-slate-600">
           Informazioni
         </p>
-        <h1 className="mt-4 text-3xl font-bold text-brand-text md:text-4xl">Contatti</h1>
+        <h1 className="editorial-title mt-4">Contatti</h1>
         <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-slate-600">
           Contatti per comunicazioni generali e informazioni relative al sito personale.
         </p>
-        <p className="mt-3 text-sm text-gray-500">
+        <p className="mt-3 text-sm text-slate-600">
           L&apos;attività privata è chiusa e non si accettano prenotazioni.
           Non inviare via email ordinaria informazioni sanitarie o dettagli clinici personali.
         </p>
@@ -56,10 +56,10 @@ export default function ContattiPage() {
 
       {/* Cards: Email + Social */}
       <section className="mb-12 grid gap-6 md:grid-cols-2">
-        <article className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-7">
+        <article className="editorial-panel">
           <div className="flex items-center gap-3">
             <EnvelopeIcon className="h-6 w-6 text-brand-primary" aria-hidden="true" />
-            <h2 className="text-lg font-semibold text-brand-text">Email</h2>
+            <h2 className="editorial-heading">Email</h2>
           </div>
           <p className="mt-4 text-base leading-relaxed text-slate-700">
             Per comunicazioni generali scrivi a
@@ -71,10 +71,10 @@ export default function ContattiPage() {
             </a>
           </p>
         </article>
-        <article className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-7">
+        <article className="editorial-panel">
           <div className="flex items-center gap-3">
             <ChatBubbleLeftRightIcon className="h-6 w-6 text-brand-primary" aria-hidden="true" />
-            <h2 className="text-lg font-semibold text-brand-text">Social</h2>
+            <h2 className="editorial-heading">Social</h2>
           </div>
           <p className="mt-4 text-base leading-relaxed text-slate-700">
             Seguimi su
@@ -97,16 +97,16 @@ export default function ContattiPage() {
       </p>
 
       {/* Note informative (come nel PDF) */}
-      <section className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm md:p-8">
-        <p className="text-center text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+      <section className="editorial-note">
+        <p className="text-center text-sm font-semibold uppercase tracking-[0.18em] text-slate-600">
           Nota istituzionale
         </p>
-        <h2 className="mt-3 text-center text-2xl font-semibold text-brand-text">
+        <h2 className="editorial-heading mt-3 text-center">
           Informazioni Istituzionali
         </h2>
 
         {/* Disponibilità Attuale */}
-        <div className="mt-8 border-b border-slate-200 pb-6">
+        <div className="mt-8 border-b border-editorial-line pb-6">
           <h3 className="text-brand-text font-semibold">Disponibilità Attuale</h3>
           <p className="mt-3 text-base leading-relaxed text-slate-700">
             {professionalStatus.availabilityMessage}
@@ -114,17 +114,17 @@ export default function ContattiPage() {
         </div>
 
         {/* Profilo Attuale */}
-        <div className="border-b border-slate-200 py-6">
+        <div className="border-b border-editorial-line py-6">
           <h3 className="text-brand-text font-semibold">Profilo Attuale</h3>
           <p className="mt-3 text-base leading-relaxed text-slate-700">
             {professionalStatus.institutionalRoleMessage}
           </p>
-          <p className="mt-4 text-sm leading-relaxed text-slate-500">
+          <p className="mt-4 text-sm leading-relaxed text-slate-600">
             {professionalStatus.sitePurposeMessage}
           </p>
         </div>
 
-        <div className="border-b border-slate-200 py-6">
+        <div className="border-b border-editorial-line py-6">
           <h3 className="text-brand-text font-semibold">Comunicazioni</h3>
           <p className="mt-3 text-base leading-relaxed text-slate-700">
             {professionalStatus.contactMessage}
