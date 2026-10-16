@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
@@ -16,19 +16,29 @@ const navLinks = [
 export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-editorial-line bg-editorial-paper/95 backdrop-blur">
       <nav
         aria-label="Navigazione principale"
         className="mx-auto max-w-6xl px-4 py-3"
-        onKeyDown={(event) => { if (event.key === 'Escape') setOpen(false); }}
+        onKeyDown={(event) => {
+          if (event.key === 'Escape' && open) {
+            setOpen(false);
+            // On desktop the toggle is hidden: retain focus in the visible navigation.
+            if (menuButtonRef.current?.getClientRects().length) {
+              menuButtonRef.current.focus();
+            }
+          }
+        }}
       >
         <div className="flex items-center justify-between md:hidden">
           <Link href="/" onClick={() => setOpen(false)} className="py-2 text-base font-semibold text-brand-text focus-visible:underline">
             Sabina Scattola
           </Link>
           <button
+            ref={menuButtonRef}
             type="button"
             aria-controls="site-navigation-links"
             aria-expanded={open}
