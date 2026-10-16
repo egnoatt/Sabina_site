@@ -14,8 +14,8 @@ function addDays(date: Date, days: number) {
 }
 
 export default function SiteBanner() {
-  // Render visible on the server and on the first client paint to avoid
-  // inserting the banner after hydration, which shifts the hero below.
+  // Keep server/client markup identical. The head pre-paint script hides a
+  // previously dismissed banner before layout; this effect then removes it.
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
@@ -56,7 +56,7 @@ export default function SiteBanner() {
   if (professionalStatus.isPrivatePracticeActive || !visible) return null;
 
   return (
-    <div className="w-full border-b border-editorial-line bg-editorial-paper" role="status" aria-live="polite">
+    <div className="site-banner w-full border-b border-editorial-line bg-editorial-paper" role="status" aria-live="polite">
       <div className="mx-auto max-w-5xl px-4 py-4">
         <div className="flex min-h-[7rem] flex-wrap items-start gap-3 border border-editorial-line bg-editorial-mist px-4 py-4 text-sm text-slate-700 sm:flex-nowrap md:min-h-[5.5rem] md:px-5 md:py-4 md:text-base">
           <span className="order-1 rounded-full bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-slate-700 sm:order-none">
