@@ -61,7 +61,7 @@ export default function BlogPage() {
   };
 
   return (
-    <div className="mx-auto max-w-5xl px-6 py-10 text-base leading-relaxed">
+    <div className="editorial-page">
       <nav aria-label="Breadcrumb" className="mb-6 text-sm text-gray-600">
         <ol className="flex items-center space-x-2">
           <li>
@@ -81,7 +81,7 @@ export default function BlogPage() {
       />
 
       <section className="text-center mb-12">
-        <h1 className="text-3xl md:text-4xl font-semibold text-brand-text">Blog</h1>
+        <h1 className="editorial-title">Blog</h1>
         <p className="mt-2 text-gray-600">
           Articoli e approfondimenti sulla psicologia e psicoterapia
         </p>
