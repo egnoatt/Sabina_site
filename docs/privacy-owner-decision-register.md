@@ -32,7 +32,7 @@ Scopo: completare il testo GDPR senza duplicare gli indirizzi email sul sito o r
 
 **Gate:** validazione della titolare, preferibilmente con consulente GDPR, prima del rilascio.
 
-### DR-03 — Hosting, responsabilità e contratti — FACTS CONFIRMED / FORMAL RELATION OPEN
+### DR-03 — Hosting, responsabilità e contratti — VERBAL AGREEMENT CONFIRMED / WRITTEN FORM OPEN
 
 **Conferma del proprietario del 16 ottobre 2026:**
 - [x] Il sito di Sabina è ospitato nel **proprio account Vercel** del gestore tecnico, che **paga il servizio**.
@@ -40,13 +40,16 @@ Scopo: completare il testo GDPR senza duplicare gli indirizzi email sul sito o r
 - [x] La titolare del trattamento per il sito resta la Dott.ssa Sabina Scattola; intestatario/pagante del servizio hosting e titolare privacy non coincidono.
 
 **Da confermare, senza dedurre automaticamente qualifiche dalla titolarità del conto:**
-- [ ] Esiste un incarico/accordo scritto con Sabina per amministrazione, accessi, sicurezza, richieste privacy e trattamento dei dati? Verificare necessità di designazione come responsabile ex art. 28 GDPR in base ai trattamenti effettivamente affidati al gestore.
+- [x] **Accordo attuale soltanto verbale**, confermato dal proprietario il 16 ottobre 2026: non è stato riferito un documento sottoscritto.
+- [ ] **Valutare la qualifica effettiva del gestore** in base ad accessi ai dati personali, attività affidate, finalità e mezzi decisi da Sabina. La proprietà e il pagamento di Vercel, da soli, non comportano automaticamente una designazione GDPR.
+- [ ] **Formalizzare per iscritto il perimetro operativo**: manutenzione del sito, accessi ai log e al progetto, istruzioni e autorizzazioni, gestione incidenti, riservatezza e regole alla cessazione.
+- [ ] Se il gestore tratta dati personali **per conto** di Sabina come responsabile, predisporre e sottoscrivere un accordo vincolante ai sensi dell'**art. 28(3) e (9) GDPR** (anche in formato elettronico), con subresponsabili e autorizzazioni pertinenti; l'accordo esclusivamente verbale non soddisferebbe tale requisito.
 - [ ] Stabilire se e a quali dati personali il gestore abbia effettivamente accesso, chi definisce finalità e mezzi, e documentare le istruzioni ove necessarie.
 - [ ] Verificare applicabilità al rapporto contrattuale concreto delle condizioni e della [DPA Vercel](https://vercel.com/legal/dpa), inclusa l'eventuale catena di responsabili/sub-responsabili.
 - [ ] Verificare [subprocessor Vercel](https://security.vercel.com) e trasferimenti/garanzie effettivamente applicabili.
 - [ ] Per l'indirizzo Live.com consumer, applicare [l'informativa Microsoft](https://www.microsoft.com/it-it/privacy/privacystatement) senza presumere un DPA business o una qualifica ex art. 28 già accertata.
 
-**Gate:** relazione economico-tecnica confermata; relazione formale/privacy ancora da qualificare e validare.
+**Gate:** relazione economico-tecnica e natura **solo verbale** dell'accordo confermate; qualifica GDPR, accessi effettivi e relativa formalizzazione ancora da validare. Riferimenti: [art. 28 GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj/ita) e [linee guida EDPB 07/2020](https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-072020-concepts-controller-and-processor-gdpr_it).
 
 ### DR-04 — Log e tempi — BLOCKING
 - I log CDN/sicurezza che Vercel tratta per conto del servizio non sono uguali alla preferenza di banner 30 giorni.
