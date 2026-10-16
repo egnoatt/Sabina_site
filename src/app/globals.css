@@ -58,13 +58,13 @@ svg {
 /* Essenza v2 — article-specific editorial reading surface.
    Does not alter typography, links or spacing on other pages. */
 .editorial-prose {
-  --tw-prose-body: #334155;
-  --tw-prose-headings: #172E29;
-  --tw-prose-links: #1F5C4A;
-  --tw-prose-bold: #172E29;
-  --tw-prose-counters: #1F5C4A;
-  --tw-prose-bullets: #1F5C4A;
-  --tw-prose-hr: #D8DCD2;
+  --tw-prose-body: theme('colors.slate.700');
+  --tw-prose-headings: theme('colors.brand.text');
+  --tw-prose-links: theme('colors.brand.primary');
+  --tw-prose-bold: theme('colors.brand.text');
+  --tw-prose-counters: theme('colors.brand.primary');
+  --tw-prose-bullets: theme('colors.brand.primary');
+  --tw-prose-hr: theme('colors.editorial.line');
   line-height: 1.85;
   overflow-wrap: anywhere;
 }
@@ -75,13 +75,44 @@ svg {
   line-height: 1.2;
 }
 .editorial-prose a {
-  color: #1F5C4A;
+  color: theme('colors.brand.primary');
   text-decoration: underline;
   text-underline-offset: 0.2em;
 }
-.editorial-prose a:hover { color: #172E29; }
+.editorial-prose a:hover { color: theme('colors.brand.text'); }
 .editorial-prose a:focus-visible {
-  outline: 2px solid #1F5C4A;
+  outline: 2px solid theme('colors.brand.primary');
   outline-offset: 3px;
 }
 .editorial-prose img { max-width: 100%; height: auto; }
+
+/* Shared Essenza presentation, opt-in: privacy retains its existing body layout. */
+@layer components {
+  .editorial-page {
+    @apply mx-auto max-w-5xl px-6 py-12 text-base leading-relaxed text-slate-700 md:py-16;
+    overflow-wrap: anywhere;
+  }
+  .editorial-title {
+    @apply font-display font-normal tracking-tight text-brand-text;
+    font-size: clamp(2.55rem, 5.5vw, 4.85rem);
+    line-height: 1.08;
+  }
+  .editorial-heading {
+    @apply font-display text-3xl font-normal tracking-tight text-brand-text;
+    line-height: 1.2;
+  }
+  .editorial-panel {
+    @apply border-t border-editorial-line py-8;
+  }
+  .editorial-note {
+    @apply border-t border-editorial-line bg-editorial-mist p-6 md:p-8;
+  }
+  .editorial-button {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-brand-primary px-8 py-3 text-center font-semibold text-white transition hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-primary;
+  }
+  .editorial-page a:not(.editorial-button):focus-visible {
+    outline: 2px solid theme('colors.brand.primary');
+    outline-offset: 3px;
+  }
+  .editorial-page nav ol { @apply flex-wrap gap-y-2; }
+}
