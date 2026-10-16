@@ -120,3 +120,8 @@ svg {
 /* A valid saved dismissal is applied in head before any banner can paint.
    With scripts/storage unavailable the informative banner remains visible. */
 html[data-site-banner-dismissed='true'] .site-banner { display: none; }
+
+/* Keep anchor targets and keyboard-focused controls clear of the sticky header.
+   rem units retain clearance when the user increases their text size. */
+html { scroll-padding-top: 8rem; }
+:focus-visible { scroll-margin-block: 1rem; }
