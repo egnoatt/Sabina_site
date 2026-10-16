@@ -17,9 +17,9 @@ Questo documento **sostituisce le checklist pre-merge della PR #11 e della #19**
 
 - [x] **G1 — Criterio di conservazione della titolare:** Sabina elimina le email immediatamente dopo aver risposto e svolge una pulizia mensile anche dei messaggi senza risposta (conferma 16 ottobre 2026). Tempi tecnici del provider e gestione di eventuali eccezioni rimangono in G4/G6.
 - [ ] **G2 — Basi giuridiche:** finalità e base art. 6 per navigazione/sicurezza, messaggi, diritti; eventuale legittimo interesse valutato, non presunto.
-- [ ] **G3 — Ruoli e contratti (PARZIALE):** confermato dal proprietario che il sito è sul **suo account Vercel Pro, pagato e amministrato per conto di Sabina**; Sabina resta la titolare dei dati del sito. **Accordo tra le parti confermato soltanto verbale** (16 ottobre 2026); resta da verificare il perimetro di accesso ai dati personali e, se ricorre il ruolo di responsabile, formalizzare l'atto scritto ex art. 28(3) e (9) GDPR. Restano inoltre da verificare la catena Vercel/Microsoft.
+- [ ] **G3 — Ruoli e contratti (PARZIALE):** confermato dal proprietario che il sito è sul **suo account Vercel Pro, pagato e amministrato per conto di Sabina**; Sabina resta la titolare dei dati del sito. **Accordo tra le parti confermato soltanto verbale** (16 ottobre 2026); il gestore amministrativo/tecnico opera tramite **GitHub e Vercel e non accede alla casella email di Sabina**. Rimane da verificare la sua eventuale visibilità/attività sui dati tecnici dei visitatori (es. log/IP) e, se ricorre il ruolo di responsabile, formalizzare l'atto scritto ex art. 28(3) e (9) GDPR. Restano inoltre da verificare la catena Vercel/Microsoft.
 - [ ] **G4 — Hosting e trasferimenti:** natura/criterio di retention log e categorie di destinatari; DPA, subprocessor e trasferimenti coerenti con gli accordi effettivi.
-- [ ] **G5 — Procedura diritti:** ruoli e modalità di risposta effettivi, confermati dalla titolare.
+- [ ] **G5 — Procedura diritti:** il canale Contatti arriva alla casella **di Sabina, senza accesso del gestore tecnico**; chiarire chi riceve/risponde alle istanze e quando può richiedere assistenza tecnica, con autorizzazioni e minimizzazione.
 - [ ] **G6 — Verifica finale:** testo pubblico approvato da titolare, confronto puntuale con art. 13, eventuale review specialistica e release QA.
 
 ## Checklist per la prossima PR applicativa

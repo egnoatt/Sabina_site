@@ -37,6 +37,8 @@ Scopo: completare il testo GDPR senza duplicare gli indirizzi email sul sito o r
 **Conferma del proprietario del 16 ottobre 2026:**
 - [x] Il sito di Sabina è ospitato nel **proprio account Vercel** del gestore tecnico, che **paga il servizio**.
 - [x] Il gestore tecnico amministra il sito e l'hosting **per conto di Sabina**.
+- [x] **Perimetro tecnico dichiarato:** il gestore opera tramite **GitHub e Vercel**; **non ha accesso alla casella di posta elettronica di Sabina**, alle email ricevute o ai relativi allegati.
+- [ ] **Accessi ai dati tecnici:** accertare, senza presumere, se il gestore accede ai log Vercel/CDN, indirizzi IP, eventi di sicurezza o altri dati personali tecnici, e con quali autorizzazioni.
 - [x] La titolare del trattamento per il sito resta la Dott.ssa Sabina Scattola; intestatario/pagante del servizio hosting e titolare privacy non coincidono.
 
 **Da confermare, senza dedurre automaticamente qualifiche dalla titolarità del conto:**
@@ -44,12 +46,12 @@ Scopo: completare il testo GDPR senza duplicare gli indirizzi email sul sito o r
 - [ ] **Valutare la qualifica effettiva del gestore** in base ad accessi ai dati personali, attività affidate, finalità e mezzi decisi da Sabina. La proprietà e il pagamento di Vercel, da soli, non comportano automaticamente una designazione GDPR.
 - [ ] **Formalizzare per iscritto il perimetro operativo**: manutenzione del sito, accessi ai log e al progetto, istruzioni e autorizzazioni, gestione incidenti, riservatezza e regole alla cessazione.
 - [ ] Se il gestore tratta dati personali **per conto** di Sabina come responsabile, predisporre e sottoscrivere un accordo vincolante ai sensi dell'**art. 28(3) e (9) GDPR** (anche in formato elettronico), con subresponsabili e autorizzazioni pertinenti; l'accordo esclusivamente verbale non soddisferebbe tale requisito.
-- [ ] Stabilire se e a quali dati personali il gestore abbia effettivamente accesso, chi definisce finalità e mezzi, e documentare le istruzioni ove necessarie.
+- [ ] Stabilire se e a quali dati personali **del sito/hosting** il gestore abbia effettivamente accesso (es. log richieste, IP); l'email personale di Sabina è **fuori dal perimetro dei suoi accessi**. Chiarire chi determina finalità e mezzi e documentare le istruzioni se necessarie.
 - [ ] Verificare applicabilità al rapporto contrattuale concreto delle condizioni e della [DPA Vercel](https://vercel.com/legal/dpa), inclusa l'eventuale catena di responsabili/sub-responsabili.
 - [ ] Verificare [subprocessor Vercel](https://security.vercel.com) e trasferimenti/garanzie effettivamente applicabili.
 - [ ] Per l'indirizzo Live.com consumer, applicare [l'informativa Microsoft](https://www.microsoft.com/it-it/privacy/privacystatement) senza presumere un DPA business o una qualifica ex art. 28 già accertata.
 
-**Gate:** relazione economico-tecnica e natura **solo verbale** dell'accordo confermate; qualifica GDPR, accessi effettivi e relativa formalizzazione ancora da validare. Riferimenti: [art. 28 GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj/ita) e [linee guida EDPB 07/2020](https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-072020-concepts-controller-and-processor-gdpr_it).
+**Gate:** relazione economico-tecnica, natura **solo verbale** dell'accordo e assenza di accesso alla posta confermate. Rimangono da qualificare l'eventuale trattamento di log/dati tecnici, il ruolo GDPR e la formalizzazione appropriata; non includere un mandato di accesso alla casella email. Riferimenti: [art. 28 GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj/ita) e [linee guida EDPB 07/2020](https://www.edpb.europa.eu/our-work-tools/our-documents/guidelines/guidelines-072020-concepts-controller-and-processor-gdpr_it).
 
 ### DR-04 — Log e tempi — BLOCKING
 - I log CDN/sicurezza che Vercel tratta per conto del servizio non sono uguali alla preferenza di banner 30 giorni.
@@ -64,8 +66,8 @@ Scopo: completare il testo GDPR senza duplicare gli indirizzi email sul sito o r
 - [ ] Confermare che Speed Insights o altri prodotti non siano stati attivati al di fuori della configurazione del codice e rieseguire i test in caso di nuove integrazioni.
 
 ### DR-06 — Diritti e risposta operativa — BLOCKING
-- La pagina Contatti è il canale indicato anche per i diritti privacy.
-- Definire chi prende in carico le richieste e come viene rispettato il termine normalmente previsto dall'art. 12(3) GDPR; definire identificazione proporzionata, risposta e cancellazione dati di lavorazione.
+- La pagina Contatti è il canale indicato anche per i diritti privacy; **i messaggi arrivano alla casella di Sabina alla quale il gestore tecnico non ha accesso**.
+- Sabina riceve direttamente i messaggi; deve confermare **chi li prende in carico e risponde**, come rispetta il termine normalmente previsto dall'art. 12(3) GDPR e se vi sia una procedura per richiedere assistenza tecnica senza condividere indiscriminatamente email o allegati con il gestore.
 - Eventuale DPO va indicato soltanto se effettivamente nominato o obbligatorio.
 
 ## Regola di rilascio
