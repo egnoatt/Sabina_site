@@ -43,7 +43,7 @@ Queste sono scelte di indirizzo, **non versioni di articoli approvate**. Nessun 
 
 **Diritti da documentare.** Prova relativa all'originale, alla traduzione e alla rielaborazione effettivamente utilizzata. Per la parte in prima persona di Sabina confermare provenienza e attualità, senza pubblicare informazioni su pazienti.
 
-**Problemi nel testo locale.** Statistiche USA prive di anno e denominatore, confronto con l'Italia senza fonte, sintomi fisici ricondotti allo stress e riferimenti a uno studio attivo. La lista non deve diventare uno strumento diagnostico o una promessa di durata della cura. L'attività attualmente sospesa richiede un contesto storico per le frasi relative allo studio.
+**Problemi nel testo locale.** Statistiche USA prive di anno e denominatore, confronto con l'Italia senza fonte, sintomi fisici ricondotti allo stress e riferimenti a uno studio attivo. La lista non deve diventare uno strumento diagnostico o una promessa di durata della cura. L'attività privata definitivamente chiusa richiede un contesto storico per le frasi relative allo studio.
 
 **Proposta concreta di trattamento.** Revisione come orientamento generale: fonti statistiche puntuali oppure loro esclusione nella futura bozza; contesto storico per gli inserti del 2015; chiara separazione dei tre contributi. Sabina sceglie revisione o archivio, identifica gli inserti e fornisce l'edizione tradotta usata. Preparare poi il testo completo per il consenso, senza aggiornare numeri in modo automatico.
 
@@ -101,7 +101,7 @@ Queste sono scelte di indirizzo, **non versioni di articoli approvate**. Nessun 
 
 **Problemi nel testo locale.** Superiorità generalizzata dei fattori aspecifici senza studio; indicazioni ampie per gruppo e coppia; durata della coppia fissata a uno/due anni; sintomi fisici elencati come indicazioni senza precisare valutazione clinica; il timore delle reazioni del partner richiede una valutazione di sicurezza individuale, non invio automatico a terapia di coppia. [NICE NG222](https://www.nice.org.uk/guidance/ng222/chapter/Recommendations) descrive opzioni e durate legate a una condizione specifica: non supporta un unico calendario per tutte le psicoterapie.
 
-**Proposta concreta di trattamento.** Revisione orientativa originale: distinguere formato e orientamento, valutazione iniziale e variabilità; rimuovere o documentare nella futura bozza le statistiche non rintracciate e le comparazioni assolute. Sabina conferma paternità, fonti e quali formulazioni cliniche adottare. Non aggiungere una nuova offerta di prestazioni a un sito con attività sospesa.
+**Proposta concreta di trattamento.** Revisione orientativa originale: distinguere formato e orientamento, valutazione iniziale e variabilità; rimuovere o documentare nella futura bozza le statistiche non rintracciate e le comparazioni assolute. Sabina conferma paternità, fonti e quali formulazioni cliniche adottare. Non aggiungere una nuova offerta di prestazioni a un sito che dichiara chiusa l’attività privata.
 
 ## Scheda 57 Le quindici cose
 
