@@ -1,0 +1,485 @@
+[
+  {
+    "check": "reflow320",
+    "route": "/",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "reflow320",
+    "route": "/blog",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "reflow320",
+    "route": "/chi-sono",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "reflow320",
+    "route": "/formazione",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "reflow320",
+    "route": "/servizi",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "reflow320",
+    "route": "/contatti",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "reflow320",
+    "route": "/news",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "reflow320",
+    "route": "/approfondimenti/clinici",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "reflow320",
+    "route": "/approfondimenti/curiosita",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "reflow320",
+    "route": "/blog/cosa-devi-sapere",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "reflow320",
+    "route": "/privacy",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "spacing320",
+    "route": "/",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "spacing320",
+    "route": "/blog",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "spacing320",
+    "route": "/chi-sono",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "spacing320",
+    "route": "/formazione",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "spacing320",
+    "route": "/servizi",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "spacing320",
+    "route": "/contatti",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "spacing320",
+    "route": "/news",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "spacing320",
+    "route": "/approfondimenti/clinici",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "spacing320",
+    "route": "/approfondimenti/curiosita",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "spacing320",
+    "route": "/blog/cosa-devi-sapere",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "spacing320",
+    "route": "/privacy",
+    "pass": true,
+    "viewport": 320,
+    "content": 320
+  },
+  {
+    "check": "text200",
+    "route": "/",
+    "pass": true,
+    "viewport": 1280,
+    "content": 1280
+  },
+  {
+    "check": "text200",
+    "route": "/blog",
+    "pass": true,
+    "viewport": 1280,
+    "content": 1280
+  },
+  {
+    "check": "text200",
+    "route": "/chi-sono",
+    "pass": true,
+    "viewport": 1280,
+    "content": 1280
+  },
+  {
+    "check": "text200",
+    "route": "/formazione",
+    "pass": true,
+    "viewport": 1280,
+    "content": 1280
+  },
+  {
+    "check": "text200",
+    "route": "/servizi",
+    "pass": true,
+    "viewport": 1280,
+    "content": 1280
+  },
+  {
+    "check": "text200",
+    "route": "/contatti",
+    "pass": true,
+    "viewport": 1280,
+    "content": 1280
+  },
+  {
+    "check": "text200",
+    "route": "/news",
+    "pass": true,
+    "viewport": 1280,
+    "content": 1280
+  },
+  {
+    "check": "text200",
+    "route": "/approfondimenti/clinici",
+    "pass": true,
+    "viewport": 1280,
+    "content": 1280
+  },
+  {
+    "check": "text200",
+    "route": "/approfondimenti/curiosita",
+    "pass": true,
+    "viewport": 1280,
+    "content": 1280
+  },
+  {
+    "check": "text200",
+    "route": "/blog/cosa-devi-sapere",
+    "pass": true,
+    "viewport": 1280,
+    "content": 1280
+  },
+  {
+    "check": "text200",
+    "route": "/privacy",
+    "pass": true,
+    "viewport": 1280,
+    "content": 1280
+  },
+  {
+    "check": "skip-link-visible",
+    "route": "/",
+    "width": 320,
+    "textScale": 1,
+    "pass": true,
+    "text": "Salta al contenuto",
+    "tag": "A",
+    "visibleCenter": true,
+    "top": 8,
+    "bottom": 48
+  },
+  {
+    "check": "skip-advances-past-header",
+    "route": "/",
+    "width": 320,
+    "textScale": 1,
+    "pass": true,
+    "text": "Maggiori informazioni",
+    "tag": "A",
+    "visibleCenter": true,
+    "top": 227.25,
+    "bottom": 246.25
+  },
+  {
+    "check": "banner-close-focus-visible-after-skip",
+    "route": "/",
+    "width": 320,
+    "textScale": 1,
+    "pass": true,
+    "text": "Chiudi",
+    "tag": "BUTTON",
+    "visibleCenter": true,
+    "top": 102,
+    "bottom": 146
+  },
+  {
+    "check": "skip-link-visible",
+    "route": "/blog",
+    "width": 320,
+    "textScale": 1,
+    "pass": true,
+    "text": "Salta al contenuto",
+    "tag": "A",
+    "visibleCenter": true,
+    "top": 8,
+    "bottom": 48
+  },
+  {
+    "check": "skip-advances-past-header",
+    "route": "/blog",
+    "width": 320,
+    "textScale": 1,
+    "pass": true,
+    "text": "Home",
+    "tag": "A",
+    "visibleCenter": true,
+    "top": 117,
+    "bottom": 136
+  },
+  {
+    "check": "skip-link-visible",
+    "route": "/contatti",
+    "width": 320,
+    "textScale": 1,
+    "pass": true,
+    "text": "Salta al contenuto",
+    "tag": "A",
+    "visibleCenter": true,
+    "top": 8,
+    "bottom": 48
+  },
+  {
+    "check": "skip-advances-past-header",
+    "route": "/contatti",
+    "width": 320,
+    "textScale": 1,
+    "pass": true,
+    "text": "Home",
+    "tag": "A",
+    "visibleCenter": true,
+    "top": 117,
+    "bottom": 136
+  },
+  {
+    "check": "skip-link-visible",
+    "route": "/",
+    "width": 1280,
+    "textScale": 1,
+    "pass": true,
+    "text": "Salta al contenuto",
+    "tag": "A",
+    "visibleCenter": true,
+    "top": 8,
+    "bottom": 48
+  },
+  {
+    "check": "skip-advances-past-header",
+    "route": "/",
+    "width": 1280,
+    "textScale": 1,
+    "pass": true,
+    "text": "Maggiori informazioni",
+    "tag": "A",
+    "visibleCenter": true,
+    "top": 122,
+    "bottom": 144
+  },
+  {
+    "check": "banner-close-focus-visible-after-skip",
+    "route": "/",
+    "width": 1280,
+    "textScale": 1,
+    "pass": true,
+    "text": "Chiudi",
+    "tag": "BUTTON",
+    "visibleCenter": true,
+    "top": 94,
+    "bottom": 138
+  },
+  {
+    "check": "skip-link-visible",
+    "route": "/blog",
+    "width": 1280,
+    "textScale": 1,
+    "pass": true,
+    "text": "Salta al contenuto",
+    "tag": "A",
+    "visibleCenter": true,
+    "top": 8,
+    "bottom": 48
+  },
+  {
+    "check": "skip-advances-past-header",
+    "route": "/blog",
+    "width": 1280,
+    "textScale": 1,
+    "pass": true,
+    "text": "Home",
+    "tag": "A",
+    "visibleCenter": true,
+    "top": 125,
+    "bottom": 144
+  },
+  {
+    "check": "skip-link-visible",
+    "route": "/contatti",
+    "width": 1280,
+    "textScale": 1,
+    "pass": true,
+    "text": "Salta al contenuto",
+    "tag": "A",
+    "visibleCenter": true,
+    "top": 8,
+    "bottom": 48
+  },
+  {
+    "check": "skip-advances-past-header",
+    "route": "/contatti",
+    "width": 1280,
+    "textScale": 1,
+    "pass": true,
+    "text": "Home",
+    "tag": "A",
+    "visibleCenter": true,
+    "top": 125,
+    "bottom": 144
+  },
+  {
+    "check": "skip-link-visible",
+    "route": "/",
+    "width": 1280,
+    "textScale": 2,
+    "pass": true,
+    "text": "Salta al contenuto",
+    "tag": "A",
+    "visibleCenter": true,
+    "top": 16,
+    "bottom": 96
+  },
+  {
+    "check": "skip-advances-past-header",
+    "route": "/",
+    "width": 1280,
+    "textScale": 2,
+    "pass": true,
+    "text": "Maggiori informazioni",
+    "tag": "A",
+    "visibleCenter": false,
+    "top": 398,
+    "bottom": 493
+  },
+  {
+    "check": "banner-close-focus-visible-after-skip",
+    "route": "/",
+    "width": 1280,
+    "textScale": 2,
+    "pass": true,
+    "text": "Chiudi",
+    "tag": "BUTTON",
+    "visibleCenter": true,
+    "top": 290,
+    "bottom": 378
+  },
+  {
+    "check": "skip-link-visible",
+    "route": "/blog",
+    "width": 1280,
+    "textScale": 2,
+    "pass": true,
+    "text": "Salta al contenuto",
+    "tag": "A",
+    "visibleCenter": true,
+    "top": 16,
+    "bottom": 96
+  },
+  {
+    "check": "skip-advances-past-header",
+    "route": "/blog",
+    "width": 1280,
+    "textScale": 2,
+    "pass": true,
+    "text": "Home",
+    "tag": "A",
+    "visibleCenter": true,
+    "top": 354,
+    "bottom": 392
+  },
+  {
+    "check": "skip-link-visible",
+    "route": "/contatti",
+    "width": 1280,
+    "textScale": 2,
+    "pass": true,
+    "text": "Salta al contenuto",
+    "tag": "A",
+    "visibleCenter": true,
+    "top": 16,
+    "bottom": 96
+  },
+  {
+    "check": "skip-advances-past-header",
+    "route": "/contatti",
+    "width": 1280,
+    "textScale": 2,
+    "pass": true,
+    "text": "Home",
+    "tag": "A",
+    "visibleCenter": true,
+    "top": 354,
+    "bottom": 392
+  }
+]

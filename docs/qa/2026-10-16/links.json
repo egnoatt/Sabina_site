@@ -1,0 +1,62 @@
+{
+  "utc": "2026-10-16T19:01:18.669932+00:00",
+  "method": "GET redirects followed; HTTP availability only, no rights or ownership inference",
+  "results": [
+    {
+      "url": "https://youtu.be/mQaqXK7z9LM",
+      "references": [
+        "src/content/blog/navigare-tra-piacere-e-dovere.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=mQaqXK7z9LM&feature=youtu.be",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://youtu.be/2VRRx7Mtep8",
+      "references": [
+        "src/content/blog/la-depressione-oscura-il-nostro-futuro.md"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=2VRRx7Mtep8&feature=youtu.be",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://issuu.com/egnoatto/docs/paliamone_libretto-paziente_1_?utm_medium=referral&utm_source=www.sabinascattola.com",
+      "references": [
+        "src/content/blog/la-depressione-oscura-il-nostro-futuro.md"
+      ],
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.facebook.com/sabinascattolapsicologa",
+      "references": [
+        "src/components/Footer.tsx",
+        "src/app/contatti/page.tsx"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.facebook.com/sabinascattolapsicologa",
+      "contentType": "text/html; charset=\"utf-8\""
+    },
+    {
+      "url": "https://gnoatto.pro",
+      "references": [
+        "src/components/Footer.tsx"
+      ],
+      "status": 308,
+      "error": "HTTP Error 308: Permanent Redirect"
+    }
+  ],
+  "crossCheck": {
+    "method": "curl GET -L, same audit session",
+    "Issuu": {
+      "status": 403,
+      "conclusion": "urllib GET Mozilla user-agent returned404; curl403. Inconclusive availability, do not remove."
+    },
+    "gnoatto.pro": {
+      "status": 200,
+      "finalUrl": "https://www.gnoatto.pro/",
+      "note": "urllib does not follow308 in this runtime; curl follows correctly"
+    }
+  }
+}
