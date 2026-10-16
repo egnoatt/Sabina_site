@@ -1,18 +1,13 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import Markdown from 'react-markdown';
-import { getPostContent } from '@/lib/posts';
-import fs from 'fs';
-import path from 'path';
+import { getAllPosts, getPostContent } from '@/lib/posts';
+import { notFound } from 'next/navigation';
 import Link from 'next/link';
 
 // Generazione dei parametri statici
 export async function generateStaticParams() {
-  const postsDir = path.join(process.cwd(), 'src', 'content', 'blog');
-  const files = fs.readdirSync(postsDir);
-  return files.filter((filename) => filename.endsWith('.md')).map((filename) => ({
-    slug: filename.replace(/\.md$/, ''),
-  }));
+  return getAllPosts().map(({ slug }) => ({ slug }));
 }
 
 interface PageProps {
@@ -23,6 +18,7 @@ interface PageProps {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const post = getPostContent(slug);
+  if (!post) notFound();
   const title = String(post.data.title ?? 'Approfondimento');
   const description = String(post.data.description ?? post.data.excerpt ?? post.content.slice(0, 160)).trim();
   const url = '/blog/' + encodeURIComponent(slug);
@@ -31,8 +27,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: title + ' | Sabina Scattola',
     description,
     alternates: { canonical: url },
-    openGraph: { type: 'article', title, description, url },
-    twitter: { card: 'summary_large_image', title, description },
+    openGraph: { images: ['/og.png'], type: 'article', title, description, url },
+    twitter: { images: ['/og.png'], card: 'summary_large_image', title, description },
   };
 }
 
@@ -49,6 +45,7 @@ function formatDate(value: unknown): string {
 export default async function BlogPost({ params }: PageProps) {
   const { slug } = await params;
   const post = getPostContent(slug);
+  if (!post) notFound();
   const title = String(post.data.title ?? 'Approfondimento');
   const date = post.data.date;
 

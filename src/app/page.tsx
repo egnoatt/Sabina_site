@@ -174,7 +174,7 @@ export default function Home() {
       <section aria-labelledby="articles-heading" className="border-t border-editorial-line bg-editorial-paper py-16 sm:py-24">
         <div className="mx-auto max-w-6xl px-6">
           <div className="flex flex-wrap items-end justify-between gap-5">
-            <div>
+            <div className="min-w-0 max-w-full [overflow-wrap:anywhere]">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-brand-primary">Letture</p>
               <h2 id="articles-heading" className="mt-4 font-display text-4xl leading-tight sm:text-5xl">Approfondimenti</h2>
               <p className="mt-4 max-w-[58ch] text-base leading-8 text-slate-700">Ultimi articoli dal blog.</p>

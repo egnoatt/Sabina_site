@@ -1,6 +1,4 @@
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
+import { getAllPosts } from '@/lib/posts';
 import Link from 'next/link';
 import BlogContent from '@/components/BlogContent';
 
@@ -9,47 +7,22 @@ export const metadata = {
   description: 'Articoli e approfondimenti su psicologia e psicoterapia.',
   alternates: { canonical: '/blog' },
   openGraph: {
+    images: ['/og.png'],
     type: 'website',
     title: 'Blog | Sabina Scattola',
     description: 'Articoli e approfondimenti su psicologia e psicoterapia.',
     url: '/blog',
   },
   twitter: {
+    images: ['/og.png'],
     card: 'summary_large_image',
     title: 'Blog | Sabina Scattola',
     description: 'Articoli e approfondimenti su psicologia e psicoterapia.',
   },
 };
 
-export type Post = {
-  slug: string;
-  title: string;
-  date: string;
-  description: string;
-};
-
-const blogDirectory = path.join(process.cwd(), 'src', 'content', 'blog');
-
-function getPosts(): Post[] {
-  const fileNames = fs.readdirSync(blogDirectory);
-  return fileNames
-    .filter((f) => f.endsWith('.md'))
-    .map((fileName) => {
-      const fullPath = path.join(blogDirectory, fileName);
-      const fileContents = fs.readFileSync(fullPath, 'utf8');
-      const { data } = matter(fileContents);
-      return {
-        slug: fileName.replace(/\.md$/, ''),
-        title: data.title ?? fileName.replace(/\.md$/, ''),
-        date: data.date ?? new Date().toISOString(),
-        description: (data.excerpt ?? data.description ?? '').toString(),
-      };
-    })
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-}
-
 export default function BlogPage() {
-  const posts = getPosts();
+  const posts = getAllPosts();
 
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
@@ -61,7 +34,7 @@ export default function BlogPage() {
   };
 
   return (
-    <div className="mx-auto max-w-5xl px-6 py-10 text-base leading-relaxed">
+    <div className="editorial-page">
       <nav aria-label="Breadcrumb" className="mb-6 text-sm text-gray-600">
         <ol className="flex items-center space-x-2">
           <li>
@@ -81,7 +54,7 @@ export default function BlogPage() {
       />
 
       <section className="text-center mb-12">
-        <h1 className="text-3xl md:text-4xl font-semibold text-brand-text">Blog</h1>
+        <h1 className="editorial-title">Blog</h1>
         <p className="mt-2 text-gray-600">
           Articoli e approfondimenti sulla psicologia e psicoterapia
         </p>
