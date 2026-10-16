@@ -71,6 +71,21 @@ describe('article validation', () => {
     expect(() => getAllPosts()).toThrow('Invalid or missing publication date');
   });
 
+  test.each(['2023-02-30', '2023-02-29', '2021-01-01T23:00:00-04:00'])(
+    'rejects unquoted invalid date-only value %s before YAML normalization', async (date) => {
+      fs.writeFileSync(path.join(tempDir, 'src/content/blog/invalid.md'), `---\ndate: ${date}\n---\ncontent`);
+      const { getPostContent } = await import('../posts');
+      expect(() => getPostContent('invalid')).toThrow('Invalid or missing publication date');
+    },
+  );
+
+  test('preserves valid unquoted leap-day dates with comments', async () => {
+    fs.writeFileSync(path.join(tempDir, 'src/content/blog/leap.md'), '---\ndate: 2024-02-29 # original publication\n---\ncontent');
+    const { getPostContent } = await import('../posts');
+    expect(getPostContent('leap')?.data.date).toBe('2024-02-29');
+    expect(getPostContent('leap')?.data.date).toBe('2024-02-29');
+  });
+
   test('does not hide filesystem errors as missing articles', async () => {
     fs.mkdirSync(path.join(tempDir, 'src/content/blog/directory.md'));
     const { getPostContent } = await import('../posts');

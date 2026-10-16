@@ -32,9 +32,14 @@ export function getPostContent(slug: string): { data: PostData; content: string 
     if ((error as NodeJS.ErrnoException).code === 'ENOENT') return null;
     throw error;
   }
-  const { data, content } = matter(fileContent);
+  // Disable gray-matter cache: cached clones omit the raw, non-enumerable matter block.
+  const parsed = matter(fileContent, {});
+  const { data, content } = parsed;
   // Fail visibly on invalid source data rather than inventing a publication date.
-  const date = data.date instanceof Date ? data.date.toISOString().slice(0, 10) : data.date;
+  // YAML eagerly normalizes unquoted dates (e.g. February 30 becomes March 2).
+  // Validate the original date-only scalar instead of its coerced Date value.
+  const rawDate = parsed.matter.match(/^(?:date|"date"|'date'):[ \t]*(\d{4}-\d{2}-\d{2})[ \t]*(?:#.*)?$/m)?.[1];
+  const date = data.date instanceof Date ? rawDate : data.date;
   if (typeof date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(date) ||
       Number.isNaN(Date.parse(date)) || new Date(date).toISOString().slice(0, 10) !== date) {
     throw new Error(`Invalid or missing publication date for article: ${slug}`);
