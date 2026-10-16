@@ -35,7 +35,7 @@ const newsData = [
 
 export default function News() {
   return (
-    <div className="mx-auto max-w-5xl px-6 py-10 text-base leading-relaxed">
+    <div className="editorial-page">
       <nav aria-label="Breadcrumb" className="mb-6 text-sm text-gray-600">
         <ol className="flex items-center space-x-2">
           <li>
@@ -52,17 +52,17 @@ export default function News() {
 
       {/* Hero Section */}
       <div className="text-center mb-12">
-        <ChatBubbleOvalLeftEllipsisIcon className="mx-auto h-16 w-16 text-brand-primary" />
-        <h1 className="mt-4 text-4xl font-bold text-brand-text">Archivio aggiornamenti</h1>
-        <p className="mt-2 text-xl text-gray-500">Comunicazioni professionali pubblicate nel 2025</p>
+        <ChatBubbleOvalLeftEllipsisIcon className="mx-auto h-16 w-16 text-brand-primary" aria-hidden="true" />
+        <h1 className="editorial-title mt-4">Archivio aggiornamenti</h1>
+        <p className="mt-2 text-xl text-slate-600">Comunicazioni professionali pubblicate nel 2025</p>
       </div>
 
       {/* Lista delle News */}
       <section className="max-w-3xl mx-auto space-y-8">
         {newsData.map((news) => (
-          <article key={news.id} className="bg-gray-50 p-6 rounded-xl shadow-md">
-            <div className="mb-2 text-sm text-gray-500">{news.data}</div>
-            <h2 className="text-2xl font-semibold text-brand-text mb-2">{news.titolo}</h2>
+          <article key={news.id} className="editorial-panel">
+            <div className="mb-2 text-sm text-slate-600">{news.data}</div>
+            <h2 className="editorial-heading mb-2">{news.titolo}</h2>
             <p className="text-lg text-gray-700">{news.descrizione}</p>
           </article>
         ))}

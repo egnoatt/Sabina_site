@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function ApprofondimentiClinici() {
   return (
-    <div className="mx-auto max-w-5xl px-6 py-10 text-base leading-relaxed">
+    <div className="editorial-page">
       <nav aria-label="Breadcrumb" className="mb-6 text-sm text-gray-600">
         <ol className="flex items-center space-x-2">
           <li>
@@ -51,24 +51,24 @@ export default function ApprofondimentiClinici() {
       {/* Hero Section */}
       <div className="text-center mb-12">
         <BookOpenIcon className="mx-auto h-16 w-16 text-brand-primary" aria-hidden="true" />
-        <h1 className="mt-4 text-3xl md:text-4xl font-bold text-brand-text">
+        <h1 className="editorial-title mt-4">
           Approfondimenti Clinici
         </h1>
-        <p className="mt-2 text-xl text-gray-500">
+        <p className="mt-2 text-xl text-slate-600">
           Temi, strumenti e prospettive cliniche presentati in chiave informativa.
         </p>
       </div>
 
       {/* Contenuto Principale */}
       <section className="max-w-4xl mx-auto text-lg text-gray-700 space-y-6">
-        <h2 className="text-2xl font-semibold text-brand-text">Nota editoriale</h2>
+        <h2 className="editorial-heading">Nota editoriale</h2>
         <p>
           Questa sezione raccoglie contenuti di taglio clinico e divulgativo, pensati per
           presentare approcci, strumenti ed esperienza professionale senza configurare un servizio
           terapeutico privato attivo.
         </p>
 
-        <h2 className="text-2xl font-semibold text-brand-text">Temi e strumenti clinici</h2>
+        <h2 className="editorial-heading">Temi e strumenti clinici</h2>
         <ul className="list-disc list-inside ml-4 space-y-2">
           <li>Colloqui clinici individuali</li>
           <li>Psicoterapia psicodinamica ad orientamento psicoanalitico</li>
@@ -77,7 +77,7 @@ export default function ApprofondimentiClinici() {
           <li>Strumenti clinici per comprendere ansia, stress e momenti di crisi</li>
         </ul>
 
-        <h2 className="text-2xl font-semibold text-brand-text">Finalità di questi contenuti</h2>
+        <h2 className="editorial-heading">Finalità di questi contenuti</h2>
         <p>
           I contenuti pubblicati hanno finalità esclusivamente informativa e descrivono temi e
           prospettive cliniche maturati nel tempo. Per questo motivo non vanno letti come
@@ -89,7 +89,7 @@ export default function ApprofondimentiClinici() {
       <section className="mt-16 text-center">
         <Link
           href="/contatti"
-          className="inline-flex items-center gap-2 rounded-full bg-brand-primary px-8 py-3 text-white font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary shadow transition"
+          className="editorial-button"
         >
           <EnvelopeIcon className="h-6 w-6" aria-hidden="true" />
           {professionalStatus.infoCtaLabel}
