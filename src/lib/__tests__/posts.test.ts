@@ -9,7 +9,7 @@ function createMarkdownPost(dir: string, slug: string, date: string) {
   const filePath = path.join(blogDir, `${slug}.md`);
   fs.writeFileSync(
     filePath,
-    `---\ndate: ${date}\n---\ncontent`
+    `---\ndate: "${date}"\n---\ncontent`
   );
 }
 
@@ -37,5 +37,43 @@ describe('getAllPosts', () => {
     expect(slugs).toEqual(['second', 'third', 'first']);
 
     fs.rmSync(tempDir, { recursive: true, force: true });
+  });
+});
+
+describe('article validation', () => {
+  const originalCwd = process.cwd();
+  let tempDir: string;
+
+  beforeEach(() => {
+    tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'article-test-'));
+    createMarkdownPost(tempDir, 'valid', '2021-01-01');
+    process.chdir(tempDir);
+    jest.resetModules();
+  });
+
+  afterEach(() => {
+    process.chdir(originalCwd);
+    jest.resetModules();
+    fs.rmSync(tempDir, { recursive: true, force: true });
+  });
+
+  test('missing and traversal slugs return null', async () => {
+    const { getPostContent } = await import('../posts');
+    expect(getPostContent('missing')).toBeNull();
+    expect(getPostContent('../valid')).toBeNull();
+    expect(getPostContent('%2e%2e%2fvalid')).toBeNull();
+    expect(getPostContent('valid')?.data.date).toBe('2021-01-01');
+  });
+
+  test.each(['', 'not-a-date', '2023-02-30'])('rejects invalid source date %s', async (date) => {
+    createMarkdownPost(tempDir, 'invalid', date);
+    const { getAllPosts } = await import('../posts');
+    expect(() => getAllPosts()).toThrow('Invalid or missing publication date');
+  });
+
+  test('does not hide filesystem errors as missing articles', async () => {
+    fs.mkdirSync(path.join(tempDir, 'src/content/blog/directory.md'));
+    const { getPostContent } = await import('../posts');
+    expect(() => getPostContent('directory')).toThrow();
   });
 });

@@ -1,41 +1,67 @@
-// src/lib/posts.ts
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
 const postsDirectory = path.join(process.cwd(), 'src', 'content', 'blog');
 
-export function getPostContent(slug: string) {
-  const filePath = path.join(postsDirectory, `${slug}.md`);
-  const fileContent = fs.readFileSync(filePath, 'utf-8');
-  const { data, content } = matter(fileContent);
-
-  return { data, content };
+interface PostData {
+  date: string;
+  title: string;
+  description?: string;
+  excerpt?: string;
+  tags?: string[];
+  image?: string;
+  updated?: string;
 }
 
-// Definisci una interfaccia per i dati del post
-interface Post {
+export interface Post {
   slug: string;
   date: string;
-  title?: string;
-  description?: string;
-  [key: string]: unknown; // per eventuali proprietà aggiuntive
+  title: string;
+  description: string;
+  updated?: string;
+}
+
+export function getPostContent(slug: string): { data: PostData; content: string } | null {
+  // Only file basenames are valid routes; never resolve user input outside the archive.
+  if (!/^[a-zA-Z0-9_-]+$/.test(slug)) return null;
+  let fileContent: string;
+  try {
+    fileContent = fs.readFileSync(path.join(postsDirectory, `${slug}.md`), 'utf-8');
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === 'ENOENT') return null;
+    throw error;
+  }
+  const { data, content } = matter(fileContent);
+  // Fail visibly on invalid source data rather than inventing a publication date.
+  const date = data.date instanceof Date ? data.date.toISOString().slice(0, 10) : data.date;
+  if (typeof date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(date) ||
+      Number.isNaN(Date.parse(date)) || new Date(date).toISOString().slice(0, 10) !== date) {
+    throw new Error(`Invalid or missing publication date for article: ${slug}`);
+  }
+  if (data.title !== undefined && typeof data.title !== 'string') {
+    throw new Error(`Invalid title for article: ${slug}`);
+  }
+  return {
+    data: { ...data, date, title: data.title ?? slug },
+    content,
+  };
 }
 
 export function getAllPosts(): Post[] {
-  const fileNames = fs.readdirSync(postsDirectory);
-  const posts: Post[] = fileNames.filter((fileName) => fileName.endsWith('.md')).map((fileName) => {
-    const slug = fileName.replace(/\.md$/, '');
-    const { data } = getPostContent(slug);
-    return {
-      slug,
-      date: data.date,
-      title: data.title,
-      description: data.description,
-      ...data, // include altre proprietà eventuali
-    };
-  });
-
-  // Ordina i post per data (dal più recente al meno recente)
-  return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  return fs.readdirSync(postsDirectory)
+    .filter((fileName) => fileName.endsWith('.md'))
+    .map((fileName) => {
+      const slug = fileName.replace(/\.md$/, '');
+      const post = getPostContent(slug);
+      if (!post) throw new Error(`Cannot load article: ${slug}`);
+      return {
+        slug,
+        date: post.data.date,
+        updated: post.data.updated,
+        title: post.data.title,
+        description: String(post.data.excerpt ?? post.data.description ?? ''),
+      };
+    })
+    .sort((a, b) => b.date.localeCompare(a.date) || a.slug.localeCompare(b.slug));
 }
