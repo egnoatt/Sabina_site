@@ -1,5 +1,9 @@
 # Orchestrazione non privacy — 16 ottobre 2026
 
+**Riconciliazione 16 ottobre 2026:** le indicazioni DRAFT/non pubblicato e la baseline `d52cf42` qui sotto descrivono la preparazione storica. Le 14 PR #59–#72 sono state integrate e pubblicate nella [release essenza-nonprivacy-2026-10-16](https://github.com/egnoatt/Sabina_site/releases/tag/essenza-nonprivacy-2026-10-16), commit `aad2f9f8e922571080045667366bd7226b0a11d1`. La release registra l'approvazione grafica e il via libera di Enrico per quella tranche. Le nuove PR preparatorie richiedono un nuovo via libera: nessuna autorizzazione permanente a merge/deploy. Restano aperti editoriale #29/#35/#36/#51–#58, QA #47–#49, accettazione #50 e protezioni #73. Vedere [stato corrente](./releases/2026-10-16-nonprivacy-followup.md).
+
+## Snapshot della preparazione, conservato per tracciabilità
+
 Stato: perimetro e preparazione PR autorizzati; **NON MERGED / NON PUBBLICATO**.
 Baseline produzione: `d52cf42dd3485d8a0478cbe5665a96d4b6b3ae3d`.
 
