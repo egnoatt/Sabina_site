@@ -1,6 +1,6 @@
 # Issue #20 — Decision register per Sabina Scattola
 
-**Data:** 15 ottobre 2026. **Stato:** OWNER REVIEW REQUIRED — non contiene autorizzazioni presunte.  
+**Data iniziale:** 15 ottobre 2026. **Aggiornamento dichiarazione owner:** 16 ottobre 2026. **Stato:** OWNER REVIEW REQUIRED — non contiene autorizzazioni presunte.  
 Scopo: completare il testo GDPR senza duplicare gli indirizzi email sul sito o riscrivere pagine già pubblicate senza evidenze.
 
 ## Decisioni già confermate
@@ -12,12 +12,16 @@ Scopo: completare il testo GDPR senza duplicare gli indirizzi email sul sito o r
 
 ## Decisioni richieste alla titolare prima di chiudere la #20
 
-### DR-01 — Politica concreta per le email ricevute — BLOCKING
-**Da confermare con Sabina:**
-- I messaggi ordinari vengono normalmente cancellati dopo la risposta, archiviati, oppure conservati senza routine di cancellazione?
-- Definire un **termine o criterio** di cancellazione effettivamente attuabile (non inventare un periodo).
-- Per email involontariamente contenenti dati sanitari: definire gestione prudente e non trattare come richieste cliniche.
-- Eventuali eccezioni per contestazioni/obblighi legali devono essere approvate, senza inventare categorie.
+### DR-01 — Politica concreta per le email ricevute — PARTIAL / TIMING BLOCKING
+**Conferma del proprietario del 16 ottobre 2026:** «Sabina cancella le email».
+
+- [x] **Prassi generale dichiarata:** le email ricevute vengono cancellate; non viene dichiarata la conservazione indefinita.
+- [ ] **Precisare il criterio effettivo:** cancellazione dopo aver risposto, cancellazione periodica o altro criterio reale? Nessuna scadenza è ancora stata confermata; non attribuire 30/90/365 giorni.
+- [ ] **Precisare la portata:** eliminazione dalla posta ricevuta e, dove necessario, trattamento di cestino, copie e backup del provider secondo le condizioni applicabili; non presumere cancellazione tecnica immediata e irreversibile.
+- [ ] Per messaggi involontariamente contenenti dati sanitari, concordare gestione prudente e non trattarli come richieste cliniche.
+- [ ] Eventuali eccezioni per contestazioni/obblighi legali devono essere approvate, senza inventare categorie.
+
+**Il punto G1 non è chiuso:** la dichiarazione «cancella le email» non soddisfa ancora, da sola, l'esigenza di definire un periodo o criterio di conservazione chiaro.
 
 ### DR-02 — Basi giuridiche dei trattamenti — BLOCKING
 **Candidate, non verificate né automaticamente applicabili:**
