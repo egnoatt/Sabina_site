@@ -1,3 +1,5 @@
+> **Nota di stato — 16 ottobre 2026:** il testo sotto è un registro storico della precedente PR, già integrata; le diciture DRAFT/BLOCKED non descrivono lo stato GitHub attuale. I gate editoriali non completati restano aperti nell’[epic #29](https://github.com/egnoatt/Sabina_site/issues/29). Privacy esclusivamente in issue #20 / PR #26. Per il piano autorizzato vedere [orchestrazione non privacy](./nonprivacy-orchestration.md). Nessuna approvazione editoriale è implicita.
+
 # Revisione privacy ed editoriale — DRAFT / NOT APPROVED
 
 Questa PR propone una mitigazione delle affermazioni assolute sulla privacy e della comunicazione di uno studio attivo. **Non fare merge né deploy prima delle approvazioni esplicite** elencate qui.

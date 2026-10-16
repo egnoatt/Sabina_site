@@ -4,6 +4,11 @@ Questa cartella contiene solo documentazione pubblica e tecnica del sito **perso
 
 ## Navigazione
 
+- [PR ed evidenze non privacy](./nonprivacy-validation.md): dipendenze, controlli e limiti della proposta.
+
+- [Orchestrazione non privacy](./nonprivacy-orchestration.md): perimetro approvato, backlog e gate, ancora NON rilasciato.
+- [Registro editoriale per Sabina](./editorial-decision-register.md): otto articoli, verifiche e decisioni pendenti.
+
 - [README principale](../README.md): panoramica, stack e sviluppo locale.
 - [Struttura del progetto](./site-structure.md): percorsi, componenti e file.
 - [Design System v2.0 — Essenza](./design-system.md): **CURRENT per homepage e articoli**, non ancora per il resto del sito.
