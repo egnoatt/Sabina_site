@@ -9,7 +9,7 @@ import { professionalStatus } from '@/config/professionalStatus';
 
 export default function Formazione() {
   return (
-    <div className="mx-auto max-w-5xl px-6 py-10 text-base leading-relaxed">
+    <div className="editorial-page">
       <nav aria-label="Breadcrumb" className="mb-6 text-sm text-gray-600">
         <ol className="flex items-center space-x-2">
           <li>
@@ -27,7 +27,7 @@ export default function Formazione() {
       {/* Hero Section */}
       <section className="text-center mb-12">
         <AcademicCapIcon className="mx-auto h-16 w-16 text-brand-primary" aria-hidden="true" />
-        <h1 className="mt-4 text-3xl md:text-4xl font-semibold text-brand-text">
+        <h1 className="editorial-title mt-4">
           Formazione e Aggiornamento
         </h1>
         <p className="mt-2 text-gray-600">
@@ -44,13 +44,13 @@ export default function Formazione() {
       </section>
 
       {/* Formazione Accademica e Specializzazioni */}
-      <section className="max-w-3xl mx-auto mb-16 rounded-xl border border-brand-accent bg-white p-6 shadow-sm">
+      <section className="editorial-panel max-w-3xl mx-auto mb-16">
         <div className="text-center mb-6">
           <ClipboardDocumentListIcon
             className="h-10 w-10 text-brand-primary mx-auto"
             aria-hidden="true"
           />
-          <h2 className="text-2xl font-semibold text-brand-text mt-2">
+          <h2 className="editorial-heading mt-2">
             Formazione Accademica e Specializzazioni
           </h2>
         </div>
@@ -79,13 +79,13 @@ export default function Formazione() {
       </section>
 
       {/* Pubblicazioni */}
-      <section className="max-w-3xl mx-auto mb-16 rounded-xl border border-brand-accent bg-white p-6 shadow-sm">
+      <section className="editorial-panel max-w-3xl mx-auto mb-16">
         <div className="text-center mb-6">
           <ClipboardDocumentListIcon
             className="h-10 w-10 text-brand-primary mx-auto"
             aria-hidden="true"
           />
-          <h2 className="text-2xl font-semibold text-brand-text mt-2">Pubblicazioni</h2>
+          <h2 className="editorial-heading mt-2">Pubblicazioni</h2>
         </div>
         <ul className="text-gray-700 list-disc list-inside space-y-3">
           <li>
@@ -111,10 +111,10 @@ export default function Formazione() {
         </ul>
       </section>
       {/* Training Personale e Supervisioni */}
-      <section className="max-w-3xl mx-auto mb-16 rounded-xl border border-brand-accent bg-white p-6 shadow-sm">
+      <section className="editorial-panel max-w-3xl mx-auto mb-16">
         <div className="text-center mb-6">
           <UserGroupIcon className="h-10 w-10 text-brand-primary mx-auto" aria-hidden="true" />
-          <h2 className="text-2xl font-semibold text-brand-text mt-2">
+          <h2 className="editorial-heading mt-2">
             Training Personale e Supervisioni
           </h2>
         </div>
@@ -125,10 +125,10 @@ export default function Formazione() {
       </section>
 
       {/* Aggiornamenti e Corsi Recenti (2024-2025) */}
-      <section className="max-w-3xl mx-auto mb-16 rounded-xl border border-brand-accent bg-white p-6 shadow-sm">
+      <section className="editorial-panel max-w-3xl mx-auto mb-16">
         <div className="text-center mb-6">
           <CalendarDaysIcon className="h-10 w-10 text-brand-primary mx-auto" aria-hidden="true" />
-          <h2 className="text-2xl font-semibold text-brand-text mt-2">
+          <h2 className="editorial-heading mt-2">
             Aggiornamenti e Corsi Recenti (2024-2025)
           </h2>
         </div>
@@ -169,7 +169,7 @@ export default function Formazione() {
             diagnostici.
           </li>
         </ul>
-        <p className="mt-4 text-sm text-gray-500 text-center">
+        <p className="mt-4 text-sm text-slate-600 text-center">
           Questa è una selezione rappresentativa degli aggiornamenti e dei corsi recenti.
         </p>
       </section>
@@ -178,7 +178,7 @@ export default function Formazione() {
       <section className="max-w-2xl mx-auto text-center">
         <Link
           href="/contatti"
-          className="inline-flex items-center gap-2 rounded-full bg-brand-primary bg-[#1F5C4A] px-8 py-3 text-white font-semibold hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary shadow-md transition"
+          className="editorial-button"
         >
           {professionalStatus.infoCtaLabel}
         </Link>
