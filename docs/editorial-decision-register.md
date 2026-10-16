@@ -1,8 +1,10 @@
 # Dossier decisionale per Sabina sugli otto articoli
 
-**Stato corrente — 16 ottobre 2026, dopo PR #77.** Il proprietario ha comunicato l’approvazione di Sabina delle cinque versioni concrete #51/#53/#54/#55/#57 (head `cc301cf00ec2c768b744b60ec8b3f12fff65b8b6`) e ha autorizzato merge e pubblicazione. La PR #77 è pubblicata su `ce2f5dc0e22833f35d43533420248e8025bba674`, Vercel READY; CI pre/post merge e verifica delle cinque pagine PASS. Queste cinque schede sono chiuse per il lavoro editoriale richiesto. L’approvazione delle modifiche minime non attesta una revisione scientifica esaustiva.
+**Stato corrente — 16 ottobre 2026, main `aae8c18913507ff12e23853a4b1c9b008c3cd9c0`.** Tutte le otto decisioni editoriali sono concluse: cinque versioni minime pubblicate con #77; mantenimento invariato di #52/#56/#58 confermato da Sabina tramite il proprietario. #35 e #29 chiuse. Non è attestata una revisione scientifica esaustiva.
 
-**Diritti separati:** il proprietario ha autorizzato di raccogliere provenienza e diritti non documentati in [#78](https://github.com/egnoatt/Sabina_site/issues/78), aperta. Non si richiedono di nuovo documenti Word già dichiarati assenti; non si deducono licenze né violazioni. #52/#56/#58 restano invariati e aperti per conferma specifica del mantenimento da parte di Sabina. #36 resta aperta per la proposta JSON-LD, che richiede approvazione separata. #49 conserva verifiche media e riferimenti.
+**JSON-LD concluso:** #79 approvata da Sabina e autorizzata dal proprietario, integrata e pubblicata; #36 chiusa. Autore locale omesso per gli otto articoli e fonti approvate citate per cinque, senza modificare i testi visibili.
+
+**Diritti separati:** per decisione esplicita del proprietario #78 resta aperta fuori dalla chiusura operativa. Nessuna licenza attestata; non richiedere nuovamente documenti storici dichiarati assenti. #49 conserva la verifica di riferimenti e media.
 
 Le otto schede sotto conservano **l’istruttoria storica**, fonti e limiti, non una lista di riscritture ancora obbligatorie. Le alternative ampie non sono il piano scelto. Nessuna nuova modifica agli articoli o privacy è inclusa in questo aggiornamento.
 
@@ -139,7 +141,7 @@ Queste sono scelte di indirizzo, **non versioni di articoli approvate**. Nessun 
 
 Le fonti esterne sono state consultate il 16 ottobre 2026. Sono state lette le pagine primarie L'Espresso, VICE, Repubblica, BuzzFeed, OMS, l'indice ufficiale Recalcati e The School of Life. NICE è stato riscontrato tramite risultato indicizzato della pagina ufficiale; l'apertura diretta ha restituito errore, quindi il confronto completo con la versione corrente resta da completare prima della bozza clinica. Gli archivi WordPress sono riscontri di provenienza storica indicizzati, non prova di titolarità. HuffPost e riproduzione YouTube restano non verificati. Non è stata eseguita una revisione sistematica della letteratura né una certificazione legale dei diritti.
 
-Per #36 nessun campo di attribuzione è modificato. Prima dell'implementazione servirà una mappa approvata per ogni versione: autore del testo, curatore, traduttore se pertinente, editore/fonte, date documentate, revisore e data di revisione reale. Per testi compositi occorre rappresentare distintamente contributo originale e materiale derivato, senza promuovere il curatore ad autore unico.
+La proposta JSON-LD descritta nell’istruttoria è stata risolta dalla soluzione concreta approvata e pubblicata con #79; non resta una richiesta di approvazione.
 
 ## Registro corrente delle approvazioni
 
@@ -148,12 +150,12 @@ La conferma di Sabina è stata comunicata espressamente dal proprietario nella c
 | Issue | Scelta/versione | Via libera Enrico | Stato editoriale | Diritti |
 | --- | --- | --- | --- | --- |
 | #51 | Mantenimento con fonte, cc301cf | Ricevuto; pubblicata #77 | Chiusa | #78 aperta |
-| #52 | Invariata; conferma specifica Sabina pendente | Nessuna nuova pubblicazione | Aperta | #78 aperta |
+| #52 | Invariata su aae8c18; Sabina ha confermato | Conferma registrata; nessuna nuova pubblicazione | Chiusa | #78 aperta |
 | #53 | Mantenimento con fonte, cc301cf | Ricevuto; pubblicata #77 | Chiusa | #78 aperta |
 | #54 | Credito/descrizione corretti, cc301cf | Ricevuto; pubblicata #77 | Chiusa | #78 aperta |
 | #55 | Correzione minima e nota storica, cc301cf | Ricevuto; pubblicata #77 | Chiusa | #78 aperta |
-| #56 | Invariata; conferma specifica Sabina pendente | Nessuna nuova pubblicazione | Aperta | #78 aperta |
+| #56 | Invariata su aae8c18; Sabina ha confermato | Conferma registrata; nessuna nuova pubblicazione | Chiusa | #78 aperta |
 | #57 | Correzione minima e fonte, cc301cf | Ricevuto; pubblicata #77 | Chiusa | #78 aperta |
-| #58 | Invariata; conferma specifica Sabina pendente | Nessuna nuova pubblicazione | Aperta | #78 aperta |
+| #58 | Invariata su aae8c18; Sabina ha confermato | Conferma registrata; nessuna nuova pubblicazione | Chiusa | #78 aperta |
 
-#35 resta aperta soltanto per completare il registro delle tre decisioni residue. #29/#50 includono ancora #36, #78 e i gate pertinenti; la separazione evita duplicazioni, non cancella il residuo. Privacy #20/#26 separata e invariata.
+#35 e #29 chiuse. #36 chiusa dopo #79. #78 resta aperta fuori dalla chiusura operativa per decisione del proprietario. #31/#50 dipendono ancora dalle verifiche #47/#49 e dall’accettazione finale. Privacy #20/#26 separata e invariata.

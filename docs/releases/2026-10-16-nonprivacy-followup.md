@@ -1,25 +1,22 @@
-# Stato corrente non privacy — 16 ottobre 2026, dopo PR #77
+# Stato corrente non privacy — 16 ottobre 2026
 
-**Produzione aggiornata; progetto non ancora chiuso.** Main e Vercel Production sono allineati a `ce2f5dc0e22833f35d43533420248e8025bba674`, deployment [READY](https://vercel.com/enrico-gnoattos-projects/sabina-site/FqpH3wiVhqHakiLxe1V7fNK6krHv). [CI](https://github.com/egnoatt/Sabina_site/actions/runs/38955404075) e [landmark](https://github.com/egnoatt/Sabina_site/actions/runs/38955403996) SUCCESS. Cinque pagine aggiornate HTTP200 e contenuti approvati presenti.
+Base corrente `aae8c18913507ff12e23853a4b1c9b008c3cd9c0`, merge #79. [CI](https://github.com/egnoatt/Sabina_site/actions/runs/38960910135) e [landmark](https://github.com/egnoatt/Sabina_site/actions/runs/38960910102) SUCCESS. [Produzione READY verificata dopo #79](https://vercel.com/enrico-gnoattos-projects/sabina-site/XFM9uepfLkfQWrBWQ5CgW4G5tmmR). Questo aggiornamento è documentale: nessun nuovo rilascio o modifica runtime.
 
-## Rilasci e decisioni concluse
+## Concluso
 
-- #59–#72: Essenza pubblicato, design congelato; release storica `essenza-nonprivacy-2026-10-16` conservata.
-- #74: Design System e documenti riconciliati, approvati e integrati. #73 chiusa: protezione A applicata e provata, [evidenza](https://github.com/egnoatt/Sabina_site/issues/73#issuecomment-6222872052).
-- #75: dossier unico preparato e integrato; non era un’approvazione di tutti i contenuti.
-- #76: QA e baseline performance integrate. #48 chiusa come baseline di laboratorio accettata; non sono CWV/INP sul campo.
-- #77: cinque modifiche minime approvate da Sabina, secondo conferma del proprietario; merge/pubblicazione autorizzati da Enrico. #51/#53/#54/#55/#57 chiuse per il lavoro editoriale richiesto.
+- Essenza #59–#72, documentazione #74/#80 e protezioni A #73; redesign congelato.
+- Dossier #75, QA #76 e baseline performance #48 (laboratorio, non CWV sul campo).
+- Cinque modifiche minime approvate e pubblicate #77.
+- Attribuzioni JSON-LD #79 approvate e pubblicate; #36 chiusa.
+- Sabina conferma mantenimento invariato #52/#56/#58: tutte le otto schede, #35 e #29 chiuse.
+- Il proprietario mantiene #78 aperta come residuo documentale esterno alla chiusura operativa, senza attestare licenze.
 
-## Gate residui di #50
+## Residui operativi
 
-| Gate | Residuo concreto |
+| Issue | Lavoro o decisione residua |
 | --- | --- |
-| #78 diritti | Provenienza/diritti non documentati raccolti separatamente per gli otto testi; nessuna licenza attestata |
-| #52/#56/#58 | Conferma Sabina del mantenimento delle versioni invariate; #58 conserva riferimento bibliografico/video non pienamente verificato |
-| #35 dossier | Registrare le tre decisioni residue; cinque approvazioni già ricevute, non da richiedere ancora |
-| #36 attribuzioni | Proposta isolata JSON-LD da approvare: omettere autore locale non confermato, citare fonti visibili verificate; nessun merge autorizzato |
-| #47 accessibilità | Completamento matrice manuale e lettore di schermo; campioni zoom reale aggiunti nel verbale supplementare, non certificazione |
-| #49 riferimenti | Conferma Facebook/ruoli/riferimenti; media e Issuu con limiti documentati |
-| #29/#31/#50 | Restano aperte come coordinamento/accettazione dei rispettivi residui |
+| #47 | Sessione di lettore di schermo osservabile e matrice manuale WCAG completa; nessuna attestazione integrale dai campioni |
+| #49 | Conferma Facebook e ruoli/riferimenti; Issuu non verificabile e alternative audiovisive non attestate |
+| #31/#50 | Coordinamento e accettazione dei residui sopra; non dipendono più dalle decisioni editoriali o da #78 |
 
-Le diciture DRAFT negli snapshot storici descrivono la fase preparatoria, non le PR #74–#77 ormai integrate. Il dossier corrente distingue esplicitamente istruttoria e decisioni successive. La nuova proposta JSON-LD resta invece bozza. Nessun nuovo merge/deploy o impostazione server in questa tranche. Privacy esclusa.
+[Verifiche estese e limiti](../qa/2026-10-16/final-qa.md). Gli snapshot storici descrivono le rispettive date; questo registro prevale per lo stato corrente. Privacy #20/#26 esclusa e invariata.
