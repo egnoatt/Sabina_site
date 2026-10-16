@@ -125,3 +125,6 @@ html[data-site-banner-dismissed='true'] .site-banner { display: none; }
    rem units retain clearance when the user increases their text size. */
 html { scroll-padding-top: 8rem; }
 :focus-visible { scroll-margin-block: 1rem; }
+
+/* Legacy and migrated pages must also reflow when users increase text spacing. */
+main { overflow-wrap: anywhere; }
