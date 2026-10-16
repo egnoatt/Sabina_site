@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       colors: {
         brand: { primary: '#1F5C4A', text: '#172E29', accent: '#BFD8CC' },
-        // Essenza v2 candidate tokens: scoped to the vertical slice until approval.
+        // Essenza v2 tokens: home/article baseline and opt-in internal surfaces.
         editorial: {
           paper: '#FAF8F4',
           mist: '#F0F2EA',
@@ -24,7 +24,7 @@ module.exports = {
           css: {
             h1: { fontWeight: '700' },
             h2: { fontWeight: '600' },
-            a: { color: '#007BFF', '&:hover': { color: '#0056b3' } },
+            a: { color: '#1F5C4A', '&:hover': { color: '#172E29' } },
           },
         },
       },
